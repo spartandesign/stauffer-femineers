@@ -4,7 +4,7 @@ Student-facing instructional website for the 2026–2027 Stauffer Middle School 
 
 ## Current release
 
-Phases 1–4 student guides and mentor planning resources:
+Complete Phases 1–6 student guides and mentor planning resources:
 
 - Home
 - Start Here: Imagine the Future
@@ -34,6 +34,14 @@ Phases 1–4 student guides and mentor planning resources:
 - Phase 4 wearable shirt testing, repair, hat-mounting mockup, and winter-storage guide
 - Phase 4 Hummingbird subsystem testing, troubleshooting, integration-prep, and kit-storage guide
 - Phase 4 mid-build test evidence and January restart-plan guide
+- Phase 5 Build the Future hub and exact January 11 workday schedule
+- Phase 5 wearable shirt completion, removable WS2812B bucket-hat integration, MakeCode, comfort, and redesign guide
+- Phase 5 Hummingbird complete-system integration, BirdBlox visitor testing, and redesign guide
+- Canvas Checkpoint 3: Test, Learn, Redesign evidence guide
+- Phase 6 Step Into the Future hub and exact February 22 workday schedule
+- Phase 6 wearable safety, reliability, fashion-show rehearsal, backup, and packing guide
+- Phase 6 Hummingbird reliability, gallery rehearsal, recovery, and numbered-kit packing guide
+- Canvas Checkpoint 4: Gala Ready evidence, project-card, backup, and logistics guide
 
 The site uses plain HTML, CSS, and JavaScript so it can be hosted directly with GitHub Pages without a build step.
 
@@ -41,6 +49,6 @@ The site uses plain HTML, CSS, and JavaScript so it can be hosted directly with 
 
 After pushing this folder to a GitHub repository, open **Settings → Pages**, choose **Deploy from a branch**, and select the branch and root folder that contain `index.html`.
 
-## Next release
+## Canvas launch preparation
 
-Build the Phase 5 student guides for system integration, meaningful complete-project testing, redesign, and Gala-readiness planning.
+Audit the Phase 1–6 pages against the Canvas modules, add the final direct Canvas assignment links, and make any school-specific wording or rubric changes before students enter the course.
