@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5f3dc4">
+  <meta name="description" content="A student-friendly introduction to sewable LEDs, polarity, testing, and safe simple circuits.">
+  <title>Sewable LED Basics | Limitless</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">L</span> Limitless</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav class="site-nav" id="main-nav" aria-label="Main navigation">
+        <a href="start-here.html">Start Here</a>
+        <a aria-current="page" href="wearable-technology.html">Wearables</a>
+        <a href="creative-robotics.html">Robotics</a>
+        <a href="design-process.html">Design Process</a>
+        <a href="canvas-checkpoint-1.html">Canvas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="progress-strip" aria-label="Wearable exploration progress">
+      <a href="wearable-technology.html">Wearable Home</a>
+      <span class="current">1 · Sewable LEDs</span>
+      <a href="conductive-thread-basics.html">2 · Conductive Thread</a>
+      <a href="meet-the-microbit.html">3 · micro:bit</a>
+      <a href="meet-the-neopixels.html">4 · NeoPixels</a>
+    </div>
+
+    <section class="page-hero">
+      <p class="eyebrow">Wearable Exploration 1</p>
+      <h1>Make a sewable LED <span>light up.</span></h1>
+      <p class="lede">Learn how polarity works, test a prepared circuit, and notice the details your denim-shirt design will need.</p>
+    </section>
+
+    <section class="section compact">
+      <div class="tutorial-goal">
+        <div class="goal-icon" aria-hidden="true">★</div>
+        <div>
+          <p class="eyebrow">Goal</p>
+          <h2>Complete one safe LED test</h2>
+          <p>By the end, you can identify the positive and negative sides of a sewable LED and make it glow using the prepared testing materials.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <h2>What you need</h2>
+      <div class="supply-grid">
+        <div class="supply"><span aria-hidden="true">💡</span><strong>1 Leyal LilyPad LED</strong></div>
+        <div class="supply"><span aria-hidden="true">🔋</span><strong>Switched LilyPad CR2032 holder</strong></div>
+        <div class="supply"><span aria-hidden="true">➕</span><strong>Polarity card</strong></div>
+        <div class="supply"><span aria-hidden="true">📱</span><strong>iPad for evidence</strong></div>
+      </div>
+      <div class="supply-match"><strong>Our actual supplies</strong><p>Stauffer ordered 500 Leyal LilyPad-style LEDs, switched LilyPad CR2032 holders, and CR2032 batteries. Your station uses these components in a mentor-prepared test setup.</p><a href="our-supplies.html">See the program supply guide →</a></div>
+      <div class="callout coral"><strong>Use only the battery setup provided at your station.</strong> Do not use a different battery, connect batteries together, or place a loose battery directly against conductive thread.</div>
+    </section>
+
+    <section class="section compact">
+      <p class="eyebrow">Learn</p>
+      <h2>LEDs care about direction</h2>
+      <p class="diagram-note">Simplified guide — follow the printed + and − marks on the actual boards.</p>
+      <div class="polarity-demo" role="img" aria-label="A simple circuit path from the positive sewable pad of a switched CR2032 holder to LED positive, through the LED, and from LED negative to the negative sewable pad of the holder">
+        <div class="terminal positive"><span>+</span><strong>Holder + pad</strong></div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="terminal led"><span>LED</span><strong>Positive pad to negative pad</strong></div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="terminal negative"><span>−</span><strong>Holder − pad</strong></div>
+      </div>
+      <div class="card-grid">
+        <article class="card"><h3>Polarity</h3><p><strong>Polarity</strong> means that positive and negative have a correct direction. Match <strong>+ to +</strong> and <strong>− to −</strong>.</p></article>
+        <article class="card"><h3>A complete loop</h3><p>Electricity needs an unbroken path from the battery, through the LED, and back to the battery.</p></article>
+        <article class="card"><h3>Separate paths</h3><p>The positive and negative paths must not touch each other. If they touch, the circuit can short.</p></article>
+      </div>
+      <div class="callout teal"><strong>Look closely:</strong> Sewable LED boards usually mark their connection pads with a plus and minus. Always inspect the exact LED at your station instead of guessing from its shape.</div>
+    </section>
+
+    <section class="section compact">
+      <p class="eyebrow">Visual guide 1</p>
+      <h2>Find the two pads on your LED</h2>
+      <p class="diagram-note">Simplified LilyPad LED — your Leyal board may have additional sewable holes, so read every printed polarity mark.</p>
+      <div class="led-anatomy" role="img" aria-label="A simplified LilyPad sewable LED board with a positive pad on the left, a light in the center, and a negative pad on the right">
+        <div class="pad pad-plus"><span>+</span><strong>Positive pad</strong><small>Connects to battery +</small></div>
+        <div class="board-center"><div class="light-dome">LIGHT</div><strong>Sewable LED board</strong><small>Check the printed marks</small></div>
+        <div class="pad pad-minus"><span>−</span><strong>Negative pad</strong><small>Connects to battery −</small></div>
+      </div>
+      <p class="diagram-caption">The exact Leyal board shape may be different. Match the printed symbols—not the position or shape in this diagram.</p>
+    </section>
+
+    <section class="section compact">
+      <p class="eyebrow">Visual guide 2</p>
+      <h2>Correct circuit: two separate paths</h2>
+      <div class="circuit-picture correct-circuit" role="img" aria-label="Correct circuit with a red positive path from battery positive to LED positive and a dark negative path from LED negative to battery negative. The paths do not touch.">
+        <div class="battery-picture"><strong>CR2032<br>HOLDER</strong><small>switch</small><span class="battery-plus">+</span><span class="battery-minus">−</span></div>
+        <div class="wire wire-positive"><span>POSITIVE PATH</span></div>
+        <div class="mini-led"><span class="mini-plus">+</span><b>LED</b><span class="mini-minus">−</span></div>
+        <div class="wire wire-negative"><span>NEGATIVE PATH</span></div>
+      </div>
+      <div class="diagram-key"><span><i class="key-line key-positive"></i> Positive path</span><span><i class="key-line key-negative"></i> Negative path</span><strong>✓ The paths stay apart.</strong></div>
+    </section>
+
+    <section class="section compact">
+      <p class="eyebrow">Visual guide 3</p>
+      <h2>Short circuit: the paths touch</h2>
+      <div class="circuit-picture short-circuit" role="img" aria-label="Incorrect short circuit where the positive and negative paths touch before reaching the LED">
+        <div class="battery-picture"><strong>CR2032<br>HOLDER</strong><small>switch</small><span class="battery-plus">+</span><span class="battery-minus">−</span></div>
+        <div class="short-paths">
+          <div class="short-wire short-red">POSITIVE</div>
+          <div class="short-warning">!</div>
+          <div class="short-wire short-dark">NEGATIVE</div>
+        </div>
+        <div class="mini-led dim"><span class="mini-plus">+</span><b>LED</b><span class="mini-minus">−</span></div>
+      </div>
+      <div class="callout coral"><strong>Stop and power off.</strong> If the positive and negative paths touch, electricity can take the wrong route. Separate the paths before testing again.</div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Try it</p>
+      <h2>Test your LED</h2>
+      <ol class="build-steps">
+        <li><div><strong>Start with the holder switched off.</strong><p>Find the slide switch on the LilyPad CR2032 holder. It stays off before any circuit change.</p></div></li>
+        <li><div><strong>Find the polarity marks.</strong><p>Point to the <strong>+</strong> and <strong>−</strong> pads on the sewable LED. Ask a partner or mentor to confirm.</p></div></li>
+        <li><div><strong>Match the prepared connections.</strong><p>Connect battery positive to the LED’s positive pad and battery negative to the LED’s negative pad. Keep the two paths apart.</p></div></li>
+        <li><div><strong>Inspect before powering.</strong><p>Check that the connections are secure, no metal pieces are crossing, and nothing feels warm.</p></div></li>
+        <li><div><strong>Turn on and observe.</strong><p>Power the test circuit for a few seconds. The LED should glow steadily.</p></div></li>
+        <li><div><strong>Turn power off.</strong><p>Switch off or disconnect the battery before touching or changing any connection.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section compact">
+      <div class="task-box">
+        <p class="eyebrow">Test</p>
+        <h2>Can you prove you understand it?</h2>
+        <ul class="checklist">
+          <li>Your LED turns on steadily.</li>
+          <li>You can point to the positive and negative pads.</li>
+          <li>You can trace the complete circuit loop with your finger.</li>
+          <li>You can explain why the two paths must stay separate.</li>
+          <li>You turn the power off before changing the circuit.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <p class="eyebrow">Visual guide 4</p>
+      <h2>Check before you switch on</h2>
+      <div class="inspection-row" role="img" aria-label="Four-part inspection sequence: match positive, match negative, keep paths separate, then test">
+        <div class="inspection-item"><span>1</span><strong>+ matches +</strong><small>Positive is connected correctly.</small></div>
+        <div class="inspection-arrow" aria-hidden="true">→</div>
+        <div class="inspection-item"><span>2</span><strong>− matches −</strong><small>Negative is connected correctly.</small></div>
+        <div class="inspection-arrow" aria-hidden="true">→</div>
+        <div class="inspection-item"><span>3</span><strong>Paths stay apart</strong><small>No metal pieces are crossing.</small></div>
+        <div class="inspection-arrow" aria-hidden="true">→</div>
+        <div class="inspection-item ready"><span>✓</span><strong>Ready to test</strong><small>Power on for a few seconds.</small></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Troubleshoot</p>
+      <h2>If your LED does not light</h2>
+      <div class="debug-sequence" aria-label="Debugging sequence">
+        <strong>STOP</strong><span>→</span><strong>OBSERVE</strong><span>→</span><strong>CHANGE ONE THING</strong><span>→</span><strong>TEST</strong>
+      </div>
+      <div class="card-grid">
+        <article class="card"><h3>1. Power</h3><p>Is the approved battery holder connected and switched on? Do not replace the battery without a mentor.</p></article>
+        <article class="card"><h3>2. Polarity</h3><p>Does battery positive go to LED positive? Does battery negative go to LED negative?</p></article>
+        <article class="card"><h3>3. Contact</h3><p>Is each prepared connection actually touching its correct LED pad?</p></article>
+        <article class="card"><h3>4. Short circuit</h3><p>Are the positive and negative paths touching? Turn power off before separating them.</p></article>
+        <article class="card"><h3>5. Known-good test</h3><p>Ask a mentor to test your LED with the station’s known-good circuit. Change only one part at a time.</p></article>
+        <article class="card"><h3>Stop immediately if…</h3><p>Anything becomes warm, a battery looks damaged, or you smell something unusual. Disconnect power and tell a mentor.</p></article>
+      </div>
+      <div class="diagnostic-visual" role="img" aria-label="Quick diagnosis comparison: glowing LED means the circuit works, a dark LED means check power polarity and contact, and warmth or smell means power off immediately">
+        <div class="diagnostic-case"><span class="bulb on">✦</span><div><strong>LED glows</strong><small>Polarity, contact, and path are working.</small></div></div>
+        <div class="diagnostic-case"><span class="bulb off">×</span><div><strong>LED stays dark</strong><small>Check power, then polarity, then contact.</small></div></div>
+        <div class="diagnostic-case danger"><span class="bulb hot">!</span><div><strong>Warmth or smell</strong><small>Power off immediately and tell a mentor.</small></div></div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="capture-box">
+        <p class="eyebrow">Capture this for Canvas</p>
+        <h2>Save your exploration evidence</h2>
+        <ul class="checklist">
+          <li>Take one clear photo of your working LED test.</li>
+          <li>Make sure the LED and both connections can be seen.</li>
+          <li>Write one sentence explaining polarity.</li>
+          <li>Record one problem you checked—or write “It worked on the first test.”</li>
+          <li>Save the original photo for Canvas Checkpoint 1.</li>
+        </ul>
+        <p><strong>Sentence starter:</strong> “My LED worked when I connected…”</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="task-box">
+        <h2>Connect this to your shirt design</h2>
+        <p>Your final denim shirt will use approximately 4–8 sewable LEDs. Their locations should strengthen your artwork and leave room for safe, separate circuit paths.</p>
+        <div class="button-row">
+          <a class="button" href="wearable-technology.html">Return to Wearable Technology</a>
+          <a class="button secondary" href="conductive-thread-basics.html">Next: Conductive Thread</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>Power off before changing any connection.</strong></p>
+    <p>Testing and redesign are what engineers do.</p>
+  </footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>

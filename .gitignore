@@ -1,0 +1,14 @@
+# Temporary working files used to generate project artifacts
+tmp/
+
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+*.bak
+
+# Local development caches
+node_modules/
+.cache/
+*.inspect.ndjson

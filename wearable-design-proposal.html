@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5f3dc4">
+  <meta name="description" content="Student guide for preparing the individual Limitless denim-shirt and NeoPixel bucket-hat design proposal.">
+  <title>Wearable Design Proposal | Limitless</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark">L</span> Limitless</a><button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button><nav class="site-nav" id="main-nav" aria-label="Main navigation"><a href="start-here.html">Start Here</a><a aria-current="page" href="wearable-technology.html">Wearables</a><a href="creative-robotics.html">Robotics</a><a href="design-process.html">Design Process</a><a href="canvas-checkpoint-1.html">Canvas</a></nav></div></header>
+
+  <main>
+    <div class="progress-strip"><a href="start-here.html">1 · Start</a><a href="limitless-challenge.html">2 · Challenge</a><a href="design-process.html">3 · Design</a><a href="wearable-technology.html">4 · Explore</a><span class="current">5 · Propose</span><a href="mentor-approval.html">6 · Approval</a><a href="canvas-checkpoint-1.html">7 · Submit</a></div>
+
+    <section class="page-hero"><p class="eyebrow">Wearable Technology · Individual Proposal</p><h1>Turn your future vision into a <span>buildable plan.</span></h1><p class="lede">Your proposal must show how one personal theme connects two required projects: a painted denim shirt with sewn LEDs and a programmable NeoPixel bucket hat. A mentor should be able to understand your idea, materials, electronics, comfort plan, and first build step without guessing.</p></section>
+
+    <section class="section compact">
+      <div class="tutorial-goal"><div class="goal-icon" aria-hidden="true">✦</div><div><p class="eyebrow">Your goal</p><h2>Prepare one complete proposal for both wearables.</h2><p>You are working individually. Your sketches and explanations should be your own, even when you brainstorm or test technology beside classmates.</p></div></div>
+      <div class="debug-sequence" aria-label="Wearable proposal sequence"><strong>Future vision</strong><span>→</span><strong>Three visual ideas</strong><span>→</span><strong>Shared style</strong><span>→</span><strong>Shirt plan</strong><span>→</span><strong>Hat plan</strong><span>→</span><strong>Safety + evidence</strong></div>
+      <p class="diagram-caption">Complete the proposal from left to right. The shirt and hat should feel connected, but each should add something different to your story.</p>
+    </section>
+
+    <section class="section compact">
+      <p class="eyebrow">Part 1 · Your Design Story</p>
+      <h2>Begin with meaning, not decoration.</h2>
+      <div class="card-grid">
+        <article class="card"><span class="number">1</span><h3>Future vision</h3><p>Write 2–4 sentences: <strong>What future do you imagine, who is part of it, and why does it matter to you?</strong></p></article>
+        <article class="card"><span class="number">2</span><h3>Three visual ideas</h3><p>Draw or describe at least three possible symbols, patterns, scenes, or light behaviors before choosing your strongest combination.</p></article>
+        <article class="card"><span class="number">3</span><h3>Shared design language</h3><p>Choose a color palette, repeated shape or symbol, and one sentence explaining how the shirt and hat belong together.</p></article>
+      </div>
+      <div class="callout coral"><strong>Using an idea starter?</strong> Name the starter, then change at least three meaningful parts—such as the purpose, symbols, layout, color meaning, or light behavior. Color changes alone do not count as three changes.</div>
+      <div class="button-row"><a class="button secondary" href="idea-starters.html#wearable-starters">Browse wearable idea starters</a><a class="button secondary" href="design-process.html">Review the design process</a></div>
+    </section>
+
+    <section class="section" id="shirt-plan">
+      <p class="eyebrow">Part 2 · LED Denim Shirt</p>
+      <h2>Show the artwork and the circuit.</h2>
+      <p class="section-intro">Your shirt sketch should make the light locations look intentional. Plan approximately 4–8 sewable LEDs, then show how the two conductive-thread paths stay separate.</p>
+      <div class="pathway-banner" role="group" aria-label="Required denim shirt sketch views">
+        <article class="pathway-panel coral"><h2>Front view</h2><p>Draw the artwork, color areas, LED locations, and any visible symbols or words. Number each LED so your sequence is easy to explain.</p></article>
+        <article class="pathway-panel coral"><h2>Back or inside view</h2><p>Draw the positive and negative thread-path ideas, switched CR2032 holder, battery-access opening, and any protective pocket or fabric layer.</p></article>
+      </div>
+      <div class="card-grid">
+        <article class="card"><span class="number">A</span><h3>Artwork plan</h3><p>Label your soft-fabric-paint colors and show which areas must dry before electronics work begins.</p></article>
+        <article class="card"><span class="number">B</span><h3>Light plan</h3><p>Place 4–8 Leyal LilyPad LEDs where light strengthens the meaning. Mark every <strong>+</strong> and <strong>−</strong> terminal.</p></article>
+        <article class="card"><span class="number">C</span><h3>Access plan</h3><p>Place the switched CR2032 holder where you can reach the switch and battery without uncomfortable pressure.</p></article>
+      </div>
+      <div class="callout teal"><strong>Shirt safety check:</strong> The positive and negative conductive-thread paths must never touch or cross. Plan secure knots, short clean routes, and an inside layer that keeps thread tails and hardware away from skin.</div>
+      <div class="button-row"><a class="button secondary" href="sewable-led-basics.html">Review sewable LEDs</a><a class="button secondary" href="conductive-thread-basics.html">Review conductive thread</a></div>
+    </section>
+
+    <section class="section" id="hat-plan">
+      <p class="eyebrow">Part 3 · Programmable Bucket Hat</p>
+      <h2>Show the pixels, program, power, and comfort.</h2>
+      <p class="section-intro">Plan 10–12 WS2812B NeoPixels on a removable route by default; a mentor may approve up to 15 after checking inventory. Your sketch must show the outside design and where every removable electronics part will sit.</p>
+
+      <div class="task-box">
+        <h2>Label this system on your hat sketch</h2>
+        <div class="debug-sequence" aria-label="NeoPixel hat signal and power planning labels"><strong>micro:bit P0</strong><span>→</span><strong>Mentor-prepared harness</strong><span>→</span><strong>DIN arrow</strong><span>→</span><strong>10–12 pixels default</strong></div>
+        <ul class="checklist"><li>2×AAA holder powers the micro:bit controller.</li><li>Switched 3×AAA holder separately powers the NeoPixels.</li><li>The mentor-prepared harness provides the approved data connection and shared ground.</li><li>The two positive power supplies stay separate.</li></ul>
+      </div>
+
+      <div class="pathway-banner" role="group" aria-label="Required bucket hat sketch views">
+        <article class="pathway-panel coral"><h2>Outside view</h2><p>Draw the decorated white hat, complete approved pixel route, first-pixel location, and arrow showing data moving from DIN toward the final pixel.</p></article>
+        <article class="pathway-panel teal"><h2>Inside view</h2><p>Draw two electronics pockets on opposite sides for balance, accessible switches, JST-SM connection, and removable ribbon channel or fabric loops.</p></article>
+      </div>
+
+      <h2>Your three required button behaviors</h2>
+      <div class="event-map" role="group" aria-label="Required micro:bit button behaviors">
+        <article class="event-card"><div class="event-button" aria-hidden="true">A</div><div class="event-arrow" aria-hidden="true">↓</div><div class="pixel-icon" aria-hidden="true">✦</div><h3>Signature effect</h3><p>Name the colors, movement, and meaning of your main light effect.</p></article>
+        <article class="event-card"><div class="event-button" aria-hidden="true">B</div><div class="event-arrow" aria-hidden="true">↓</div><div class="pixel-icon" aria-hidden="true">●</div><h3>Second effect</h3><p>Plan a clearly different effect for another mood, message, or part of your story.</p></article>
+        <article class="event-card"><div class="event-button wide" aria-hidden="true">A+B</div><div class="event-arrow" aria-hidden="true">↓</div><div class="pixel-icon empty" aria-hidden="true">○</div><h3>Lights off</h3><p>This button combination must turn all NeoPixels off before shutdown or storage.</p></article>
+      </div>
+
+      <div class="callout coral"><strong>Mentor-only harness rule:</strong> Students do not cut, solder, splice, or rebuild the NeoPixel wiring harness. Mentors prepare and test the JST-SM connector, wire, 330-ohm resistor, capacitor, heat-shrink, and power connections. Your proposal shows where the approved removable harness goes and how it stays accessible.</div>
+      <div class="button-row"><a class="button secondary" href="meet-the-microbit.html">Review the micro:bit</a><a class="button secondary" href="meet-the-neopixels.html">Review NeoPixels</a></div>
+    </section>
+
+    <section class="section compact" id="materials">
+      <p class="eyebrow">Part 4 · Confirmed Program Materials</p>
+      <h2>Plan with what we actually have.</h2>
+      <div class="supply-grid">
+        <article class="supply"><span aria-hidden="true">👕</span><strong>Denim shirt + soft fabric paint</strong></article>
+        <article class="supply"><span aria-hidden="true">✦</span><strong>4–8 Leyal LilyPad LEDs</strong></article>
+        <article class="supply"><span aria-hidden="true">🧵</span><strong>Conductive thread + large-eye needle</strong></article>
+        <article class="supply"><span aria-hidden="true">🔋</span><strong>Switched CR2032 holder + battery</strong></article>
+        <article class="supply"><span aria-hidden="true">🧢</span><strong>White bucket hat + ordinary sewing thread</strong></article>
+        <article class="supply"><span aria-hidden="true">🌈</span><strong>10–12 NeoPixels (up to 15 approved)</strong></article>
+        <article class="supply"><span aria-hidden="true">▦</span><strong>micro:bit V2 + 2×AAA holder</strong></article>
+        <article class="supply"><span aria-hidden="true">🔌</span><strong>Switched 3×AAA holder + mentor harness</strong></article>
+      </div>
+      <div class="supply-match"><strong>Add installation materials to your list.</strong><p>Include the removable ribbon channel or fabric loops, two balanced electronics pockets, hook-and-loop fastener, ordinary thread, and any approved decorative materials your design needs.</p><a href="our-supplies.html">See the full classroom inventory →</a></div>
+      <div class="callout teal"><strong>Pixel allocation check:</strong> The program has about 600 pixels total. If all 50 members choose wearables, the average is 12 pixels per hat. Plan 10&ndash;12 unless a mentor confirms that 13&ndash;15 are available for your design.</div>
+    </section>
+
+    <section class="section compact">
+      <p class="eyebrow">Part 5 · Wearability + Repair</p>
+      <h2>Design for a real person to wear it.</h2>
+      <div class="card-grid">
+        <article class="card"><span class="number">1</span><h3>Comfort</h3><p>Keep hard parts away from pressure points. Show how pockets, backing fabric, and balanced placement protect the wearer.</p></article>
+        <article class="card"><span class="number">2</span><h3>Access</h3><p>Show how a mentor can reach the switches, batteries, connectors, micro:bit, and first pixel without undoing the decoration.</p></article>
+        <article class="card"><span class="number">3</span><h3>Removal</h3><p>Explain how electronics come out before cleaning, repair, or storage. Permanent glue over electronics is not an approved plan.</p></article>
+      </div>
+      <div class="callout"><strong>Evidence to capture:</strong> Photograph your sewable-LED test, conductive-thread practice, micro:bit button test, and prepared NeoPixel-strip test. Add one short caption to each photo: what you tried, what happened, and what you learned.</div>
+      <div class="button-row"><a class="button secondary" href="capture-evidence.html">How to capture strong evidence</a></div>
+    </section>
+
+    <section class="section" id="approval-check">
+      <p class="eyebrow">Part 6 · Mentor-Ready Check</p>
+      <h2>Could another person build from your plan?</h2>
+      <div class="status-grid">
+        <article class="status"><strong>Meaningful</strong>Your future vision is personal and every major design choice supports it.</article>
+        <article class="status"><strong>Complete</strong>Both required projects, all sketch views, light counts, program behaviors, and materials are included.</article>
+        <article class="status"><strong>Buildable</strong>Your plans use confirmed supplies, fit the time available, and identify a sensible first prototype task.</article>
+        <article class="status"><strong>Safe</strong>Power, polarity, separate thread paths, mentor-only harness work, and switch access are clearly shown.</article>
+        <article class="status"><strong>Wearable</strong>The electronics are balanced, protected from skin, removable, and reachable for battery changes.</article>
+        <article class="status"><strong>Explainable</strong>You can describe what every light and program behavior means without reading your whole proposal.</article>
+      </div>
+      <div class="callout teal"><strong>Practice your 60-second explanation:</strong> “My future vision is… My shirt communicates it by… My hat adds… The most important safety or comfort choice is… My first prototype task will be…”</div>
+    </section>
+
+    <section class="section compact" id="canvas-deliverables">
+      <div class="task-box">
+        <p class="eyebrow">Exact Canvas Deliverables</p>
+        <h2>Submit one individual wearable proposal containing all of these items.</h2>
+        <ul class="checklist">
+          <li>Your name, future-vision statement, and at least three visual brainstorm ideas.</li>
+          <li>Your chosen color palette, repeated symbol or shape, and explanation of how the two projects connect.</li>
+          <li>Denim-shirt front and back/inside sketches with 4–8 LED locations, every +/− mark, conductive-thread-path idea, switched CR2032 holder, battery access, and painting plan.</li>
+          <li>Bucket-hat outside and inside sketches with a 10–12 NeoPixel path (or mentor-approved path up to 15), DIN/data-direction arrow, Button A effect, Button B effect, A+B lights off, two balanced electronics pockets, switches, and removable mounting plan.</li>
+          <li>A materials list using confirmed program supplies, including installation and decorative materials.</li>
+          <li>Clear technology-exploration photos with short captions explaining what you tried, what happened, and what you learned.</li>
+          <li>Your mentor decision—Approved, Approved with Notes, Revise and Return, or Needs Technical Review—and any required changes.</li>
+          <li>Your first prototype task for the October 5 workday.</li>
+        </ul>
+        <p><strong>Before uploading:</strong> Make sure every image is upright and readable, your name appears on the proposal, and your original photos and sketches are saved.</p>
+        <div class="button-row"><a class="button" href="mentor-approval.html">Next: Mentor Approval</a><a class="button secondary" href="canvas-checkpoint-1.html">Open Canvas Checkpoint 1 Guide</a><a class="button secondary" href="wearable-technology.html">Return to Wearables</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>Plan both projects. Explain your choices. Build only after approval.</p></footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>
