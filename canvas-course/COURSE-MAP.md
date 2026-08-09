@@ -29,8 +29,10 @@
 
 ## Pathway handling
 
-- Wearable Technology assignments are individual.
-- Creative Robotics technical evidence may be shared by a team of two.
+- Participation year determines placement; students do not choose between the pathways.
+- First-year Femineers are assigned to Creative Robotics in teams of two.
+- Second- and third-year Femineers are assigned to Wearable Technology and complete individual projects.
+- Creative Robotics technical evidence may be shared by the assigned team of two.
 - Each robotics partner must still submit an individual contribution and reflection when the assignment requests it.
 - The visual website contains the full pathway-specific directions; Canvas pages provide the module flow, condensed requirements, and submission points.
 
@@ -40,4 +42,3 @@
 - December 7, 2026 — proposed additional Phase 4 pull-out day
 
 The package does not assign due dates, so it can be imported safely before those two workdays are formally approved.
-

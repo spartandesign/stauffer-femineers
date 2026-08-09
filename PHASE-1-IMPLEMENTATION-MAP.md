@@ -24,10 +24,10 @@ By the end of the day, all students will be able to:
 
 ### Definition of success
 
-| Pathway | Working arrangement | Phase 1 finish line |
+| Assigned pathway | Participation year and working arrangement | Phase 1 finish line |
 |---|---|---|
-| Wearable Technology | Individual | Each student submits one combined proposal for her own denim shirt and her own programmable bucket hat, including visuals, LED/NeoPixel plans, effects, and electronics placement. |
-| Creative Robotics | Teams of exactly two | Each pair submits one proposal for an interactive future invention with a user/need, at least one input, at least two outputs, a physical concept, and an input → decision → output storyboard. |
+| Wearable Technology | Second- or third-year Femineers; individual | Each student submits one combined proposal for her own denim shirt and her own programmable bucket hat, including visuals, LED/NeoPixel plans, effects, and electronics placement. |
+| Creative Robotics | First-year Femineers; teams of exactly two | Each pair submits one proposal for an interactive future invention with a user/need, at least one input, at least two outputs, a physical concept, and an input → decision → output storyboard. |
 
 ---
 
@@ -35,13 +35,13 @@ By the end of the day, all students will be able to:
 
 The website should reveal the minimum useful choice at each moment. Students should never need to search through the future phases to find today's task.
 
-1. **Home** — Choose a pathway or open the design process.
+1. **Home** — Identify the pathway assigned by participation year or open the design process.
 2. **Start Here: Imagine the Future** — Meet the theme, central question, goals, and schedule for today.
 3. **The Limitless Challenge** — Select a future area, identify a person or community, and describe a need or opportunity.
 4. **Engineering Design Process** — Learn the full cycle, with emphasis on Imagine, Research, Brainstorm, and Design.
-5. **Choose the correct pathway hub.**
-   - Wearable students work individually.
-   - Robotics students confirm a team of exactly two.
+5. **Open the correct assigned-pathway hub.**
+   - Second- and third-year Femineers open Wearable Technology and work individually.
+   - First-year Femineers open Creative Robotics and confirm a team of exactly two.
 6. **Complete short technology explorations.** Each exploration follows Goal → What You Need → Learn → Try → Test → Troubleshoot → Capture for Canvas.
 7. **Open the pathway proposal guide.** Turn the future idea and technology discoveries into a labeled, realistic design.
 8. **Use the self-check.** Fix missing requirements before asking for mentor review.
@@ -68,7 +68,7 @@ Every Phase 1 tutorial page should include:
 
 | Page | Student purpose | Essential content | Student action/evidence |
 |---|---|---|---|
-| Home | Enter the experience quickly | Title, tagline, three large choices: Wearables, Robotics, Design Process | Select pathway |
+| Home | Enter the experience quickly | Title, tagline, pathway-by-year explanation, links to Wearables, Robotics, and Design Process | Identify assigned pathway |
 | Start Here: Imagine the Future | Understand today's mission | Welcome, central question, outcomes, workday flow, safety expectations | Read goals; complete quick future prompt |
 | The Limitless Challenge | Move from a broad interest to a real need | Future areas, user/community prompts, examples and non-examples | Write a future vision or problem statement |
 | Engineering Design Process | Understand iteration | Imagine → Research → Brainstorm → Design → Prototype → Build → Test → Improve → Present → Reflect | Identify today's four emphasized stages |
@@ -153,7 +153,7 @@ Demonstrations should be brief, visible, and rehearsed. Each should use a finish
 
 | Demonstration | Maximum time | Key message |
 |---|---:|---|
-| Theme launch and two-pathway showcase | 8 minutes | Wearables represent the people designing the future; robotics represents the future they might create. |
+| Theme launch and pathway-progression showcase | 8 minutes | First-year robotics builds foundational team systems; second- and third-year wearables apply growing skills to individual expression. |
 | Engineering design in action | 7 minutes | A first idea is a starting point; testing and redesign are expected. |
 | Evidence worth saving | 5 minutes | Capture clear proof while working instead of recreating it later. |
 | Safety and help system | 5 minutes | Stop power before changing electronics; use the troubleshooting model; then request help. |
@@ -196,7 +196,7 @@ Final quantities must be adjusted after inventory. Quantities below describe sta
 
 | Station | Capacity | Materials |
 |---|---:|---|
-| Welcome and pathway check-in | Whole group | Name/pathway roster, team-of-two roster, name tags, agenda, projector |
+| Welcome and assigned-pathway check-in | Whole group | Participation-year/pathway roster, first-year team-of-two roster, name tags, agenda, projector |
 | Future exploration | 6–8 students | Prompt cards, example images, sticky notes, chart paper, markers, iPads |
 | Brainstorm and sketch | 6–8 students | Proposal drafts, pencils, erasers, colored pencils/markers, rulers, clipboards |
 | Evidence and Canvas practice | 4–6 students | iPads, charging access, sample photos, upload checklist, QR/direct links |
@@ -238,7 +238,7 @@ Final quantities must be adjusted after inventory. Quantities below describe sta
 
 | Time | Whole group | Wearable Technology | Creative Robotics | Evidence/milestone |
 |---|---|---|---|---|
-| 8:30–9:00 | Arrival, breakfast, pathway/team check-in | Confirm individual project status | Confirm teams of exactly two | Roster complete |
+| 8:30–9:00 | Arrival, breakfast, participation-year/pathway check-in | Confirm second-/third-year individual project status | Confirm first-year teams of exactly two | Roster complete |
 | 9:00–9:25 | Theme launch, challenge, design process, safety/help system | Shared session | Shared session | Future prompt started |
 | 9:25–9:50 | Future exploration and three-idea brainstorm | Individual brainstorm | Partner brainstorm | Three concepts captured |
 | 9:50–11:30 | Pathway rotations | LED, thread, micro:bit, NeoPixel rotations | Hummingbird, outputs, sensors, interaction rotations | Technology exploration record |
@@ -412,7 +412,7 @@ Mentors should give no more than three specific required revisions at one time. 
 
 ### A. Decisions and inventory — complete by August 21
 
-- Confirm final student roster and pathway counts.
+- Confirm final student roster, participation year, automatic pathway assignment, and pathway counts.
 - Confirm robotics teams of two or a fair pairing process.
 - Inventory and function-test all micro:bits, Hummingbird controllers, servos, motors, sensors, LEDs, NeoPixels, cables, battery holders, power supplies, and student devices.
 - Record actual simultaneous capacity for every technical station.
@@ -454,7 +454,7 @@ Mentors should give no more than three specific required revisions at one time. 
 - Prepare charged batteries, spares, cables, power strips, and charging plan.
 - Print proposal drafts, self-checks, station records, approval criteria, port/wiring diagrams, and emergency offline directions.
 - Prepare ready/needs-help/used-inspect bins and a component-count sheet.
-- Prepare student name/pathway labels and robotics team labels.
+- Prepare student name/year/pathway labels and first-year robotics team labels.
 - Communicate appropriate take-home work and the electronics-remain-at-school rule.
 
 ### E. Final readiness check — September 18–20

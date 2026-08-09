@@ -45,16 +45,17 @@ The receiving Canvas course shell should remain unpublished during the audit. If
 
 ## Required audit before launch
 
-1. Confirm approval for the proposed October 5 and December 7 pull-out workdays.
-2. Review the Phase 2 and Phase 4 module titles after those dates are approved.
-3. Add due dates and availability dates to all eight assignments.
-4. Confirm whether every assignment should remain 10 points.
-5. Confirm allowed file types and media-size limits for student iPad submissions.
-6. Add district-required attendance, behavior, accommodations, communication, and grading language.
-7. Push the latest website pages to GitHub so all Phase 5 and Phase 6 buttons work publicly.
-8. Test every module, page, assignment, and website button in Canvas Student View.
-9. Publish the Mentor Planning module only if students should see it; otherwise keep it unpublished.
-10. Publish the course only after enrollments and launch communication are ready.
+1. Confirm each student’s participation year and Canvas section: first year = Creative Robotics; second or third year = Wearable Technology.
+2. Confirm approval for the proposed October 5 and December 7 pull-out workdays.
+3. Review the Phase 2 and Phase 4 module titles after those dates are approved.
+4. Add due dates and availability dates to all eight assignments.
+5. Confirm whether every assignment should remain 10 points.
+6. Confirm allowed file types and media-size limits for student iPad submissions.
+7. Add district-required attendance, behavior, accommodations, communication, and grading language.
+8. Push the latest website pages to GitHub so all Phase 5 and Phase 6 buttons work publicly.
+9. Test every module, page, assignment, and website button in Canvas Student View.
+10. Publish the Mentor Planning module only if students should see it; otherwise keep it unpublished.
+11. Publish the course only after enrollments and launch communication are ready.
 
 ## Recommended Canvas navigation
 
@@ -75,4 +76,3 @@ Consider hiding from student navigation if your district allows it:
 ## Rebuilding the package
 
 The included `build_canvas_course.ps1` recreates the package with stable identifiers. Rebuilding is useful before the first import. After instructors begin editing the imported course directly, do not re-import a rebuilt package into that same course unless overwriting the original imported items is intentional.
-
