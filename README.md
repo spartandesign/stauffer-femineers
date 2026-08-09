@@ -4,7 +4,7 @@ Student-facing instructional website for the 2026–2027 Stauffer Middle School 
 
 ## Current release
 
-Phases 1–3 student guides and mentor planning resources:
+Phases 1–4 student guides and mentor planning resources:
 
 - Home
 - Start Here: Imagine the Future
@@ -30,6 +30,10 @@ Phases 1–3 student guides and mentor planning resources:
 - Phase 3 wearable denim-shirt major-build guide
 - Phase 3 Hummingbird robotics major-build guide
 - Canvas Checkpoint 2: Build Progress #1 evidence guide
+- Phase 4 Build & Test hub and exact December 7 workday schedule
+- Phase 4 wearable shirt testing, repair, hat-mounting mockup, and winter-storage guide
+- Phase 4 Hummingbird subsystem testing, troubleshooting, integration-prep, and kit-storage guide
+- Phase 4 mid-build test evidence and January restart-plan guide
 
 The site uses plain HTML, CSS, and JavaScript so it can be hosted directly with GitHub Pages without a build step.
 
@@ -39,4 +43,4 @@ After pushing this folder to a GitHub repository, open **Settings → Pages**, c
 
 ## Next release
 
-Build the Phase 4 student guides for subsystem testing, troubleshooting, repair, and safe winter-break storage.
+Build the Phase 5 student guides for system integration, meaningful complete-project testing, redesign, and Gala-readiness planning.
