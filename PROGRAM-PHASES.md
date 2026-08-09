@@ -8,10 +8,19 @@ The Stauffer sequence now uses six school-day work sessions. This reduces the lo
 | 2 | Monday, October 5, 2026 | Prototype the Future | Begin building and prove that the core idea can work | Create material tests, circuit swatches, painting tests, and a first programmable light effect | Build a quick physical prototype and a first input → decision → output interaction | Prototype evidence and first-test note |
 | 3 | Monday, November 2, 2026 | Design What’s Next | Complete major construction work | Major denim-shirt painting and circuit construction | Major structural construction, mechanisms, and first complete programmed interaction | Checkpoint 2: Build Progress #1 |
 | 4 | Monday, December 7, 2026 | Build & Test | Continue construction and troubleshoot before winter break | Continue/repair shirts; prepare hat components and mounting elements | Continue construction, test subsystems, troubleshoot, and document changes | Mid-build test evidence and next-step plan |
-| 5 | Tuesday, January 12, 2027 | Build the Future | Integrate systems, test, and redesign | Finish shirts; construct and integrate programmable bucket hats | Integrate structure, mechanisms, sensors, and outputs; conduct significant redesign | Checkpoint 3: Test, Learn, Redesign |
-| 6 | Tuesday, February 23, 2027 | Step Into the Future | Finish, inspect, document, and rehearse | Final programming, repairs, comfort/reliability tests, inspection, and fashion-show practice | Reliability testing, repairs, documentation, gallery preparation, and presentation practice | Checkpoint 4: Gala Ready |
-| Showcase | Monday, March 1, 2027 | Stauffer Femineers Gala | First public showcase and real-world reliability test | Fashion show | Interactive robotics gallery | Checkpoint 5: Stauffer Gala Reflection |
-| Final Showcase | Thursday, March 18, 2027 | District Femineers Gala | Present polished projects and reflect | Final presentation | Final presentation | Final portfolio/reflection |
+| 5 | Monday, January 11, 2027 | Build the Future | Integrate systems, test, and redesign | Finish shirts; construct and integrate programmable bucket hats | Integrate structure, mechanisms, sensors, and outputs; conduct significant redesign | Checkpoint 3: Test, Learn, Redesign |
+| 6 | Monday, February 22, 2027 | Step Into the Future | Finish, inspect, document, and rehearse | Final programming, repairs, comfort/reliability tests, inspection, and fashion-show practice | Reliability testing, repairs, documentation, gallery preparation, and presentation practice | Checkpoint 4: Gala Ready |
+| Showcase | Monday, March 1, 2027 | Stauffer Femineers Gala · Stauffer Library | First public showcase and real-world reliability test | Fashion show | Interactive robotics gallery | Checkpoint 5: Stauffer Gala Reflection |
+| Final Showcase | Thursday, March 18, 2027 | District Femineers Gala · Downey High | Present polished projects and reflect; more details to come | Final presentation | Final presentation | Final portfolio/reflection |
+
+## Workday logistics
+
+- All six Stauffer project workdays meet in Room 14, fall on Mondays, and follow the Monday bell schedule.
+- School/workday: 8:00 a.m.–2:41 p.m.
+- Snack: 9:38–9:51 a.m.
+- Lunch: 12:29–12:59 p.m.
+- Stauffer Femineers Gala on March 1: Stauffer Library.
+- District Femineers Gala on March 18: Downey High; more details to come.
 
 ## Phase boundaries
 

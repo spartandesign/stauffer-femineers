@@ -507,7 +507,7 @@ Because one mentor cannot simultaneously run multiple technical stations and app
 | Website reading replaces building time | Keep pages short, use diagrams/checklists, and pair each tutorial with immediate action. |
 | Weak Canvas evidence | Put exact capture instructions inside each tutorial and schedule evidence review before cleanup. |
 | One robotics partner dominates | Require role rotation and have each partner explain the entire interaction during approval. |
-| Hat power system is misunderstood | Use only prepared harnesses; show shared ground and separate positive supplies visually; defer full integration instruction to the January 12 integration phase. |
+| Hat power system is misunderstood | Use only prepared harnesses; show shared ground and separate positive supplies visually; defer full integration instruction to the January 11 integration phase. |
 | Network or login failure | Keep printable/offline directions, downloaded starter programs, paper proposal forms, and a later upload path. |
 | Technology exploration consumes proposal time | Use strict rotation timing and prepared starter programs; stop optional extensions when the core success check is met. |
 
