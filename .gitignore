@@ -12,3 +12,8 @@ Desktop.ini
 node_modules/
 .cache/
 *.inspect.ndjson
+
+# Private recruitment records and local workbook-generation files
+# These may contain student information and must not be published on GitHub Pages.
+outputs/recruitment-2026/
+recruitment-workbook-build/
