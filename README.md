@@ -20,6 +20,8 @@ Complete Phases 1–6 student guides and mentor planning resources:
 - Conductive Thread Basics student tutorial
 - Our Supplies student reference page with confirmed program equipment
 - Meet the micro:bit tutorial using classroom Windows laptops and MakeCode
+- Meet the Hummingbird overview and official BirdBlox tutorial launchpad
+- Fabrication Lab guide with Phase 1 Tinkercad concepts, Phase 2 STL/SVG file checks, machine-access levels, and mentor fabrication requests
 - Meet the NeoPixels tutorial for the WS2812B-compatible mentor-prepared dual-power hat system
 - Idea Starter Gallery with customizable robotics and wearable concepts
 - Wearable Design Proposal guide for the individual shirt-and-hat plan

@@ -1,0 +1,43 @@
+# Limitless Canvas Course Map
+
+## Course structure
+
+| Module | Canvas pages | Canvas assignments | Status |
+|---|---:|---:|---|
+| Start Here: Limitless Course Orientation | 4 | 0 | Published in package |
+| Phase 1 — Imagine the Future — September 21 | 3 | Checkpoint 1: Approved Project Proposal | Published in package |
+| Phase 2 — Prototype the Future — October 5 (Proposed) | 2 | Prototype Evidence and First-Test Note | Published in package |
+| Phase 3 — Design What’s Next — November 2 | 2 | Checkpoint 2: Build Progress #1 | Published in package |
+| Phase 4 — Build & Test — December 7 (Proposed) | 2 | Mid-Build Test + January Plan | Published in package |
+| Phase 5 — Build the Future — January 11 | 2 | Checkpoint 3: Test, Learn, Redesign | Published in package |
+| Phase 6 — Step Into the Future — February 22 | 2 | Checkpoint 4: Gala Ready | Published in package |
+| Galas, Reflection, and Final Portfolio | 2 | Stauffer Gala Reflection; Final Portfolio + District Gala Reflection | Published in package |
+| Mentor Planning — Keep Unpublished | 2 | 0 | Unpublished |
+
+## Assignment defaults
+
+| Assignment | Default points | Due date | Main evidence |
+|---|---:|---|---|
+| Checkpoint 1: Approved Project Proposal | 10 | Unset | User/need, three ideas, selected plan, sketches, materials, system, safety, prototype question, mentor approval |
+| Phase 2: Prototype Evidence and First-Test Note | 10 | Unset | Prototype question, success condition, first test, one change, retest, advance/revise/stop decision |
+| Checkpoint 2: Build Progress #1 | 10 | Unset | Overall and close-up photos, plan comparison, construction change, status, next test/repair |
+| Phase 4: Mid-Build Test + January Plan | 10 | Unset | Starting condition, subsystem test, one controlled change, retest, restart card, winter storage |
+| Checkpoint 3: Test, Learn, Redesign | 10 | Unset | Complete-system baseline, evidence claim, meaningful redesign, fair retest, February punch list |
+| Checkpoint 4: Gala Ready | 10 | Unset | Final project, inspection, two reliability trials, project card, backup plan, setup/pack-down |
+| Checkpoint 5: Stauffer Gala Reflection | 10 | Unset | Real visitor experience, reliability evidence, focused improvement before District Gala |
+| Final Portfolio + District Gala Reflection | 10 | Unset | Strongest evidence from all phases and individual final reflection |
+
+## Pathway handling
+
+- Wearable Technology assignments are individual.
+- Creative Robotics technical evidence may be shared by a team of two.
+- Each robotics partner must still submit an individual contribution and reflection when the assignment requests it.
+- The visual website contains the full pathway-specific directions; Canvas pages provide the module flow, condensed requirements, and submission points.
+
+## Dates that require confirmation
+
+- October 5, 2026 — proposed additional Phase 2 pull-out day
+- December 7, 2026 — proposed additional Phase 4 pull-out day
+
+The package does not assign due dates, so it can be imported safely before those two workdays are formally approved.
+
