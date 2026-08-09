@@ -4,7 +4,7 @@ Student-facing instructional website for the 2026–2027 Stauffer Middle School 
 
 ## Current release
 
-Phase 1 shared pages and pathway introductions:
+Phases 1–3 student guides and mentor planning resources:
 
 - Home
 - Start Here: Imagine the Future
@@ -20,10 +20,16 @@ Phase 1 shared pages and pathway introductions:
 - Conductive Thread Basics student tutorial
 - Our Supplies student reference page with confirmed program equipment
 - Meet the micro:bit tutorial using classroom Windows laptops and MakeCode
-- Meet the NeoPixels tutorial using the mentor-prepared dual-power hat system
+- Meet the NeoPixels tutorial for the WS2812B-compatible mentor-prepared dual-power hat system
 - Idea Starter Gallery with customizable robotics and wearable concepts
 - Wearable Design Proposal guide for the individual shirt-and-hat plan
 - Robotics Design Proposal guide for teams of two using one Hummingbird Premium Kit
+- Phase 2 Prototype the Future hub, pathway prototype guides, and prototype-evidence guide
+- Six-day mentor lesson-plan playbook with the Room 14 Monday bell schedule
+- Phase 3 Design What’s Next hub and exact November 2 workday schedule
+- Phase 3 wearable denim-shirt major-build guide
+- Phase 3 Hummingbird robotics major-build guide
+- Canvas Checkpoint 2: Build Progress #1 evidence guide
 
 The site uses plain HTML, CSS, and JavaScript so it can be hosted directly with GitHub Pages without a build step.
 
@@ -31,6 +37,6 @@ The site uses plain HTML, CSS, and JavaScript so it can be hosted directly with 
 
 After pushing this folder to a GitHub repository, open **Settings → Pages**, choose **Deploy from a branch**, and select the branch and root folder that contain `index.html`.
 
-## Next Phase 1 release
+## Next release
 
-Prototype-test the mentor-prepared NeoPixel harness and the BirdBlox kit workflow with the exact classroom batteries and devices before the first student workday.
+Build the Phase 4 student guides for subsystem testing, troubleshooting, repair, and safe winter-break storage.
