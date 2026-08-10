@@ -27,7 +27,7 @@ Complete Phases 1–6 student guides and mentor planning resources:
 - Recruitment landing page, printable student and returning-member forms, teacher recommendation, family commitment sheet, Club Day flyer/sign/script, QR code, and communication templates
 - Google Apps Script that creates the new-student, returning-member, family, and teacher Google Forms with one private response spreadsheet; the recruitment pages link to the official responder forms while retaining printable backups
 - Meet the NeoPixels tutorial for the WS2812B-compatible mentor-prepared dual-power hat system
-- Idea Starter Gallery with customizable robotics and wearable concepts
+- iPad-friendly Idea Starter Gallery with search, theme filters, 30 Creative Robotics concepts, and 30 Wearable Technology concepts
 - Wearable Design Proposal guide for the individual shirt-and-hat plan
 - Robotics Design Proposal guide for teams of two using one Hummingbird Premium Kit
 - Phase 2 Prototype the Future hub, pathway prototype guides, and prototype-evidence guide
