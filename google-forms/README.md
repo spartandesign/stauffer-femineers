@@ -34,8 +34,8 @@ Running `createRecruitmentForms` again from the same Apps Script project returns
 ## Useful functions
 
 - `showRecruitmentLinks()` prints the saved links again.
-- `updateLiveFormsForYearBasedPathways()` updates the already-created forms so first-year students are assigned Creative Robotics and second-/third-year students are assigned Wearable Technology. Run this once after pasting the latest script into the existing Apps Script project.
-- `updateLiveFormsForDenimSizing()` removes the denim-shirt-size question from the first-year and family forms. Returning second-/third-year members still provide their denim size. Run this once after pasting the latest script.
+- `updateLiveFormsForThirdYearChoiceAndPulloutDates()` updates the already-created forms so first-year students are assigned Creative Robotics, second-year students are assigned Wearable Technology, and third-year students choose either pathway. It also adds the six pull-out dates and the missed-work commitment. Run this once after pasting the latest script into the existing Apps Script project.
+- `updateLiveFormsForDenimSizing()` is retained for reference. Denim sizing is now requested from second-year members and third-year members choosing Wearable Technology.
 - `closeRecruitmentForms()` stops all four forms from accepting responses.
 - `reopenRecruitmentForms()` reopens all four forms if an extension is approved.
 

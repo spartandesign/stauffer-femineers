@@ -48,6 +48,26 @@ textarea:focus-visible {
   backdrop-filter: blur(14px);
 }
 
+.recruitment-banner { min-height: 58px; display: flex; align-items: center; justify-content: center; gap: 28px; padding: 10px 20px; color: white; background: linear-gradient(100deg, var(--violet-dark), var(--violet), #8b4bd6); text-align: left; }
+.recruitment-banner div { display: flex; align-items: baseline; gap: 14px; }
+.recruitment-banner strong { font-size: 1.08rem; }
+.recruitment-banner span { color: #eee9ff; font-size: .9rem; font-weight: 700; }
+.recruitment-banner a { min-height: 42px; display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 999px; color: var(--violet-dark); background: white; text-decoration: none; font-weight: 950; }
+.recruitment-active .site-header { top: 0; }
+.join-home-hero { min-height: 590px; }
+.join-home-hero .recruitment-deadline { display: inline-flex; gap: 10px; margin: 5px 0 18px; padding: 9px 15px; border-radius: 999px; color: #6f4310; background: #fff0bd; font-weight: 900; }
+.pullout-summary { padding: 28px; border: 3px solid #e1d8ff; border-radius: 28px; background: linear-gradient(145deg, white, #f7f3ff); box-shadow: var(--shadow); }
+.pullout-dates { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; margin: 22px 0; }
+.pullout-dates span { min-height: 98px; display: flex; flex-direction: column; justify-content: center; padding: 13px; border-radius: 16px; color: var(--violet-dark); background: #efeaff; text-align: center; font-size: .8rem; font-weight: 800; }
+.pullout-dates strong { font-size: 1rem; }
+.year-path-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+.year-path-card { padding: 25px; border: 1px solid var(--line); border-radius: 25px; background: white; box-shadow: var(--shadow); }
+.year-path-card.robotics { border-top: 8px solid var(--teal); }
+.year-path-card.wearables { border-top: 8px solid var(--coral); }
+.year-path-card.choice { border-top: 8px solid var(--violet); background: linear-gradient(145deg, white, #f6f2ff); }
+.year-path-card h3 { margin: 6px 0 10px; }
+.year-path-card p:last-child { margin-bottom: 0; color: var(--muted); }
+
 .header-inner {
   width: min(1180px, calc(100% - 32px));
   min-height: 72px;
@@ -1271,6 +1291,8 @@ code { padding: 2px 6px; border-radius: 6px; color: var(--violet-dark); backgrou
   .recruitment-hero, .flyer-panel { grid-template-columns: 1fr; }
   .recruitment-badge { width: 250px; min-height: 250px; margin: auto; }
   .date-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pullout-dates { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .year-path-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 620px) {
@@ -1280,6 +1302,11 @@ code { padding: 2px 6px; border-radius: 6px; color: var(--violet-dark); backgrou
   .section { padding: 38px 0; }
   .page-hero { padding-top: 44px; }
   .button { width: 100%; }
+  .recruitment-banner { display: block; text-align: center; }
+  .recruitment-banner div { display: block; }
+  .recruitment-banner span { display: block; margin: 3px 0 9px; }
+  .recruitment-banner a { justify-content: center; }
+  .pullout-dates { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .tutorial-goal { display: block; }
   .goal-icon { margin-bottom: 18px; }
   .build-steps li { grid-template-columns: 48px 1fr; padding: 18px; }

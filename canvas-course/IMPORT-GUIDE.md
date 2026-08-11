@@ -45,7 +45,7 @@ The receiving Canvas course shell should remain unpublished during the audit. If
 
 ## Required audit before launch
 
-1. Confirm each student’s participation year and Canvas section: first year = Creative Robotics; second or third year = Wearable Technology.
+1. Confirm each student’s participation year, third-year pathway choice, and Canvas section: first year = Creative Robotics; second year = Wearable Technology; third year = selected pathway.
 2. Confirm approval for the proposed October 5 and December 7 pull-out workdays.
 3. Review the Phase 2 and Phase 4 module titles after those dates are approved.
 4. Add due dates and availability dates to all eight assignments.

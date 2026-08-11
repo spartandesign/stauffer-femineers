@@ -115,7 +115,7 @@ $pages = @(
     Content=@'
 <div style="padding:20px;border:1px solid #ded8f7;border-radius:14px;margin-bottom:18px;">
   <h2 style="margin-top:0;color:#5f3dc4;">How the course works</h2>
-  <ul><li>Up to 50 Femineers work through six school-day project phases.</li><li>All workdays meet in Room 14 on the Monday bell schedule, 8:00 a.m.–2:41 p.m.</li><li>Snack is 9:38–9:51 a.m.; lunch is 12:29–12:59 p.m.</li><li>Tri Tansopalucks, Jennifer Frausto, and Stephanie Chavez are the three primary teacher mentors.</li><li>Use your iPad for Canvas, evidence, and BirdBlox. Classroom Windows laptops support MakeCode and micro:bit preparation.</li></ul>
+  <ul><li>Up to 50 Femineers work through six school-day project phases.</li><li>All workdays meet in Room 14 on the Monday bell schedule, 8:00 a.m.–2:41 p.m.</li><li>Snack is 9:38–9:51 a.m.; lunch is 12:29–12:59 p.m.</li><li>Students must check with teachers, collect assignments and notes, and complete all classwork missed during pull-out workdays by each teacher’s deadline.</li><li>Tri Tansopalucks, Jennifer Frausto, and Stephanie Chavez are the three primary teacher mentors.</li><li>Use your iPad for Canvas, evidence, and BirdBlox. Classroom Windows laptops support MakeCode and micro:bit preparation.</li></ul>
 </div>
 <div style="padding:20px;border-radius:14px;background:#edf9f8;">
   <h2 style="margin-top:0;color:#168b88;">Your course routine</h2>
@@ -126,7 +126,7 @@ $pages = @(
   },
   [ordered]@{
     Slug='roadmap'; Title='Program Roadmap and Important Dates'; Eyebrow='Orientation';
-    Lede='The District Kickoff is separate from the six Stauffer project workdays. The two additional Monday workdays remain subject to school and CTE approval.';
+    Lede='Students are pulled from regular classes for all six Stauffer workdays and are responsible for completing missed classwork. The District Kickoff is a separate event.';
     Content=@'
 <table style="width:100%;border-collapse:collapse;"><thead><tr style="background:#f0edff;"><th style="padding:10px;border:1px solid #d9d3ef;text-align:left;">Date</th><th style="padding:10px;border:1px solid #d9d3ef;text-align:left;">Event</th><th style="padding:10px;border:1px solid #d9d3ef;text-align:left;">Main goal</th></tr></thead><tbody>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Sept. 21</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 1: Imagine the Future</td><td style="padding:10px;border:1px solid #d9d3ef;">Explore, brainstorm, propose, approve</td></tr>
@@ -142,13 +142,14 @@ $pages = @(
     Links=@(@{Label='Open the visual roadmap';Url="$baseUrl/program-roadmap.html"})
   },
   [ordered]@{
-    Slug='choose-path'; Title='Know Your Assigned Project Pathway'; Eyebrow='Orientation';
-    Lede='Your Femineers participation year assigns your pathway. Both pathways use the engineering design process, with different projects, technology, and collaboration structures.';
+    Slug='choose-path'; Title='Know Your Project Pathway'; Eyebrow='Orientation';
+    Lede='First-year Femineers complete Creative Robotics, second-year Femineers complete Wearable Technology, and third-year Femineers choose either pathway. Both pathways use the engineering design process.';
     Content=@'
 <div style="padding:20px;border-left:7px solid #168b88;background:#edf9f8;margin-bottom:18px;"><h2 style="margin-top:0;">First year: Creative Robotics — team of two</h2><p>Use one BirdBrain Hummingbird Premium Kit and BirdBlox on an iPad to build a future-focused visitor interaction with at least one input and two outputs.</p><p><strong>You submit:</strong> shared technical evidence plus an individual contribution and reflection from each partner.</p></div>
-<div style="padding:20px;border-left:7px solid #ef6a74;background:#fff3f4;"><h2 style="margin-top:0;">Second or third year: Wearable Technology — individual</h2><p>Create a painted denim shirt with 4–8 sewn LEDs and a programmable bucket hat using a removable 10–12-pixel WS2812B strip, a wearable micro:bit, and MakeCode.</p><p><strong>You submit:</strong> your own proposal, evidence, reflections, and final presentation.</p></div>
+<div style="padding:20px;border-left:7px solid #ef6a74;background:#fff3f4;margin-bottom:18px;"><h2 style="margin-top:0;">Second year: Wearable Technology — individual</h2><p>Create a painted denim shirt with 4–8 sewn LEDs and a programmable bucket hat using a removable 10–12-pixel WS2812B strip, a wearable micro:bit, and MakeCode.</p><p><strong>You submit:</strong> your own proposal, evidence, reflections, and final presentation.</p></div>
+<div style="padding:20px;border-left:7px solid #5f3dc4;background:#f0edff;"><h2 style="margin-top:0;">Third year: choose either pathway</h2><p>Select Creative Robotics in a team of two or an individual Wearable Technology project, then follow that pathway’s directions for the year.</p></div>
 '@;
-    Links=@(@{Label='First year: explore Creative Robotics';Url="$baseUrl/creative-robotics.html"},@{Label='Second/third year: explore Wearables';Url="$baseUrl/wearable-technology.html"},@{Label='Browse idea starters';Url="$baseUrl/idea-starters.html"})
+    Links=@(@{Label='Robotics: first year or third-year choice';Url="$baseUrl/creative-robotics.html"},@{Label='Wearables: second year or third-year choice';Url="$baseUrl/wearable-technology.html"},@{Label='Browse idea starters';Url="$baseUrl/idea-starters.html"})
   },
   [ordered]@{
     Slug='safety-evidence'; Title='Safety, Supplies, and Evidence Rules'; Eyebrow='Orientation';
@@ -164,17 +165,17 @@ $pages = @(
     Slug='phase-1-overview'; Title='Phase 1: Imagine the Future'; Eyebrow='Monday, September 21, 2026';
     Lede='Explore the technology, identify a future need or identity, brainstorm three ideas, choose with evidence, and earn mentor approval.';
     Content=@'
-<h2 style="color:#5f3dc4;">Today’s finish line</h2><ol><li>Understand the Limitless challenge and your assigned pathway requirements.</li><li>Explore the actual technology without beginning major construction.</li><li>Generate at least three distinct ideas.</li><li>Choose one idea using purpose, feasibility, safety, supplies, and time.</li><li>Create labeled sketches, materials, system behavior, evidence plan, and roles.</li><li>Earn mentor approval before submitting Checkpoint 1.</li></ol>
+<h2 style="color:#5f3dc4;">Today’s finish line</h2><ol><li>Understand the Limitless challenge and your assigned or selected pathway requirements.</li><li>Explore the actual technology without beginning major construction.</li><li>Generate at least three distinct ideas.</li><li>Choose one idea using purpose, feasibility, safety, supplies, and time.</li><li>Create labeled sketches, materials, system behavior, evidence plan, and roles.</li><li>Earn mentor approval before submitting Checkpoint 1.</li></ol>
 <div style="padding:16px;background:#fff3f4;border-radius:12px;"><strong>Phase boundary:</strong> Phase 1 ends with an approved plan—not permanent construction.</div>
 '@;
     Links=@(@{Label='Open Phase 1 start page';Url="$baseUrl/start-here.html"},@{Label='Read the Limitless challenge';Url="$baseUrl/limitless-challenge.html"},@{Label='Mentor approval gate';Url="$baseUrl/mentor-approval.html"})
   },
   [ordered]@{
     Slug='phase-1-tools'; Title='Meet the Technology'; Eyebrow='Phase 1 exploration';
-    Lede='Use the tutorials for your assigned pathway, then record what each component makes possible and what safety rule controls it.';
+    Lede='Use the tutorials for your assigned or selected pathway, then record what each component makes possible and what safety rule controls it.';
     Content=@'
-<h2 style="color:#168b88;">First-year Creative Robotics</h2><ul><li>Hummingbird input, decision, two outputs, and reset</li><li>Premium Kit quantities and assigned ports</li><li>BirdBlox connection using the assigned three-word name and green dot</li><li>Driver/Navigator rotation and safe startup/shutdown</li></ul>
-<h2 style="color:#ef6a74;">Second-/third-year Wearables</h2><ul><li>Sewable LEDs and polarity</li><li>Conductive thread paths and separation</li><li>micro:bit with MakeCode on a Windows laptop</li><li>WS2812B programmable strip with a mentor-prepared removable harness</li></ul>
+<h2 style="color:#168b88;">Creative Robotics — 1st year or 3rd-year choice</h2><ul><li>Hummingbird input, decision, two outputs, and reset</li><li>Premium Kit quantities and assigned ports</li><li>BirdBlox connection using the assigned three-word name and green dot</li><li>Driver/Navigator rotation and safe startup/shutdown</li></ul>
+<h2 style="color:#ef6a74;">Wearables — 2nd year or 3rd-year choice</h2><ul><li>Sewable LEDs and polarity</li><li>Conductive thread paths and separation</li><li>micro:bit with MakeCode on a Windows laptop</li><li>WS2812B programmable strip with a mentor-prepared removable harness</li></ul>
 '@;
     Links=@(@{Label='Sewable LED basics';Url="$baseUrl/sewable-led-basics.html"},@{Label='Conductive thread basics';Url="$baseUrl/conductive-thread-basics.html"},@{Label='Meet the micro:bit';Url="$baseUrl/meet-the-microbit.html"},@{Label='Meet programmable pixels';Url="$baseUrl/meet-the-neopixels.html"})
   },
@@ -197,11 +198,11 @@ $pages = @(
     Links=@(@{Label='Phase 2 workday guide';Url="$baseUrl/phase-2-prototype.html"},@{Label='Prototype evidence guide';Url="$baseUrl/prototype-evidence.html"})
   },
   [ordered]@{
-    Slug='phase-2-pathways'; Title='Prototype in Your Assigned Pathway'; Eyebrow='Phase 2';
+    Slug='phase-2-pathways'; Title='Prototype in Your Pathway'; Eyebrow='Phase 2';
     Lede='Use low-risk materials and one focused test to prove the core idea.';
     Content=@'
-<h2 style="color:#168b88;">First-year Robotics prototype</h2><p>Build a quick physical model and prove one input → decision → two outputs → reset interaction using one assigned Hummingbird kit.</p>
-<h2 style="color:#ef6a74;">Second-/third-year Wearable prototype</h2><p>Test paint on scrap fabric, make a conductive-thread circuit swatch, try LED placement, mock up the hat route with paper/ribbon, and test one simple light effect using mentor-released sample equipment.</p>
+<h2 style="color:#168b88;">Robotics prototype — 1st year or 3rd-year choice</h2><p>Build a quick physical model and prove one input → decision → two outputs → reset interaction using one assigned Hummingbird kit.</p>
+<h2 style="color:#ef6a74;">Wearable prototype — 2nd year or 3rd-year choice</h2><p>Test paint on scrap fabric, make a conductive-thread circuit swatch, try LED placement, mock up the hat route with paper/ribbon, and test one simple light effect using mentor-released sample equipment.</p>
 <p><strong>Do not:</strong> cut final programmable strip, permanently seal electronics, consume final construction materials, or expand the project before the prototype question is answered.</p>
 '@;
     Links=@(@{Label='Wearable prototype guide';Url="$baseUrl/wearable-prototype.html"},@{Label='Robotics prototype guide';Url="$baseUrl/robotics-prototype.html"})
@@ -216,11 +217,11 @@ $pages = @(
     Links=@(@{Label='Phase 3 workday guide';Url="$baseUrl/phase-3-build.html"},@{Label='Build progress evidence';Url="$baseUrl/build-progress-evidence.html"})
   },
   [ordered]@{
-    Slug='phase-3-pathways'; Title='Major Build in Your Assigned Pathway'; Eyebrow='Phase 3';
+    Slug='phase-3-pathways'; Title='Major Build in Your Pathway'; Eyebrow='Phase 3';
     Lede='Build the approved plan, document meaningful changes, and preserve service access.';
     Content=@'
-<h2 style="color:#168b88;">First-year Robotics major build</h2><p>Construct the durable physical form, mechanisms, accessible mounts, and first full programmed interaction. Keep controller, power, sensors, outputs, servos, and fasteners reachable.</p>
-<h2 style="color:#ef6a74;">Second-/third-year Wearable major build</h2><p>Transfer the approved design, complete major denim-shirt painting, and construct the 4–8-light sewn circuit. The final programmable-strip hat is not a Phase 3 construction task.</p>
+<h2 style="color:#168b88;">Robotics major build — 1st year or 3rd-year choice</h2><p>Construct the durable physical form, mechanisms, accessible mounts, and first full programmed interaction. Keep controller, power, sensors, outputs, servos, and fasteners reachable.</p>
+<h2 style="color:#ef6a74;">Wearable major build — 2nd year or 3rd-year choice</h2><p>Transfer the approved design, complete major denim-shirt painting, and construct the 4–8-light sewn circuit. The final programmable-strip hat is not a Phase 3 construction task.</p>
 '@;
     Links=@(@{Label='Wearable build guide';Url="$baseUrl/wearable-build.html"},@{Label='Robotics build guide';Url="$baseUrl/robotics-build.html"})
   },
@@ -234,11 +235,11 @@ $pages = @(
     Links=@(@{Label='Phase 4 workday guide';Url="$baseUrl/phase-4-test.html"},@{Label='Mid-build evidence guide';Url="$baseUrl/mid-build-evidence.html"})
   },
   [ordered]@{
-    Slug='phase-4-pathways'; Title='Test and Store Your Assigned Pathway'; Eyebrow='Phase 4';
+    Slug='phase-4-pathways'; Title='Test and Store Your Pathway'; Eyebrow='Phase 4';
     Lede='Subsystem testing protects January integration from hidden problems.';
     Content=@'
-<h2 style="color:#168b88;">First-year Robotics</h2><p>Test the input, each output, mechanism, and reset separately; repair one variable; prepare a clear integration order; and count the numbered kit before storage.</p>
-<h2 style="color:#ef6a74;">Second-/third-year Wearables</h2><p>Inspect and test the denim shirt, make one evidence-based repair, and create a non-electronic removable hat-mounting mockup. Do not cut or permanently install the final WS2812B strip.</p>
+<h2 style="color:#168b88;">Robotics — 1st year or 3rd-year choice</h2><p>Test the input, each output, mechanism, and reset separately; repair one variable; prepare a clear integration order; and count the numbered kit before storage.</p>
+<h2 style="color:#ef6a74;">Wearables — 2nd year or 3rd-year choice</h2><p>Inspect and test the denim shirt, make one evidence-based repair, and create a non-electronic removable hat-mounting mockup. Do not cut or permanently install the final WS2812B strip.</p>
 '@;
     Links=@(@{Label='Wearable test guide';Url="$baseUrl/wearable-test.html"},@{Label='Robotics test guide';Url="$baseUrl/robotics-test.html"})
   },
@@ -254,8 +255,8 @@ $pages = @(
     Slug='phase-5-pathways'; Title='Complete-System Integration'; Eyebrow='Phase 5';
     Lede='The complete-system test should match the experience a wearer or visitor will actually have.';
     Content=@'
-<h2 style="color:#168b88;">First-year Robotics</h2><p>Connect the stable structure, input, output 1, output 2/mechanism, and reset; use the assigned three-word BirdBlox device; run five realistic visitor trials; and rotate Driver/Navigator.</p>
-<h2 style="color:#ef6a74;">Second-/third-year Wearables</h2><p>Finish the shirt, install only mentor-released removable hat electronics, program Button A, Button B, and A+B reset in MakeCode, test on a stand before wearing, and evaluate comfort, balance, access, function, theme clarity, and safe removal.</p>
+<h2 style="color:#168b88;">Robotics — 1st year or 3rd-year choice</h2><p>Connect the stable structure, input, output 1, output 2/mechanism, and reset; use the assigned three-word BirdBlox device; run five realistic visitor trials; and rotate Driver/Navigator.</p>
+<h2 style="color:#ef6a74;">Wearables — 2nd year or 3rd-year choice</h2><p>Finish the shirt, install only mentor-released removable hat electronics, program Button A, Button B, and A+B reset in MakeCode, test on a stand before wearing, and evaluate comfort, balance, access, function, theme clarity, and safe removal.</p>
 '@;
     Links=@(@{Label='Wearable integration guide';Url="$baseUrl/wearable-integration.html"},@{Label='Robotics integration guide';Url="$baseUrl/robotics-integration.html"})
   },
@@ -272,8 +273,8 @@ $pages = @(
     Slug='phase-6-pathways'; Title='Inspection, Reliability, and Rehearsal'; Eyebrow='Phase 6';
     Lede='A single successful demonstration is not enough. Pass the complete routine twice and practice the safe recovery plan.';
     Content=@'
-<h2 style="color:#168b88;">First-year Robotics Gala readiness</h2><p>Inspect stability, motion, input, two outputs, startup, reset, repairability, and numbered kit. Both partners pass as Driver, then rotate Presenter/Greeter and Operator/Resetter roles.</p>
-<h2 style="color:#ef6a74;">Second-/third-year Wearable Gala readiness</h2><p>Inspect shirt and hat power, function, comfort, fit, repairability, and theme clarity. Test on the stand before wearing. Rehearse the fashion-show walk, operation, explanation, shutdown, and safe garment/power packing.</p>
+<h2 style="color:#168b88;">Robotics Gala readiness — 1st year or 3rd-year choice</h2><p>Inspect stability, motion, input, two outputs, startup, reset, repairability, and numbered kit. Both partners pass as Driver, then rotate Presenter/Greeter and Operator/Resetter roles.</p>
+<h2 style="color:#ef6a74;">Wearable Gala readiness — 2nd year or 3rd-year choice</h2><p>Inspect shirt and hat power, function, comfort, fit, repairability, and theme clarity. Test on the stand before wearing. Rehearse the fashion-show walk, operation, explanation, shutdown, and safe garment/power packing.</p>
 '@;
     Links=@(@{Label='Wearable Gala guide';Url="$baseUrl/wearable-gala-ready.html"},@{Label='Robotics Gala guide';Url="$baseUrl/robotics-gala-ready.html"})
   },
@@ -383,17 +384,17 @@ $modules = @(
   )},
   [ordered]@{Slug='phase-2';Title='Phase 2 — Prototype the Future — October 5 (Proposed)';State='active';Items=@(
     @{Type='Page';Ref='phase-2-overview';Title='Phase 2 Overview'},
-    @{Type='Page';Ref='phase-2-pathways';Title='Prototype in Your Assigned Pathway'},
+    @{Type='Page';Ref='phase-2-pathways';Title='Prototype in Your Pathway'},
     @{Type='Assignment';Ref='prototype-evidence';Title='Prototype Evidence and First-Test Note'}
   )},
   [ordered]@{Slug='phase-3';Title='Phase 3 — Design What’s Next — November 2';State='active';Items=@(
     @{Type='Page';Ref='phase-3-overview';Title='Phase 3 Overview'},
-    @{Type='Page';Ref='phase-3-pathways';Title='Major Build in Your Assigned Pathway'},
+    @{Type='Page';Ref='phase-3-pathways';Title='Major Build in Your Pathway'},
     @{Type='Assignment';Ref='checkpoint-2-build-progress';Title='Checkpoint 2: Build Progress #1'}
   )},
   [ordered]@{Slug='phase-4';Title='Phase 4 — Build & Test — December 7 (Proposed)';State='active';Items=@(
     @{Type='Page';Ref='phase-4-overview';Title='Phase 4 Overview'},
-    @{Type='Page';Ref='phase-4-pathways';Title='Test and Store Your Assigned Pathway'},
+    @{Type='Page';Ref='phase-4-pathways';Title='Test and Store Your Pathway'},
     @{Type='Assignment';Ref='phase-4-mid-build';Title='Mid-Build Test + January Plan'}
   )},
   [ordered]@{Slug='phase-5';Title='Phase 5 — Build the Future — January 11';State='active';Items=@(
@@ -509,7 +510,7 @@ $syllabus = @"
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Syllabus</title></head><body>
 <div style="max-width:850px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;color:#25223a;line-height:1.55;">
 <h1>$courseTitle</h1><p><strong>Theme:</strong> Limitless: Designed by Her</p><p><strong>Tagline:</strong> Imagine it. Build it. Become it.</p>
-<p>Participation year assigns each student’s pathway: first-year Femineers complete Creative Robotics in teams of two, while second- and third-year Femineers complete Wearable Technology individually. Six school-day work sessions move each project through proposal, prototype, major build, subsystem testing, integration, redesign, public-readiness inspection, rehearsal, and reflection.</p>
+<p>Participation year shapes each student’s pathway: first-year Femineers complete Creative Robotics in teams of two, second-year Femineers complete Wearable Technology individually, and third-year Femineers choose either pathway. Six school-day work sessions move each project through proposal, prototype, major build, subsystem testing, integration, redesign, public-readiness inspection, rehearsal, and reflection.</p>
 <p><strong>Mentors:</strong> Tri Tansopalucks, Jennifer Frausto, and Stephanie Chavez</p>
 <p><strong>Workday location:</strong> Room 14, Monday bell schedule, 8:00 a.m.–2:41 p.m.</p>
 <p><strong>Website:</strong> <a href="$baseUrl/index.html">$baseUrl</a></p>

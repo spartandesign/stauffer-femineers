@@ -29,16 +29,17 @@
 
 ## Pathway handling
 
-- Participation year determines placement; students do not choose between the pathways.
 - First-year Femineers are assigned to Creative Robotics in teams of two.
-- Second- and third-year Femineers are assigned to Wearable Technology and complete individual projects.
+- Second-year Femineers are assigned to Wearable Technology and complete individual projects.
+- Third-year Femineers choose Creative Robotics or Wearable Technology and follow that pathway for the year.
 - Creative Robotics technical evidence may be shared by the assigned team of two.
 - Each robotics partner must still submit an individual contribution and reflection when the assignment requests it.
 - The visual website contains the full pathway-specific directions; Canvas pages provide the module flow, condensed requirements, and submission points.
 
-## Dates that require confirmation
+## Pull-out workdays
 
-- October 5, 2026 — proposed additional Phase 2 pull-out day
-- December 7, 2026 — proposed additional Phase 4 pull-out day
+- September 21, October 5, November 2, and December 7, 2026
+- January 11 and February 22, 2027
+- Room 14, 8:00 a.m.–2:41 p.m.
 
-The package does not assign due dates, so it can be imported safely before those two workdays are formally approved.
+Students are responsible for checking with teachers, collecting assignments and notes, and completing all missed work by each teacher’s deadline. The package does not assign Canvas due dates, so mentors can add course-specific deadlines after import.

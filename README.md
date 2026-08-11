@@ -2,7 +2,7 @@
 
 Student-facing instructional website for the 2026–2027 Stauffer Middle School Femineers program.
 
-Pathway placement is automatic: first-year Femineers complete Creative Robotics in teams of two, while second- and third-year Femineers complete individual Wearable Technology projects.
+Pathways are organized by participation year: first-year Femineers complete Creative Robotics in teams of two, second-year Femineers complete individual Wearable Technology projects, and third-year Femineers choose either pathway.
 
 ## Current release
 

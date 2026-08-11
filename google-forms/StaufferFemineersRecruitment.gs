@@ -21,10 +21,13 @@ const CLOSED_FORM_MESSAGE =
   'Recruitment is currently closed. Please contact a Stauffer Femineers mentor through the school’s approved communication method.';
 
 const PATHWAY_PLACEMENT =
-  'PATHWAY PLACEMENT: First-year Femineers complete Creative Robotics in teams of two. Second- and third-year Femineers complete Wearable Technology individually. Students do not choose between the pathways.';
+  'PATHWAY OPTIONS: First-year Femineers complete Creative Robotics in teams of two. Second-year Femineers complete Wearable Technology individually. Third-year Femineers choose Creative Robotics or Wearable Technology.';
 
 const DENIM_SIZE_RULE =
-  'DENIM SIZING: A denim-shirt size is required only from second- and third-year Wearable Technology members.';
+  'DENIM SIZING: A denim-shirt size is required from second-year members and third-year members choosing Wearable Technology. It is not needed for first-year members or third-year members choosing Creative Robotics.';
+
+const PULL_OUT_COMMITMENT =
+  'SCHOOL-DAY COMMITMENT: Students will be pulled from regular classes for all six workdays in Room 14 from 8:00 a.m.–2:41 p.m. Students must check with teachers, collect assignments and notes, and complete all missed work by each teacher’s deadline.';
 
 const WORKDAYS = Object.freeze([
   'Monday, September 21, 2026 — Imagine the Future',
@@ -117,115 +120,109 @@ function reopenRecruitmentForms() {
   setAllFormsAcceptingResponses_(true);
 }
 
-/**
- * Updates the already-created live forms after the year-based pathway rule was
- * adopted. Run this once after replacing Code.gs with the current script.
- */
+/** Backward-compatible shortcut for the current live-form update. */
 function updateLiveFormsForYearBasedPathways() {
+  return updateLiveFormsForThirdYearChoiceAndPulloutDates();
+}
+
+/**
+ * Updates the four existing live forms without changing their public links.
+ * Run this once after replacing Code.gs with this version.
+ */
+function updateLiveFormsForThirdYearChoiceAndPulloutDates() {
   const links = getSavedRecruitmentLinks_();
   const newStudentForm = FormApp.openById(links.newStudent.id);
   const returningForm = FormApp.openById(links.returningMember.id);
   const familyForm = FormApp.openById(links.familyCommitment.id);
   const teacherForm = FormApp.openById(links.teacherRecommendation.id);
+  const scheduleText = pullOutScheduleText_();
 
-  newStudentForm.setTitle(`Stauffer Femineers ${RECRUITMENT.year} — First-Year Student Application`);
-  addPlacementToDescription_(newStudentForm);
+  replaceRecruitmentRulesInDescription_(newStudentForm, [PATHWAY_PLACEMENT, PULL_OUT_COMMITMENT, scheduleText]);
+  replaceRecruitmentRulesInDescription_(returningForm, [PATHWAY_PLACEMENT, DENIM_SIZE_RULE, PULL_OUT_COMMITMENT, scheduleText]);
+  replaceRecruitmentRulesInDescription_(familyForm, [PATHWAY_PLACEMENT, DENIM_SIZE_RULE, PULL_OUT_COMMITMENT, scheduleText]);
+  replaceRecruitmentRulesInDescription_(teacherForm, [PATHWAY_PLACEMENT]);
+
   newStudentForm.setConfirmationMessage(
-    'Thank you for applying to Stauffer Femineers. Your assigned first-year pathway is Creative Robotics. A family member must also submit the family commitment form before your application is complete: ' +
+    'Thank you for applying to Stauffer Femineers. Your first-year pathway is Creative Robotics. A family member must also submit the family commitment form before your application is complete: ' +
       links.familyCommitment.responderUrl
   );
-  updateMultipleChoiceQuestion_(
-    newStudentForm,
-    'Which pathway sounds most interesting right now?',
-    'Your assigned first-year pathway',
-    ['Creative Robotics — all first-year Femineers'],
-    'Select the statement to confirm that you understand your pathway assignment.'
-  );
-  updateParagraphQuestion_(
-    newStudentForm,
-    'Why does that pathway—or Femineers in general—interest you?',
-    'What interests you about building an interactive invention with sensors, lights, movement, craft materials, and programming?',
-    'Prior robotics or coding experience is not required.'
-  );
-  updateParagraphQuestion_(
-    newStudentForm,
-    'What might you design, build, or investigate?',
-    'What might your robotics team design, build, or investigate?',
-    ''
-  );
-  updateParagraphQuestion_(
-    newStudentForm,
-    'What makes you a helpful partner or team member? Give one example.',
-    'What makes you a helpful robotics partner or team member? Give one example.',
-    ''
-  );
   updateCommitmentQuestion_(newStudentForm, 'Confirm each program commitment.', [
-    'I reviewed the six workdays and events with my family.',
-    'I understand that I must arrange and complete classwork missed during school-day sessions.',
+    'I reviewed all six pull-out workdays and events with my family.',
+    'I understand that I must check with teachers, collect assignments and notes, and complete missed classwork by each teacher’s deadline.',
     'I will share robotics responsibilities with my partner and rotate roles.',
     'I am willing to design, build, code, test, document, clean up, and present.',
     'I understand that space is limited and an application does not guarantee placement.',
   ]);
 
-  returningForm.setTitle(`Stauffer Femineers ${RECRUITMENT.year} — Second-/Third-Year Confirmation`);
-  addPlacementToDescription_(returningForm);
-  returningForm.setConfirmationMessage(
-    'Your returning-member confirmation was received. Your assigned second-/third-year pathway is Wearable Technology. A family member must also submit the family commitment form before your confirmation is complete: ' +
-      links.familyCommitment.responderUrl
-  );
-  updateMultipleChoiceQuestion_(
+  upsertMultipleChoiceQuestion_(
     returningForm,
-    'Current pathway preference',
-    'Your assigned returning-member pathway',
-    ['Wearable Technology — all second- and third-year Femineers'],
-    'Select the statement to confirm that you understand your pathway assignment.'
+    ['Current pathway preference', 'Your assigned returning-member pathway', 'Your 2026–2027 pathway'],
+    'Your 2026–2027 pathway',
+    [
+      '2nd year — Wearable Technology',
+      '3rd year — Creative Robotics',
+      '3rd year — Wearable Technology',
+    ],
+    'Second-year members complete Wearable Technology. Third-year members choose either pathway.'
   );
-  updateParagraphQuestion_(
+  updateParagraphQuestionIfPresent_(
     returningForm,
-    'What is one new skill or leadership contribution you want to develop?',
-    'What wearable-technology skill or leadership contribution do you want to develop?',
+    [
+      'What is one new skill or leadership contribution you want to develop?',
+      'What wearable-technology skill or leadership contribution do you want to develop?',
+      'What pathway-specific skill or leadership contribution do you want to develop?',
+    ],
+    'What pathway-specific skill or leadership contribution do you want to develop?',
     ''
   );
   updateCommitmentQuestion_(returningForm, 'Confirm each returning-member commitment.', [
-    'I reviewed all six workdays and events with my family.',
-    'I will arrange and complete classwork missed during school-day sessions.',
-    'I will complete both assigned wearable projects: an LED denim shirt and programmable bucket hat.',
+    'I reviewed all six pull-out workdays and events with my family.',
+    'I will check with teachers, collect assignments and notes, and complete missed classwork by each teacher’s deadline.',
+    'I will complete the project requirements for my confirmed pathway.',
     'I will participate in designing, building, programming, testing, documenting, cleanup, and presentation.',
     'I understand that confirmation is required for roster planning.',
   ]);
+  upsertListQuestion_(
+    returningForm,
+    ['Denim-shirt size', 'Denim-shirt size — Wearable Technology only'],
+    'Denim-shirt size — Wearable Technology only',
+    SHIRT_SIZES.concat(['Not needed — 3rd-year Creative Robotics']),
+    'Second-year members and third-year members choosing Wearable Technology provide a denim size. Third-year Robotics members select “Not needed.”'
+  );
+  returningForm.setConfirmationMessage(
+    'Your returning-member confirmation and pathway response were received. A family member must also submit the family commitment form before your confirmation is complete: ' +
+      links.familyCommitment.responderUrl
+  );
 
-  addPlacementToDescription_(familyForm);
-  updateMultipleChoiceQuestion_(
+  upsertMultipleChoiceQuestion_(
     familyForm,
-    'Student application type',
-    'Student participation year and assigned pathway',
+    ['Student application type', 'Student participation year and assigned pathway', 'Student participation year and pathway'],
+    'Student participation year and pathway',
     [
       '1st year — Creative Robotics',
       '2nd year — Wearable Technology',
+      '3rd year — Creative Robotics',
       '3rd year — Wearable Technology',
     ],
-    'The participation year determines the student’s pathway.'
+    'First- and second-year pathways are assigned. Third-year members choose either pathway.'
   );
   updateCommitmentQuestion_(familyForm, 'Please confirm every family commitment.', [
-    'We understand that the student’s pathway is assigned by participation year.',
-    'We reviewed all six workdays and the additional events.',
-    'We understand that the student must arrange and complete missed classwork.',
+    'We understand the pathway rules and have confirmed the student’s pathway above.',
+    'We reviewed all six pull-out workdays and the additional events.',
+    'We understand that the student must check with teachers, collect assignments and notes, and complete missed work by each teacher’s deadline.',
     'We will communicate attendance conflicts as early as possible.',
     'We understand that projects require safe tool use, cleanup, documentation, and public presentation.',
     'We understand that space is limited to 50 students and submitting forms does not guarantee placement.',
   ]);
 
-  teacherForm.setTitle(`Stauffer Femineers ${RECRUITMENT.year} — First-Year Candidate Recommendation`);
-  addPlacementToDescription_(teacherForm);
-
-  console.log('All four live recruitment forms now use the year-based pathway rule.');
+  deleteQuestionIfPresent_(newStudentForm, 'Denim-shirt size');
+  deleteQuestionIfPresent_(familyForm, 'Denim-shirt size');
+  console.log('Third-year choice, pull-out dates, and missed-work responsibility are now on all live recruitment forms.');
   logRecruitmentLinks_(links, 'Updated live form links:');
+  return links;
 }
 
-/**
- * Removes denim sizing from the first-year and shared family forms. Returning
- * second-/third-year members continue to provide both clothing sizes.
- */
+/** Removes denim sizing from the first-year and shared family forms. */
 function updateLiveFormsForDenimSizing() {
   const links = getSavedRecruitmentLinks_();
   const newStudentForm = FormApp.openById(links.newStudent.id);
@@ -237,7 +234,7 @@ function updateLiveFormsForDenimSizing() {
   addTextToDescription_(returningForm, DENIM_SIZE_RULE);
   addTextToDescription_(familyForm, DENIM_SIZE_RULE);
 
-  console.log('Denim sizing is now required only on the second-/third-year returning-member form.');
+  console.log('Denim sizing is limited to returning members whose pathway is Wearable Technology.');
   logRecruitmentLinks_(links, 'Updated live form links:');
 }
 
@@ -253,6 +250,7 @@ function buildNewStudentForm_(spreadsheetId, familyUrl) {
       `${RECRUITMENT.theme}`,
       `Applications are open ${RECRUITMENT.window}. Membership is capped at ${RECRUITMENT.capacity} students.`,
       PATHWAY_PLACEMENT,
+      PULL_OUT_COMMITMENT,
       'No previous engineering, coding, or robotics experience is required. We are looking for curiosity, persistence, collaboration, student voice, and commitment—not only top grades or prior experience.',
       `Review the program first: ${RECRUITMENT.siteUrl}`,
       `A family member must also complete the family commitment form: ${familyUrl}`,
@@ -363,10 +361,11 @@ function buildReturningMemberForm_(spreadsheetId, familyUrl) {
       `Returning members must confirm by ${RECRUITMENT.dueDate}. Prior membership does not automatically reserve a place.`,
       PATHWAY_PLACEMENT,
       DENIM_SIZE_RULE,
+      PULL_OUT_COMMITMENT,
       `Review the program: ${RECRUITMENT.siteUrl}`,
       `A family member must also complete the family commitment form: ${familyUrl}`,
     ].join('\n\n'),
-    'Your returning-member confirmation was received. Your assigned second-/third-year pathway is Wearable Technology. A family member must also submit the family commitment form before your confirmation is complete: ' + familyUrl,
+    'Your returning-member confirmation and pathway response were received. Second-year members complete Wearable Technology; third-year members may choose either pathway. A family member must also submit the family commitment form before your confirmation is complete: ' + familyUrl,
     true,
     spreadsheetId
   );
@@ -382,9 +381,13 @@ function buildReturningMemberForm_(spreadsheetId, familyUrl) {
     .setHelpText('Complete this section if you want to return for 2026–2027.');
 
   form.addMultipleChoiceItem()
-    .setTitle('Your assigned returning-member pathway')
-    .setChoiceValues(['Wearable Technology — all second- and third-year Femineers'])
-    .setHelpText('Select the statement to confirm that you understand your pathway assignment.')
+    .setTitle('Your 2026–2027 pathway')
+    .setChoiceValues([
+      '2nd year — Wearable Technology',
+      '3rd year — Creative Robotics',
+      '3rd year — Wearable Technology',
+    ])
+    .setHelpText('Second-year members complete Wearable Technology. Third-year members choose either pathway.')
     .setRequired(true);
 
   form.addSectionHeaderItem()
@@ -398,7 +401,7 @@ function buildReturningMemberForm_(spreadsheetId, familyUrl) {
   );
   addParagraph_(
     form,
-    'What wearable-technology skill or leadership contribution do you want to develop?',
+    'What pathway-specific skill or leadership contribution do you want to develop?',
     '',
     true
   );
@@ -409,7 +412,7 @@ function buildReturningMemberForm_(spreadsheetId, familyUrl) {
   addCommitmentCheckbox_(form, 'Confirm each returning-member commitment.', [
     'I reviewed all six workdays and events with my family.',
     'I will arrange and complete classwork missed during school-day sessions.',
-    'I will complete both assigned wearable projects: an LED denim shirt and programmable bucket hat.',
+    'I will complete the project requirements for my confirmed pathway.',
     'I will participate in designing, building, programming, testing, documenting, cleanup, and presentation.',
     'I understand that confirmation is required for roster planning.',
   ]);
@@ -475,6 +478,7 @@ function buildFamilyForm_(spreadsheetId) {
       'Please complete one family form for each student applying or confirming a returning place.',
       PATHWAY_PLACEMENT,
       DENIM_SIZE_RULE,
+      PULL_OUT_COMMITMENT,
       `Recruitment window: ${RECRUITMENT.window}. Program capacity: ${RECRUITMENT.capacity} students.`,
       'This is recruitment planning material, not emergency or medical documentation. Do not enter confidential medical details. Continue to use the school’s required forms and reporting processes.',
       `Program information: ${RECRUITMENT.siteUrl}`,
@@ -497,13 +501,14 @@ function buildFamilyForm_(spreadsheetId) {
     .setRequired(true);
 
   form.addMultipleChoiceItem()
-    .setTitle('Student participation year and assigned pathway')
+    .setTitle('Student participation year and pathway')
     .setChoiceValues([
       '1st year — Creative Robotics',
       '2nd year — Wearable Technology',
+      '3rd year — Creative Robotics',
       '3rd year — Wearable Technology',
     ])
-    .setHelpText('The participation year determines the student’s pathway.')
+    .setHelpText('First- and second-year pathways are assigned. Third-year members choose either pathway.')
     .setRequired(true);
 
   form.addTextItem()
@@ -529,7 +534,7 @@ function buildFamilyForm_(spreadsheetId) {
     );
 
   addCommitmentCheckbox_(form, 'Please confirm every family commitment.', [
-    'We understand that the student’s pathway is assigned by participation year.',
+    'We understand the pathway rules and have confirmed the student’s pathway above.',
     'We reviewed all six workdays and the additional events.',
     'We understand that the student must arrange and complete missed classwork.',
     'We will communicate attendance conflicts as early as possible.',
@@ -711,6 +716,10 @@ function addIdentitySection_(form, returning) {
     form.addTextItem()
       .setTitle('Previous Femineers year or years')
       .setRequired(true);
+    form.addMultipleChoiceItem()
+      .setTitle('This will be my Femineers participation year')
+      .setChoiceValues(['2nd year', '3rd year'])
+      .setRequired(true);
   }
 }
 
@@ -740,8 +749,9 @@ function addSizeQuestions_(form, includeDenim) {
     .setRequired(true);
   if (includeDenim) {
     form.addListItem()
-      .setTitle('Denim-shirt size')
-      .setChoiceValues(SHIRT_SIZES)
+      .setTitle('Denim-shirt size — Wearable Technology only')
+      .setChoiceValues(SHIRT_SIZES.concat(['Not needed — 3rd-year Creative Robotics']))
+      .setHelpText('Second-year members and third-year members choosing Wearable Technology provide a denim size. Third-year Robotics members select “Not needed.”')
       .setRequired(true);
   }
 }
@@ -767,6 +777,26 @@ function addPlacementToDescription_(form) {
   addTextToDescription_(form, PATHWAY_PLACEMENT);
 }
 
+function pullOutScheduleText_() {
+  return [
+    'SIX FULL-DAY PULL-OUT WORKDAYS — Room 14, 8:00 a.m.–2:41 p.m.',
+    WORKDAYS.join('\n'),
+  ].join('\n');
+}
+
+function replaceRecruitmentRulesInDescription_(form, currentRules) {
+  const obsoleteRules = [
+    'PATHWAY PLACEMENT: First-year Femineers complete Creative Robotics in teams of two. Second- and third-year Femineers complete Wearable Technology individually. Students do not choose between the pathways.',
+    'DENIM SIZING: A denim-shirt size is required only from second- and third-year Wearable Technology members.',
+  ];
+  let description = form.getDescription() || '';
+  obsoleteRules.concat(currentRules).forEach(function (rule) {
+    description = description.split(rule).join('');
+  });
+  description = description.replace(/\n{3,}/g, '\n\n').trim();
+  form.setDescription([description].concat(currentRules).filter(Boolean).join('\n\n'));
+}
+
 function addTextToDescription_(form, text) {
   const description = form.getDescription() || '';
   if (!description.includes(text)) form.setDescription(description + '\n\n' + text);
@@ -786,6 +816,24 @@ function updateMultipleChoiceQuestion_(form, oldTitle, newTitle, choices, helpTe
   item.setTitle(newTitle).setChoiceValues(choices).setHelpText(helpText).setRequired(true);
 }
 
+function upsertMultipleChoiceQuestion_(form, acceptedTitles, newTitle, choices, helpText) {
+  const match = form.getItems(FormApp.ItemType.MULTIPLE_CHOICE).find(function (item) {
+    return acceptedTitles.indexOf(item.getTitle()) !== -1;
+  });
+  const item = match ? match.asMultipleChoiceItem() : form.addMultipleChoiceItem();
+  item.setTitle(newTitle).setChoiceValues(choices).setHelpText(helpText).setRequired(true);
+  return item;
+}
+
+function upsertListQuestion_(form, acceptedTitles, newTitle, choices, helpText) {
+  const match = form.getItems(FormApp.ItemType.LIST).find(function (item) {
+    return acceptedTitles.indexOf(item.getTitle()) !== -1;
+  });
+  const item = match ? match.asListItem() : form.addListItem();
+  item.setTitle(newTitle).setChoiceValues(choices).setHelpText(helpText).setRequired(true);
+  return item;
+}
+
 function updateParagraphQuestion_(form, oldTitle, newTitle, helpText) {
   const item = findQuestionByTitle_(
     form,
@@ -793,6 +841,13 @@ function updateParagraphQuestion_(form, oldTitle, newTitle, helpText) {
     [oldTitle, newTitle]
   ).asParagraphTextItem();
   item.setTitle(newTitle).setHelpText(helpText);
+}
+
+function updateParagraphQuestionIfPresent_(form, acceptedTitles, newTitle, helpText) {
+  const match = form.getItems(FormApp.ItemType.PARAGRAPH_TEXT).find(function (item) {
+    return acceptedTitles.indexOf(item.getTitle()) !== -1;
+  });
+  if (match) match.asParagraphTextItem().setTitle(newTitle).setHelpText(helpText);
 }
 
 function updateCommitmentQuestion_(form, title, statements) {

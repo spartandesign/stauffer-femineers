@@ -40,8 +40,8 @@ The website should reveal the minimum useful choice at each moment. Students sho
 3. **The Limitless Challenge** — Select a future area, identify a person or community, and describe a need or opportunity.
 4. **Engineering Design Process** — Learn the full cycle, with emphasis on Imagine, Research, Brainstorm, and Design.
 5. **Open the correct assigned-pathway hub.**
-   - Second- and third-year Femineers open Wearable Technology and work individually.
-   - First-year Femineers open Creative Robotics and confirm a team of exactly two.
+   - Second-year Femineers and third-year members choosing Wearables open Wearable Technology and work individually.
+   - First-year Femineers and third-year members choosing Robotics open Creative Robotics and confirm a team of exactly two.
 6. **Complete short technology explorations.** Each exploration follows Goal → What You Need → Learn → Try → Test → Troubleshoot → Capture for Canvas.
 7. **Open the pathway proposal guide.** Turn the future idea and technology discoveries into a labeled, realistic design.
 8. **Use the self-check.** Fix missing requirements before asking for mentor review.
@@ -153,7 +153,7 @@ Demonstrations should be brief, visible, and rehearsed. Each should use a finish
 
 | Demonstration | Maximum time | Key message |
 |---|---:|---|
-| Theme launch and pathway-progression showcase | 8 minutes | First-year robotics builds foundational team systems; second- and third-year wearables apply growing skills to individual expression. |
+| Theme launch and pathway-progression showcase | 8 minutes | First-year students begin Creative Robotics, second-year students advance to Wearables, and third-year students choose the pathway that fits their goals. |
 | Engineering design in action | 7 minutes | A first idea is a starting point; testing and redesign are expected. |
 | Evidence worth saving | 5 minutes | Capture clear proof while working instead of recreating it later. |
 | Safety and help system | 5 minutes | Stop power before changing electronics; use the troubleshooting model; then request help. |
@@ -238,7 +238,7 @@ Final quantities must be adjusted after inventory. Quantities below describe sta
 
 | Time | Whole group | Wearable Technology | Creative Robotics | Evidence/milestone |
 |---|---|---|---|---|
-| 8:30–9:00 | Arrival, breakfast, participation-year/pathway check-in | Confirm second-/third-year individual project status | Confirm first-year teams of exactly two | Roster complete |
+| 8:30–9:00 | Arrival, breakfast, participation-year/pathway check-in | Confirm second-year members and third-year Wearables choices | Confirm first-year members and third-year Robotics choices; teams of exactly two | Roster and third-year choices complete |
 | 9:00–9:25 | Theme launch, challenge, design process, safety/help system | Shared session | Shared session | Future prompt started |
 | 9:25–9:50 | Future exploration and three-idea brainstorm | Individual brainstorm | Partner brainstorm | Three concepts captured |
 | 9:50–11:30 | Pathway rotations | LED, thread, micro:bit, NeoPixel rotations | Hummingbird, outputs, sensors, interaction rotations | Technology exploration record |
