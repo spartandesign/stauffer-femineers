@@ -115,31 +115,45 @@ $pages = @(
     Content=@'
 <div style="padding:20px;border:1px solid #ded8f7;border-radius:14px;margin-bottom:18px;">
   <h2 style="margin-top:0;color:#5f3dc4;">How the course works</h2>
-  <ul><li>Up to 50 Femineers work through six school-day project phases.</li><li>All workdays meet in Room 14 on the Monday bell schedule, 8:00 a.m.–2:41 p.m.</li><li>Snack is 9:38–9:51 a.m.; lunch is 12:29–12:59 p.m.</li><li>Students must check with teachers, collect assignments and notes, and complete all classwork missed during pull-out workdays by each teacher’s deadline.</li><li>Tri Tansopalucks, Jennifer Frausto, and Stephanie Chavez are the three primary teacher mentors.</li><li>Use your iPad for Canvas, evidence, and BirdBlox. Classroom Windows laptops support MakeCode and micro:bit preparation.</li></ul>
+  <ul><li>Up to 50 Femineers work through six project phases using five full pull-out workdays and three Wednesday lunch checkpoints.</li><li>Full workdays meet in Room 14 on the Monday bell schedule, 8:00 a.m.–2:41 p.m.</li><li>Lunch checkpoints meet in Room 14 from 12:29–12:59 p.m. on October 21, January 13, and February 10.</li><li>Students must check with teachers, collect assignments and notes, and complete all classwork missed during pull-out workdays by each teacher’s deadline.</li><li>Tri Tansopalucks, Jennifer Frausto, and Stephanie Chavez are the three primary teacher mentors.</li><li>Use your iPad for Canvas, evidence, and BirdBlox. Classroom Windows laptops support MakeCode and micro:bit preparation.</li></ul>
 </div>
 <div style="padding:20px;border-radius:14px;background:#edf9f8;">
   <h2 style="margin-top:0;color:#168b88;">Your course routine</h2>
-  <ol><li>Open the current module and read the workday overview.</li><li>Follow the exact guide for your project pathway.</li><li>Stop at every mentor safety or approval gate.</li><li>Capture evidence while the result is visible.</li><li>Submit the checkpoint and write the next action before cleanup.</li></ol>
+  <ol><li>Open the current module and read the workday or lunch-checkpoint overview.</li><li>Follow the exact guide for your project pathway.</li><li>Stop at every mentor safety or approval gate.</li><li>Capture honest evidence while the result is visible.</li><li>Submit on time, demonstrate when required, and write the next action.</li></ol>
 </div>
 '@;
     Links=@(@{Label='Open the visual student website';Url="$baseUrl/index.html"},@{Label='Start Phase 1';Url="$baseUrl/start-here.html"})
   },
   [ordered]@{
     Slug='roadmap'; Title='Program Roadmap and Important Dates'; Eyebrow='Orientation';
-    Lede='Students are pulled from regular classes for all six Stauffer workdays and are responsible for completing missed classwork. The District Kickoff is a separate event.';
+    Lede='Students are pulled from regular classes for five Stauffer workdays and are responsible for completing missed classwork. Three Wednesday lunch checkpoints maintain progress between workdays.';
     Content=@'
 <table style="width:100%;border-collapse:collapse;"><thead><tr style="background:#f0edff;"><th style="padding:10px;border:1px solid #d9d3ef;text-align:left;">Date</th><th style="padding:10px;border:1px solid #d9d3ef;text-align:left;">Event</th><th style="padding:10px;border:1px solid #d9d3ef;text-align:left;">Main goal</th></tr></thead><tbody>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Sept. 21</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 1: Imagine the Future</td><td style="padding:10px;border:1px solid #d9d3ef;">Explore, brainstorm, propose, approve</td></tr>
-<tr><td style="padding:10px;border:1px solid #d9d3ef;">Oct. 5</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 2: Prototype the Future</td><td style="padding:10px;border:1px solid #d9d3ef;">Prove one important part can work</td></tr>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Oct. 13</td><td style="padding:10px;border:1px solid #d9d3ef;">District Kickoff at Griffiths</td><td style="padding:10px;border:1px solid #d9d3ef;">Community event; not a Stauffer build day</td></tr>
-<tr><td style="padding:10px;border:1px solid #d9d3ef;">Nov. 2</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 3: Design What’s Next</td><td style="padding:10px;border:1px solid #d9d3ef;">Major construction</td></tr>
+<tr><td style="padding:10px;border:1px solid #d9d3ef;">Oct. 19</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 2 Design Ready package due</td><td style="padding:10px;border:1px solid #d9d3ef;">Submit design, systems, materials, and test plan</td></tr>
+<tr><td style="padding:10px;border:1px solid #d9d3ef;">Oct. 21</td><td style="padding:10px;border:1px solid #d9d3ef;">Design Ready lunch checkpoint</td><td style="padding:10px;border:1px solid #d9d3ef;">Demonstrate and receive readiness status</td></tr>
+<tr><td style="padding:10px;border:1px solid #d9d3ef;">Nov. 9</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 3: Design What’s Next</td><td style="padding:10px;border:1px solid #d9d3ef;">Quick prototype, test, and major construction</td></tr>
+<tr><td style="padding:10px;border:1px solid #d9d3ef;">Dec. 2</td><td style="padding:10px;border:1px solid #d9d3ef;">Project Rescue lunch</td><td style="padding:10px;border:1px solid #d9d3ef;">Invitation-only support for yellow and red projects</td></tr>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Dec. 7</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 4: Build &amp; Test</td><td style="padding:10px;border:1px solid #d9d3ef;">Subsystem testing and winter restart plan</td></tr>
-<tr><td style="padding:10px;border:1px solid #d9d3ef;">Jan. 11</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 5: Build the Future</td><td style="padding:10px;border:1px solid #d9d3ef;">Integrate, test, redesign</td></tr>
+<tr><td style="padding:10px;border:1px solid #d9d3ef;">Jan. 13</td><td style="padding:10px;border:1px solid #d9d3ef;">Restart Ready lunch checkpoint</td><td style="padding:10px;border:1px solid #d9d3ef;">Confirm status, code, supplies, and priorities</td></tr>
+<tr><td style="padding:10px;border:1px solid #d9d3ef;">Jan. 25</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 5: Build the Future</td><td style="padding:10px;border:1px solid #d9d3ef;">Integrate, test, redesign</td></tr>
+<tr><td style="padding:10px;border:1px solid #d9d3ef;">Feb. 10</td><td style="padding:10px;border:1px solid #d9d3ef;">Gala Path lunch checkpoint</td><td style="padding:10px;border:1px solid #d9d3ef;">Rank repairs and prepare for final workday</td></tr>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Feb. 22</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 6: Step Into the Future</td><td style="padding:10px;border:1px solid #d9d3ef;">Inspect, pass twice, rehearse, pack</td></tr>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Mar. 1</td><td style="padding:10px;border:1px solid #d9d3ef;">Stauffer Gala — Library</td><td style="padding:10px;border:1px solid #d9d3ef;">First public showcase</td></tr>
-<tr><td style="padding:10px;border:1px solid #d9d3ef;">Mar. 18</td><td style="padding:10px;border:1px solid #d9d3ef;">District Gala — Downey High</td><td style="padding:10px;border:1px solid #d9d3ef;">Final presentation; details to come</td></tr></tbody></table>
+<tr><td style="padding:10px;border:1px solid #d9d3ef;">Mar. 18 evening</td><td style="padding:10px;border:1px solid #d9d3ef;">District Gala — Downey High</td><td style="padding:10px;border:1px solid #d9d3ef;">Projects, guest speakers, Culinary Arts hors d’oeuvres, and district celebration</td></tr></tbody></table>
 '@;
     Links=@(@{Label='Open the visual roadmap';Url="$baseUrl/program-roadmap.html"})
+  },
+  [ordered]@{
+    Slug='lunch-checkpoints'; Title='Lunch Checkpoints and Milestone Treats'; Eyebrow='October 21 · January 13 · February 10';
+    Lede='Submit first, demonstrate your progress in Room 14 during lunch, receive a clear readiness status, and leave with one exact next action.';
+    Content=@'
+<h2 style="color:#5f3dc4;">Deliver · Demonstrate · Celebrate</h2><ol><li>Submit every required item by the listed deadline.</li><li>Provide genuine evidence of your progress.</li><li>Demonstrate or explain the deliverable in sixty seconds.</li><li>Identify the next action.</li><li>Complete the individual reflection.</li></ol>
+<h2 style="color:#168b88;">Status</h2><ul><li><strong>Green:</strong> complete and ready.</li><li><strong>Yellow:</strong> one named revision is required.</li><li><strong>Red:</strong> mentor help is required before building.</li></ul>
+<div style="padding:16px;background:#fff3c9;border-radius:12px;"><strong>Milestone Treat:</strong> students who meet the checkpoint may choose an ingredient-labeled packaged treat or a nonfood prize. The reward recognizes preparation and responsibility, not whose project looks most polished. Excused absences, documented accommodations, and verified technology problems receive a reasonable make-up opportunity.</div>
+'@;
+    Links=@(@{Label='Open the full lunch checkpoint guide';Url="$baseUrl/lunch-checkpoints.html"})
   },
   [ordered]@{
     Slug='choose-path'; Title='Know Your Project Pathway'; Eyebrow='Orientation';
@@ -189,48 +203,49 @@ $pages = @(
     Links=@(@{Label='Wearable proposal guide';Url="$baseUrl/wearable-design-proposal.html"},@{Label='Robotics proposal guide';Url="$baseUrl/robotics-design-proposal.html"},@{Label='Checkpoint 1 visual guide';Url="$baseUrl/canvas-checkpoint-1.html"})
   },
   [ordered]@{
-    Slug='phase-2-overview'; Title='Phase 2: Prototype the Future'; Eyebrow='Monday, October 5, 2026 — proposed additional workday';
-    Lede='Build the smallest safe version that can answer one important question before using final materials.';
+    Slug='phase-2-overview'; Title='Phase 2: Arrive Ready to Build'; Eyebrow='October Canvas deliverables · October 21 lunch checkpoint';
+    Lede='Turn the approved proposal into a complete, buildable package and a focused first-test plan before the November 9 workday.';
     Content=@'
-<h2 style="color:#5f3dc4;">Prototype cycle</h2><ol><li>Choose one important uncertainty.</li><li>Write an observable success condition.</li><li>Build only enough to run the test.</li><li>Record expected versus observed.</li><li>Change one variable and retest.</li><li>Choose advance, revise and retest, or stop and ask.</li></ol>
-<div style="padding:16px;background:#edf9f8;border-radius:12px;"><strong>Phase boundary:</strong> a small testable prototype—not a finished project.</div>
+<h2 style="color:#5f3dc4;">Eight Design Ready deliverables</h2><ol><li>Approved proposal and revisions</li><li>Labeled project drawing</li><li>Pathway circuit or input → decision → outputs → reset diagram</li><li>Storyboard or lighting sequence</li><li>Materials and fabrication request</li><li>Tinkercad link, STL, or SVG when needed</li><li>One prototype question with an observable success condition and three-trial plan</li><li>Individual contribution, concern, and next-action reflection</li></ol>
+<div style="padding:16px;background:#edf9f8;border-radius:12px;"><strong>Schedule:</strong> submit by Monday, October 19. Mentors review October 20. Demonstrate at lunch in Room 14 on Wednesday, October 21.</div>
 '@;
-    Links=@(@{Label='Phase 2 workday guide';Url="$baseUrl/phase-2-prototype.html"},@{Label='Prototype evidence guide';Url="$baseUrl/prototype-evidence.html"})
+    Links=@(@{Label='Phase 2 deliverables';Url="$baseUrl/phase-2-prototype.html"},@{Label='Lunch checkpoint guide';Url="$baseUrl/lunch-checkpoints.html"})
   },
   [ordered]@{
-    Slug='phase-2-pathways'; Title='Prototype in Your Pathway'; Eyebrow='Phase 2';
-    Lede='Use low-risk materials and one focused test to prove the core idea.';
+    Slug='phase-2-pathways'; Title='Design Ready in Your Pathway'; Eyebrow='Phase 2';
+    Lede='Make the technology, materials, user experience, and first November test understandable before materials are released.';
     Content=@'
-<h2 style="color:#168b88;">Robotics prototype — 1st year or 3rd-year choice</h2><p>Build a quick physical model and prove one input → decision → two outputs → reset interaction using one assigned Hummingbird kit.</p>
-<h2 style="color:#ef6a74;">Wearable prototype — 2nd year or 3rd-year choice</h2><p>Test paint on scrap fabric, make a conductive-thread circuit swatch, try LED placement, mock up the hat route with paper/ribbon, and test one simple light effect using mentor-released sample equipment.</p>
-<p><strong>Do not:</strong> cut final programmable strip, permanently seal electronics, consume final construction materials, or expand the project before the prototype question is answered.</p>
+<h2 style="color:#168b88;">Robotics — 1st year or 3rd-year choice</h2><p>Show the future user and need, input → decision → at least two outputs → reset system, three-to-five-frame visitor storyboard, Hummingbird parts, physical structure, movement, service access, partner roles, and first interaction or mechanism test.</p>
+<h2 style="color:#ef6a74;">Wearables — 2nd year or 3rd-year choice</h2><p>Show the shirt front and back, hat design, battery, micro:bit, LEDs, connections, removable electronics, planned light behavior, comfort and movement considerations, and first circuit or material test.</p>
+<p><strong>No finished physical prototype is required in October.</strong> Students may use iPads or classroom Windows laptops for Canvas, Tinkercad, diagrams, code planning, and evidence preparation.</p>
 '@;
-    Links=@(@{Label='Wearable prototype guide';Url="$baseUrl/wearable-prototype.html"},@{Label='Robotics prototype guide';Url="$baseUrl/robotics-prototype.html"})
+    Links=@(@{Label='Wearable proposal guide';Url="$baseUrl/wearable-design-proposal.html"},@{Label='Robotics proposal guide';Url="$baseUrl/robotics-design-proposal.html"},@{Label='Fabrication Lab';Url="$baseUrl/fabrication-lab.html"})
   },
   [ordered]@{
-    Slug='phase-3-overview'; Title='Phase 3: Design What’s Next'; Eyebrow='Monday, November 2, 2026';
-    Lede='Turn approved prototype learning into careful major construction while keeping every important part inspectable and repairable.';
+    Slug='phase-3-overview'; Title='Phase 3: Design What’s Next'; Eyebrow='Monday, November 9, 2026';
+    Lede='Build and test the planned quick prototype, then use that evidence to begin careful major construction while keeping important parts inspectable and repairable.';
     Content=@'
-<h2 style="color:#5f3dc4;">Start only when</h2><ul><li>Your prototype decision is recorded.</li><li>Your major-build milestone is measurable.</li><li>Final materials are released by a mentor.</li><li>You know which overall photo, close-up, test, and next step to capture.</li></ul>
-<h2 style="color:#5f3dc4;">End with</h2><p>A safe, documented, labeled, powered-off project; an honest status of on track, targeted repair, or blocked; and an exact first December test or repair.</p>
+<h2 style="color:#5f3dc4;">Start only when</h2><ul><li>Your October Design Ready package is green or the named revision is complete.</li><li>Your prototype question, success condition, and three-trial plan are ready.</li><li>Prototype materials are released by a mentor.</li><li>You know what evidence must be captured before permanent construction.</li></ul>
+<h2 style="color:#5f3dc4;">Workday sequence</h2><ol><li>Build the smallest useful test.</li><li>Run the planned trials and record the real result.</li><li>Change one variable and retest.</li><li>Receive mentor clearance for permanent construction.</li><li>Complete the named major-build milestone.</li></ol>
+<h2 style="color:#5f3dc4;">End with</h2><p>Prototype evidence, safe and documented major-build progress, an honest status of on track, targeted repair, or blocked, and an exact first December test or repair.</p>
 '@;
     Links=@(@{Label='Phase 3 workday guide';Url="$baseUrl/phase-3-build.html"},@{Label='Build progress evidence';Url="$baseUrl/build-progress-evidence.html"})
   },
   [ordered]@{
-    Slug='phase-3-pathways'; Title='Major Build in Your Pathway'; Eyebrow='Phase 3';
-    Lede='Build the approved plan, document meaningful changes, and preserve service access.';
+    Slug='phase-3-pathways'; Title='Prototype and Build in Your Pathway'; Eyebrow='Phase 3';
+    Lede='Test the most important uncertainty first, then build the approved plan, document meaningful changes, and preserve service access.';
     Content=@'
-<h2 style="color:#168b88;">Robotics major build — 1st year or 3rd-year choice</h2><p>Construct the durable physical form, mechanisms, accessible mounts, and first full programmed interaction. Keep controller, power, sensors, outputs, servos, and fasteners reachable.</p>
-<h2 style="color:#ef6a74;">Wearable major build — 2nd year or 3rd-year choice</h2><p>Transfer the approved design, complete major denim-shirt painting, and construct the 4–8-light sewn circuit. The final programmable-strip hat is not a Phase 3 construction task.</p>
+<h2 style="color:#168b88;">Robotics — 1st year or 3rd-year choice</h2><p>Prove one critical input, output, or mechanism behavior. After mentor clearance, construct the durable physical form, mechanisms, accessible mounts, and first complete programmed interaction.</p>
+<h2 style="color:#ef6a74;">Wearables — 2nd year or 3rd-year choice</h2><p>Complete a paint, material, or one-light circuit test. After mentor clearance, transfer the approved design, begin major denim-shirt painting, and construct the planned sewn circuit.</p>
 '@;
     Links=@(@{Label='Wearable build guide';Url="$baseUrl/wearable-build.html"},@{Label='Robotics build guide';Url="$baseUrl/robotics-build.html"})
   },
   [ordered]@{
-    Slug='phase-4-overview'; Title='Phase 4: Build & Test'; Eyebrow='Monday, December 7, 2026 — proposed additional workday';
+    Slug='phase-4-overview'; Title='Phase 4: Build & Test'; Eyebrow='Monday, December 7, 2026';
     Lede='Continue only critical construction, test one subsystem, improve one problem with evidence, and leave a January restart plan.';
     Content=@'
 <h2 style="color:#5f3dc4;">Troubleshooting loop</h2><ol><li>Observe the exact behavior.</li><li>Power off before touching hardware.</li><li>Choose one likely variable.</li><li>Change only that variable.</li><li>Repeat the same test and record the comparison.</li></ol>
-<h2 style="color:#5f3dc4;">Winter-storage gate</h2><p>Power is off; battery action is mentor-approved; parts are contained and counted; code is backed up; condition and storage location are photographed; the January first action begins with a specific verb.</p>
+<h2 style="color:#5f3dc4;">Winter-storage gate</h2><p>Power is off; battery action is mentor-approved; parts are contained and counted; code is backed up; condition and storage location are photographed; the January first action begins with a specific verb.</p><p><strong>January 13 Restart Ready lunch:</strong> confirm the current status, code backup, materials needs, blocker, and three priorities for January 25. No construction is required during winter break.</p>
 '@;
     Links=@(@{Label='Phase 4 workday guide';Url="$baseUrl/phase-4-test.html"},@{Label='Mid-build evidence guide';Url="$baseUrl/mid-build-evidence.html"})
   },
@@ -244,10 +259,11 @@ $pages = @(
     Links=@(@{Label='Wearable test guide';Url="$baseUrl/wearable-test.html"},@{Label='Robotics test guide';Url="$baseUrl/robotics-test.html"})
   },
   [ordered]@{
-    Slug='phase-5-overview'; Title='Phase 5: Build the Future'; Eyebrow='Monday, January 11, 2027';
+    Slug='phase-5-overview'; Title='Phase 5: Build the Future'; Eyebrow='January 13 lunch checkpoint · Monday, January 25 workday';
     Lede='Restart safely, integrate systems in layers, test the complete experience, and make one meaningful evidence-based redesign.';
     Content=@'
-<h2 style="color:#5f3dc4;">Integration sequence</h2><ol><li>Compare with the December photo, inventory, blocker, and restart card.</li><li>Earn ready to integrate, repair first, or blocked status.</li><li>Connect one proven system layer and test before adding the next.</li><li>Write a realistic complete-system success condition.</li><li>Run the baseline experience from setup through safe reset/shutdown.</li><li>Redesign the weakest high-impact variable and repeat the test fairly.</li><li>Rank February work as critical, important, or optional.</li></ol>
+<h2 style="color:#5f3dc4;">Restart Ready lunch · January 13</h2><p>Show the December project status, latest test, code backup, missing or damaged materials, three priorities, blocker, and individual commitment.</p>
+<h2 style="color:#5f3dc4;">Integration sequence · January 25</h2><ol><li>Compare with the December photo, inventory, blocker, and restart card.</li><li>Use the lunch-checkpoint status to begin ready to integrate, repair first, or blocked.</li><li>Connect one proven system layer and test before adding the next.</li><li>Write a realistic complete-system success condition.</li><li>Run the baseline experience from setup through safe reset/shutdown.</li><li>Redesign the weakest high-impact variable and repeat the test fairly.</li><li>Rank February work as critical, important, or optional.</li></ol>
 '@;
     Links=@(@{Label='Phase 5 workday guide';Url="$baseUrl/phase-5-integrate.html"},@{Label='Checkpoint 3 guide';Url="$baseUrl/test-learn-redesign.html"})
   },
@@ -261,10 +277,11 @@ $pages = @(
     Links=@(@{Label='Wearable integration guide';Url="$baseUrl/wearable-integration.html"},@{Label='Robotics integration guide';Url="$baseUrl/robotics-integration.html"})
   },
   [ordered]@{
-    Slug='phase-6-overview'; Title='Phase 6: Step Into the Future'; Eyebrow='Monday, February 22, 2027';
+    Slug='phase-6-overview'; Title='Phase 6: Step Into the Future'; Eyebrow='February 10 lunch checkpoint · Monday, February 22 workday';
     Lede='Finish only critical work, pass formal inspection and two reliability trials, document the project, rehearse, and pack for the public.';
     Content=@'
-<h2 style="color:#5f3dc4;">Today’s priority</h2><p>Critical safety and function work comes first. Important clarity, documentation, repairability, appearance, setup, and rehearsal follow. Optional decoration and new features are deferred.</p>
+<h2 style="color:#5f3dc4;">Gala Path lunch · February 10</h2><p>Show the current project, latest complete-system test, ranked punch list, repair request, draft project card, safe backup plan, and individual presentation responsibility before the February break.</p>
+<h2 style="color:#5f3dc4;">February 22 priority</h2><p>Critical safety and function work comes first. Important clarity, documentation, repairability, appearance, setup, and rehearsal follow. Optional decoration and new features are deferred.</p>
 <h2 style="color:#5f3dc4;">Gala-ready proof</h2><ul><li>Formal safety and function inspection</li><li>Two complete passing trials including reset and shutdown</li><li>Safe backup or modified demonstration</li><li>Final project card and 45-second engineering explanation</li><li>Every student practices a speaking and operating role</li><li>Labeled setup, pack-down, code, power, parts, garments, kit, and transport</li></ul>
 '@;
     Links=@(@{Label='Phase 6 workday guide';Url="$baseUrl/phase-6-gala-ready.html"},@{Label='Checkpoint 4 guide';Url="$baseUrl/gala-ready-evidence.html"})
@@ -288,28 +305,29 @@ $pages = @(
     Links=@(@{Label='Review the program roadmap';Url="$baseUrl/program-roadmap.html"},@{Label='Review Gala-ready evidence';Url="$baseUrl/gala-ready-evidence.html"})
   },
   [ordered]@{
-    Slug='district-gala'; Title='District Femineers Gala'; Eyebrow='Thursday, March 18, 2027 — Downey High';
-    Lede='Present the polished project after using Stauffer Gala evidence. Additional district details will be added when available.';
+    Slug='district-gala'; Title='District Femineers Gala'; Eyebrow='Thursday evening, March 18, 2027 — Downey High';
+    Lede='Present the polished project, hear from guest speakers, and celebrate with Femineers from across the district at an evening showcase to remember.';
     Content=@'
 <h2 style="color:#5f3dc4;">Between Galas</h2><ul><li>Review real-world Stauffer reliability and visitor evidence.</li><li>Approve only focused repairs or clarity improvements.</li><li>Repeat the affected reliability test after every change.</li><li>Update the project card, code backup, labels, and transport plan.</li></ul>
+<div style="padding:18px;background:#fff3c9;border-radius:12px;"><strong>Evening celebration:</strong> the District Gala includes student projects, guest speakers, and hors d’oeuvres provided by Culinary Arts. Exact arrival time, program schedule, and transportation details will be shared when confirmed.</div>
 <h2 style="color:#5f3dc4;">Final reflection</h2><p>Select the strongest evidence from the year and explain how your idea, skills, testing habits, teamwork or independence, and view of your future changed.</p>
 '@;
     Links=@(@{Label='Open the program roadmap';Url="$baseUrl/program-roadmap.html"})
   },
   [ordered]@{
     Slug='mentor-playbook'; Title='Mentor Lesson-Plan Playbook'; Eyebrow='Mentor planning — unpublished module';
-    Lede='Preparation, exact Room 14 agendas, student reflection, mentor debrief, and next-phase preparation for all six workdays.';
+    Lede='Preparation, exact Room 14 agendas, lunch-checkpoint review, student reflection, mentor debrief, and next-phase preparation for five full workdays.';
     Content=@'
-<h2 style="color:#5f3dc4;">Use before each workday</h2><ol><li>Review the preparation list and function-test equipment.</li><li>Open the student hub and pathway guides for the current phase.</li><li>Confirm Canvas assignment, evidence model, and mentor gate.</li><li>Assign stations, roles, repair/inspect areas, storage, and cleanup.</li><li>After dismissal, complete the mentor debrief and prepare the next phase.</li></ol>
+<h2 style="color:#5f3dc4;">Use before each workday</h2><ol><li>Review the preparation list and function-test equipment.</li><li>Open the student hub and pathway guides for the current phase.</li><li>Confirm Canvas assignment, evidence model, and mentor gate.</li><li>Assign stations, roles, repair/inspect areas, storage, and cleanup.</li><li>After dismissal, complete the mentor debrief and prepare the next phase.</li></ol><h2 style="color:#168b88;">Use before each lunch checkpoint</h2><ol><li>Review Canvas submissions in advance.</li><li>Assign green, yellow, or red status.</li><li>Prepare one named revision for yellow projects.</li><li>Prioritize red projects for mentor conferences.</li><li>Prepare ingredient-labeled treats and nonfood choices.</li></ol>
 <p><strong>Scheduling principle:</strong> do not depend on whole-program Saturday workdays. Use targeted school-day, lunch, advisory, or supervised after-school support when available.</p>
 '@;
-    Links=@(@{Label='Open the full mentor playbook';Url="$baseUrl/mentor-lesson-plans.html"},@{Label='Open the roadmap';Url="$baseUrl/program-roadmap.html"})
+    Links=@(@{Label='Open the full mentor playbook';Url="$baseUrl/mentor-lesson-plans.html"},@{Label='Open lunch checkpoints';Url="$baseUrl/lunch-checkpoints.html"},@{Label='Open the roadmap';Url="$baseUrl/program-roadmap.html"})
   },
   [ordered]@{
     Slug='canvas-launch-checklist'; Title='Canvas Launch Checklist'; Eyebrow='Mentor planning — unpublished module';
     Lede='Complete these course-specific decisions after import and before publishing to students.';
     Content=@'
-<ol><li>Confirm approval for the proposed October 5 and December 7 pull-out days.</li><li>Review module dates, names, and Room 14 schedule.</li><li>Add final due dates and availability dates to all eight assignments.</li><li>Confirm whether every assignment remains 10 points or uses a different grading plan.</li><li>Review allowed file types and media size limits on student iPads.</li><li>Add district-required policies, accommodations, and contact information.</li><li>Test every website button and assignment in Student View.</li><li>Publish pages, assignments, and modules only after the audit.</li><li>Publish the course when enrollment and communication are ready.</li></ol>
+<ol><li>Confirm the five full workdays and three lunch checkpoints.</li><li>Review module dates, names, Room 14 schedule, and the invitation-only December 2 Project Rescue lunch.</li><li>Add final due dates and availability dates to all eight assignments, including October 19 for the Design Ready package if approved.</li><li>Confirm whether every assignment remains 10 points or uses a different grading plan.</li><li>Review allowed file types and media size limits on student iPads.</li><li>Add district-required policies, accommodations, food-reward guidance, and contact information.</li><li>Test every website button and assignment in Student View.</li><li>Publish pages, assignments, and modules only after the audit.</li><li>Publish the course when enrollment and communication are ready.</li></ol>
 '@;
     Links=@(@{Label='Open the student website';Url="$baseUrl/index.html"})
   }
@@ -324,15 +342,16 @@ $assignments = @(
 '@
   },
   [ordered]@{
-    Slug='prototype-evidence'; Title='Phase 2: Prototype Evidence and First-Test Note'; Points=10; Position=2; Guide="$baseUrl/prototype-evidence.html";
+    Slug='prototype-evidence'; Title='Phase 2: Design Ready Package'; Points=10; Position=2; Guide="$baseUrl/phase-2-prototype.html";
     Content=@'
-<h2 style="color:#168b88;">Submit</h2><ul><li>Prototype question and written success condition</li><li>Before/overall photo and close-up of the testable part</li><li>Expected versus observed result</li><li>One named variable changed</li><li>Matching retest evidence</li><li>Decision: advance, revise and retest, or stop and ask</li><li>First Phase 3 construction milestone</li></ul>
+<h2 style="color:#168b88;">Submit by Monday, October 19</h2><ul><li>Approved proposal and every requested revision</li><li>Labeled project drawing</li><li>Wearable circuit diagram or Robotics input → decision → at least two outputs → reset system map</li><li>Storyboard or lighting sequence</li><li>Materials and fabrication request</li><li>Tinkercad link, STL, or SVG when needed</li><li>One prototype question, observable success condition, and three-trial plan for November 9</li><li>Individual contribution, concern, and next-action reflection</li></ul>
+<p><strong>October 21 lunch demonstration:</strong> show the evidence in sixty seconds, explain one important decision, name the first November test, and state the next action. Robotics partners both speak and explain different parts.</p>
 '@
   },
   [ordered]@{
-    Slug='checkpoint-2-build-progress'; Title='Checkpoint 2: Build Progress #1'; Points=10; Position=3; Guide="$baseUrl/build-progress-evidence.html";
+    Slug='checkpoint-2-build-progress'; Title='Checkpoint 2: Prototype + Build Progress #1'; Points=10; Position=3; Guide="$baseUrl/build-progress-evidence.html";
     Content=@'
-<h2 style="color:#168b88;">Submit</h2><ul><li>Overall project photo</li><li>Close-up of the most important completed construction</li><li>Comparison with the approved proposal</li><li>Meaningful change and reason</li><li>One test result or observable build-quality check</li><li>Status: on track, targeted repair, or blocked</li><li>Exact first December test or repair</li></ul>
+<h2 style="color:#168b88;">Submit</h2><ul><li>Prototype question and success condition</li><li>Three-trial result, one named change, and matching retest evidence</li><li>Mentor clearance or documented blocker</li><li>Overall project photo</li><li>Close-up of the most important completed construction</li><li>Comparison with the October Design Ready plan</li><li>Meaningful construction change and reason</li><li>Status: on track, targeted repair, or blocked</li><li>Exact first December test or repair</li></ul>
 '@
   },
   [ordered]@{
@@ -373,6 +392,7 @@ $modules = @(
   [ordered]@{Slug='orientation';Title='Start Here: Limitless Course Orientation';State='active';Items=@(
     @{Type='Page';Ref='welcome';Title='Welcome to Limitless: Designed by Her'},
     @{Type='Page';Ref='roadmap';Title='Program Roadmap and Important Dates'},
+    @{Type='Page';Ref='lunch-checkpoints';Title='Lunch Checkpoints and Milestone Treats'},
     @{Type='Page';Ref='choose-path';Title='Know Your Assigned Project Pathway'},
     @{Type='Page';Ref='safety-evidence';Title='Safety, Supplies, and Evidence Rules'}
   )},
@@ -382,27 +402,27 @@ $modules = @(
     @{Type='Page';Ref='phase-1-proposal';Title='Prepare Your Approved Design Proposal'},
     @{Type='Assignment';Ref='checkpoint-1-proposal';Title='Checkpoint 1: Approved Project Proposal'}
   )},
-  [ordered]@{Slug='phase-2';Title='Phase 2 — Prototype the Future — October 5 (Proposed)';State='active';Items=@(
-    @{Type='Page';Ref='phase-2-overview';Title='Phase 2 Overview'},
-    @{Type='Page';Ref='phase-2-pathways';Title='Prototype in Your Pathway'},
-    @{Type='Assignment';Ref='prototype-evidence';Title='Prototype Evidence and First-Test Note'}
+  [ordered]@{Slug='phase-2';Title='Phase 2 — Arrive Ready to Build — October Canvas + October 21 Lunch';State='active';Items=@(
+    @{Type='Page';Ref='phase-2-overview';Title='Phase 2 Design Ready Overview'},
+    @{Type='Page';Ref='phase-2-pathways';Title='Design Ready in Your Pathway'},
+    @{Type='Assignment';Ref='prototype-evidence';Title='Phase 2: Design Ready Package'}
   )},
-  [ordered]@{Slug='phase-3';Title='Phase 3 — Design What’s Next — November 2';State='active';Items=@(
+  [ordered]@{Slug='phase-3';Title='Phase 3 — Design What’s Next — November 9';State='active';Items=@(
     @{Type='Page';Ref='phase-3-overview';Title='Phase 3 Overview'},
-    @{Type='Page';Ref='phase-3-pathways';Title='Major Build in Your Pathway'},
-    @{Type='Assignment';Ref='checkpoint-2-build-progress';Title='Checkpoint 2: Build Progress #1'}
+    @{Type='Page';Ref='phase-3-pathways';Title='Prototype and Build in Your Pathway'},
+    @{Type='Assignment';Ref='checkpoint-2-build-progress';Title='Checkpoint 2: Prototype + Build Progress #1'}
   )},
-  [ordered]@{Slug='phase-4';Title='Phase 4 — Build & Test — December 7 (Proposed)';State='active';Items=@(
+  [ordered]@{Slug='phase-4';Title='Phase 4 — Build & Test — December 7';State='active';Items=@(
     @{Type='Page';Ref='phase-4-overview';Title='Phase 4 Overview'},
     @{Type='Page';Ref='phase-4-pathways';Title='Test and Store Your Pathway'},
     @{Type='Assignment';Ref='phase-4-mid-build';Title='Mid-Build Test + January Plan'}
   )},
-  [ordered]@{Slug='phase-5';Title='Phase 5 — Build the Future — January 11';State='active';Items=@(
+  [ordered]@{Slug='phase-5';Title='Phase 5 — Build the Future — January 13 Lunch + January 25 Workday';State='active';Items=@(
     @{Type='Page';Ref='phase-5-overview';Title='Phase 5 Overview'},
     @{Type='Page';Ref='phase-5-pathways';Title='Complete-System Integration'},
     @{Type='Assignment';Ref='checkpoint-3-redesign';Title='Checkpoint 3: Test, Learn, Redesign'}
   )},
-  [ordered]@{Slug='phase-6';Title='Phase 6 — Step Into the Future — February 22';State='active';Items=@(
+  [ordered]@{Slug='phase-6';Title='Phase 6 — Step Into the Future — February 10 Lunch + February 22 Workday';State='active';Items=@(
     @{Type='Page';Ref='phase-6-overview';Title='Phase 6 Overview'},
     @{Type='Page';Ref='phase-6-pathways';Title='Inspection, Reliability, and Rehearsal'},
     @{Type='Assignment';Ref='checkpoint-4-gala-ready';Title='Checkpoint 4: Gala Ready'}

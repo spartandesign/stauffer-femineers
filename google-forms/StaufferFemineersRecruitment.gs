@@ -27,21 +27,26 @@ const DENIM_SIZE_RULE =
   'DENIM SIZING: A denim-shirt size is required from second-year members and third-year members choosing Wearable Technology. It is not needed for first-year members or third-year members choosing Creative Robotics.';
 
 const PULL_OUT_COMMITMENT =
-  'SCHOOL-DAY COMMITMENT: Students will be pulled from regular classes for all six workdays in Room 14 from 8:00 a.m.–2:41 p.m. Students must check with teachers, collect assignments and notes, and complete all missed work by each teacher’s deadline.';
+  'SCHOOL-DAY COMMITMENT: Students will be pulled from regular classes for five full workdays in Room 14 from 8:00 a.m.–2:41 p.m. Students also attend three Wednesday lunch checkpoints in Room 14 from 12:29–12:59 p.m. Students must check with teachers, collect assignments and notes, and complete all missed work by each teacher’s deadline.';
 
 const WORKDAYS = Object.freeze([
   'Monday, September 21, 2026 — Imagine the Future',
-  'Monday, October 5, 2026 — Prototype the Future',
-  'Monday, November 2, 2026 — Design What’s Next',
+  'Monday, November 9, 2026 — Design What’s Next',
   'Monday, December 7, 2026 — Build & Test',
-  'Monday, January 11, 2027 — Build the Future',
+  'Monday, January 25, 2027 — Build the Future',
   'Monday, February 22, 2027 — Step Into the Future',
+]);
+
+const LUNCH_CHECKPOINTS = Object.freeze([
+  'Wednesday, October 21, 2026 — Design Ready checkpoint',
+  'Wednesday, January 13, 2027 — Restart Ready checkpoint',
+  'Wednesday, February 10, 2027 — Gala Path checkpoint',
 ]);
 
 const EVENTS = Object.freeze([
   'October 13, 2026 — District Femineers Kickoff at Griffiths',
   'March 1, 2027 — Stauffer Gala in the Stauffer Library',
-  'March 18, 2027 — District Femineers Gala at Downey High (details to come)',
+  'March 18, 2027 — Evening District Femineers Gala at Downey High with guest speakers and Culinary Arts hors d’oeuvres',
 ]);
 
 const SHIRT_SIZES = Object.freeze([
@@ -122,24 +127,30 @@ function reopenRecruitmentForms() {
 
 /** Backward-compatible shortcut for the current live-form update. */
 function updateLiveFormsForYearBasedPathways() {
-  return updateLiveFormsForThirdYearChoiceAndPulloutDates();
+  return updateLiveFormsForFiveWorkdaysAndLunchCheckpoints();
+}
+
+/** Backward-compatible shortcut retained for copies using the earlier function name. */
+function updateLiveFormsForThirdYearChoiceAndPulloutDates() {
+  return updateLiveFormsForFiveWorkdaysAndLunchCheckpoints();
 }
 
 /**
  * Updates the four existing live forms without changing their public links.
  * Run this once after replacing Code.gs with this version.
  */
-function updateLiveFormsForThirdYearChoiceAndPulloutDates() {
+function updateLiveFormsForFiveWorkdaysAndLunchCheckpoints() {
   const links = getSavedRecruitmentLinks_();
   const newStudentForm = FormApp.openById(links.newStudent.id);
   const returningForm = FormApp.openById(links.returningMember.id);
   const familyForm = FormApp.openById(links.familyCommitment.id);
   const teacherForm = FormApp.openById(links.teacherRecommendation.id);
   const scheduleText = pullOutScheduleText_();
+  const lunchText = lunchCheckpointScheduleText_();
 
-  replaceRecruitmentRulesInDescription_(newStudentForm, [PATHWAY_PLACEMENT, PULL_OUT_COMMITMENT, scheduleText]);
-  replaceRecruitmentRulesInDescription_(returningForm, [PATHWAY_PLACEMENT, DENIM_SIZE_RULE, PULL_OUT_COMMITMENT, scheduleText]);
-  replaceRecruitmentRulesInDescription_(familyForm, [PATHWAY_PLACEMENT, DENIM_SIZE_RULE, PULL_OUT_COMMITMENT, scheduleText]);
+  replaceRecruitmentRulesInDescription_(newStudentForm, [PATHWAY_PLACEMENT, PULL_OUT_COMMITMENT, scheduleText, lunchText]);
+  replaceRecruitmentRulesInDescription_(returningForm, [PATHWAY_PLACEMENT, DENIM_SIZE_RULE, PULL_OUT_COMMITMENT, scheduleText, lunchText]);
+  replaceRecruitmentRulesInDescription_(familyForm, [PATHWAY_PLACEMENT, DENIM_SIZE_RULE, PULL_OUT_COMMITMENT, scheduleText, lunchText]);
   replaceRecruitmentRulesInDescription_(teacherForm, [PATHWAY_PLACEMENT]);
 
   newStudentForm.setConfirmationMessage(
@@ -147,7 +158,7 @@ function updateLiveFormsForThirdYearChoiceAndPulloutDates() {
       links.familyCommitment.responderUrl
   );
   updateCommitmentQuestion_(newStudentForm, 'Confirm each program commitment.', [
-    'I reviewed all six pull-out workdays and events with my family.',
+    'I reviewed all five pull-out workdays, three lunch checkpoints, and events with my family.',
     'I understand that I must check with teachers, collect assignments and notes, and complete missed classwork by each teacher’s deadline.',
     'I will share robotics responsibilities with my partner and rotate roles.',
     'I am willing to design, build, code, test, document, clean up, and present.',
@@ -176,7 +187,7 @@ function updateLiveFormsForThirdYearChoiceAndPulloutDates() {
     ''
   );
   updateCommitmentQuestion_(returningForm, 'Confirm each returning-member commitment.', [
-    'I reviewed all six pull-out workdays and events with my family.',
+    'I reviewed all five pull-out workdays, three lunch checkpoints, and events with my family.',
     'I will check with teachers, collect assignments and notes, and complete missed classwork by each teacher’s deadline.',
     'I will complete the project requirements for my confirmed pathway.',
     'I will participate in designing, building, programming, testing, documenting, cleanup, and presentation.',
@@ -208,16 +219,26 @@ function updateLiveFormsForThirdYearChoiceAndPulloutDates() {
   );
   updateCommitmentQuestion_(familyForm, 'Please confirm every family commitment.', [
     'We understand the pathway rules and have confirmed the student’s pathway above.',
-    'We reviewed all six pull-out workdays and the additional events.',
+    'We reviewed all five pull-out workdays, three lunch checkpoints, and the additional events.',
     'We understand that the student must check with teachers, collect assignments and notes, and complete missed work by each teacher’s deadline.',
     'We will communicate attendance conflicts as early as possible.',
     'We understand that projects require safe tool use, cleanup, documentation, and public presentation.',
     'We understand that space is limited to 50 students and submitting forms does not guarantee placement.',
   ]);
+  updatePageBreakHelpText_(
+    familyForm,
+    'Schedule and attendance',
+    'All five workdays are in Room 14 from 8:00 a.m.–2:41 p.m. Snack is 9:38–9:51 a.m.; lunch is 12:29–12:59 p.m.\n\n' +
+      WORKDAYS.join('\n') +
+      '\n\nWednesday lunch checkpoints — Room 14, 12:29–12:59 p.m.:\n' +
+      LUNCH_CHECKPOINTS.join('\n') +
+      '\n\nAdditional events:\n' +
+      EVENTS.join('\n')
+  );
 
   deleteQuestionIfPresent_(newStudentForm, 'Denim-shirt size');
   deleteQuestionIfPresent_(familyForm, 'Denim-shirt size');
-  console.log('Third-year choice, pull-out dates, and missed-work responsibility are now on all live recruitment forms.');
+  console.log('All four live recruitment forms now use five pull-out workdays, three lunch checkpoints, and the updated Gala information.');
   logRecruitmentLinks_(links, 'Updated live form links:');
   return links;
 }
@@ -251,6 +272,8 @@ function buildNewStudentForm_(spreadsheetId, familyUrl) {
       `Applications are open ${RECRUITMENT.window}. Membership is capped at ${RECRUITMENT.capacity} students.`,
       PATHWAY_PLACEMENT,
       PULL_OUT_COMMITMENT,
+      pullOutScheduleText_(),
+      lunchCheckpointScheduleText_(),
       'No previous engineering, coding, or robotics experience is required. We are looking for curiosity, persistence, collaboration, student voice, and commitment—not only top grades or prior experience.',
       `Review the program first: ${RECRUITMENT.siteUrl}`,
       `A family member must also complete the family commitment form: ${familyUrl}`,
@@ -313,7 +336,7 @@ function buildNewStudentForm_(spreadsheetId, familyUrl) {
     .setHelpText('Review these items with your family before submitting.');
 
   addCommitmentCheckbox_(form, 'Confirm each program commitment.', [
-    'I reviewed the six workdays and events with my family.',
+    'I reviewed the five workdays, three lunch checkpoints, and events with my family.',
     'I understand that I must arrange and complete classwork missed during school-day sessions.',
     'I will share robotics responsibilities with my partner and rotate roles.',
     'I am willing to design, build, code, test, document, clean up, and present.',
@@ -362,6 +385,8 @@ function buildReturningMemberForm_(spreadsheetId, familyUrl) {
       PATHWAY_PLACEMENT,
       DENIM_SIZE_RULE,
       PULL_OUT_COMMITMENT,
+      pullOutScheduleText_(),
+      lunchCheckpointScheduleText_(),
       `Review the program: ${RECRUITMENT.siteUrl}`,
       `A family member must also complete the family commitment form: ${familyUrl}`,
     ].join('\n\n'),
@@ -410,7 +435,7 @@ function buildReturningMemberForm_(spreadsheetId, familyUrl) {
     .setTitle('Commitment and updates');
 
   addCommitmentCheckbox_(form, 'Confirm each returning-member commitment.', [
-    'I reviewed all six workdays and events with my family.',
+    'I reviewed all five workdays, three lunch checkpoints, and events with my family.',
     'I will arrange and complete classwork missed during school-day sessions.',
     'I will complete the project requirements for my confirmed pathway.',
     'I will participate in designing, building, programming, testing, documenting, cleanup, and presentation.',
@@ -479,6 +504,8 @@ function buildFamilyForm_(spreadsheetId) {
       PATHWAY_PLACEMENT,
       DENIM_SIZE_RULE,
       PULL_OUT_COMMITMENT,
+      pullOutScheduleText_(),
+      lunchCheckpointScheduleText_(),
       `Recruitment window: ${RECRUITMENT.window}. Program capacity: ${RECRUITMENT.capacity} students.`,
       'This is recruitment planning material, not emergency or medical documentation. Do not enter confidential medical details. Continue to use the school’s required forms and reporting processes.',
       `Program information: ${RECRUITMENT.siteUrl}`,
@@ -529,13 +556,17 @@ function buildFamilyForm_(spreadsheetId) {
   form.addPageBreakItem()
     .setTitle('Schedule and attendance')
     .setHelpText(
-      'All six workdays are in Room 14 from 8:00 a.m.–2:41 p.m. Snack is 9:38–9:51 a.m.; lunch is 12:29–12:59 p.m.\n\n' +
-      WORKDAYS.join('\n') + '\n\nAdditional events:\n' + EVENTS.join('\n')
+      'All five workdays are in Room 14 from 8:00 a.m.–2:41 p.m. Snack is 9:38–9:51 a.m.; lunch is 12:29–12:59 p.m.\n\n' +
+      WORKDAYS.join('\n') +
+      '\n\nWednesday lunch checkpoints — Room 14, 12:29–12:59 p.m.:\n' +
+      LUNCH_CHECKPOINTS.join('\n') +
+      '\n\nAdditional events:\n' +
+      EVENTS.join('\n')
     );
 
   addCommitmentCheckbox_(form, 'Please confirm every family commitment.', [
     'We understand the pathway rules and have confirmed the student’s pathway above.',
-    'We reviewed all six workdays and the additional events.',
+    'We reviewed all five workdays, three lunch checkpoints, and the additional events.',
     'We understand that the student must arrange and complete missed classwork.',
     'We will communicate attendance conflicts as early as possible.',
     'We understand that projects require safe tool use, cleanup, documentation, and public presentation.',
@@ -779,8 +810,16 @@ function addPlacementToDescription_(form) {
 
 function pullOutScheduleText_() {
   return [
-    'SIX FULL-DAY PULL-OUT WORKDAYS — Room 14, 8:00 a.m.–2:41 p.m.',
+    'FIVE FULL-DAY PULL-OUT WORKDAYS — Room 14, 8:00 a.m.–2:41 p.m.',
     WORKDAYS.join('\n'),
+  ].join('\n');
+}
+
+function lunchCheckpointScheduleText_() {
+  return [
+    'THREE WEDNESDAY LUNCH CHECKPOINTS — Room 14, 12:29–12:59 p.m.',
+    LUNCH_CHECKPOINTS.join('\n'),
+    'Students submit the required Canvas deliverables, demonstrate progress, receive a readiness status, and identify the next action.',
   ].join('\n');
 }
 
@@ -788,6 +827,16 @@ function replaceRecruitmentRulesInDescription_(form, currentRules) {
   const obsoleteRules = [
     'PATHWAY PLACEMENT: First-year Femineers complete Creative Robotics in teams of two. Second- and third-year Femineers complete Wearable Technology individually. Students do not choose between the pathways.',
     'DENIM SIZING: A denim-shirt size is required only from second- and third-year Wearable Technology members.',
+    'SCHOOL-DAY COMMITMENT: Students will be pulled from regular classes for all six workdays in Room 14 from 8:00 a.m.–2:41 p.m. Students must check with teachers, collect assignments and notes, and complete all missed work by each teacher’s deadline.',
+    [
+      'SIX FULL-DAY PULL-OUT WORKDAYS — Room 14, 8:00 a.m.–2:41 p.m.',
+      'Monday, September 21, 2026 — Imagine the Future',
+      'Monday, October 5, 2026 — Prototype the Future',
+      'Monday, November 2, 2026 — Design What’s Next',
+      'Monday, December 7, 2026 — Build & Test',
+      'Monday, January 11, 2027 — Build the Future',
+      'Monday, February 22, 2027 — Step Into the Future',
+    ].join('\n'),
   ];
   let description = form.getDescription() || '';
   obsoleteRules.concat(currentRules).forEach(function (rule) {
@@ -848,6 +897,14 @@ function updateParagraphQuestionIfPresent_(form, acceptedTitles, newTitle, helpT
     return acceptedTitles.indexOf(item.getTitle()) !== -1;
   });
   if (match) match.asParagraphTextItem().setTitle(newTitle).setHelpText(helpText);
+}
+
+function updatePageBreakHelpText_(form, title, helpText) {
+  const match = form.getItems(FormApp.ItemType.PAGE_BREAK).find(function (item) {
+    return item.getTitle() === title;
+  });
+  if (!match) throw new Error(`Could not find page section in "${form.getTitle()}": ${title}`);
+  match.asPageBreakItem().setHelpText(helpText);
 }
 
 function updateCommitmentQuestion_(form, title, statements) {
