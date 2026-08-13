@@ -17,7 +17,7 @@ Complete Phases 1–6 student guides and mentor planning resources:
 - Capture Good Evidence
 - Mentor Approval
 - Canvas Checkpoint 1
-- Updated six-workday program roadmap
+- Updated five-workday roadmap with three Wednesday lunch checkpoints
 - Sewable LED Basics student tutorial
 - Conductive Thread Basics student tutorial
 - Our Supplies student reference page with confirmed program equipment
@@ -30,9 +30,9 @@ Complete Phases 1–6 student guides and mentor planning resources:
 - iPad-friendly Idea Starter Gallery with search, theme filters, 30 Creative Robotics concepts, and 30 Wearable Technology concepts
 - Wearable Design Proposal guide for the individual shirt-and-hat plan
 - Robotics Design Proposal guide for teams of two using one Hummingbird Premium Kit
-- Phase 2 Prototype the Future hub, pathway prototype guides, and prototype-evidence guide
-- Six-day mentor lesson-plan playbook with the Room 14 Monday bell schedule
-- Phase 3 Design What’s Next hub and exact November 2 workday schedule
+- Phase 2 October Design Ready deliverables, lunch demonstration, and first-test plan
+- Mentor lesson-plan playbook for five workdays and three lunch checkpoints
+- Phase 3 Design What’s Next hub and exact November 9 prototype-and-build schedule
 - Phase 3 wearable denim-shirt major-build guide
 - Phase 3 Hummingbird robotics major-build guide
 - Canvas Checkpoint 2: Build Progress #1 evidence guide
@@ -40,7 +40,7 @@ Complete Phases 1–6 student guides and mentor planning resources:
 - Phase 4 wearable shirt testing, repair, hat-mounting mockup, and winter-storage guide
 - Phase 4 Hummingbird subsystem testing, troubleshooting, integration-prep, and kit-storage guide
 - Phase 4 mid-build test evidence and January restart-plan guide
-- Phase 5 Build the Future hub and exact January 11 workday schedule
+- Phase 5 Build the Future hub and exact January 25 workday schedule
 - Phase 5 wearable shirt completion, removable WS2812B bucket-hat integration, MakeCode, comfort, and redesign guide
 - Phase 5 Hummingbird complete-system integration, BirdBlox visitor testing, and redesign guide
 - Canvas Checkpoint 3: Test, Learn, Redesign evidence guide
@@ -48,6 +48,7 @@ Complete Phases 1–6 student guides and mentor planning resources:
 - Phase 6 wearable safety, reliability, fashion-show rehearsal, backup, and packing guide
 - Phase 6 Hummingbird reliability, gallery rehearsal, recovery, and numbered-kit packing guide
 - Canvas Checkpoint 4: Gala Ready evidence, project-card, backup, and logistics guide
+- Recruitment-page District Femineers Gala spotlight with the Downey High evening showcase, guest speakers, and Culinary Arts hospitality
 
 The site uses plain HTML, CSS, and JavaScript so it can be hosted directly with GitHub Pages without a build step.
 

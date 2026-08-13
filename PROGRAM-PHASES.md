@@ -1,32 +1,36 @@
 # Limitless: Designed by Her — Updated Program Phases
 
-The Stauffer sequence now uses six school-day work sessions. This reduces the long gaps between build days and avoids relying on low-attendance Saturday sessions.
+The Stauffer sequence uses five full school-day work sessions, three Wednesday lunch checkpoints, and one invitation-only support lunch. Phase 2 remains part of the six-phase learning sequence, but students complete its planning deliverables through Canvas and a lunch demonstration instead of a full pull-out day.
 
-| Phase | Date | Title | Main purpose | Wearable Technology | Creative Robotics | Canvas evidence |
-|---|---|---|---|---|---|---|
-| 1 | Monday, September 21, 2026 | Imagine the Future | Confirm year-based placement or third-year choice, learn, explore, brainstorm, design, and gain approval | Second-year Femineers and third-year members choosing Wearables explore sewable LEDs, conductive thread, micro:bit, and NeoPixels; design both individual wearables | First-year Femineers and third-year members choosing Robotics form teams of two; explore Hummingbird inputs and outputs; design a future invention | Checkpoint 1: approved project proposal |
-| 2 | Monday, October 5, 2026 | Prototype the Future | Begin building and prove that the core idea can work | Create material tests, circuit swatches, painting tests, and a first programmable light effect | Build a quick physical prototype and a first input → decision → output interaction | Prototype evidence and first-test note |
-| 3 | Monday, November 2, 2026 | Design What’s Next | Complete major construction work | Major denim-shirt painting and circuit construction | Major structural construction, mechanisms, and first complete programmed interaction | Checkpoint 2: Build Progress #1 |
-| 4 | Monday, December 7, 2026 | Build & Test | Continue construction and troubleshoot before winter break | Continue/repair shirts; prepare hat components and mounting elements | Continue construction, test subsystems, troubleshoot, and document changes | Mid-build test evidence and next-step plan |
-| 5 | Monday, January 11, 2027 | Build the Future | Integrate systems, test, and redesign | Finish shirts; construct and integrate programmable bucket hats | Integrate structure, mechanisms, sensors, and outputs; conduct significant redesign | Checkpoint 3: Test, Learn, Redesign |
-| 6 | Monday, February 22, 2027 | Step Into the Future | Finish, inspect, document, and rehearse | Final programming, repairs, comfort/reliability tests, inspection, and fashion-show practice | Reliability testing, repairs, documentation, gallery preparation, and presentation practice | Checkpoint 4: Gala Ready |
-| Showcase | Monday, March 1, 2027 | Stauffer Femineers Gala · Stauffer Library | First public showcase and real-world reliability test | Fashion show | Interactive robotics gallery | Checkpoint 5: Stauffer Gala Reflection |
-| Final Showcase | Thursday, March 18, 2027 | District Femineers Gala · Downey High | Present polished projects and reflect; more details to come | Final presentation | Final presentation | Final portfolio/reflection |
+| Phase | Date and format | Title | Main purpose | Canvas evidence |
+|---|---|---|---|---|
+| 1 | Monday, September 21, 2026 · full workday | Imagine the Future | Explore, brainstorm, create a proposal, and gain approval | Checkpoint 1: approved project proposal |
+| 2 | October · Canvas plus Wednesday, October 21 lunch | Arrive Ready to Build | Complete the labeled design, system diagram, storyboard, materials request, optional Tinkercad file, and three-trial prototype plan | Design Ready package and individual reflection |
+| 3 | Monday, November 9, 2026 · full workday | Design What’s Next | Build and test a quick physical prototype, then use the evidence to begin major construction | Prototype result plus Checkpoint 2: Build Progress #1 |
+| 4 | Monday, December 7, 2026 · full workday | Build & Test | Continue construction, troubleshoot, and prepare safe winter storage | Mid-build test evidence and restart plan |
+| 5 | Wednesday, January 13 lunch plus Monday, January 25 full workday | Build the Future | Confirm readiness, integrate systems, test, and redesign | Checkpoint 3: Test, Learn, Redesign |
+| 6 | Wednesday, February 10 lunch plus Monday, February 22 full workday | Step Into the Future | Confirm the Gala path, finish, inspect, document, and rehearse | Checkpoint 4: Gala Ready |
+| Showcase | Monday, March 1, 2027 | Stauffer Femineers Gala · Stauffer Library | First public showcase and real-world reliability test | Checkpoint 5: Stauffer Gala Reflection |
+| Final Showcase | Thursday, March 18, 2027 · evening | District Femineers Gala · Downey High | Present polished projects, hear guest speakers, and celebrate with Femineers across the district; Culinary Arts provides hors d’oeuvres | Final portfolio and reflection |
 
-## Workday logistics
+## Checkpoints and logistics
 
-- All six Stauffer project workdays meet in Room 14, fall on Mondays, and follow the Monday bell schedule.
-- School/workday: 8:00 a.m.–2:41 p.m.
+- Full workdays: September 21, November 9, December 7, January 25, and February 22.
+- Every full workday meets in Room 14 from 8:00 a.m.–2:41 p.m. and follows the Monday bell schedule.
 - Snack: 9:38–9:51 a.m.
 - Lunch: 12:29–12:59 p.m.
-- Stauffer Femineers Gala on March 1: Stauffer Library.
-- District Femineers Gala on March 18: Downey High; more details to come.
+- Full-group lunch checkpoints: October 21, January 13, and February 10 in Room 14 from 12:29–12:59 p.m.
+- Invitation-only Project Rescue lunch: December 2 for yellow and red projects.
+- October submissions are due October 19 and reviewed by mentors October 20.
+- Complete, on-time demonstrations earn a choice from the Milestone Treat Cart, with ingredient-labeled and nonfood options.
+- Stauffer Femineers Gala: March 1 in the Stauffer Library.
+- District Femineers Gala: March 18 in the evening at Downey High.
 
 ## Phase boundaries
 
 - Phase 1 ends with an approved plan, not major construction.
-- Phase 2 must produce a small testable prototype, not a finished project.
-- Phase 3 is the main construction day.
+- Phase 2 produces a complete, buildable design package and first test plan.
+- Phase 3 begins with the planned quick prototype before permanent construction.
 - Phase 4 protects momentum before winter break and identifies unresolved problems early.
 - Phase 5 is for integration and meaningful redesign.
 - Phase 6 is a finishing and rehearsal day; no major new construction should be planned.
