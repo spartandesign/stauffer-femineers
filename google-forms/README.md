@@ -34,7 +34,8 @@ Running `createRecruitmentForms` again from the same Apps Script project returns
 ## Useful functions
 
 - `showRecruitmentLinks()` prints the saved links again.
-- `updateLiveFormsForThirdYearChoiceAndPulloutDates()` updates the already-created forms so first-year students are assigned Creative Robotics, second-year students are assigned Wearable Technology, and third-year students choose either pathway. It also adds the six pull-out dates and the missed-work commitment. Run this once after pasting the latest script into the existing Apps Script project.
+- `updateLiveFormsForFiveWorkdaysAndLunchCheckpoints()` updates the already-created forms without changing their public links. It applies the five pull-out workdays, three lunch checkpoints, revised pathway rules, missed-work commitment, and updated District Gala information. Run this once after pasting the latest script into the existing Apps Script project.
+- `updateLiveFormsForThirdYearChoiceAndPulloutDates()` remains as a backward-compatible shortcut and now runs the same current update.
 - `updateLiveFormsForDenimSizing()` is retained for reference. Denim sizing is now requested from second-year members and third-year members choosing Wearable Technology.
 - `closeRecruitmentForms()` stops all four forms from accepting responses.
 - `reopenRecruitmentForms()` reopens all four forms if an extension is approved.
