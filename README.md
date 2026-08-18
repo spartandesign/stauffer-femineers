@@ -32,7 +32,7 @@ Complete Phases 1–6 student guides and mentor planning resources:
 - Robotics Design Proposal guide for teams of two using one Hummingbird Premium Kit
 - Phase 2 October Design Ready deliverables, lunch demonstration, and first-test plan
 - Mentor lesson-plan playbook for five workdays and three lunch checkpoints
-- Phase 3 Design What’s Next hub and exact November 9 prototype-and-build schedule
+- Phase 3 Design What’s Next hub and exact November 16 prototype-and-build schedule
 - Phase 3 wearable denim-shirt major-build guide
 - Phase 3 Hummingbird robotics major-build guide
 - Canvas Checkpoint 2: Build Progress #1 evidence guide

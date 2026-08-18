@@ -133,7 +133,7 @@ $pages = @(
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Oct. 13</td><td style="padding:10px;border:1px solid #d9d3ef;">District Kickoff at Griffiths</td><td style="padding:10px;border:1px solid #d9d3ef;">Community event; not a Stauffer build day</td></tr>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Oct. 19</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 2 Design Ready package due</td><td style="padding:10px;border:1px solid #d9d3ef;">Submit design, systems, materials, and test plan</td></tr>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Oct. 21</td><td style="padding:10px;border:1px solid #d9d3ef;">Design Ready lunch checkpoint</td><td style="padding:10px;border:1px solid #d9d3ef;">Demonstrate and receive readiness status</td></tr>
-<tr><td style="padding:10px;border:1px solid #d9d3ef;">Nov. 9</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 3: Design What’s Next</td><td style="padding:10px;border:1px solid #d9d3ef;">Quick prototype, test, and major construction</td></tr>
+<tr><td style="padding:10px;border:1px solid #d9d3ef;">Nov. 16</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 3: Design What’s Next</td><td style="padding:10px;border:1px solid #d9d3ef;">Quick prototype, test, and major construction</td></tr>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Dec. 2</td><td style="padding:10px;border:1px solid #d9d3ef;">Project Rescue lunch</td><td style="padding:10px;border:1px solid #d9d3ef;">Invitation-only support for yellow and red projects</td></tr>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Dec. 7</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 4: Build &amp; Test</td><td style="padding:10px;border:1px solid #d9d3ef;">Subsystem testing and winter restart plan</td></tr>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Jan. 13</td><td style="padding:10px;border:1px solid #d9d3ef;">Restart Ready lunch checkpoint</td><td style="padding:10px;border:1px solid #d9d3ef;">Confirm status, code, supplies, and priorities</td></tr>
@@ -204,7 +204,7 @@ $pages = @(
   },
   [ordered]@{
     Slug='phase-2-overview'; Title='Phase 2: Arrive Ready to Build'; Eyebrow='October Canvas deliverables · October 21 lunch checkpoint';
-    Lede='Turn the approved proposal into a complete, buildable package and a focused first-test plan before the November 9 workday.';
+    Lede='Turn the approved proposal into a complete, buildable package and a focused first-test plan before the November 16 workday.';
     Content=@'
 <h2 style="color:#5f3dc4;">Eight Design Ready deliverables</h2><ol><li>Approved proposal and revisions</li><li>Labeled project drawing</li><li>Pathway circuit or input → decision → outputs → reset diagram</li><li>Storyboard or lighting sequence</li><li>Materials and fabrication request</li><li>Tinkercad link, STL, or SVG when needed</li><li>One prototype question with an observable success condition and three-trial plan</li><li>Individual contribution, concern, and next-action reflection</li></ol>
 <div style="padding:16px;background:#edf9f8;border-radius:12px;"><strong>Schedule:</strong> submit by Monday, October 19. Mentors review October 20. Demonstrate at lunch in Room 14 on Wednesday, October 21.</div>
@@ -222,7 +222,7 @@ $pages = @(
     Links=@(@{Label='Wearable proposal guide';Url="$baseUrl/wearable-design-proposal.html"},@{Label='Robotics proposal guide';Url="$baseUrl/robotics-design-proposal.html"},@{Label='Fabrication Lab';Url="$baseUrl/fabrication-lab.html"})
   },
   [ordered]@{
-    Slug='phase-3-overview'; Title='Phase 3: Design What’s Next'; Eyebrow='Monday, November 9, 2026';
+    Slug='phase-3-overview'; Title='Phase 3: Design What’s Next'; Eyebrow='Monday, November 16, 2026';
     Lede='Build and test the planned quick prototype, then use that evidence to begin careful major construction while keeping important parts inspectable and repairable.';
     Content=@'
 <h2 style="color:#5f3dc4;">Start only when</h2><ul><li>Your October Design Ready package is green or the named revision is complete.</li><li>Your prototype question, success condition, and three-trial plan are ready.</li><li>Prototype materials are released by a mentor.</li><li>You know what evidence must be captured before permanent construction.</li></ul>
@@ -344,7 +344,7 @@ $assignments = @(
   [ordered]@{
     Slug='prototype-evidence'; Title='Phase 2: Design Ready Package'; Points=10; Position=2; Guide="$baseUrl/phase-2-prototype.html";
     Content=@'
-<h2 style="color:#168b88;">Submit by Monday, October 19</h2><ul><li>Approved proposal and every requested revision</li><li>Labeled project drawing</li><li>Wearable circuit diagram or Robotics input → decision → at least two outputs → reset system map</li><li>Storyboard or lighting sequence</li><li>Materials and fabrication request</li><li>Tinkercad link, STL, or SVG when needed</li><li>One prototype question, observable success condition, and three-trial plan for November 9</li><li>Individual contribution, concern, and next-action reflection</li></ul>
+<h2 style="color:#168b88;">Submit by Monday, October 19</h2><ul><li>Approved proposal and every requested revision</li><li>Labeled project drawing</li><li>Wearable circuit diagram or Robotics input → decision → at least two outputs → reset system map</li><li>Storyboard or lighting sequence</li><li>Materials and fabrication request</li><li>Tinkercad link, STL, or SVG when needed</li><li>One prototype question, observable success condition, and three-trial plan for November 16</li><li>Individual contribution, concern, and next-action reflection</li></ul>
 <p><strong>October 21 lunch demonstration:</strong> show the evidence in sixty seconds, explain one important decision, name the first November test, and state the next action. Robotics partners both speak and explain different parts.</p>
 '@
   },
@@ -407,7 +407,7 @@ $modules = @(
     @{Type='Page';Ref='phase-2-pathways';Title='Design Ready in Your Pathway'},
     @{Type='Assignment';Ref='prototype-evidence';Title='Phase 2: Design Ready Package'}
   )},
-  [ordered]@{Slug='phase-3';Title='Phase 3 — Design What’s Next — November 9';State='active';Items=@(
+  [ordered]@{Slug='phase-3';Title='Phase 3 — Design What’s Next — November 16';State='active';Items=@(
     @{Type='Page';Ref='phase-3-overview';Title='Phase 3 Overview'},
     @{Type='Page';Ref='phase-3-pathways';Title='Prototype and Build in Your Pathway'},
     @{Type='Assignment';Ref='checkpoint-2-build-progress';Title='Checkpoint 2: Prototype + Build Progress #1'}

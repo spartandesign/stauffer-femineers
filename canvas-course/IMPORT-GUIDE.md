@@ -45,7 +45,7 @@ Keep the receiving Canvas shell unpublished during the audit. If the shell is al
 ## Required audit before launch
 
 1. Confirm participation year and pathway: first year = Creative Robotics, second year = Wearable Technology, and third year = selected pathway.
-2. Confirm the five full workdays: September 21, November 9, December 7, January 25, and February 22.
+2. Confirm the five full workdays: September 21, November 16, December 7, January 25, and February 22.
 3. Confirm the lunch checkpoints: October 21, January 13, and February 10, plus the invitation-only December 2 Project Rescue lunch.
 4. Add due dates and availability dates to all eight assignments. October 19 is the recommended Design Ready deadline.
 5. Confirm whether every assignment remains 10 points.

@@ -31,7 +31,7 @@ const PULL_OUT_COMMITMENT =
 
 const WORKDAYS = Object.freeze([
   'Monday, September 21, 2026 — Imagine the Future',
-  'Monday, November 9, 2026 — Design What’s Next',
+  'Monday, November 16, 2026 — Design What’s Next',
   'Monday, December 7, 2026 — Build & Test',
   'Monday, January 25, 2027 — Build the Future',
   'Monday, February 22, 2027 — Step Into the Future',
