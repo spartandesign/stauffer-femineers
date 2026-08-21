@@ -530,7 +530,7 @@ $syllabus = @"
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Syllabus</title></head><body>
 <div style="max-width:850px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;color:#25223a;line-height:1.55;">
 <h1>$courseTitle</h1><p><strong>Theme:</strong> Limitless: Designed by Her</p><p><strong>Tagline:</strong> Imagine it. Build it. Become it.</p>
-<p>Participation year shapes each student’s pathway: first-year Femineers complete Creative Robotics in teams of two, second-year Femineers complete Wearable Technology individually, and third-year Femineers choose either pathway. Six school-day work sessions move each project through proposal, prototype, major build, subsystem testing, integration, redesign, public-readiness inspection, rehearsal, and reflection.</p>
+<p>Participation year shapes each student’s pathway: first-year Femineers complete Creative Robotics in teams of two, second-year Femineers complete Wearable Technology individually, and third-year Femineers choose either pathway. Five school-day work sessions move each project through proposal, prototype, major build, subsystem testing, integration, redesign, public-readiness inspection, rehearsal, and reflection.</p>
 <p><strong>Mentors:</strong> Tri Tansopalucks, Jennifer Frausto, and Stephanie Chavez</p>
 <p><strong>Workday location:</strong> Room 14, Monday bell schedule, 8:00 a.m.–2:41 p.m.</p>
 <p><strong>Website:</strong> <a href="$baseUrl/index.html">$baseUrl</a></p>
