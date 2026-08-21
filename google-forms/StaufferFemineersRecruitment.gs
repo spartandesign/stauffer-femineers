@@ -30,7 +30,7 @@ const PULL_OUT_COMMITMENT =
   'SCHOOL-DAY COMMITMENT: Students will be pulled from regular classes for five full workdays in Room 14 from 8:00 a.m.–2:41 p.m. Students also attend three Wednesday lunch checkpoints in Room 14 from 12:29–12:59 p.m. Students must check with teachers, collect assignments and notes, and complete all missed work by each teacher’s deadline.';
 
 const WORKDAYS = Object.freeze([
-  'Monday, September 21, 2026 — Imagine the Future',
+  'Monday, September 14, 2026 — Imagine the Future',
   'Monday, November 16, 2026 — Design What’s Next',
   'Monday, December 7, 2026 — Build & Test',
   'Monday, January 25, 2027 — Build the Future',
@@ -828,17 +828,12 @@ function replaceRecruitmentRulesInDescription_(form, currentRules) {
     'PATHWAY PLACEMENT: First-year Femineers complete Creative Robotics in teams of two. Second- and third-year Femineers complete Wearable Technology individually. Students do not choose between the pathways.',
     'DENIM SIZING: A denim-shirt size is required only from second- and third-year Wearable Technology members.',
     'SCHOOL-DAY COMMITMENT: Students will be pulled from regular classes for all six workdays in Room 14 from 8:00 a.m.–2:41 p.m. Students must check with teachers, collect assignments and notes, and complete all missed work by each teacher’s deadline.',
-    [
-      'SIX FULL-DAY PULL-OUT WORKDAYS — Room 14, 8:00 a.m.–2:41 p.m.',
-      'Monday, September 21, 2026 — Imagine the Future',
-      'Monday, October 5, 2026 — Prototype the Future',
-      'Monday, November 2, 2026 — Design What’s Next',
-      'Monday, December 7, 2026 — Build & Test',
-      'Monday, January 11, 2027 — Build the Future',
-      'Monday, February 22, 2027 — Step Into the Future',
-    ].join('\n'),
   ];
   let description = form.getDescription() || '';
+  description = description.replace(
+    /(?:FIVE|SIX) FULL-DAY PULL-OUT WORKDAYS — Room 14, 8:00 a\.m\.–2:41 p\.m\.(?:\r?\n[^\r\n]+)*/g,
+    ''
+  );
   obsoleteRules.concat(currentRules).forEach(function (rule) {
     description = description.split(rule).join('');
   });

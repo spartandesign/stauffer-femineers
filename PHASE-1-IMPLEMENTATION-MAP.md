@@ -2,8 +2,8 @@
 
 ## Phase 1 Implementation Map — Imagine the Future
 
-**Stauffer Femineers Workday 1:** Monday, September 21, 2026  
-**Tagline:** Imagine it. Build it. Become it.  
+**Stauffer Femineers Workday 1:** Monday, September 14, 2026\
+**Tagline:** Imagine it. Build it. Become it.\
 **Phase outcome:** Every student leaves with foundational technology experience, a realistic approved design proposal, and the evidence needed for Canvas Checkpoint 1. Major construction does not begin until approval.
 
 ---
@@ -408,7 +408,7 @@ Mentors should give no more than three specific required revisions at one time. 
 
 ---
 
-## 11. What Must Be Prepared Before September 21
+## 11. What Must Be Prepared Before September 14
 
 ### A. Decisions and inventory — complete by August 21
 
@@ -515,7 +515,7 @@ Because one mentor cannot simultaneously run multiple technical stations and app
 
 ## 14. Phase 1 Completion Dashboard
 
-At the end of September 21, staff should be able to report:
+At the end of September 14, staff should be able to report:
 
 - number of wearable students enrolled, present, proposal-complete, approved, and needing revision;
 - number of robotics teams formed, present, proposal-complete, approved, and needing revision;

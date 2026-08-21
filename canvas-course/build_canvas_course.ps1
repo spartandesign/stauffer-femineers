@@ -129,7 +129,7 @@ $pages = @(
     Lede='Students are pulled from regular classes for five Stauffer workdays and are responsible for completing missed classwork. Three Wednesday lunch checkpoints maintain progress between workdays.';
     Content=@'
 <table style="width:100%;border-collapse:collapse;"><thead><tr style="background:#f0edff;"><th style="padding:10px;border:1px solid #d9d3ef;text-align:left;">Date</th><th style="padding:10px;border:1px solid #d9d3ef;text-align:left;">Event</th><th style="padding:10px;border:1px solid #d9d3ef;text-align:left;">Main goal</th></tr></thead><tbody>
-<tr><td style="padding:10px;border:1px solid #d9d3ef;">Sept. 21</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 1: Imagine the Future</td><td style="padding:10px;border:1px solid #d9d3ef;">Explore, brainstorm, propose, approve</td></tr>
+<tr><td style="padding:10px;border:1px solid #d9d3ef;">Sept. 14</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 1: Imagine the Future</td><td style="padding:10px;border:1px solid #d9d3ef;">Explore, brainstorm, propose, approve</td></tr>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Oct. 13</td><td style="padding:10px;border:1px solid #d9d3ef;">District Kickoff at Griffiths</td><td style="padding:10px;border:1px solid #d9d3ef;">Community event; not a Stauffer build day</td></tr>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Oct. 19</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 2 Design Ready package due</td><td style="padding:10px;border:1px solid #d9d3ef;">Submit design, systems, materials, and test plan</td></tr>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Oct. 21</td><td style="padding:10px;border:1px solid #d9d3ef;">Design Ready lunch checkpoint</td><td style="padding:10px;border:1px solid #d9d3ef;">Demonstrate and receive readiness status</td></tr>
@@ -176,7 +176,7 @@ $pages = @(
     Links=@(@{Label='See our supplies';Url="$baseUrl/our-supplies.html"},@{Label='Capture good evidence';Url="$baseUrl/capture-evidence.html"},@{Label='Engineering design process';Url="$baseUrl/design-process.html"})
   },
   [ordered]@{
-    Slug='phase-1-overview'; Title='Phase 1: Imagine the Future'; Eyebrow='Monday, September 21, 2026';
+    Slug='phase-1-overview'; Title='Phase 1: Imagine the Future'; Eyebrow='Monday, September 14, 2026';
     Lede='Explore the technology, identify a future need or identity, brainstorm three ideas, choose with evidence, and earn mentor approval.';
     Content=@'
 <h2 style="color:#5f3dc4;">Today’s finish line</h2><ol><li>Understand the Limitless challenge and your assigned or selected pathway requirements.</li><li>Explore the actual technology without beginning major construction.</li><li>Generate at least three distinct ideas.</li><li>Choose one idea using purpose, feasibility, safety, supplies, and time.</li><li>Create labeled sketches, materials, system behavior, evidence plan, and roles.</li><li>Earn mentor approval before submitting Checkpoint 1.</li></ol>
@@ -222,7 +222,7 @@ $pages = @(
     Links=@(@{Label='Wearable proposal guide';Url="$baseUrl/wearable-design-proposal.html"},@{Label='Robotics proposal guide';Url="$baseUrl/robotics-design-proposal.html"},@{Label='Fabrication Lab';Url="$baseUrl/fabrication-lab.html"})
   },
   [ordered]@{
-    Slug='phase-3-overview'; Title='Phase 3: Design What’s Next'; Eyebrow='Monday, November 16, 2026';
+    Slug='phase-3-overview'; Title="Phase 3: Design What’s Next"; Eyebrow='Monday, November 16, 2026';
     Lede='Build and test the planned quick prototype, then use that evidence to begin careful major construction while keeping important parts inspectable and repairable.';
     Content=@'
 <h2 style="color:#5f3dc4;">Start only when</h2><ul><li>Your October Design Ready package is green or the named revision is complete.</li><li>Your prototype question, success condition, and three-trial plan are ready.</li><li>Prototype materials are released by a mentor.</li><li>You know what evidence must be captured before permanent construction.</li></ul>
@@ -396,7 +396,7 @@ $modules = @(
     @{Type='Page';Ref='choose-path';Title='Know Your Assigned Project Pathway'},
     @{Type='Page';Ref='safety-evidence';Title='Safety, Supplies, and Evidence Rules'}
   )},
-  [ordered]@{Slug='phase-1';Title='Phase 1 — Imagine the Future — September 21';State='active';Items=@(
+  [ordered]@{Slug='phase-1';Title='Phase 1 — Imagine the Future — September 14';State='active';Items=@(
     @{Type='Page';Ref='phase-1-overview';Title='Phase 1 Overview'},
     @{Type='Page';Ref='phase-1-tools';Title='Meet the Technology'},
     @{Type='Page';Ref='phase-1-proposal';Title='Prepare Your Approved Design Proposal'},
@@ -407,7 +407,7 @@ $modules = @(
     @{Type='Page';Ref='phase-2-pathways';Title='Design Ready in Your Pathway'},
     @{Type='Assignment';Ref='prototype-evidence';Title='Phase 2: Design Ready Package'}
   )},
-  [ordered]@{Slug='phase-3';Title='Phase 3 — Design What’s Next — November 16';State='active';Items=@(
+  [ordered]@{Slug='phase-3';Title="Phase 3 — Design What’s Next — November 16";State='active';Items=@(
     @{Type='Page';Ref='phase-3-overview';Title='Phase 3 Overview'},
     @{Type='Page';Ref='phase-3-pathways';Title='Prototype and Build in Your Pathway'},
     @{Type='Assignment';Ref='checkpoint-2-build-progress';Title='Checkpoint 2: Prototype + Build Progress #1'}

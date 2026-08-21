@@ -4,7 +4,7 @@ The Stauffer sequence uses five full school-day work sessions, three Wednesday l
 
 | Phase | Date and format | Title | Main purpose | Canvas evidence |
 |---|---|---|---|---|
-| 1 | Monday, September 21, 2026 · full workday | Imagine the Future | Explore, brainstorm, create a proposal, and gain approval | Checkpoint 1: approved project proposal |
+| 1 | Monday, September 14, 2026 · full workday | Imagine the Future | Explore, brainstorm, create a proposal, and gain approval | Checkpoint 1: approved project proposal |
 | 2 | October · Canvas plus Wednesday, October 21 lunch | Arrive Ready to Build | Complete the labeled design, system diagram, storyboard, materials request, optional Tinkercad file, and three-trial prototype plan | Design Ready package and individual reflection |
 | 3 | Monday, November 16, 2026 · full workday | Design What’s Next | Build and test a quick physical prototype, then use the evidence to begin major construction | Prototype result plus Checkpoint 2: Build Progress #1 |
 | 4 | Monday, December 7, 2026 · full workday | Build & Test | Continue construction, troubleshoot, and prepare safe winter storage | Mid-build test evidence and restart plan |
@@ -15,7 +15,7 @@ The Stauffer sequence uses five full school-day work sessions, three Wednesday l
 
 ## Checkpoints and logistics
 
-- Full workdays: September 21, November 16, December 7, January 25, and February 22.
+- Full workdays: September 14, November 16, December 7, January 25, and February 22.
 - Every full workday meets in Room 14 from 8:00 a.m.–2:41 p.m. and follows the Monday bell schedule.
 - Snack: 9:38–9:51 a.m.
 - Lunch: 12:29–12:59 p.m.

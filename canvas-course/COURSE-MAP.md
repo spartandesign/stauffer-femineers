@@ -5,7 +5,7 @@
 | Module | Canvas pages | Canvas assignments | Status |
 |---|---:|---:|---|
 | Start Here: Limitless Course Orientation | 5 | 0 | Published in package |
-| Phase 1 — Imagine the Future — September 21 | 3 | Checkpoint 1: Approved Project Proposal | Published in package |
+| Phase 1 — Imagine the Future — September 14 | 3 | Checkpoint 1: Approved Project Proposal | Published in package |
 | Phase 2 — Arrive Ready to Build — October Canvas + October 21 Lunch | 2 | Phase 2: Design Ready Package | Published in package |
 | Phase 3 — Design What’s Next — November 16 | 2 | Checkpoint 2: Prototype + Build Progress #1 | Published in package |
 | Phase 4 — Build & Test — December 7 | 2 | Mid-Build Test + January Plan | Published in package |
@@ -38,7 +38,7 @@
 
 ## Schedule
 
-- Full pull-out workdays: September 21, November 16, and December 7, 2026; January 25 and February 22, 2027.
+- Full pull-out workdays: September 14, November 16, and December 7, 2026; January 25 and February 22, 2027.
 - Full workdays meet in Room 14 from 8:00 a.m.–2:41 p.m. and follow the Monday bell schedule.
 - Full-group lunch checkpoints: October 21, January 13, and February 10 in Room 14 from 12:29–12:59 p.m.
 - Invitation-only Project Rescue lunch: December 2 for yellow and red projects.
