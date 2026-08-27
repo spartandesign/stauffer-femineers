@@ -6,6 +6,7 @@
 |---|---:|---:|---|
 | Start Here: Limitless Course Orientation | 5 | 0 | Published in package |
 | Phase 1 — Imagine the Future — September 14 | 3 | Checkpoint 1: Approved Project Proposal | Published in package |
+| DUSD Femineers Kickoff — Glow Up Your Badge — October 13 | 1 | Kickoff Reflection — Glow Up Your Badge | Unpublished until the physical badge prototype passes the timing, safety, and reliability gate |
 | Phase 2 — Arrive Ready to Build — October Canvas + October 21 Lunch | 2 | Phase 2: Design Ready Package | Published in package |
 | Phase 3 — Design What’s Next — November 16 | 2 | Checkpoint 2: Prototype + Build Progress #1 | Published in package |
 | Phase 4 — Build & Test — December 7 | 2 | Mid-Build Test + January Plan | Published in package |
@@ -18,7 +19,8 @@
 
 | Assignment | Default points | Due date | Main evidence |
 |---|---:|---|---|
-| Checkpoint 1: Approved Project Proposal | 10 | Unset | User or need, three ideas, selected plan, sketches, materials, system, safety, test question, mentor approval |
+| Checkpoint 1: Approved Project Proposal | 10 | Unset | User or need, three ideas, selected plan, sketches, materials, system, pathway technology-exploration evidence, safety, test question, mentor approval |
+| Kickoff Reflection — Glow Up Your Badge | 0; omitted from final grade | Unset; complete after October 13 | Finished-badge photo; what completed the circuit; troubleshooting action; learning from another school/activity |
 | Phase 2: Design Ready Package | 10 | Unset; October 19 recommended | Approved plan, labeled drawing, system diagram, storyboard, materials, optional fabrication file, three-trial plan, individual reflection |
 | Checkpoint 2: Prototype + Build Progress #1 | 10 | Unset | Prototype trials and retest, mentor clearance, build photos, plan comparison, construction change, status, next repair |
 | Phase 4: Mid-Build Test + January Plan | 10 | Unset | Starting condition, subsystem test, one controlled change, retest, restart card, winter storage |
@@ -34,6 +36,7 @@
 - Third-year Femineers choose Creative Robotics or Wearable Technology.
 - Creative Robotics technical evidence may be shared by the assigned team of two.
 - Each robotics partner still submits an individual contribution and reflection when requested.
+- Glow Up Your Badge is a theme-neutral district event for all participating schools. It does not change Stauffer pathway placement or project requirements.
 - The visual website contains the complete pathway directions; Canvas provides module flow, condensed requirements, and submission points.
 
 ## Schedule
@@ -42,7 +45,7 @@
 - Full workdays meet in Room 14 from 8:00 a.m.–2:41 p.m. and follow the Monday bell schedule.
 - Full-group lunch checkpoints: October 21, January 13, and February 10 in Room 14 from 12:29–12:59 p.m.
 - Invitation-only Project Rescue lunch: December 2 for yellow and red projects.
-- District Kickoff: October 13 at Griffiths.
+- District Kickoff: October 13 at Griffiths; Stauffer runs the 20-minute, theme-neutral Glow Up Your Badge station. The photo reflection is completed later, not during workshop time.
 - Stauffer Gala: March 1 in the Stauffer Library.
 - District Femineers Gala: March 18 in the evening at Downey High with guest speakers and Culinary Arts hors d’oeuvres.
 

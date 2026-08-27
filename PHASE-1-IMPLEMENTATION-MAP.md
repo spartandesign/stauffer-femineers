@@ -26,7 +26,7 @@ By the end of the day, all students will be able to:
 
 | Assigned pathway | Participation year and working arrangement | Phase 1 finish line |
 |---|---|---|
-| Wearable Technology | Second- or third-year Femineers; individual | Each student submits one combined proposal for her own denim shirt and her own programmable bucket hat, including visuals, LED/NeoPixel plans, effects, and electronics placement. |
+| Wearable Technology | Second- or third-year Femineers; individual | Each student submits one combined proposal for her own denim shirt and programmable bucket hat, plus four-part exploration evidence: Future Stamp, combined LED/conductive-thread circuit, micro:bit, and NeoPixel. The stamp is a symbol test, not a third final wearable. |
 | Creative Robotics | First-year Femineers; teams of exactly two | Each pair submits one proposal for an interactive future invention with a user/need, at least one input, at least two outputs, a physical concept, and an input → decision → output storyboard. |
 
 ---
@@ -47,7 +47,7 @@ The website should reveal the minimum useful choice at each moment. Students sho
 8. **Use the self-check.** Fix missing requirements before asking for mentor review.
 9. **Request mentor approval.** A mentor marks Approved, Revise and Return, or Needs Technical Review.
 10. **Open Canvas Checkpoint 1.** Upload the proposal evidence, verify image quality, and submit.
-11. **Finish screen.** Record the first prototype task for October 5; do not begin major construction before approval.
+11. **Finish screen.** Record the first prototype question for November 16; do not begin major construction before approval.
 
 ### Persistent Phase 1 navigation
 
@@ -84,6 +84,7 @@ Every Phase 1 tutorial page should include:
 |---|---|---|
 | Wearable Technology: Your Challenge | Individual-project rule; both required products; future-vision connection; examples | Introduce, do not teach full construction |
 | Design Your Future | Audience/message, motifs, color palette, visual hierarchy, practical wearability | Produce concept choices |
+| Stamp from the Future | Turn one future need into a small stitched symbol; ordinary-floss and needle safety; photo/caption evidence | Explore a symbol on an inspected wooden blank; no powered materials and no third final project |
 | Sewable LED Basics | LED polarity, simple circuit, battery safety, testing orientation | Explore a prepared sample; no shirt construction |
 | Conductive Thread Basics | Conductivity, separate paths, knotting concept, avoiding loose ends/short circuits | Practice on a reusable swatch or card |
 | Meet the micro:bit | Buttons, display, MakeCode, download/run cycle | Complete one small prepared activity |
@@ -134,6 +135,7 @@ Every technical tutorial uses the same headings:
 | All | Three-idea brainstorm | Produces three meaningfully different ideas | Photo or screenshot of brainstorm |
 | All | Labeled design sketch | Shows parts, placement, purpose, and notes | Clear proposal sketch |
 | All | Capturing useful evidence | Photo is focused and note explains learning | One practice evidence item |
+| Wearables | Future Stamp symbol and controlled stitching | Begins a safe, intentional motif and returns the counted needle | Complete or meaningful in-progress photo + symbol caption |
 | Wearables | LED polarity and a simple circuit | Prepared LED lights and student identifies +/− | Exploration photo + one observation |
 | Wearables | Conductive paths and short circuits | Student identifies two separate paths and diagnoses a sample short | Practice photo or annotated diagram |
 | Wearables | micro:bit first program | Student downloads/runs a simple button or display program | MakeCode screenshot or photo |
@@ -206,9 +208,9 @@ Final quantities must be adjusted after inventory. Quantities below describe sta
 
 | Station | Suggested capacity | Materials and preparation |
 |---|---:|---|
-| LED polarity | 4–6 | Prepared sewable LEDs, appropriate battery holders, batteries, polarity cards, working/nonworking samples, safety tray |
-| Conductive thread | 4–6 | Short pre-cut thread, needles appropriate for practice, practice felt/cards, clips/tape, magnifiers if available, correct/shorted samples |
-| micro:bit basics | 4–6 | micro:bits, USB cables, student devices, labeled sets, tested MakeCode starter, spare cables, download guide |
+| Future Stamp | 4–6 | Inspected wooden blanks, two BYMORE floss kits, short pre-cut ordinary floss, tested needles/threaders, planning cards, named snack bags, sample, counted needle tray/pincushion, paper-grid backups |
+| Combined LED + conductive-thread Circuit Lab | 4–6 | Prepared sewable LEDs, switched holders and batteries, polarity cards, conductive thread, tested needles, felt swatches, correct/shorted samples, counted needle tray; keep separate from decorative floss |
+| micro:bit basics | 4–6 | micro:bits, USB cables, classroom Windows laptops, labeled sets, tested MakeCode starter, spare cables, download guide |
 | NeoPixel preview | 4–6 | Mentor-prepared plug-in harnesses, 10–15 pixel sample strips, 2×AAA micro:bit holders, switched 3×AAA pixel holders, matched batteries, safe starter code, wiring diagram |
 | Wearable proposal | 6–8 | Shirt and hat templates, color tools, sample removable-channel/pocket pieces, placement ruler/tape measure, requirement cards |
 
@@ -238,16 +240,17 @@ Final quantities must be adjusted after inventory. Quantities below describe sta
 
 | Time | Whole group | Wearable Technology | Creative Robotics | Evidence/milestone |
 |---|---|---|---|---|
-| 8:30–9:00 | Arrival, breakfast, participation-year/pathway check-in | Confirm second-year members and third-year Wearables choices | Confirm first-year members and third-year Robotics choices; teams of exactly two | Roster and third-year choices complete |
-| 9:00–9:25 | Theme launch, challenge, design process, safety/help system | Shared session | Shared session | Future prompt started |
-| 9:25–9:50 | Future exploration and three-idea brainstorm | Individual brainstorm | Partner brainstorm | Three concepts captured |
-| 9:50–11:30 | Pathway rotations | LED, thread, micro:bit, NeoPixel rotations | Hummingbird, outputs, sensors, interaction rotations | Technology exploration record |
-| 11:30–12:00 | Progress share and cleanup | Name one discovery and likely design effect | Each partner explains one system part | Materials accounted for |
-| 12:00–12:45 | Lunch |  |  |  |
-| 12:45–1:50 | Proposal studio | Complete shirt and hat proposal | Complete team proposal and storyboard | Draft proposal complete |
-| 1:50–2:15 | Self-check and peer explain | Explain both wearables to a peer | Each partner explains full project | Self-check complete |
-| 2:15–2:45 | Mentor review, revision, documentation | Individual approval conference | Team-of-two approval conference | Approval status recorded |
-| 2:45–3:00 | Whole-group share and next steps | Save/upload evidence; identify October 5 prototype step | Save/upload evidence; identify October 5 prototype step | Checkpoint submitted or revision plan recorded |
+| 8:00–8:20 | Arrival, attendance, participation-year/pathway check-in | Confirm second-year members and third-year Wearables choices | Confirm first-year members and third-year Robotics choices; teams of exactly two | Roster and third-year choices complete |
+| 8:20–8:40 | Theme launch, pathway progression, design process, safety/help system | Shared session | Shared session | Students state pathway and finish line |
+| 8:40–9:38 | Future exploration, three-idea brainstorm, station orientation | Individual brainstorm | Partner brainstorm | Three concepts captured |
+| 9:38–9:51 | Snack |  |  |  |
+| 9:51–11:45 | Pathway technology rotations | Four 25-minute stations: Future Stamp; combined LED/conductive-thread Circuit Lab; micro:bit; NeoPixel, with three-minute transitions and final evidence/bagging | Hummingbird, outputs, sensors, interaction rotations | Four Wearables evidence items; needle counts at transitions; final count matches |
+| 11:45–12:29 | Progress share, cleanup, proposal setup | Name one discovery; verify stamp storage and needle count | Each partner explains one system part | Materials accounted for |
+| 12:29–12:59 | Lunch |  |  |  |
+| 12:59–1:45 | Proposal studio | Complete shirt and hat proposal | Complete team proposal and storyboard | Draft proposal complete |
+| 1:45–2:05 | Self-check and peer explanation | Explain both wearables to a peer | Each partner explains full project | Self-check complete |
+| 2:05–2:21 | Final mentor review and revision status | Individual approval conference | Team-of-two approval conference | Approval status recorded |
+| 2:21–2:41 | Evidence, reflection, next step, cleanup, dismissal | Submit or save revision plan | Submit or save revision plan | October Design Ready deliverables assigned |
 
 ### Rotation contingency
 
@@ -279,7 +282,7 @@ Each student must leave with:
 - A+B lights-off behavior;
 - a plan for two balanced battery/controller pockets on opposite sides;
 - a removable mounting/channel concept;
-- evidence of LED, conductive thread, micro:bit, and NeoPixel exploration;
+- four-part exploration evidence: a complete or meaningful in-progress Future Stamp photo and symbol caption, combined LED/conductive-thread circuit evidence, micro:bit evidence, and NeoPixel evidence;
 - an approval status and recorded next step.
 
 Students are not expected to fabricate the hat wiring harness or begin major garment construction during Phase 1.
@@ -331,7 +334,7 @@ Each student submits:
 8. planned Button A, Button B, and A+B behaviors;
 9. balanced controller/battery placement and removable mounting plan;
 10. materials list;
-11. technology exploration evidence;
+11. one labeled technology-exploration evidence page showing the Future Stamp, combined LED/conductive-thread Circuit Lab, micro:bit, and NeoPixel, each with a short caption; the stamp caption also explains the symbol and its connection to the proposal;
 12. mentor approval or revision status.
 
 ### Creative Robotics — one team submission
@@ -361,7 +364,7 @@ Each partner separately answers in two to four sentences:
 
 ### Suggested completion labels
 
-- **Submitted and Approved** — complete and ready for Prototype the Future on October 5.
+- **Submitted and Approved** — complete and ready for the October Design Ready work and November 16 prototype/build day.
 - **Submitted — Revision Required** — evidence is present, but the design must be revised before construction.
 - **Not Yet Submitted** — missing evidence or upload; follow-up is assigned.
 
@@ -380,8 +383,8 @@ Each partner separately answers in two to four sentences:
 
 ### Approval statuses
 
-- **Approved:** Safe and feasible with available or confirmed materials. Student/team may prepare for the October 5 prototype day.
-- **Approved with Notes:** Core design is feasible; small named details must be resolved before or at the start of October 5.
+- **Approved:** Safe and feasible with available or confirmed materials. Student/team may prepare the October Design Ready package and November 16 prototype question.
+- **Approved with Notes:** Core design is feasible; small named details must be resolved during the October Design Ready process and before November 16 construction.
 - **Revise and Return:** One or more required design elements are missing, unclear, too complex, or unreliable. Mentor records exact revision requests.
 - **Needs Technical Review:** Power, wiring, mechanism, inventory, device compatibility, or safety requires a designated technical mentor.
 
@@ -424,6 +427,9 @@ Mentors should give no more than three specific required revisions at one time. 
 ### B. Samples and technical preparation — complete by September 4
 
 - Build and test one representative denim LED circuit.
+- Inspect all 40 wooden blanks and quarantine cracks, splinters, rough edges, or blocked holes; prepare paper-grid backups because the order has no replacement margin.
+- Pretest the exact needle eye, ordinary-floss thickness, and wooden hole; stage two BYMORE kits, short pre-cut floss, named snack bags, planning cards, one sample, needle landing trays/pincushions, and an opening/transition/final count sheet.
+- Keep decorative embroidery floss physically separate from conductive thread and powered Circuit Lab materials.
 - Build and test one complete bucket-hat electronics sample using the planned separate power supplies, shared ground, safe brightness, and removable harness.
 - Prepare multiple plug-in NeoPixel exploration harnesses; students do not fabricate difficult harnesses.
 - Create correct and intentionally faulty LED/conductive-thread samples.
@@ -445,11 +451,13 @@ Mentors should give no more than three specific required revisions at one time. 
 - Verify readable font size, touch targets, contrast, navigation, load time, and media playback.
 - Print or save offline backups of essential instructions and diagrams.
 
-### D. Staffing, station flow, and materials — complete by September 16
+### D. Staffing, station flow, and materials — complete by September 11
 
 - Assign a lead and backup mentor to each pathway and technical station.
 - Assign a designated technical reviewer for wiring, power, mechanisms, and device problems.
 - Finalize the rotation schedule based on verified equipment capacity.
+- Assign the four Wearables rotations and exact transition procedure: Future Stamp; combined LED/conductive-thread Circuit Lab; micro:bit; NeoPixel.
+- Assign one adult to release/count needles and inspect/store wooden blanks; needles never enter student snack bags.
 - Assemble labeled station bins and individual/team kits.
 - Prepare charged batteries, spares, cables, power strips, and charging plan.
 - Print proposal drafts, self-checks, station records, approval criteria, port/wiring diagrams, and emergency offline directions.
@@ -457,7 +465,7 @@ Mentors should give no more than three specific required revisions at one time. 
 - Prepare student name/year/pathway labels and first-year robotics team labels.
 - Communicate appropriate take-home work and the electronics-remain-at-school rule.
 
-### E. Final readiness check — September 18–20
+### E. Final readiness check — September 11–13
 
 - Run a mentor rehearsal of all demonstrations and keep each within its time limit.
 - Test every station with the exact student device, cable, power source, and account configuration.
@@ -523,15 +531,15 @@ At the end of September 14, staff should be able to report:
 - equipment failures or shortages discovered;
 - website/Canvas access problems;
 - most common concept or feasibility issues;
-- projects requiring technical follow-up before October 5;
+- projects requiring technical follow-up during October and before November 16;
 - students absent or needing a makeup pathway;
-- the first planned prototype task for every student/team on October 5.
+- the first planned prototype question for every student/team on November 16.
 
 ### Phase 1 exit rule
 
 Phase 1 is complete when every participating student has either:
 
-1. an approved proposal and a clear October 5 prototype task, or
+1. an approved proposal and a clear November 16 prototype question, or
 2. a documented revision/makeup plan with an assigned mentor and deadline.
 
 Only after this workflow has been tested and adjusted should development move to Phase 2: Prototype the Future.

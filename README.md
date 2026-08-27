@@ -18,6 +18,8 @@ Complete Phases 1–6 student guides and mentor planning resources:
 - Mentor Approval
 - Canvas Checkpoint 1
 - Updated five-workday roadmap with three Wednesday lunch checkpoints
+- Stamp from the Future wooden cross-stitch tutorial and four-station September 14 Wearables rotation
+- Theme-neutral DUSD Kickoff “Glow Up Your Badge” student guide, 20-minute mentor workshop, and Canvas reflection scaffold
 - Sewable LED Basics student tutorial
 - Conductive Thread Basics student tutorial
 - Our Supplies student reference page with confirmed program equipment

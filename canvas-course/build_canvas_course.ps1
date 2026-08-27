@@ -52,6 +52,7 @@ function New-CanvasPageHtml($Page, [string]$Identifier) {
   $eyebrow = [System.Net.WebUtility]::HtmlEncode($Page.Eyebrow)
   $lede = [System.Net.WebUtility]::HtmlEncode($Page.Lede)
   $frontPageMeta = if ($Page.Slug -eq 'welcome') { '<meta name="front_page" content="true"/>' } else { '' }
+  $workflowState = if ($Page.Contains('State')) { $Page.State } else { 'active' }
 
   return @"
 <html>
@@ -60,7 +61,7 @@ function New-CanvasPageHtml($Page, [string]$Identifier) {
 <title>$title</title>
 <meta name="identifier" content="$Identifier"/>
 <meta name="editing_roles" content="teachers"/>
-<meta name="workflow_state" content="active"/>
+<meta name="workflow_state" content="$workflowState"/>
 $frontPageMeta
 </head>
 <body>
@@ -130,7 +131,7 @@ $pages = @(
     Content=@'
 <table style="width:100%;border-collapse:collapse;"><thead><tr style="background:#f0edff;"><th style="padding:10px;border:1px solid #d9d3ef;text-align:left;">Date</th><th style="padding:10px;border:1px solid #d9d3ef;text-align:left;">Event</th><th style="padding:10px;border:1px solid #d9d3ef;text-align:left;">Main goal</th></tr></thead><tbody>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Sept. 14</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 1: Imagine the Future</td><td style="padding:10px;border:1px solid #d9d3ef;">Explore, brainstorm, propose, approve</td></tr>
-<tr><td style="padding:10px;border:1px solid #d9d3ef;">Oct. 13</td><td style="padding:10px;border:1px solid #d9d3ef;">District Kickoff at Griffiths</td><td style="padding:10px;border:1px solid #d9d3ef;">Community event; not a Stauffer build day</td></tr>
+<tr><td style="padding:10px;border:1px solid #d9d3ef;">Oct. 13</td><td style="padding:10px;border:1px solid #d9d3ef;">District Kickoff at Griffiths — Glow Up Your Badge</td><td style="padding:10px;border:1px solid #d9d3ef;">Theme-neutral 20-minute Stauffer station; not a Limitless project workday</td></tr>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Oct. 19</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 2 Design Ready package due</td><td style="padding:10px;border:1px solid #d9d3ef;">Submit design, systems, materials, and test plan</td></tr>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Oct. 21</td><td style="padding:10px;border:1px solid #d9d3ef;">Design Ready lunch checkpoint</td><td style="padding:10px;border:1px solid #d9d3ef;">Demonstrate and receive readiness status</td></tr>
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Nov. 16</td><td style="padding:10px;border:1px solid #d9d3ef;">Phase 3: Design What’s Next</td><td style="padding:10px;border:1px solid #d9d3ef;">Quick prototype, test, and major construction</td></tr>
@@ -144,6 +145,18 @@ $pages = @(
 <tr><td style="padding:10px;border:1px solid #d9d3ef;">Mar. 18 evening</td><td style="padding:10px;border:1px solid #d9d3ef;">District Gala — Downey High</td><td style="padding:10px;border:1px solid #d9d3ef;">Projects, guest speakers, Culinary Arts hors d’oeuvres, and district celebration</td></tr></tbody></table>
 '@;
     Links=@(@{Label='Open the visual roadmap';Url="$baseUrl/program-roadmap.html"})
+  },
+  [ordered]@{
+    Slug='kickoff-glow-up-badge'; Title='Glow Up Your Badge'; Eyebrow='DUSD Femineers Kickoff — Tuesday, October 13, 2026 — Griffiths'; State='unpublished';
+    Lede='At the theme-neutral 20-minute Stauffer Middle School district station, personalize and assemble a tested no-solder light-up badge, then explain why its circuit works.';
+    Content=@'
+<div style="padding:16px;background:#fff3f4;border-radius:12px;margin-bottom:18px;"><strong>Prototype gate:</strong> exact kit parts, orientation marks, and placement directions will be released only after the physical badge passes the 10–12 minute build, safety, reset, and reliability tests. Follow the final station card and mentor demonstration—not an untested shopping image.</div>
+<h2 style="color:#5f3dc4;">The 20-minute station</h2><ol><li><strong>0:00–2:00:</strong> welcome and finished example</li><li><strong>2:00–4:00:</strong> battery → complete path → LED demonstration</li><li><strong>4:00–15:00:</strong> personalize, assemble the approved no-solder kit, and test</li><li><strong>15:00–18:00:</strong> quick check or known-good component swap</li><li><strong>18:00–20:00:</strong> secure, wear, clean, and transition</li></ol>
+<h2 style="color:#168b88;">Your finish line</h2><ul><li>Your badge is complete and the LED lights.</li><li>You can identify the battery and LED.</li><li>You can explain that a complete circuit path makes the light work.</li><li>The battery, connection, and wearable attachment pass the mentor check.</li><li>You return shared tools and leave the seat ready for the next student.</li></ul>
+<p><strong>Theme-neutral district event:</strong> enjoy meeting Femineers from other schools. This activity is not part of the Stauffer Limitless project and does not change your pathway or project requirements.</p>
+<p><strong>Canvas happens later:</strong> do not use workshop time for a long submission. After the event or during class/advisory, add one photo and three short answers to the Kickoff Reflection.</p>
+'@;
+    Links=@(@{Label='Open the student badge guide';Url="$baseUrl/glow-up-your-badge.html"},@{Label='Open the district-event roadmap';Url="$baseUrl/program-roadmap.html"})
   },
   [ordered]@{
     Slug='lunch-checkpoints'; Title='Lunch Checkpoints and Milestone Treats'; Eyebrow='October 21 · January 13 · February 10';
@@ -171,6 +184,7 @@ $pages = @(
     Content=@'
 <h2 style="color:#5f3dc4;">Always</h2><ul><li>Power off before touching wiring, stitches, sensors, servos, mechanisms, connectors, or batteries.</li><li>Use only your assigned wearable controller or numbered Hummingbird kit.</li><li>Keep electronics, batteries, switches, connectors, and repair points accessible.</li><li>Stop for heat, odor, damaged power parts, exposed conductors, uncontrolled motion, pressure, pinching, or an unstable structure.</li><li>Capture honest evidence before changing the project.</li></ul>
 <h2 style="color:#ef6a74;">Mentor-only wearable work</h2><p>Students do not cut the purchased WS2812B strip, solder, splice, rebuild the pixel harness, join the two positive supplies, or alter any level interface. Mentors prepare and test the removable harness.</p>
+<h2 style="color:#ef6a74;">Wooden-stitching safety</h2><ul><li>Mentors inspect every wooden blank for cracks, splinters, rough edges, and blocked holes and pretest the exact needle-and-floss combination.</li><li>A needle is either in a student’s hand or in the counted tray/pincushion. Count needles at every transition and never place a needle in a student storage bag.</li><li>Use ordinary embroidery floss only on the wooden Future Stamp. Conductive thread, LEDs, batteries, and powered circuits remain at the separate Circuit Lab station.</li></ul>
 <h2 style="color:#168b88;">Evidence pattern</h2><p>Write a success condition, record the real result, change one named variable, retest fairly, explain what the evidence shows, and leave a specific next action.</p>
 '@;
     Links=@(@{Label='See our supplies';Url="$baseUrl/our-supplies.html"},@{Label='Capture good evidence';Url="$baseUrl/capture-evidence.html"},@{Label='Engineering design process';Url="$baseUrl/design-process.html"})
@@ -179,8 +193,9 @@ $pages = @(
     Slug='phase-1-overview'; Title='Phase 1: Imagine the Future'; Eyebrow='Monday, September 14, 2026';
     Lede='Explore the technology, identify a future need or identity, brainstorm three ideas, choose with evidence, and earn mentor approval.';
     Content=@'
-<h2 style="color:#5f3dc4;">Today’s finish line</h2><ol><li>Understand the Limitless challenge and your assigned or selected pathway requirements.</li><li>Explore the actual technology without beginning major construction.</li><li>Generate at least three distinct ideas.</li><li>Choose one idea using purpose, feasibility, safety, supplies, and time.</li><li>Create labeled sketches, materials, system behavior, evidence plan, and roles.</li><li>Earn mentor approval before submitting Checkpoint 1.</li></ol>
+<h2 style="color:#5f3dc4;">Today’s finish line</h2><ol><li>Understand the Limitless challenge and your assigned or selected pathway requirements.</li><li>Explore the actual technology without beginning major construction and save the required pathway-exploration evidence.</li><li>Generate at least three distinct ideas.</li><li>Choose one idea using purpose, feasibility, safety, supplies, and time.</li><li>Create labeled sketches, materials, system behavior, evidence plan, and roles.</li><li>Earn mentor approval before submitting Checkpoint 1.</li></ol>
 <div style="padding:16px;background:#fff3f4;border-radius:12px;"><strong>Phase boundary:</strong> Phase 1 ends with an approved plan—not permanent construction.</div>
+<p><strong>Wearables:</strong> the wooden Future Stamp is a short symbol-and-stitching exploration. It may inform the shirt-and-hat theme, but it is not a third final wearable and does not replace the three-idea brainstorm.</p>
 '@;
     Links=@(@{Label='Open Phase 1 start page';Url="$baseUrl/start-here.html"},@{Label='Read the Limitless challenge';Url="$baseUrl/limitless-challenge.html"},@{Label='Mentor approval gate';Url="$baseUrl/mentor-approval.html"})
   },
@@ -189,16 +204,16 @@ $pages = @(
     Lede='Use the tutorials for your assigned or selected pathway, then record what each component makes possible and what safety rule controls it.';
     Content=@'
 <h2 style="color:#168b88;">Creative Robotics — 1st year or 3rd-year choice</h2><ul><li>Hummingbird input, decision, two outputs, and reset</li><li>Premium Kit quantities and assigned ports</li><li>BirdBlox connection using the assigned three-word name and green dot</li><li>Driver/Navigator rotation and safe startup/shutdown</li></ul>
-<h2 style="color:#ef6a74;">Wearables — 2nd year or 3rd-year choice</h2><ul><li>Sewable LEDs and polarity</li><li>Conductive thread paths and separation</li><li>micro:bit with MakeCode on a Windows laptop</li><li>WS2812B programmable strip with a mentor-prepared removable harness</li></ul>
+<h2 style="color:#ef6a74;">Wearables — 2nd year or 3rd-year choice</h2><ol><li><strong>Stamp from the Future:</strong> use ordinary embroidery floss on an inspected wooden blank; save a complete or meaningful in-progress photo and explain what the symbol represents.</li><li><strong>Combined Circuit Lab:</strong> test sewable-LED polarity and separate conductive-thread paths on felt; save one clear circuit photo and caption.</li><li><strong>micro:bit:</strong> use MakeCode on a Windows laptop; save a physical test photo or readable screenshot and caption.</li><li><strong>NeoPixel:</strong> run a prepared WS2812B system with a removable mentor-built harness; save one test photo and caption.</li></ol><p>For every caption, state what you tried, what happened, and what you learned. Ordinary embroidery floss is not conductive and stays separate from Circuit Lab materials.</p>
 '@;
-    Links=@(@{Label='Sewable LED basics';Url="$baseUrl/sewable-led-basics.html"},@{Label='Conductive thread basics';Url="$baseUrl/conductive-thread-basics.html"},@{Label='Meet the micro:bit';Url="$baseUrl/meet-the-microbit.html"},@{Label='Meet programmable pixels';Url="$baseUrl/meet-the-neopixels.html"})
+    Links=@(@{Label='Stamp from the Future';Url="$baseUrl/stamp-from-the-future.html"},@{Label='Sewable LED basics';Url="$baseUrl/sewable-led-basics.html"},@{Label='Conductive thread basics';Url="$baseUrl/conductive-thread-basics.html"},@{Label='Meet the micro:bit';Url="$baseUrl/meet-the-microbit.html"},@{Label='Meet programmable pixels';Url="$baseUrl/meet-the-neopixels.html"})
   },
   [ordered]@{
     Slug='phase-1-proposal'; Title='Prepare Your Approved Design Proposal'; Eyebrow='Phase 1 design gate';
     Lede='A mentor should be able to understand the user, purpose, appearance, technology, materials, safety, program behavior, and first test without guessing.';
     Content=@'
-<h2 style="color:#5f3dc4;">Required for everyone</h2><ul><li>Future user, audience, need, identity, or opportunity</li><li>Three distinct ideas and an evidence-based selection</li><li>Labeled sketches from enough views to show hidden parts</li><li>Exact materials and electronics</li><li>Input/output or light-behavior story</li><li>Safety, comfort/stability, access, and repair plan</li><li>First prototype and success condition</li></ul>
-<p><strong>Robotics teams:</strong> include both names, one kit number, three-word device name, Driver/Navigator plan, and individual reflections.</p>
+<h2 style="color:#5f3dc4;">Required for everyone</h2><ul><li>Future user, audience, need, identity, or opportunity</li><li>Three distinct ideas and an evidence-based selection</li><li>Labeled sketches from enough views to show hidden parts</li><li>Exact materials and electronics</li><li>Input/output or light-behavior story</li><li>Pathway technology-exploration evidence with short captions</li><li>Safety, comfort/stability, access, and repair plan</li><li>First prototype and success condition</li></ul>
+<p><strong>Wearables:</strong> connect the Future Stamp symbol to the shared shirt-and-hat visual theme when useful, but keep the three-idea brainstorm and both final wearable plans complete.</p><p><strong>Robotics teams:</strong> include both names, one kit number, three-word device name, Driver/Navigator plan, and individual reflections.</p>
 '@;
     Links=@(@{Label='Wearable proposal guide';Url="$baseUrl/wearable-design-proposal.html"},@{Label='Robotics proposal guide';Url="$baseUrl/robotics-design-proposal.html"},@{Label='Checkpoint 1 visual guide';Url="$baseUrl/canvas-checkpoint-1.html"})
   },
@@ -318,7 +333,7 @@ $pages = @(
     Slug='mentor-playbook'; Title='Mentor Lesson-Plan Playbook'; Eyebrow='Mentor planning — unpublished module';
     Lede='Preparation, exact Room 14 agendas, lunch-checkpoint review, student reflection, mentor debrief, and next-phase preparation for five full workdays.';
     Content=@'
-<h2 style="color:#5f3dc4;">Use before each workday</h2><ol><li>Review the preparation list and function-test equipment.</li><li>Open the student hub and pathway guides for the current phase.</li><li>Confirm Canvas assignment, evidence model, and mentor gate.</li><li>Assign stations, roles, repair/inspect areas, storage, and cleanup.</li><li>After dismissal, complete the mentor debrief and prepare the next phase.</li></ol><h2 style="color:#168b88;">Use before each lunch checkpoint</h2><ol><li>Review Canvas submissions in advance.</li><li>Assign green, yellow, or red status.</li><li>Prepare one named revision for yellow projects.</li><li>Prioritize red projects for mentor conferences.</li><li>Prepare ingredient-labeled treats and nonfood choices.</li></ol>
+<h2 style="color:#5f3dc4;">Use before each workday</h2><ol><li>Review the preparation list and function-test equipment.</li><li>Open the student hub and pathway guides for the current phase.</li><li>Confirm Canvas assignment, evidence model, and mentor gate.</li><li>Assign stations, roles, repair/inspect areas, storage, and cleanup.</li><li>After dismissal, complete the mentor debrief and prepare the next phase.</li></ol><h2 style="color:#ef6a74;">September 14 Wearables setup</h2><ul><li>Stage 40 inspected wooden blanks, two BYMORE embroidery-floss kits, short pre-cut ordinary-floss lengths, named snack bags, planning cards, tested compatible needles/threaders/snips, needle landing trays or pincushions, and a visible opening needle count.</li><li>Prepare paper-grid backups because 40 blanks provide no replacement margin.</li><li>Keep embroidery floss physically separate from conductive thread and all powered Circuit Lab materials.</li><li>Run four 25-minute rotations: Future Stamp; combined LED/conductive-thread Circuit Lab; micro:bit; NeoPixel. Count needles and check power-off status during every three-minute transition.</li></ul><h2 style="color:#ef6a74;">October 13 Glow Up Your Badge setup</h2><ul><li>Keep the district activity theme-neutral and separate from Stauffer project work.</li><li>Do not finalize kit parts or publish exact student wiring/orientation directions until the chosen prototype passes the 10–12 minute novice build and 90–95% normal-success targets.</li><li>Prepare one tested kit per confirmed participant plus 10–15% spare consumable electronics; keep known-good swaps and the inspect bin mentor-controlled.</li><li>Assign a lead/timekeeper, build support, troubleshooting/swap lead, and reset lead when staffing allows.</li><li>Use the exact 0:00–20:00 flow in the website mentor plan. Complete the photo reflection later, not during workshop time.</li></ul><h2 style="color:#168b88;">Use before each lunch checkpoint</h2><ol><li>Review Canvas submissions in advance.</li><li>Assign green, yellow, or red status.</li><li>Prepare one named revision for yellow projects.</li><li>Prioritize red projects for mentor conferences.</li><li>Prepare ingredient-labeled treats and nonfood choices.</li></ol>
 <p><strong>Scheduling principle:</strong> do not depend on whole-program Saturday workdays. Use targeted school-day, lunch, advisory, or supervised after-school support when available.</p>
 '@;
     Links=@(@{Label='Open the full mentor playbook';Url="$baseUrl/mentor-lesson-plans.html"},@{Label='Open lunch checkpoints';Url="$baseUrl/lunch-checkpoints.html"},@{Label='Open the roadmap';Url="$baseUrl/program-roadmap.html"})
@@ -327,7 +342,7 @@ $pages = @(
     Slug='canvas-launch-checklist'; Title='Canvas Launch Checklist'; Eyebrow='Mentor planning — unpublished module';
     Lede='Complete these course-specific decisions after import and before publishing to students.';
     Content=@'
-<ol><li>Confirm the five full workdays and three lunch checkpoints.</li><li>Review module dates, names, Room 14 schedule, and the invitation-only December 2 Project Rescue lunch.</li><li>Add final due dates and availability dates to all eight assignments, including October 19 for the Design Ready package if approved.</li><li>Confirm whether every assignment remains 10 points or uses a different grading plan.</li><li>Review allowed file types and media size limits on student iPads.</li><li>Add district-required policies, accommodations, food-reward guidance, and contact information.</li><li>Test every website button and assignment in Student View.</li><li>Publish pages, assignments, and modules only after the audit.</li><li>Publish the course when enrollment and communication are ready.</li></ol>
+<ol><li>Confirm the five full workdays, October 13 district kickoff, and three lunch checkpoints.</li><li>Review module dates, names, Room 14 schedule, and the invitation-only December 2 Project Rescue lunch.</li><li>Add final due dates and availability dates to the eight graded assignments, including October 19 for the Design Ready package if approved.</li><li>Schedule the 0-point Kickoff Reflection after October 13; excuse non-attendees and keep it out of the final grade.</li><li>Keep the Glow Up Your Badge module unpublished until the physical badge kit, orientation card, 20-minute flow, and spare plan pass the prototype gate.</li><li>Confirm whether the eight graded assignments remain 10 points or use a different grading plan.</li><li>Review allowed file types and media size limits on student iPads.</li><li>Add district-required policies, accommodations, food-reward guidance, and contact information.</li><li>Test every website button and all nine assignments in Student View.</li><li>Publish pages, assignments, and modules only after the audit.</li><li>Publish the course when enrollment and communication are ready.</li></ol>
 '@;
     Links=@(@{Label='Open the student website';Url="$baseUrl/index.html"})
   }
@@ -337,50 +352,58 @@ $assignments = @(
   [ordered]@{
     Slug='checkpoint-1-proposal'; Title='Checkpoint 1: Approved Project Proposal'; Points=10; Position=1; Guide="$baseUrl/canvas-checkpoint-1.html";
     Content=@'
-<h2 style="color:#168b88;">Submit</h2><ul><li>Future user, need, identity, or opportunity</li><li>Three distinct ideas and evidence-based selection</li><li>Complete labeled sketch(es), materials, and system behavior</li><li>Safety, comfort/stability, access, and repair plan</li><li>First prototype question and success condition</li><li>Mentor approval status</li></ul>
-<p><strong>Wearable:</strong> one individual proposal covers both the LED denim shirt and programmable bucket hat.</p><p><strong>Robotics:</strong> submit one shared team packet plus an individual reflection from each partner.</p>
+<h2 style="color:#168b88;">Submit</h2><ul><li>Future user, need, identity, or opportunity</li><li>Three distinct ideas and evidence-based selection</li><li>Complete labeled sketch(es), materials, and system behavior</li><li>Pathway technology-exploration evidence with short captions</li><li>Safety, comfort/stability, access, and repair plan</li><li>First prototype question and success condition</li><li>Mentor approval status</li></ul>
+<p><strong>Wearable:</strong> one individual proposal covers both the LED denim shirt and programmable bucket hat. In that same proposal or Canvas submission, include: a complete or meaningful in-progress Future Stamp photo; one combined LED/conductive-thread Circuit Lab photo; one micro:bit test photo or screenshot; one NeoPixel test photo; and short captions stating what was tried, what happened, and what was learned. The stamp caption also explains the symbol and how it may inform the proposal. Stamp completion and craftsmanship are not the mentor-approval gate.</p><p><strong>Robotics:</strong> submit one shared team packet plus an individual reflection from each partner.</p>
 '@
   },
   [ordered]@{
-    Slug='prototype-evidence'; Title='Phase 2: Design Ready Package'; Points=10; Position=2; Guide="$baseUrl/phase-2-prototype.html";
+    Slug='kickoff-glow-up-badge-reflection'; Title='Kickoff Reflection — Glow Up Your Badge'; Points=0; Position=2; State='unpublished'; OmitFromFinalGrade=$true; Guide="$baseUrl/glow-up-your-badge.html";
+    Content=@'
+<h2 style="color:#168b88;">Complete after the event</h2><p>This short documentation task should take five minutes or less after the kickoff or during a later class/advisory period. Do not use the 20-minute workshop rotation for a long Canvas submission.</p>
+<ul><li>Upload one clear photo of your finished light-up badge.</li><li><strong>What made your LED light?</strong></li><li><strong>What did you do when something did not work?</strong></li><li><strong>What is one thing you learned from another Femineers school or activity today?</strong></li></ul>
+<p><strong>Attendance:</strong> this is a 0-point, formative event reflection. Students who did not attend should follow the teacher’s alternate or excused-work direction rather than recreate the electrical activity independently.</p>
+'@
+  },
+  [ordered]@{
+    Slug='prototype-evidence'; Title='Phase 2: Design Ready Package'; Points=10; Position=3; Guide="$baseUrl/phase-2-prototype.html";
     Content=@'
 <h2 style="color:#168b88;">Submit by Monday, October 19</h2><ul><li>Approved proposal and every requested revision</li><li>Labeled project drawing</li><li>Wearable circuit diagram or Robotics input → decision → at least two outputs → reset system map</li><li>Storyboard or lighting sequence</li><li>Materials and fabrication request</li><li>Tinkercad link, STL, or SVG when needed</li><li>One prototype question, observable success condition, and three-trial plan for November 16</li><li>Individual contribution, concern, and next-action reflection</li></ul>
 <p><strong>October 21 lunch demonstration:</strong> show the evidence in sixty seconds, explain one important decision, name the first November test, and state the next action. Robotics partners both speak and explain different parts.</p>
 '@
   },
   [ordered]@{
-    Slug='checkpoint-2-build-progress'; Title='Checkpoint 2: Prototype + Build Progress #1'; Points=10; Position=3; Guide="$baseUrl/build-progress-evidence.html";
+    Slug='checkpoint-2-build-progress'; Title='Checkpoint 2: Prototype + Build Progress #1'; Points=10; Position=4; Guide="$baseUrl/build-progress-evidence.html";
     Content=@'
 <h2 style="color:#168b88;">Submit</h2><ul><li>Prototype question and success condition</li><li>Three-trial result, one named change, and matching retest evidence</li><li>Mentor clearance or documented blocker</li><li>Overall project photo</li><li>Close-up of the most important completed construction</li><li>Comparison with the October Design Ready plan</li><li>Meaningful construction change and reason</li><li>Status: on track, targeted repair, or blocked</li><li>Exact first December test or repair</li></ul>
 '@
   },
   [ordered]@{
-    Slug='phase-4-mid-build'; Title='Phase 4: Mid-Build Test + January Plan'; Points=10; Position=4; Guide="$baseUrl/mid-build-evidence.html";
+    Slug='phase-4-mid-build'; Title='Phase 4: Mid-Build Test + January Plan'; Points=10; Position=5; Guide="$baseUrl/mid-build-evidence.html";
     Content=@'
 <h2 style="color:#168b88;">Submit</h2><ul><li>Starting-condition photo before repair</li><li>Named subsystem and observable success condition</li><li>Honest first result</li><li>One controlled change</li><li>Fair retest and before/after explanation</li><li>Current blocker and actionable January first step</li><li>Power status, loose parts, code backup, and storage location</li><li>Mentor winter-storage approval</li></ul>
 '@
   },
   [ordered]@{
-    Slug='checkpoint-3-redesign'; Title='Checkpoint 3: Test, Learn, Redesign'; Points=10; Position=5; Guide="$baseUrl/test-learn-redesign.html";
+    Slug='checkpoint-3-redesign'; Title='Checkpoint 3: Test, Learn, Redesign'; Points=10; Position=6; Guide="$baseUrl/test-learn-redesign.html";
     Content=@'
 <h2 style="color:#168b88;">Submit</h2><ul><li>Complete-system success condition written before testing</li><li>Baseline from setup through safe reset/shutdown</li><li>Specific evidence and learning claim</li><li>One meaningful redesign and reason</li><li>Fair retest under the original condition</li><li>Conclusion: better, worse, unchanged, or still uncertain</li><li>Critical, important, and optional February punch list</li><li>Mentor readiness status</li></ul>
 <p>Robotics teams include shared evidence and an individual contribution/learning response from each partner.</p>
 '@
   },
   [ordered]@{
-    Slug='checkpoint-4-gala-ready'; Title='Checkpoint 4: Gala Ready'; Points=10; Position=6; Guide="$baseUrl/gala-ready-evidence.html";
+    Slug='checkpoint-4-gala-ready'; Title='Checkpoint 4: Gala Ready'; Points=10; Position=7; Guide="$baseUrl/gala-ready-evidence.html";
     Content=@'
 <h2 style="color:#168b88;">Submit</h2><ul><li>Final overall and labeled detail photos</li><li>Mentor inspection status</li><li>Two passing reliability trials and one complete demonstration video</li><li>Final project card and 45-second engineering explanation</li><li>Safe backup or modified demonstration</li><li>Final code backup name</li><li>Setup, reset/shutdown, pack-down, labels, and inventory</li></ul>
 '@
   },
   [ordered]@{
-    Slug='stauffer-gala-reflection'; Title='Checkpoint 5: Stauffer Gala Reflection'; Points=10; Position=7; Guide="$baseUrl/program-roadmap.html";
+    Slug='stauffer-gala-reflection'; Title='Checkpoint 5: Stauffer Gala Reflection'; Points=10; Position=8; Guide="$baseUrl/program-roadmap.html";
     Content=@'
 <h2 style="color:#168b88;">Respond individually</h2><ol><li>What worked reliably with real visitors?</li><li>What failure, confusion, comfort issue, or unexpected use did you observe?</li><li>What evidence supports one focused change before the District Gala?</li><li>What will you keep exactly the same?</li><li>What did you learn about presenting engineering work publicly?</li></ol><p>Include one approved photo, short video, observation record, or visitor-response note when available.</p>
 '@
   },
   [ordered]@{
-    Slug='final-portfolio-reflection'; Title='Final Portfolio + District Gala Reflection'; Points=10; Position=8; Guide="$baseUrl/program-roadmap.html";
+    Slug='final-portfolio-reflection'; Title='Final Portfolio + District Gala Reflection'; Points=10; Position=9; Guide="$baseUrl/program-roadmap.html";
     Content=@'
 <h2 style="color:#168b88;">Submit your strongest evidence</h2><ul><li>Approved proposal</li><li>Prototype and first test</li><li>Major-build progress</li><li>Most important failure or challenge</li><li>Evidence-based redesign and retest</li><li>Final project and public presentation</li></ul>
 <h2 style="color:#168b88;">Reflect individually</h2><ol><li>How did your idea change from proposal to final project?</li><li>Which skill or engineering habit improved most?</li><li>How did you respond when evidence disagreed with your expectation?</li><li>What did you contribute independently or to your team?</li><li>What future interest, identity, or possibility do you see differently now?</li></ol>
@@ -401,6 +424,10 @@ $modules = @(
     @{Type='Page';Ref='phase-1-tools';Title='Meet the Technology'},
     @{Type='Page';Ref='phase-1-proposal';Title='Prepare Your Approved Design Proposal'},
     @{Type='Assignment';Ref='checkpoint-1-proposal';Title='Checkpoint 1: Approved Project Proposal'}
+  )},
+  [ordered]@{Slug='district-kickoff';Title='DUSD Femineers Kickoff — Glow Up Your Badge — October 13';State='unpublished';Items=@(
+    @{Type='Page';Ref='kickoff-glow-up-badge';Title='Glow Up Your Badge'},
+    @{Type='Assignment';Ref='kickoff-glow-up-badge-reflection';Title='Kickoff Reflection — Glow Up Your Badge'}
   )},
   [ordered]@{Slug='phase-2';Title='Phase 2 — Arrive Ready to Build — October Canvas + October 21 Lunch';State='active';Items=@(
     @{Type='Page';Ref='phase-2-overview';Title='Phase 2 Design Ready Overview'},
@@ -474,14 +501,17 @@ foreach ($assignment in $assignments) {
   $folder = Join-Path $buildRoot $id
   New-Item -ItemType Directory -Path $folder -Force | Out-Null
   Write-Utf8 (Join-Path $folder 'body.html') (New-AssignmentHtml $assignment)
+  $omitFromFinalGradeXml = if ($assignment.Contains('OmitFromFinalGrade') -and $assignment.OmitFromFinalGrade) { '  <omit_from_final_grade>true</omit_from_final_grade>' } else { '' }
+  $assignmentState = if ($assignment.Contains('State')) { $assignment.State } else { 'active' }
   $settings = @"
 <?xml version="1.0" encoding="UTF-8"?>
 <assignment identifier="$id" xmlns="$canvasNamespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="$canvasNamespace $canvasSchema">
   <title>$(ConvertTo-XmlText $assignment.Title)</title>
   <assignment_group_identifierref>$assignmentGroupId</assignment_group_identifierref>
-  <workflow_state>active</workflow_state>
+  <workflow_state>$assignmentState</workflow_state>
   <points_possible>$($assignment.Points)</points_possible>
   <grading_type>points</grading_type>
+$omitFromFinalGradeXml
   <submission_types>online_text_entry,online_url,online_upload,media_recording</submission_types>
   <position>$($assignment.Position)</position>
   <peer_reviews>false</peer_reviews>
