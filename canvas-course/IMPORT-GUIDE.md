@@ -4,7 +4,7 @@
 
 `Stauffer-Femineers-Limitless-2026-27.imscc`
 
-Content revision: **2026-08-26 — Stamp from the Future added to Phase 1; Glow Up Your Badge added as a separate, unpublished October 13 district-event module with a 0-point reflection; novice-mentor prototype, rehearsal, and detailed lesson guidance expanded.**
+Content revision: **2026-08-27 — September 14 pathway rotations expanded into exact novice-mentor scripts: four Wearables stations and four sequential, fixed-kit Hummingbird challenges; Phase 1 evidence and mentor guidance synchronized.**
 
 This Canvas-flavored Common Cartridge course export contains:
 
@@ -36,10 +36,10 @@ Update the existing items in place instead:
 
 1. **Safety, Supplies, and Evidence Rules** — add wooden-blank inspection, needle count-in/count-out, separate needle storage, and the ordinary-floss/non-powered rule.
 2. **Phase 1: Imagine the Future** — add the Future Stamp as Wearables exploration evidence, not a third final wearable.
-3. **Meet the Technology** — use the four stations: Future Stamp; combined LED/conductive-thread Circuit Lab; micro:bit; NeoPixel.
+3. **Meet the Technology** — update the four Wearables stations and add the four sequential Robotics evidence products: connection/reset; three input readings plus threshold; two outputs; complete input → decision → two outputs → reset interaction.
 4. **Prepare Your Approved Design Proposal** — require pathway technology-exploration evidence and allow the stamp symbol to inform the shared shirt-and-hat theme.
-5. **Checkpoint 1: Approved Project Proposal** — require the four Wearables evidence items and captions inside the same submission; do not create a separate stamp assignment or grade stamp craftsmanship as the approval gate.
-6. **Mentor Lesson-Plan Playbook** — add the September 14 setup, material separation, rotation timing, and needle-accounting procedure.
+5. **Checkpoint 1: Approved Project Proposal** — require the four Wearables evidence items and captions plus the four shared Robotics evidence products inside the existing pathway submission; do not create a new technology-rotation assignment.
+6. **Mentor Lesson-Plan Playbook** — add the exact September 14 rotation timing, right-sized Wearables tasks, needle/power accounting, and fixed-kit Robotics setup. Robotics partners stay at one labeled table and switch Driver/Navigator roles; Hummingbird hardware does not rotate.
 
 Preserve the existing assignment’s due and availability dates, points, submission types, attempts, rubrics, student submissions, and grades. Back up/export the course before any selective re-import. Keep the Phase 1 module structure and item order unchanged.
 
