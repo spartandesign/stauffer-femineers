@@ -4,7 +4,7 @@
 
 `Stauffer-Femineers-Limitless-2026-27.imscc`
 
-Content revision: **2026-08-26 — Stamp from the Future added to Phase 1; Glow Up Your Badge added as a separate, unpublished October 13 district-event module with a 0-point reflection.**
+Content revision: **2026-08-26 — Stamp from the Future added to Phase 1; Glow Up Your Badge added as a separate, unpublished October 13 district-event module with a 0-point reflection; novice-mentor prototype, rehearsal, and detailed lesson guidance expanded.**
 
 This Canvas-flavored Common Cartridge course export contains:
 
@@ -51,8 +51,8 @@ Do not re-import the full package solely to add the October 13 activity. Add the
 2. Add an unpublished page named **Glow Up Your Badge** using the builder/source wording and link it to `glow-up-your-badge.html`.
 3. Add an unpublished, 0-point assignment named **Kickoff Reflection — Glow Up Your Badge**. Allow the normal online submission choices, omit it from the final grade, and leave the due date unset until the post-event reflection time is confirmed.
 4. Require one finished-badge photo and the three short reflection answers. Excuse non-attendees or provide a non-electrical alternative; do not direct students to recreate the circuit independently.
-5. Update the existing **Program Roadmap and Important Dates**, **Mentor Lesson-Plan Playbook**, and **Canvas Launch Checklist** in place.
-6. Keep the new module, page, and assignment unpublished until the final physical badge kit passes the 10–12 minute novice build, 20-minute rotation, safety, rapid-reset, and 90–95% normal-success targets.
+5. Update the existing **Program Roadmap and Important Dates**, **Mentor Lesson-Plan Playbook**, and **Canvas Launch Checklist** in place. The mentor playbook should direct mentors to the website’s full circuit primer, prototype record, mentor-only candidate sample, photographed working-example process, rehearsal timeline, detailed 20-minute agenda, and rapid troubleshooting plan.
+6. Keep the new module, page, and assignment unpublished until the final physical badge kit has a mentor-made working example, exact parts record, photographed orientation card, confirmed headcount and spares, and passed 10–12 minute novice build, 20-minute rotation, safety, wear/reliability, rapid-reset, and 90–95% normal-success tests.
 
 Preserve every existing module, module item, assignment, and page identifier. Do not insert the kickoff items into Phase 2; the event remains a separate, theme-neutral module.
 
