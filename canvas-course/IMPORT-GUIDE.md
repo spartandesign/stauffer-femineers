@@ -4,7 +4,7 @@
 
 `Stauffer-Femineers-Limitless-2026-27.imscc`
 
-Content revision: **2026-08-27 — September 14 pathway rotations expanded into exact novice-mentor scripts: four Wearables stations and four sequential, fixed-kit Hummingbird challenges; Phase 1 evidence and mentor guidance synchronized.**
+Content revision: **2026-08-27 — novice-mentor runbooks expanded for November 16, December 2, December 7, January 25, and February 22 with working-example rehearsals, exact release gates, controlled troubleshooting, Project Rescue triage, reliability/backup decisions, and low-paper studio-tool routing.**
 
 This Canvas-flavored Common Cartridge course export contains:
 
@@ -39,9 +39,11 @@ Update the existing items in place instead:
 3. **Meet the Technology** — update the four Wearables stations and add the four sequential Robotics evidence products: connection/reset; three input readings plus threshold; two outputs; complete input → decision → two outputs → reset interaction.
 4. **Prepare Your Approved Design Proposal** — require pathway technology-exploration evidence and allow the stamp symbol to inform the shared shirt-and-hat theme.
 5. **Checkpoint 1: Approved Project Proposal** — require the four Wearables evidence items and captions plus the four shared Robotics evidence products inside the existing pathway submission; do not create a new technology-rotation assignment.
-6. **Mentor Lesson-Plan Playbook** — add the exact September 14 rotation timing, right-sized Wearables tasks, needle/power accounting, and fixed-kit Robotics setup. Robotics partners stay at one labeled table and switch Driver/Navigator roles; Hummingbird hardware does not rotate.
+6. **Mentor Lesson-Plan Playbook** — retain the September 14 and October 13 preparation, then add the linked detailed runbooks for November 16, December 2, December 7, January 25, and February 22. Include the mentor-made pathway examples, safe prepared faults, live-test capacity gates, Project Rescue statuses, restore/integrate/retest sequence, two-trial Gala rule, and modified-demonstration decisions. Add the low-paper Print Center link and explain that mentors sleeve reusable pages, print only the named student/team or project pages, complete them during program time, and do not grade or assign them as homework.
 
 Preserve the existing assignment’s due and availability dates, points, submission types, attempts, rubrics, student submissions, and grades. Back up/export the course before any selective re-import. Keep the Phase 1 module structure and item order unchanged.
+
+The Print Center and expanded runbooks are website resources linked from the existing unpublished Mentor Planning module; they do not require a new Canvas page or assignment. In an already imported course, update the current **Mentor Lesson-Plan Playbook**, the **Phase 4 Overview**, and the Phase 4 module title in place rather than importing the rebuilt package again. Preserve all student work, grades, dates, and course-specific edits.
 
 ### Add Glow Up Your Badge to an existing course
 
@@ -49,7 +51,7 @@ Do not re-import the full package solely to add the October 13 activity. Add the
 
 1. Create an unpublished module named **DUSD Femineers Kickoff — Glow Up Your Badge — October 13**.
 2. Add an unpublished page named **Glow Up Your Badge** using the builder/source wording and link it to `glow-up-your-badge.html`.
-3. Add an unpublished, 0-point assignment named **Kickoff Reflection — Glow Up Your Badge**. Allow the normal online submission choices, omit it from the final grade, and leave the due date unset until the post-event reflection time is confirmed.
+3. Add an unpublished, 0-point assignment named **Kickoff Reflection — Glow Up Your Badge**. Allow the normal online submission choices, omit it from the final grade, and leave the completion window unset until a supervised post-event reflection time is confirmed.
 4. Require one finished-badge photo and the three short reflection answers. Excuse non-attendees or provide a non-electrical alternative; do not direct students to recreate the circuit independently.
 5. Update the existing **Program Roadmap and Important Dates**, **Mentor Lesson-Plan Playbook**, and **Canvas Launch Checklist** in place. The mentor playbook should direct mentors to the website’s full circuit primer, prototype record, mentor-only candidate sample, photographed working-example process, rehearsal timeline, detailed 20-minute agenda, and rapid troubleshooting plan.
 6. Keep the new module, page, and assignment unpublished until the final physical badge kit has a mentor-made working example, exact parts record, photographed orientation card, confirmed headcount and spares, and passed 10–12 minute novice build, 20-minute rotation, safety, wear/reliability, rapid-reset, and 90–95% normal-success tests.
@@ -62,12 +64,12 @@ Preserve every existing module, module item, assignment, and page identifier. Do
 - Project modules and items: published in the package
 - DUSD Kickoff module, page, and reflection: unpublished pending prototype approval
 - Mentor Planning module: unpublished
-- Eight graded assignments: 10 points each
+- Eight evidence checkpoints: 10 points each for completion/evidence tracking, not project polish
 - Kickoff reflection: 0 points and omitted from the final grade
 - Assignment group: Femineers Evidence
 - Submission choices: text entry, URL, file upload, or media recording
 - Attempts: unlimited
-- Due dates and availability dates: unset
+- Studio/checkpoint completion windows and availability dates: unset
 - Module progress: sequential
 - Page editing: teachers only
 - Time zone: America/Los_Angeles
@@ -80,9 +82,9 @@ Keep the receiving Canvas shell unpublished during the audit. If the shell is al
 2. Confirm the five full workdays: September 14, November 16, December 7, January 25, and February 22.
 3. Confirm the October 13 district kickoff at Griffiths, including Stauffer’s 20-minute Glow Up Your Badge station, final kit, rotation headcount, staffing, and post-event reflection time.
 4. Confirm the lunch checkpoints: October 21, January 13, and February 10, plus the invitation-only December 2 Project Rescue lunch.
-5. Add due dates and availability dates to the eight graded assignments. October 19 is the recommended Design Ready deadline.
+5. Add due/availability dates only for the approved in-program studio or checkpoint windows. October 19 is the recommended Design Ready completion date; arrange any catch-up at school with a mentor.
 6. Schedule the 0-point kickoff reflection after the event and confirm the absence/alternative policy.
-7. Confirm whether the eight graded assignments remain 10 points.
+7. Keep the eight checkpoints at 10 points for completion/evidence tracking, or apply the district grading policy consistently across every point value and explanation.
 8. Confirm allowed file types and media-size limits for student iPad submissions.
 9. Add district-required attendance, behavior, accommodations, communication, grading, and food-reward guidance.
 10. Push the matching website pages to GitHub.
