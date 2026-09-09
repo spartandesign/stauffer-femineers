@@ -11,7 +11,7 @@ These ten PowerPoint decks are the shared-screen facilitation layer for the Limi
 
 ## Deck order
 
-1. September 14 — Imagine the Future
+1. September 24 — Imagine the Future
 2. October 13 — Glow Up Your Badge
 3. October 21 — Design Ready Lunch Checkpoint
 4. November 16 — Design What’s Next
