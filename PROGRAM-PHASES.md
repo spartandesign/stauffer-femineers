@@ -4,7 +4,7 @@ The Stauffer sequence uses five full school-day work sessions, three Wednesday l
 
 | Phase | Date and format | Title | Main purpose | Canvas evidence |
 |---|---|---|---|---|
-| 1 | Monday, September 14, 2026 · full workday | Imagine the Future | Explore, brainstorm, create a proposal, and gain approval | Checkpoint 1: approved project proposal |
+| 1 | Thursday, September 24, 2026 · full workday | Imagine the Future | Explore, brainstorm, create a proposal, and gain approval | Checkpoint 1: approved project proposal |
 | 2 | October · Canvas plus Wednesday, October 21 lunch | Arrive Ready to Build | Complete the labeled design, system diagram, storyboard, materials request, optional Tinkercad file, and three-trial prototype plan | Design Ready package and individual reflection |
 | 3 | Monday, November 16, 2026 · full workday | Design What’s Next | Build and test a quick physical prototype, then use the evidence to begin major construction | Prototype result plus Checkpoint 2: Build Progress #1 |
 | 4 | Monday, December 7, 2026 · full workday | Build & Test | Continue construction, troubleshoot, and prepare safe winter storage | Mid-build test evidence and restart plan |
@@ -15,11 +15,12 @@ The Stauffer sequence uses five full school-day work sessions, three Wednesday l
 
 ## Checkpoints and logistics
 
-- Full workdays: September 14, November 16, December 7, January 25, and February 22.
-- Every full workday meets in Room 14 from 8:00 a.m.–2:41 p.m. and follows the Monday bell schedule.
-- Snack: 9:38–9:51 a.m.
-- Lunch: 12:29–12:59 p.m.
-- Full-group lunch checkpoints: October 21, January 13, and February 10 in Room 14 from 12:29–12:59 p.m.
+- Full workdays: September 24, November 16, December 7, January 25, and February 22.
+- All full workdays meet in Room 14 from 8:00 a.m.–2:41 p.m. September 24 follows Thursday bells; the four later workdays follow Monday bells.
+- September 24: snack 9:25–9:38 a.m.; lunch 12:42–1:12 p.m.
+- Later Monday snack: 9:38–9:51 a.m.
+- Later Monday lunch: 12:29–12:59 p.m.
+- Full-group lunch checkpoints: October 21, January 13, and February 10 in Room 14 from 11:37 a.m.–12:07 p.m.
 - Invitation-only Project Rescue lunch: December 2 for yellow and red projects.
 - October submissions are due October 19 and reviewed by mentors October 20.
 - Complete, on-time demonstrations earn a choice from the Milestone Treat Cart, with ingredient-labeled and nonfood options.
@@ -38,3 +39,7 @@ The Stauffer sequence uses five full school-day work sessions, three Wednesday l
 ## Saturday scheduling principle
 
 The program should not depend on Saturday workdays for completion. Previous Saturday sessions had very low attendance. If individual students need catch-up support, use targeted school-day, lunch, advisory, or supervised after-school options when available rather than scheduling a required whole-program Saturday.
+
+## Room allocation
+
+36 students use six home tables: 18 individual Wearables students at W1–W3 (six per table), and 18 Creative Robotics students in nine pairs at R1–R3 (three pairs per table). Jennifer leads Wearables, Stephanie leads Robotics, and Tri supports technology. Table assignments do not imply six simultaneously staffed stations.

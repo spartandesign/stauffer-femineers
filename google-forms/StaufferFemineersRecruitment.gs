@@ -11,7 +11,7 @@ const RECRUITMENT = Object.freeze({
   theme: 'Limitless: Designed by Her',
   window: 'August 18–September 4, 2026',
   dueDate: 'September 4, 2026',
-  capacity: 50,
+  capacity: 36,
   siteUrl: 'https://spartandesign.github.io/stauffer-femineers/recruitment.html',
   roadmapUrl: 'https://spartandesign.github.io/stauffer-femineers/program-roadmap.html',
   propertyKey: 'STAUFFER_FEMINEERS_RECRUITMENT_2026_27',
@@ -27,10 +27,10 @@ const DENIM_SIZE_RULE =
   'DENIM SIZING: A denim-shirt size is required from second-year members and third-year members choosing Wearable Technology. It is not needed for first-year members or third-year members choosing Creative Robotics.';
 
 const PULL_OUT_COMMITMENT =
-  'SCHOOL-DAY COMMITMENT: Students will be pulled from regular classes for five full workdays in Room 14 from 8:00 a.m.–2:41 p.m. Students also attend three Wednesday lunch checkpoints in Room 14 from 12:29–12:59 p.m. Students must check with teachers, collect assignments and notes, and complete all missed work by each teacher’s deadline.';
+  'SCHOOL-DAY COMMITMENT: Students will be pulled from regular classes for five full workdays in Room 14 from 8:00 a.m.–2:41 p.m. Students also attend three Wednesday lunch checkpoints in Room 14 from 11:37 a.m.–12:07 p.m. Students must check with teachers, collect assignments and notes, and complete all missed work by each teacher’s deadline.';
 
 const WORKDAYS = Object.freeze([
-  'Monday, September 14, 2026 — Imagine the Future',
+  'Thursday, September 24, 2026 — Imagine the Future',
   'Monday, November 16, 2026 — Design What’s Next',
   'Monday, December 7, 2026 — Build & Test',
   'Monday, January 25, 2027 — Build the Future',
@@ -223,14 +223,14 @@ function updateLiveFormsForFiveWorkdaysAndLunchCheckpoints() {
     'We understand that the student must check with teachers, collect assignments and notes, and complete missed work by each teacher’s deadline.',
     'We will communicate attendance conflicts as early as possible.',
     'We understand that projects require safe tool use, cleanup, documentation, and public presentation.',
-    'We understand that space is limited to 50 students and submitting forms does not guarantee placement.',
+    'We understand that space is limited to 36 students and submitting forms does not guarantee placement.',
   ]);
   updatePageBreakHelpText_(
     familyForm,
     'Schedule and attendance',
-    'All five workdays are in Room 14 from 8:00 a.m.–2:41 p.m. Snack is 9:38–9:51 a.m.; lunch is 12:29–12:59 p.m.\n\n' +
+    'All five workdays are in Room 14 from 8:00 a.m.–2:41 p.m. September 24 uses Thursday bells: snack 9:25–9:38 a.m.; lunch 12:42–1:12 p.m. Later Monday workdays use snack 9:38–9:51 a.m.; lunch 12:29–12:59 p.m.\n\n' +
       WORKDAYS.join('\n') +
-      '\n\nWednesday lunch checkpoints — Room 14, 12:29–12:59 p.m.:\n' +
+      '\n\nWednesday lunch checkpoints — Room 14, 11:37 a.m.–12:07 p.m.:\n' +
       LUNCH_CHECKPOINTS.join('\n') +
       '\n\nAdditional events:\n' +
       EVENTS.join('\n')
@@ -556,9 +556,9 @@ function buildFamilyForm_(spreadsheetId) {
   form.addPageBreakItem()
     .setTitle('Schedule and attendance')
     .setHelpText(
-      'All five workdays are in Room 14 from 8:00 a.m.–2:41 p.m. Snack is 9:38–9:51 a.m.; lunch is 12:29–12:59 p.m.\n\n' +
+      'All five workdays are in Room 14 from 8:00 a.m.–2:41 p.m. September 24 uses Thursday bells: snack 9:25–9:38 a.m.; lunch 12:42–1:12 p.m. Later Monday workdays use snack 9:38–9:51 a.m.; lunch 12:29–12:59 p.m.\n\n' +
       WORKDAYS.join('\n') +
-      '\n\nWednesday lunch checkpoints — Room 14, 12:29–12:59 p.m.:\n' +
+      '\n\nWednesday lunch checkpoints — Room 14, 11:37 a.m.–12:07 p.m.:\n' +
       LUNCH_CHECKPOINTS.join('\n') +
       '\n\nAdditional events:\n' +
       EVENTS.join('\n')
@@ -570,7 +570,7 @@ function buildFamilyForm_(spreadsheetId) {
     'We understand that the student must arrange and complete missed classwork.',
     'We will communicate attendance conflicts as early as possible.',
     'We understand that projects require safe tool use, cleanup, documentation, and public presentation.',
-    'We understand that space is limited to 50 students and submitting forms does not guarantee placement.',
+    'We understand that space is limited to 36 students and submitting forms does not guarantee placement.',
   ]);
 
   form.addPageBreakItem()
@@ -817,7 +817,7 @@ function pullOutScheduleText_() {
 
 function lunchCheckpointScheduleText_() {
   return [
-    'THREE WEDNESDAY LUNCH CHECKPOINTS — Room 14, 12:29–12:59 p.m.',
+    'THREE WEDNESDAY LUNCH CHECKPOINTS — Room 14, 11:37 a.m.–12:07 p.m.',
     LUNCH_CHECKPOINTS.join('\n'),
     'Students submit the required Canvas deliverables, demonstrate progress, receive a readiness status, and identify the next action.',
   ].join('\n');

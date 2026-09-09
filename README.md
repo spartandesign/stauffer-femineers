@@ -6,6 +6,10 @@ Pathways are organized by participation year: first-year Femineers complete Crea
 
 ## Current release
 
+The entire curriculum shares four navigation links: **Home, My Project, Tutorials, and Mentors**. My Project opens the student's pathway and dated sessions; Tutorials provides a searchable library of the full guides; Mentors provides dated preparation, named roles, and links to the complete playbook. Existing lesson URLs and anchors remain available for Canvas links and bookmarks.
+
+The first workday is Thursday, September 24, 2026, using the supplied Thursday bell schedule. Room 14 holds 36 students at six home tables: W1–W3 for 18 individual Wearables projects and R1–R3 for nine Creative Robotics pairs. Later Monday workdays and Wednesday lunch checkpoints retain their respective bell schedules.
+
 Complete Phases 1–6 student guides and mentor planning resources:
 
 - Home
@@ -18,7 +22,7 @@ Complete Phases 1–6 student guides and mentor planning resources:
 - Mentor Approval
 - Canvas Checkpoint 1
 - Updated five-workday roadmap with three Wednesday lunch checkpoints
-- Stamp from the Future wooden cross-stitch tutorial and four-station September 14 Wearables rotation
+- Stamp from the Future wooden cross-stitch tutorial and full four-activity reference, with the current September 24 agenda on the mentor start page
 - Theme-neutral DUSD Kickoff “Glow Up Your Badge” student guide, 20-minute mentor workshop, and Canvas reflection scaffold
 - Sewable LED Basics student tutorial
 - Conductive Thread Basics student tutorial
@@ -53,6 +57,12 @@ Complete Phases 1–6 student guides and mentor planning resources:
 - Recruitment-page District Femineers Gala spotlight with the Downey High evening showcase, guest speakers, and Culinary Arts hospitality
 
 The site uses plain HTML, CSS, and JavaScript so it can be hosted directly with GitHub Pages without a build step.
+
+## Maintaining the navigation
+
+Edit the session and tutorial data in `scripts/build_navigation.py`, then run `python scripts/build_navigation.py`. It rebuilds the seven entry/error pages and synchronizes navigation on existing lessons without replacing their instructional bodies. Keep lesson edits in their existing HTML files.
+
+Run `python scripts/check_curriculum.py` to check every local link, anchor, and lesson's reachability. During a change, it also compares existing lesson content against Git HEAD. Optional browser verification uses `node scripts/check_navigation.cjs` with Playwright and Microsoft Edge installed; it covers mobile menus, search, dated mentor links, the student guide journey, and access without JavaScript.
 
 ## GitHub Pages
 

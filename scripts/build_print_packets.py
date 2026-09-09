@@ -284,15 +284,15 @@ def finish_pdf(c: canvas.Canvas) -> None:
 
 def build_sept14_mentor_pack() -> None:
     filename = "September-14-Mentor-and-Station-Pack.pdf"
-    c = new_pdf(filename, "September 14 Mentor and Station Pack")
+    c = new_pdf(filename, "September 24 Mentor and Station Pack")
     total = 11
 
     # Page 1 - daily brief
     draw_header(
         c,
-        "September 14 mentor brief",
+        "September 24 mentor brief",
         "Technology Studio at a Glance",
-        "Print pages 1-3 for each working adult; keep this duplex on a clipboard.",
+        "September 24: use mentors.html for the current Thursday agenda and table groups.",
         1,
         total,
         accent=PURPLE,
@@ -305,14 +305,14 @@ def build_sept14_mentor_pack() -> None:
         y,
         PAGE_W - 2 * MARGIN,
         78,
-        "Purpose",
-        "Students are trying technologies before choosing how to use them. The finish line is understanding, not polished work. Honest 'not yet' evidence counts.",
+        "36 students / six home tables",
+        "Jennifer: 18 Wearables at W1-W3. Stephanie: nine Robotics pairs at R1-R3. Tri: technical support. This pack preserves the expanded station scripts; extra live stations require trained supervision. Honest 'not yet' evidence counts.",
         accent=PURPLE,
         fill=PALE_PURPLE,
         body_size=9.2,
     )
     y -= 92
-    y = section_title(c, "Mentor assignments", MARGIN, y, PURPLE)
+    y = section_title(c, "Expanded-model station supervision", MARGIN, y, PURPLE)
     assignments = [
         ["Stamp", "Circuit Lab", "micro:bit", "NeoPixel"],
         ["________________", "________________", "________________", "________________"],
@@ -321,17 +321,17 @@ def build_sept14_mentor_pack() -> None:
     ]
     y = draw_table(c, assignments, MARGIN, y, [136, 136, 136, 136], row_heights=[21, 23, 21, 23], font_size=7.5, header_fill=NAVY, stripe=False)
     y -= 12
-    y = section_title(c, "Schedule", MARGIN, y, TEAL)
+    y = section_title(c, "Expanded rotation model - elapsed minutes", MARGIN, y, TEAL)
     schedule = [
         ["Time", "Wearables", "Robotics", "Safety / understanding gate"],
-        ["9:51-10:16", "Rotation 1", "Challenge 1: identity + reset", "Core action and evidence started"],
-        ["10:16-10:19", "Count, power off, move", "SAFE RESET; switch roles", "Mentor releases transition"],
-        ["10:19-10:44", "Rotation 2", "Challenge 2: input", "Student can show or explain"],
-        ["10:44-10:47", "Count, power off, move", "SAFE RESET; switch roles", "No loose or powered parts"],
-        ["10:47-11:12", "Rotation 3", "Challenge 3: two outputs", "Evidence saved before extension"],
-        ["11:12-11:15", "Count, power off, move", "SAFE RESET; switch roles", "Inspect items labeled"],
-        ["11:15-11:40", "Rotation 4", "Challenge 4: interaction", "Fourth capability check"],
-        ["11:40-11:45", "Evidence + final count", "Evidence + kit inventory", "Ready / inspect / missing reported"],
+        ["0-25 min", "Rotation 1", "Challenge 1: identity + reset", "Core action and evidence started"],
+        ["25-28 min", "Count, power off, move", "SAFE RESET; switch roles", "Mentor releases transition"],
+        ["28-53 min", "Rotation 2", "Challenge 2: input", "Student can show or explain"],
+        ["53-56 min", "Count, power off, move", "SAFE RESET; switch roles", "No loose or powered parts"],
+        ["56-81 min", "Rotation 3", "Challenge 3: two outputs", "Evidence saved before extension"],
+        ["81-84 min", "Count, power off, move", "SAFE RESET; switch roles", "Inspect items labeled"],
+        ["84-109 min", "Rotation 4", "Challenge 4: interaction", "Fourth capability check"],
+        ["109-114 min", "Evidence + final count", "Evidence + kit inventory", "Ready / inspect / missing reported"],
     ]
     y = draw_table(c, schedule, MARGIN, y, [74, 130, 150, 190], font_size=6.8)
     y -= 12
@@ -355,7 +355,7 @@ def build_sept14_mentor_pack() -> None:
     # Page 2 - coaching and readiness
     draw_header(
         c,
-        "September 14 mentor brief",
+        "September 24 mentor brief",
         "Keep It Feeling Like a Studio",
         "Short explanations, hands-on noticing, quick conversation, and safe reset.",
         2,
@@ -450,9 +450,9 @@ def build_sept14_mentor_pack() -> None:
     # Page 3 - master route and transition
     draw_header(
         c,
-        "September 14 mentor brief",
+        "September 24 mentor brief",
         "Master Route, Transition, and Final Count",
-        "Post one copy; keep one copy with the room/time lead.",
+        "Expanded-model groups A-D are activity groups, not Room 14 home-table labels.",
         3,
         total,
         accent=CORAL,
@@ -460,11 +460,11 @@ def build_sept14_mentor_pack() -> None:
     )
     y = CONTENT_TOP
     route = [
-        ["Group", "9:51", "10:19", "10:47", "11:15"],
-        ["W1", "Future Stamp", "Circuit Lab", "micro:bit", "NeoPixel"],
-        ["W2", "Circuit Lab", "micro:bit", "NeoPixel", "Future Stamp"],
-        ["W3", "micro:bit", "NeoPixel", "Future Stamp", "Circuit Lab"],
-        ["W4", "NeoPixel", "Future Stamp", "Circuit Lab", "micro:bit"],
+        ["Group", "Round 1", "Round 2", "Round 3", "Round 4"],
+        ["A", "Future Stamp", "Circuit Lab", "micro:bit", "NeoPixel"],
+        ["B", "Circuit Lab", "micro:bit", "NeoPixel", "Future Stamp"],
+        ["C", "micro:bit", "NeoPixel", "Future Stamp", "Circuit Lab"],
+        ["D", "NeoPixel", "Future Stamp", "Circuit Lab", "micro:bit"],
         ["Robotics", "Controller + reset", "Read input", "Test outputs", "Interaction"],
     ]
     y = draw_table(c, route, MARGIN, y, [68, 119, 119, 119, 119], row_heights=[28, 34, 34, 34, 34, 34], font_size=7.2, alignments={0: "center"})
@@ -480,7 +480,7 @@ def build_sept14_mentor_pack() -> None:
     ]
     y = draw_table(c, transition, MARGIN, y, [74, 132, 166, 172], row_heights=[27, 34, 38, 38, 34, 34], font_size=7.1)
     y -= 14
-    y = section_title(c, "11:40-11:45 final report", MARGIN, y, PURPLE)
+    y = section_title(c, "109-114 min final report", MARGIN, y, PURPLE)
     draw_bullets(
         c,
         [
@@ -500,7 +500,7 @@ def build_sept14_mentor_pack() -> None:
 
     station_pages = [
         {
-            "title": "W1 - Future Stamp",
+            "title": "Activity 1 - Future Stamp",
             "subtitle": "Meaningful progress counts. Ordinary embroidery floss only.",
             "accent": PURPLE,
             "fill": PALE_PURPLE,
@@ -531,7 +531,7 @@ def build_sept14_mentor_pack() -> None:
             "stop": "Lost needle, cracked/splintered blank, blocked hole, or any stitch that requires force.",
         },
         {
-            "title": "W2 - LED + Conductive-Thread Circuit Lab",
+            "title": "Activity 2 - LED + Conductive-Thread Circuit Lab",
             "subtitle": "Prepared powered loop + short unpowered stitch practice.",
             "accent": CORAL,
             "fill": PALE_CORAL,
@@ -562,7 +562,7 @@ def build_sept14_mentor_pack() -> None:
             "stop": "Warmth, odor, damage, exposed crossing, touching paths, or a light that works only when squeezed.",
         },
         {
-            "title": "W3 - micro:bit + MakeCode",
+            "title": "Activity 3 - micro:bit + MakeCode",
             "subtitle": "Prepared A/B/A+B starter on matched W-labeled equipment.",
             "accent": TEAL,
             "fill": PALE_TEAL,
@@ -593,7 +593,7 @@ def build_sept14_mentor_pack() -> None:
             "stop": "Battery connected during USB transfer, premature unplug, mismatched kit, damaged cable/board, or unexpected R firmware.",
         },
         {
-            "title": "W4 - Prepared NeoPixel Preview",
+            "title": "Activity 4 - Prepared NeoPixel Preview",
             "subtitle": "Run and explain first. Code editing is optional after the core pass.",
             "accent": GOLD,
             "fill": PALE_GOLD,
@@ -660,7 +660,7 @@ def build_sept14_mentor_pack() -> None:
     y = CONTENT_TOP
     draw_card(c, MARGIN, y, PAGE_W - 2 * MARGIN, 62, "Roles", "Driver operates. Navigator reads the card, checks ports and safety, predicts, and records. Both partners explain. Switch roles at each transition.", accent=TEAL, fill=PALE_TEAL, body_size=8.6)
     y -= 76
-    y = section_title(c, "Challenge 1 - 9:51-10:16", MARGIN, y, PURPLE)
+    y = section_title(c, "Challenge 1 - 0-25 min", MARGIN, y, PURPLE)
     r1 = [
         ["Min.", "Team action", "Mentor checkpoint"],
         ["0-4", "Name Hummingbird, R micro:bit, BirdBlox, and power-off rule", "Correct system language"],
@@ -673,7 +673,7 @@ def build_sept14_mentor_pack() -> None:
     y -= 12
     draw_card(c, MARGIN, y, PAGE_W - 2 * MARGIN, 68, "SAFE RESET", "1. LED to 0%.   2. Servo to marked ready angle.   3. Stop program.   4. Disconnect BirdBlox.   5. Switch kit power off.", accent=CORAL, fill=PALE_CORAL, body_size=9)
     y -= 82
-    y = section_title(c, "Challenge 2 - 10:19-10:44", MARGIN, y, TEAL)
+    y = section_title(c, "Challenge 2 - 28-53 min", MARGIN, y, TEAL)
     r2 = [
         ["Min.", "Team action", "Mentor checkpoint"],
         ["0-3", "Input reports information; code compares and decides", "Sensing is not acting"],
@@ -688,7 +688,7 @@ def build_sept14_mentor_pack() -> None:
     # Page 9 - outputs and interaction
     draw_header(c, "Reusable Robotics lead card", "R3 + R4 - Outputs and Interaction", "Use only identical prepared boards and mentor-marked servo angles.", 9, total, accent=PURPLE, footer_note="Students do not change wiring, firmware, batteries, terminals, or device assignments during this tour.")
     y = CONTENT_TOP
-    y = section_title(c, "Challenge 3 - 10:47-11:12", MARGIN, y, PURPLE)
+    y = section_title(c, "Challenge 3 - 56-81 min", MARGIN, y, PURPLE)
     r3 = [
         ["Min.", "Team action", "Mentor checkpoint"],
         ["0-4", "Identify LED 1, Servo 1, ports, and motion zone", "Rig secured; roles switched"],
@@ -701,7 +701,7 @@ def build_sept14_mentor_pack() -> None:
     y -= 16
     draw_card(c, MARGIN, y, PAGE_W - 2 * MARGIN, 62, "Say before Challenge 4", "IF the object is closer than our measured threshold, THEN the light turns on AND the pointer moves; OTHERWISE the light turns off AND the pointer returns to ready.", accent=TEAL, fill=PALE_TEAL, body_size=8.7)
     y -= 78
-    y = section_title(c, "Challenge 4 - 11:15-11:40", MARGIN, y, TEAL)
+    y = section_title(c, "Challenge 4 - 84-109 min", MARGIN, y, TEAL)
     r4 = [
         ["Min.", "Team action", "Mentor checkpoint"],
         ["0-4", "Say full IF / THEN / AND / OTHERWISE rule", "Input, decision, two outputs, reset named"],
@@ -712,7 +712,7 @@ def build_sept14_mentor_pack() -> None:
     ]
     y = draw_table(c, r4, MARGIN, y, [48, 300, 196], row_heights=[26] + [39] * 5, font_size=7.0, alignments={0: "center"})
     y -= 14
-    draw_card(c, MARGIN, y, PAGE_W - 2 * MARGIN, 62, "11:40-11:45", "Verify four evidence boxes, both names/contributions, SAFE RESET, disconnect/off, and complete numbered kit inventory.", accent=CORAL, fill=PALE_CORAL, body_size=8.7)
+    draw_card(c, MARGIN, y, PAGE_W - 2 * MARGIN, 62, "109-114 min", "Verify four evidence boxes, both names/contributions, SAFE RESET, disconnect/off, and complete numbered kit inventory.", accent=CORAL, fill=PALE_CORAL, body_size=8.7)
     save_page(c)
 
     # Page 10 - troubleshooting
@@ -744,15 +744,15 @@ def build_sept14_mentor_pack() -> None:
     c.drawString(MARGIN, y, "Station: __________________________  Lead: __________________________  Date: __________")
     y -= 24
     count_data = [["Checkpoint", "Needles out", "Needles in", "Snips/tools", "Power off?", "Initials / note"]]
-    for label in ["Opening", "10:16", "10:44", "11:12", "11:40", "Final 11:45"]:
+    for label in ["Opening", "Round 1", "Round 2", "Round 3", "Round 4", "Final count"]:
         count_data.append([label, "", "", "", "Y / N", ""])
-    y = draw_table(c, count_data, MARGIN, y, [72, 74, 74, 78, 70, 176], row_heights=[30] + [48] * 6, font_size=7.2, alignments={0: "center", 1: "center", 2: "center", 3: "center", 4: "center"})
+    y = draw_table(c, count_data, MARGIN, y, [72, 74, 74, 78, 70, 176], row_heights=[30] + [40] * 6, font_size=7.2, alignments={0: "center", 1: "center", 2: "center", 3: "center", 4: "center"})
     y -= 18
     y = section_title(c, "Inspect / missing record", MARGIN, y, CORAL)
     issue_data = [["Time", "Station / kit", "Item or symptom", "Safe state", "Owner / next action"]]
     for _ in range(5):
         issue_data.append(["", "", "", "", ""])
-    y = draw_table(c, issue_data, MARGIN, y, [52, 98, 168, 92, 134], row_heights=[28] + [44] * 5, font_size=7.0)
+    y = draw_table(c, issue_data, MARGIN, y, [52, 98, 168, 92, 134], row_heights=[28] + [36] * 5, font_size=7.0)
     y -= 16
     draw_card(c, MARGIN, y, PAGE_W - 2 * MARGIN, 56, "Release rule", "Every needle is returned separately; every powered system is off; every numbered kit is complete or explicitly labeled INSPECT / MISSING with an owner.", accent=CORAL, fill=PALE_CORAL, body_size=8.4)
     save_page(c)
@@ -802,11 +802,11 @@ def draw_thumbnail(c: canvas.Canvas, number: int, x: float, y_top: float, width:
 
 
 def build_wearables_student_sheets() -> None:
-    c = new_pdf("September-14-Wearables-Studio-Sheets.pdf", "September 14 Wearables Studio Sheets")
+    c = new_pdf("September-14-Wearables-Studio-Sheets.pdf", "September 24 Wearables Studio Sheets")
     total = 4
 
     # Page 1 - Future Stamp and Circuit Lab
-    draw_header(c, "September 14 wearables passport", "What I Can Make Happen", "Side 1 of the capability passport - carry this through the four studios.", 1, total, accent=PURPLE, footer_note=STUDIO_FOOTER)
+    draw_header(c, "September 24 wearables passport", "What I Can Make Happen", "Side 1 of the capability passport - carry this through the four studios.", 1, total, accent=PURPLE, footer_note=STUDIO_FOOTER)
     y = draw_identity_line(c, CONTENT_TOP)
     draw_card(c, MARGIN, y, PAGE_W - 2 * MARGIN, 54, "How to use this passport", "Try it, notice what happened, and show or explain one piece of evidence. A truthful 'not yet' helps us plan support.", accent=PURPLE, fill=PALE_PURPLE, body_size=8.2)
     y -= 70
@@ -827,7 +827,7 @@ def build_wearables_student_sheets() -> None:
     save_page(c)
 
     # Page 2 - micro:bit and NeoPixel
-    draw_header(c, "September 14 wearables passport", "Inputs, Code, and Light Patterns", "Side 2 of the capability passport - explain what caused what.", 2, total, accent=TEAL, footer_note=STUDIO_FOOTER)
+    draw_header(c, "September 24 wearables passport", "Inputs, Code, and Light Patterns", "Side 2 of the capability passport - explain what caused what.", 2, total, accent=TEAL, footer_note=STUDIO_FOOTER)
     y = draw_identity_line(c, CONTENT_TOP)
     y = section_title(c, "3. micro:bit - an input can trigger a response", MARGIN, y, TEAL)
     y = draw_check_row(c, ["Program ran", "Input worked", "I changed one thing"], MARGIN, y)
@@ -853,7 +853,7 @@ def build_wearables_student_sheets() -> None:
     save_page(c)
 
     # Page 3 - idea canvas
-    draw_header(c, "September 14 wearables idea canvas", "Three Fast Ideas, Then Combine", "Sketch to think. These are possibilities, not promises or polished art.", 3, total, accent=PURPLE, footer_note=STUDIO_FOOTER)
+    draw_header(c, "September 24 wearables idea canvas", "Three Fast Ideas, Then Combine", "Sketch to think. These are possibilities, not promises or polished art.", 3, total, accent=PURPLE, footer_note=STUDIO_FOOTER)
     y = draw_identity_line(c, CONTENT_TOP)
     y = draw_prompt(c, "Future statement or message", MARGIN, y, PAGE_W - 2 * MARGIN, 66, "What do you want someone to notice, feel, understand, or do?", accent=PURPLE, lines=2)
     y -= 15
@@ -876,7 +876,7 @@ def build_wearables_student_sheets() -> None:
     save_page(c)
 
     # Page 4 - build map and conversation
-    draw_header(c, "September 14 wearables idea canvas", "Map the Wearable Before Building", "Use simple labels and arrows. Your mentor conversation matters more than drawing skill.", 4, total, accent=TEAL, footer_note=STUDIO_FOOTER)
+    draw_header(c, "September 24 wearables idea canvas", "Map the Wearable Before Building", "Use simple labels and arrows. Your mentor conversation matters more than drawing skill.", 4, total, accent=TEAL, footer_note=STUDIO_FOOTER)
     y = draw_identity_line(c, CONTENT_TOP)
     y = section_title(c, "Placement map", MARGIN, y, TEAL)
     box_w = (PAGE_W - 2 * MARGIN - 12) / 2
@@ -903,10 +903,10 @@ def build_wearables_student_sheets() -> None:
 
 
 def build_robotics_team_sheets() -> None:
-    c = new_pdf("September-14-Robotics-Team-Studio-Sheets.pdf", "September 14 Robotics Team Studio Sheets")
+    c = new_pdf("September-14-Robotics-Team-Studio-Sheets.pdf", "September 24 Robotics Team Studio Sheets")
     total = 4
 
-    draw_header(c, "September 14 robotics passport", "Identity, Reset, and Input", "Team studio sheet - switch Driver and Navigator every challenge.", 1, total, accent=PURPLE, footer_note=STUDIO_FOOTER)
+    draw_header(c, "September 24 robotics passport", "Identity, Reset, and Input", "Team studio sheet - switch Driver and Navigator every challenge.", 1, total, accent=PURPLE, footer_note=STUDIO_FOOTER)
     y = draw_identity_line(c, CONTENT_TOP, team=True)
     y = draw_prompt(c, "Our numbered kit and device", MARGIN, y, PAGE_W - 2 * MARGIN, 58, "Kit ______  Robot/device name ______  Driver first ______  Navigator first ______", accent=PURPLE, lines=1)
     y -= 14
@@ -931,7 +931,7 @@ def build_robotics_team_sheets() -> None:
     draw_card(c, MARGIN, y, PAGE_W - 2 * MARGIN, 56, "Team checkpoint", "Both teammates can point to the real readings and explain why copying another team's threshold may not work.", accent=CORAL, fill=PALE_CORAL, body_size=8.2)
     save_page(c)
 
-    draw_header(c, "September 14 robotics passport", "Outputs and a Full Interaction", "Use only mentor-marked ports, prepared connections, and safe servo angles.", 2, total, accent=TEAL, footer_note=STUDIO_FOOTER)
+    draw_header(c, "September 24 robotics passport", "Outputs and a Full Interaction", "Use only mentor-marked ports, prepared connections, and safe servo angles.", 2, total, accent=TEAL, footer_note=STUDIO_FOOTER)
     y = draw_identity_line(c, CONTENT_TOP, team=True)
     y = section_title(c, "Challenge 3 - two different outputs", MARGIN, y, TEAL)
     outputs = [
@@ -940,7 +940,7 @@ def build_robotics_team_sheets() -> None:
         ["Servo", "", "Only the two marked safe angles", "", "Ready angle"],
         ["Together", "", "Predict, then run both", "", "Both reset"],
     ]
-    y = draw_table(c, outputs, MARGIN, y, [72, 98, 142, 150, 82], row_heights=[30, 55, 55, 55], font_size=6.9)
+    y = draw_table(c, outputs, MARGIN, y, [72, 98, 142, 150, 82], row_heights=[30, 45, 45, 45], font_size=6.9)
     y -= 18
     y = section_title(c, "Challenge 4 - input -> decision -> two outputs -> reset", MARGIN, y, PURPLE)
     y = draw_prompt(c, "Say the rule before running it", MARGIN, y, PAGE_W - 2 * MARGIN, 76, "IF the object is ______ than ______, THEN the light ______ AND the pointer ______; OTHERWISE...", accent=PURPLE, lines=2)
@@ -951,14 +951,14 @@ def build_robotics_team_sheets() -> None:
         ["2", "Near", "", "", "", ""],
         ["3", "Far again", "", "", "", ""],
     ]
-    y = draw_table(c, trials, MARGIN, y, [42, 100, 108, 84, 120, 90], row_heights=[30, 48, 48, 48], font_size=7.0, alignments={0: "center"})
+    y = draw_table(c, trials, MARGIN, y, [42, 100, 108, 84, 120, 90], row_heights=[30, 40, 40, 40], font_size=7.0, alignments={0: "center"})
     y -= 14
     y = draw_prompt(c, "Change one approved variable, then retest", MARGIN, y, PAGE_W - 2 * MARGIN, 72, "We changed only ______. We held ______ the same. The result was...", accent=CORAL, lines=2)
     y -= 12
     draw_card(c, MARGIN, y, PAGE_W - 2 * MARGIN, 58, "Final proof", "Both teammates can explain the input, threshold decision, two outputs, and what the system does when the condition is false.", accent=TEAL, fill=PALE_TEAL, body_size=8.2)
     save_page(c)
 
-    draw_header(c, "September 14 robotics idea canvas", "Three Interactions Worth Discussing", "Each idea needs an input, a decision, an output, and a reason people would care.", 3, total, accent=PURPLE, footer_note=STUDIO_FOOTER)
+    draw_header(c, "September 24 robotics idea canvas", "Three Interactions Worth Discussing", "Each idea needs an input, a decision, an output, and a reason people would care.", 3, total, accent=PURPLE, footer_note=STUDIO_FOOTER)
     y = draw_identity_line(c, CONTENT_TOP, team=True)
     y = draw_prompt(c, "Problem, delight, or future possibility", MARGIN, y, PAGE_W - 2 * MARGIN, 62, "Who is the interaction for, and what should be easier, safer, clearer, or more interesting?", accent=PURPLE, lines=2)
     y -= 15
@@ -979,7 +979,7 @@ def build_robotics_team_sheets() -> None:
     draw_prompt(c, "Choose or combine", MARGIN, y, PAGE_W - 2 * MARGIN, 74, "We want to explore idea(s) ______ because the interaction would...", accent=TEAL, lines=2)
     save_page(c)
 
-    draw_header(c, "September 14 robotics idea canvas", "Map the System and First Test", "Build the smallest safe interaction that can answer one useful question.", 4, total, accent=TEAL, footer_note=STUDIO_FOOTER)
+    draw_header(c, "September 24 robotics idea canvas", "Map the System and First Test", "Build the smallest safe interaction that can answer one useful question.", 4, total, accent=TEAL, footer_note=STUDIO_FOOTER)
     y = draw_identity_line(c, CONTENT_TOP, team=True)
     map_rows = [
         ["INPUT", "DECISION", "OUTPUT 1", "OUTPUT 2", "OTHERWISE / RESET"],
