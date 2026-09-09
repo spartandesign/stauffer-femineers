@@ -5,7 +5,7 @@
 | Module | Canvas pages | Canvas assignments | Status |
 |---|---:|---:|---|
 | Start Here: Limitless Course Orientation | 5 | 0 | Published in package |
-| Phase 1 — Imagine the Future — September 14 | 3 | Checkpoint 1: Approved Project Proposal | Published in package |
+| Phase 1 — Imagine the Future — September 24 | 3 | Checkpoint 1: Approved Project Proposal | Published in package |
 | DUSD Femineers Kickoff — Glow Up Your Badge — October 13 | 1 | Kickoff Reflection — Glow Up Your Badge | Unpublished until the physical badge prototype passes the timing, safety, and reliability gate |
 | Phase 2 — Arrive Ready to Build — October Canvas + October 21 Lunch | 2 | Phase 2: Design Ready Package | Published in package |
 | Phase 3 — Design What’s Next — November 16 | 2 | Checkpoint 2: Prototype + Build Progress #1 | Published in package |
@@ -41,12 +41,16 @@
 
 ## Schedule
 
-- Full pull-out workdays: September 14, November 16, and December 7, 2026; January 25 and February 22, 2027.
-- Full workdays meet in Room 14 from 8:00 a.m.–2:41 p.m. and follow the Monday bell schedule.
-- Full-group lunch checkpoints: October 21, January 13, and February 10 in Room 14 from 12:29–12:59 p.m.
+- Full pull-out workdays: September 24, November 16, and December 7, 2026; January 25 and February 22, 2027.
+- Full workdays meet in Room 14 from 8:00 a.m.–2:41 p.m. September 24 follows Thursday bells; later workdays follow Monday bells.
+- Full-group lunch checkpoints: October 21, January 13, and February 10 in Room 14 from 11:37 a.m.–12:07 p.m.
 - Invitation-only Project Rescue lunch: December 2 for yellow and red projects.
 - District Kickoff: October 13 at Griffiths; Stauffer runs the 20-minute, theme-neutral Glow Up Your Badge station. The photo reflection is completed later, not during workshop time.
 - Stauffer Gala: March 1 in the Stauffer Library.
 - District Femineers Gala: March 18 in the evening at Downey High with guest speakers and Culinary Arts hors d’oeuvres.
 
 Students are responsible for checking with teachers, collecting assignments and notes, and completing missed work by each teacher’s deadline. The package leaves Canvas due dates unset so mentors can add approved course-specific deadlines after import.
+
+## Room allocation
+
+36 students use six home tables: 18 individual Wearables students at W1–W3 (six per table), and 18 Creative Robotics students in nine pairs at R1–R3 (three pairs per table). Jennifer leads Wearables, Stephanie leads Robotics, and Tri supports technology. Table assignments do not imply six simultaneously staffed stations.

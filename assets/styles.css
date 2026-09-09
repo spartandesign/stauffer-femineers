@@ -14,6 +14,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 
 html {
   scroll-behavior: smooth;
@@ -128,7 +129,56 @@ textarea:focus-visible {
 }
 
 .site-nav a:hover,
-.site-nav a[aria-current="page"] { color: var(--violet-dark); background: #efeaff; }
+.site-nav a[aria-current] { color: var(--violet-dark); background: #efeaff; }
+
+.skip-link { position: absolute; left: 16px; top: -100px; z-index: 50; padding: 12px 18px; color: white; background: var(--violet-dark); border-radius: 10px; }
+.skip-link:focus { top: 12px; }
+.breadcrumbs { width: min(1180px, calc(100% - 32px)); margin: 18px auto 0; display: flex; flex-wrap: wrap; gap: 8px; color: var(--muted); font-size: .86rem; }
+.breadcrumbs a { color: var(--violet-dark); }
+.hub-hero { padding-top: 48px; }
+.hub-hero h1 { max-width: 900px; }
+.hub-pathways { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 24px 0; }
+.hub-pathways .choice-card h2 { font-size: clamp(1.65rem, 3vw, 2.3rem); }
+.next-session { padding: 28px; border: 2px solid #dcd2fa; border-radius: 24px; background: #f4f0ff; }
+.next-session h2 { margin-bottom: 12px; }
+.next-session p { margin: 7px 0; }
+.hub-links { display: flex; flex-wrap: wrap; gap: 10px 24px; margin: 0 0 28px; }
+.hub-links a { padding: 8px 0; color: var(--violet-dark); font-weight: 750; }
+.curriculum-detail { margin: 14px 0; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); scroll-margin-top: 90px; }
+.curriculum-detail > summary { cursor: pointer; padding: 20px 24px; font-weight: 750; }
+.curriculum-detail[open] > summary { border-bottom: 1px solid var(--line); color: var(--violet-dark); }
+.curriculum-detail summary small { display: block; margin-top: 5px; color: var(--muted); font-size: .86rem; font-weight: 500; }
+.session-summary { display: inline-grid; grid-template-columns: 230px minmax(0, 1fr); gap: 18px; width: calc(100% - 24px); vertical-align: top; }
+.session-date { color: var(--muted); font-size: .92rem; }
+.detail-body { padding: 0 24px 24px; }
+.detail-body > p:first-child { margin-top: 22px; }
+.day-quickstart { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding-top: 24px; }
+.day-quickstart p { margin-bottom: 0; color: var(--muted); }
+.deeper-links { margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--line); }
+.deeper-links ul { columns: 2; padding-left: 20px; }
+.deeper-links li { padding: 5px 0; break-inside: avoid; }
+.agenda-detail { margin-top: 25px; }
+.agenda-detail > summary { cursor: pointer; padding: 12px 0; font-weight: 750; color: var(--violet-dark); }
+.home-tables { display: grid; gap: 10px; padding: 0; list-style: none; }
+.home-tables li { display: flex; flex-direction: column; gap: 5px; padding: 15px; border: 1px solid var(--line); border-radius: 12px; }
+.home-tables strong { color: var(--violet-dark); }
+.home-tables span { font-size: .9rem; }
+.session-picker { display: block; margin: 25px 0; font-weight: 750; }
+.session-picker select { display: block; max-width: 100%; width: 620px; margin-top: 9px; padding: 12px; font: inherit; font-size: 1rem; color: var(--ink); background: white; border: 1px solid var(--line); border-radius: 10px; }
+.tutorial-search { padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: white; }
+.tutorial-search label { display: block; font-weight: 750; }
+.tutorial-search input { width: 100%; margin-top: 10px; padding: 14px; font: inherit; border: 1px solid #aab3c3; border-radius: 10px; color: var(--ink); background: white; }
+.tutorial-search p { margin-bottom: 0; color: var(--muted); }
+.tutorial-category { margin-top: 38px; }
+.tutorial-category h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
+.tutorial-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; list-style: none; padding: 0; }
+.tutorial-list a { display: flex; flex-direction: column; height: 100%; gap: 6px; padding: 20px; border: 1px solid var(--line); border-radius: 14px; background: white; text-decoration: none; }
+.tutorial-list a:hover { border-color: var(--violet); background: #f7f4ff; }
+.tutorial-list strong { color: var(--violet-dark); }
+.tutorial-list span { color: var(--muted); font-size: .92rem; }
+.footer-nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 24px; margin-top: 22px; font-size: .9rem; }
+.footer-nav a { padding: 8px 0; }
+summary:focus-visible, select:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
 
 .hero,
 .page-hero {
@@ -1270,9 +1320,12 @@ code { padding: 2px 6px; border-radius: 6px; color: var(--violet-dark); backgrou
   .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 48px; }
   .future-orbit { width: min(430px, 86vw); margin: auto; }
   .choice-grid, .card-grid, .step-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .site-nav { display: none; position: absolute; top: 72px; left: 16px; right: 16px; padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: white; box-shadow: var(--shadow); }
-  .site-nav.open { display: grid; }
-  .nav-toggle { display: inline-grid; place-items: center; }
+  .header-inner { flex-wrap: wrap; padding: 12px 0; }
+  .site-nav { display: flex; flex-wrap: wrap; width: 100%; }
+  .nav-ready .header-inner { flex-wrap: nowrap; }
+  .nav-ready .site-nav { display: none; position: absolute; top: 100%; left: 16px; right: 16px; width: auto; padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: white; box-shadow: var(--shadow); }
+  .nav-ready .site-nav.open { display: grid; }
+  .nav-ready .nav-toggle { display: inline-grid; place-items: center; }
   .supply-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .polarity-demo { grid-template-columns: 1fr; }
   .flow-arrow { transform: rotate(90deg); justify-self: center; }
@@ -1326,6 +1379,12 @@ code { padding: 2px 6px; border-radius: 6px; color: var(--violet-dark); backgrou
   .section { padding: 38px 0; }
   .page-hero { padding-top: 44px; }
   .button { width: 100%; }
+  .hub-pathways, .day-quickstart, .tutorial-list { grid-template-columns: 1fr; }
+  .session-summary { grid-template-columns: 1fr; gap: 8px; }
+  .curriculum-detail > summary { padding: 18px; }
+  .detail-body { padding: 0 18px 18px; }
+  .next-session { padding: 22px; }
+  .deeper-links ul { columns: 1; }
   .recruitment-banner { display: block; text-align: center; }
   .recruitment-banner div { display: block; }
   .recruitment-banner span { display: block; margin: 3px 0 9px; }

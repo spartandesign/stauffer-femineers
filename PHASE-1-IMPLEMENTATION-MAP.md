@@ -2,7 +2,7 @@
 
 ## Phase 1 Implementation Map — Imagine the Future
 
-**Stauffer Femineers Workday 1:** Monday, September 14, 2026\
+**Stauffer Femineers Workday 1:** Thursday, September 24, 2026\
 **Tagline:** Imagine it. Build it. Become it.\
 **Phase outcome:** Every student leaves with foundational technology experience, a realistic approved design proposal, and the evidence needed for Canvas Checkpoint 1. Major construction does not begin until approval.
 
@@ -238,19 +238,26 @@ Final quantities must be adjusted after inventory. Quantities below describe sta
 
 ## 7. Recommended Workday Flow
 
+September 24 is a Thursday. Use the [dated mentor start page](mentors.html#september-24) for the current agenda and the [full playbook](mentor-lesson-plans.html#day-1) for every teaching action. The supplied 2025–26 Thursday bells are the planning reference. W1–W3 each hold six individual Wearables students; R1–R3 each hold three Robotics pairs. Jennifer leads Wearables, Stephanie leads Robotics, and Tri provides technical demonstrations and support.
+
 | Time | Whole group | Wearable Technology | Creative Robotics | Evidence/milestone |
 |---|---|---|---|---|
 | 8:00–8:20 | Arrival, attendance, participation-year/pathway check-in | Confirm second-year members and third-year Wearables choices | Confirm first-year members and third-year Robotics choices; teams of exactly two | Roster and third-year choices complete |
 | 8:20–8:40 | Theme launch, pathway progression, design process, safety/help system | Shared session | Shared session | Students state pathway and finish line |
-| 8:40–9:38 | Future exploration, three-idea brainstorm, station orientation | Individual brainstorm | Partner brainstorm | Three concepts captured |
-| 9:38–9:51 | Snack |  |  |  |
-| 9:51–11:45 | Pathway technology rotations | Four 25-minute stations: Future Stamp; combined LED/conductive-thread Circuit Lab; micro:bit; NeoPixel, with three-minute transitions and final evidence/bagging | Hummingbird, outputs, sensors, interaction rotations | Four Wearables evidence items; needle counts at transitions; final count matches |
-| 11:45–12:29 | Progress share, cleanup, proposal setup | Name one discovery; verify stamp storage and needle count | Each partner explains one system part | Materials accounted for |
-| 12:29–12:59 | Lunch |  |  |  |
-| 12:59–1:45 | Proposal studio | Complete shirt and hat proposal | Complete team proposal and storyboard | Draft proposal complete |
+| 8:40–9:25 | Future exploration, three-idea brainstorm, activity orientation | Individual brainstorm | Partner brainstorm | Three concepts captured |
+| 9:25–9:38 | Snack |  |  |  |
+| 9:38–9:42 | Return and settle |  |  | Ready for supervised activity |
+| 9:42–11:09 | Supervised pathway technology exploration | Future Stamp; combined LED/conductive-thread Circuit Lab; micro:bit; NeoPixel | Hummingbird, outputs, sensors, interaction challenges | Save each exploration; needle counts at transitions |
+| 11:09–11:17 | Pause, save, and reset | Verify stamp storage and needle count | Safe reset and role check | Materials accounted for |
+| 11:17–12:42 | Finish exploration, share discoveries, begin proposals | Four evidence items; shirt and hat plans | Each partner explains the system; team plan | Exploration evidence complete; labeled proposal started |
+| 12:42–1:12 | Lunch |  |  |  |
+| 1:12–1:16 | Return and settle |  |  |  |
+| 1:16–1:45 | Proposal studio and staggered mentor reviews | Complete shirt and hat proposal | Complete team proposal and storyboard | Draft proposal complete |
 | 1:45–2:05 | Self-check and peer explanation | Explain both wearables to a peer | Each partner explains full project | Self-check complete |
 | 2:05–2:21 | Final mentor review and revision status | Individual approval conference | Team-of-two approval conference | Approval status recorded |
 | 2:21–2:41 | Evidence, reflection, next step, cleanup, dismissal | Submit or save revision plan | Submit or save revision plan | October Design Ready deliverables assigned |
+
+The original four-station reference retains four 25-minute rounds, three 3-minute transitions, and five minutes for evidence/inventory. It requires additional trained station supervision and is an expanded activity reference, not the current six-table movement plan. Use supervised demonstrations or smaller groups to retain the required evidence within available staffing and equipment.
 
 ### Rotation contingency
 
@@ -411,7 +418,7 @@ Mentors should give no more than three specific required revisions at one time. 
 
 ---
 
-## 11. What Must Be Prepared Before September 14
+## 11. What Must Be Prepared Before September 24
 
 ### A. Decisions and inventory — complete by August 21
 
@@ -427,7 +434,7 @@ Mentors should give no more than three specific required revisions at one time. 
 ### B. Samples and technical preparation — complete by September 4
 
 - Build and test one representative denim LED circuit.
-- Inspect all 40 wooden blanks and quarantine cracks, splinters, rough edges, or blocked holes; prepare paper-grid backups because the order has no replacement margin.
+- Inspect all 40 wooden blanks and quarantine cracks, splinters, rough edges, or blocked holes. Eighteen Wearables students use 18 blanks, leaving 22 before inspection losses; prepare paper-grid backups as needed.
 - Pretest the exact needle eye, ordinary-floss thickness, and wooden hole; stage two BYMORE kits, short pre-cut floss, named snack bags, planning cards, one sample, needle landing trays/pincushions, and an opening/transition/final count sheet.
 - Keep decorative embroidery floss physically separate from conductive thread and powered Circuit Lab materials.
 - Build and test one complete bucket-hat electronics sample using the planned separate power supplies, shared ground, safe brightness, and removable harness.
@@ -523,7 +530,7 @@ Because one mentor cannot simultaneously run multiple technical stations and app
 
 ## 14. Phase 1 Completion Dashboard
 
-At the end of September 14, staff should be able to report:
+At the end of September 24, staff should be able to report:
 
 - number of wearable students enrolled, present, proposal-complete, approved, and needing revision;
 - number of robotics teams formed, present, proposal-complete, approved, and needing revision;

@@ -4,7 +4,7 @@
 
 `Stauffer-Femineers-Limitless-2026-27.imscc`
 
-Content revision: **2026-08-27 — novice-mentor runbooks expanded for November 16, December 2, December 7, January 25, and February 22 with working-example rehearsals, exact release gates, controlled troubleshooting, Project Rescue triage, reliability/backup decisions, and low-paper studio-tool routing.**
+Content revision: **2026-09-08 — simplified curriculum navigation, September 24 Thursday workday, Wednesday lunch times, and 36 students at six Room 14 tables. Full student guides, mentor runbooks, assignment identifiers, and assessment settings are retained.**
 
 This Canvas-flavored Common Cartridge course export contains:
 
@@ -14,6 +14,8 @@ This Canvas-flavored Common Cartridge course export contains:
 - 80 default points
 - A syllabus and one assignment group named **Femineers Evidence**
 - Links from Canvas to the detailed GitHub Pages guides
+
+The website now uses **Home / My Project / Tutorials / Mentors** throughout the curriculum. The welcome page links students to My Project and the tutorial library; Mentor Planning links to the dated mentor start page and the full playbook. Publish the matching website before using these new links in Canvas. Navigation improvements alone do not require replacing an existing course.
 
 ## Import into Canvas
 
@@ -30,6 +32,8 @@ Avoid importing the package into the same course more than once. Canvas may over
 
 ## Updating an existing Canvas course
 
+For this navigation revision, update the current welcome and roadmap pages with September 24, the Thursday snack (9:25–9:38) and lunch (12:42–1:12), Wednesday lunch checkpoints (11:37–12:07), and the 18 Wearables / 18 Robotics allocation. Add the new My Project, Tutorials, and Mentors website links. Existing detailed-guide links still resolve. A clean import into a new, unpublished shell is also supported by the rebuilt package above.
+
 If this package has already been imported and instructors have edited the live course, do not re-import the full rebuilt package. A repeat import can replace previously imported content and can disrupt course-specific edits.
 
 Update the existing items in place instead:
@@ -39,7 +43,7 @@ Update the existing items in place instead:
 3. **Meet the Technology** — update the four Wearables stations and add the four sequential Robotics evidence products: connection/reset; three input readings plus threshold; two outputs; complete input → decision → two outputs → reset interaction.
 4. **Prepare Your Approved Design Proposal** — require pathway technology-exploration evidence and allow the stamp symbol to inform the shared shirt-and-hat theme.
 5. **Checkpoint 1: Approved Project Proposal** — require the four Wearables evidence items and captions plus the four shared Robotics evidence products inside the existing pathway submission; do not create a new technology-rotation assignment.
-6. **Mentor Lesson-Plan Playbook** — retain the September 14 and October 13 preparation, then add the linked detailed runbooks for November 16, December 2, December 7, January 25, and February 22. Include the mentor-made pathway examples, safe prepared faults, live-test capacity gates, Project Rescue statuses, restore/integrate/retest sequence, two-trial Gala rule, and modified-demonstration decisions. Add the low-paper Print Center link and explain that mentors sleeve reusable pages, print only the named student/team or project pages, complete them during program time, and do not grade or assign them as homework.
+6. **Mentor Lesson-Plan Playbook** — retain the September 24 and October 13 preparation, then add the linked detailed runbooks for November 16, December 2, December 7, January 25, and February 22. Include the mentor-made pathway examples, safe prepared faults, live-test capacity gates, Project Rescue statuses, restore/integrate/retest sequence, two-trial Gala rule, and modified-demonstration decisions. Add the low-paper Print Center link and explain that mentors sleeve reusable pages, print only the named student/team or project pages, complete them during program time, and do not grade or assign them as homework.
 
 Preserve the existing assignment’s due and availability dates, points, submission types, attempts, rubrics, student submissions, and grades. Back up/export the course before any selective re-import. Keep the Phase 1 module structure and item order unchanged.
 
@@ -79,7 +83,7 @@ Keep the receiving Canvas shell unpublished during the audit. If the shell is al
 ## Required audit before launch
 
 1. Confirm participation year and pathway: first year = Creative Robotics, second year = Wearable Technology, and third year = selected pathway.
-2. Confirm the five full workdays: September 14, November 16, December 7, January 25, and February 22.
+2. Confirm the five full workdays: September 24, November 16, December 7, January 25, and February 22. September 24 uses Thursday bells from the supplied 2025–26 schedule; verify that schedule remains applicable for 2026–27. Confirm 36 students: six Wearables students at each W table and three Robotics pairs at each R table.
 3. Confirm the October 13 district kickoff at Griffiths, including Stauffer’s 20-minute Glow Up Your Badge station, final kit, rotation headcount, staffing, and post-event reflection time.
 4. Confirm the lunch checkpoints: October 21, January 13, and February 10, plus the invitation-only December 2 Project Rescue lunch.
 5. Add due/availability dates only for the approved in-program studio or checkpoint windows. October 19 is the recommended Design Ready completion date; arrange any catch-up at school with a mentor.
