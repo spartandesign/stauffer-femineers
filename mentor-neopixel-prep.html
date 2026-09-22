@@ -24,7 +24,7 @@
 
     <section class="section compact" id="before-you-build" aria-labelledby="readiness-title">
       <div class="callout coral prep-readiness"><p class="eyebrow">Before assembly</p><h2 id="readiness-title">Two connections still need a decision.</h2><p>The order identifies the strip and harness materials. It does not identify a dedicated <strong>micro:bit P0/GND connector</strong> or a <strong>logic-level interface</strong>. Confirm the physical connection and the delivered strip’s data-voltage requirements before powering the harness.</p><p>This is a preparation guide. The complete system still needs a physical bench test. A resistor does not change the data signal’s voltage.</p><a href="#interface">Read the interface check →</a></div>
-      <nav class="prep-jumps no-print" aria-label="On this page"><a href="#gather">Parts</a><a href="#order">Order details</a><a href="#wiring">Wiring</a><a href="#assembly">Assembly</a><a href="#starter">Code</a><a href="#test">Test</a><a href="#backup">Backup</a></nav>
+      <nav class="prep-jumps no-print" aria-label="On this page"><a href="#gather">Parts</a><a href="#order">Order details</a><a href="#wiring">Wiring</a><a href="#assembly">Assembly</a><a href="#tutorials">Videos</a><a href="#starter-blocks">Blocks</a><a href="#starter-text">Text code</a><a href="#test">Test</a><a href="#backup">Backup</a></nav>
     </section>
 
     <section class="section compact" id="gather">
@@ -109,12 +109,76 @@
         <li><div><strong>Check the holder before connection.</strong><p>With the holder disconnected from the harness, check its output polarity and voltage. Switch it off before reconnecting. Power the assembly only after inspection and the interface decision.</p></div></li>
       </ol>
       <p class="prep-source">Keep signal wires short and use secure leads, following <a href="https://learn.adafruit.com/adafruit-neopixel-uberguide/best-practices">Adafruit’s connection guidance</a>.</p>
+      <div class="prep-resources" id="illustrated-guides" aria-labelledby="illustrated-title">
+        <h3 id="illustrated-title">Illustrated references for assembly</h3>
+        <div class="prep-resource-grid">
+          <article class="prep-resource">
+            <p class="eyebrow">Adafruit · micro:bit lesson</p>
+            <h4>See the connections and coding steps.</h4>
+            <p>Follow the pictured micro:bit lesson from parts through connections and software. Use its diagram to identify ground, positive supply, and data input.</p>
+            <p class="prep-adaptation"><strong>Adapt for our build:</strong> this example uses a 24-pixel ring, P2, and the micro:bit’s 3V supply. Our starter uses 12 pixels and P0; follow <a href="#wiring">our separate-supply wiring map</a> and complete the interface check.</p>
+            <p><a href="https://learn.adafruit.com/micro-bit-lesson-3-neopixels-with-micro-bit">Open the illustrated lesson →</a><br><a href="https://cdn-learn.adafruit.com/downloads/pdf/micro-bit-lesson-3-neopixels-with-micro-bit.pdf">Open the printable lesson PDF →</a></p>
+          </article>
+          <article class="prep-resource">
+            <p class="eyebrow">Adafruit · strip close-ups</p>
+            <h4>Find the input end and inspect the leads.</h4>
+            <p>The “Data Flow Direction” and connection photos show how arrows identify the input end and how wires attach to a controller.</p>
+            <p class="prep-adaptation"><strong>Different controller:</strong> these photos use Circuit Playground Express with A1 and VOUT. Use them for orientation and wire preparation; verify our actual connector pinout and use the micro:bit wiring map above.</p>
+            <p><a href="https://learn.adafruit.com/make-it-glow-your-first-neopixel-project/connect-the-lights">Open the connection photos →</a></p>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section class="section compact" id="starter">
       <p class="eyebrow">05 · Program</p><h2>Give each button one clear job.</h2>
       <div class="prep-behaviors"><article><span class="prep-key">A</span><h3>All purple</h3><p>Every pixel shows the same color.</p></article><article><span class="prep-key">B</span><h3>Cyan + blue</h3><p>Alternating colors show pixel order.</p></article><article><span class="prep-key">A+B</span><h3>Lights off</h3><p>Clears the strip. Battery power remains connected.</p></article></div>
-      <ol class="build-steps"><li><div><strong>Create the MakeCode project.</strong><p>Open <a href="https://makecode.microbit.org/">MakeCode for micro:bit</a>. Name the project <code>Femineers-NeoPixel-Preview</code>. Open Extensions and add Microsoft’s <code>neopixel</code> extension. If needed, search with <code>https://github.com/microsoft/pxt-neopixel</code>.</p></div></li><li><div><strong>Paste the code in JavaScript view.</strong><p>Use the code below. It starts with 12 pixels on P0 at brightness 40/255. Set <code>PIXEL_COUNT</code> to the actual segment count. <code>NeoPixelMode.RGB</code> means the standard GRB-order RGB strip mode; check the product if colors are swapped.</p></div></li><li><div><strong>Disconnect the battery system before USB transfer.</strong><p>Disconnect both supplies and the strip harness from the W-labeled micro:bit. Download using the USB data cable and wait until transfer finishes. Remove USB before reconnecting the inspected, unpowered system.</p></div></li></ol>
+      <p>Review the same starter in <a href="#starter-blocks">Blocks</a> and <a href="#starter-text">JavaScript / TypeScript</a> below. Both use 12 pixels on P0 at brightness 40/255, with the same button actions.</p>
+      <div class="prep-resources" id="tutorials" aria-labelledby="tutorials-title">
+        <h3 id="tutorials-title">Watch the MakeCode steps</h3>
+        <div class="prep-resource-grid">
+          <article class="prep-resource">
+            <p class="eyebrow">micro:bit Educational Foundation</p>
+            <h4>Add and initialize NeoPixels.</h4>
+            <video class="prep-video no-print" controls preload="none" playsinline aria-label="Official micro:bit demonstration of initializing NeoPixels in MakeCode">
+              <source src="https://video.microbit.org/support/neopixel.mp4" type="video/mp4">
+              <p><a href="https://video.microbit.org/support/neopixel.mp4">Watch the NeoPixel setup video.</a></p>
+            </video>
+            <p>Follow the editor demonstration: add the NeoPixel extension, place “set strip to NeoPixel…” in “on start,” then choose the pin, pixel count, and RGB format.</p>
+            <p><a href="https://support.microbit.org/support/solutions/articles/19000130206-using-neopixels-with-the-micro-bit">Open the video and step-by-step screenshots →</a></p>
+            <p class="prep-adaptation"><strong>For our starter:</strong> P0, 12 pixels, RGB (GRB format), brightness 40. The article’s 3V wiring illustration differs from our separate pixel supply.</p>
+          </article>
+          <article class="prep-resource">
+            <p class="eyebrow">Microsoft MakeCode · teacher video series</p>
+            <h4>Part 3B: LED NeoPixels</h4>
+            <iframe class="prep-video no-print" src="https://www.youtube-nocookie.com/embed/G5LjM_Izk88" title="Coding with micro:bit, Part 3B: LED NeoPixels" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <p>Use this lesson to see programmable color and pattern ideas. Then review our four starter stacks below.</p>
+            <p><a href="https://www.youtube.com/watch?v=G5LjM_Izk88">Watch on YouTube →</a><br><a href="https://makecode.microbit.org/coding-for-teachers">Open the teacher video series →</a></p>
+            <p class="prep-adaptation"><strong>For Thursday:</strong> keep our A, B, and A+B controls and starting brightness. Check any tutorial wiring against the verified harness.</p>
+          </article>
+        </div>
+      </div>
+      <ol class="build-steps">
+        <li><div><strong>Choose Blocks or text.</strong><p>For Blocks, <a href="https://makecode.microbit.org/_LbL1fY9sCXrM">open the prepared project</a> and choose <strong>Edit Code</strong>; the NeoPixel extension is included. For text, create a project in <a href="https://makecode.microbit.org/">MakeCode for micro:bit</a>, add Microsoft’s <code>neopixel</code> extension from Extensions, then paste the text below into JavaScript view. You can switch to Blocks afterward.</p></div></li>
+        <li><div><strong>Check the startup settings.</strong><p>Set <code>PIXEL_COUNT</code> to the actual segment count. Use <strong>P0</strong>, <strong>RGB (GRB format)</strong>, and brightness <strong>40</strong>. The text equivalent of that strip format is <code>NeoPixelMode.RGB</code>. Check the product if colors are swapped.</p></div></li>
+        <li><div><strong>Disconnect the battery system before USB transfer.</strong><p>Disconnect both supplies and the strip harness from the W-labeled micro:bit. Download using the USB data cable and wait until transfer finishes. Remove USB before reconnecting the inspected, unpowered system.</p></div></li>
+      </ol>
+      <div class="prep-code-review" id="starter-blocks" aria-labelledby="blocks-title">
+        <p class="eyebrow">Starter · Blocks</p><h3 id="blocks-title">Review all four block stacks.</h3>
+        <p>These are the actual MakeCode blocks, saved here for review and printing. On a small screen, scroll each image sideways to read it.</p>
+        <p class="prep-code-actions"><a class="button" href="https://makecode.microbit.org/_LbL1fY9sCXrM">Open editable Blocks project →</a><a class="button secondary" href="assets/downloads/neopixel-preview-blocks.svg" download>Download all blocks (.svg)</a></p>
+        <p class="prep-source">Choose Edit Code in MakeCode to make your own copy. The simulator’s generic wiring illustration does not replace <a href="#wiring">our physical wiring map</a>.</p>
+        <div class="prep-block-recipes" aria-label="Text guide to the four block stacks">
+          <article><h4>1 · On start</h4><div class="prep-block-image" tabindex="0" role="region" aria-label="Scrollable on start blocks"><img src="assets/downloads/neopixel-blocks-start.svg" width="874" height="352" alt="On start: set PIXEL_COUNT to 12; create strip on P0 in RGB (GRB format); set brightness 40; clear; show."></div><ol><li>Set <code>PIXEL_COUNT</code> to <strong>12</strong>.</li><li>Set <code>strip</code> to NeoPixel at <strong>P0</strong> with <code>PIXEL_COUNT</code> LEDs as <strong>RGB (GRB format)</strong>.</li><li><code>strip</code> set brightness <strong>40</strong>.</li><li><code>strip</code> clear, then <code>strip</code> show.</li></ol></article>
+          <article><h4>2 · On button A pressed</h4><div class="prep-block-image" tabindex="0" role="region" aria-label="Scrollable button A blocks"><img src="assets/downloads/neopixel-blocks-a.svg" width="591" height="152" alt="On button A pressed: strip show color red 255, green 0, blue 255."></div><p><code>strip</code> show color: red <strong>255</strong>, green <strong>0</strong>, blue <strong>255</strong>.</p><p>“Show color” updates the LEDs immediately.</p></article>
+          <article><h4>3 · On button B pressed</h4><div class="prep-block-image" tabindex="0" role="region" aria-label="Scrollable button B blocks"><img src="assets/downloads/neopixel-blocks-b.svg" width="797" height="528" alt="On button B pressed: clear; loop i from 0 to PIXEL_COUNT minus 1; even indices cyan and odd indices blue; show after the loop."></div><ol><li><code>strip</code> clear.</li><li>For <code>i</code> from <strong>0</strong> to <code>PIXEL_COUNT − 1</code>, check whether the remainder of <code>i ÷ 2</code> equals <strong>0</strong>.</li><li>If yes, set pixel <code>i</code> to RGB <strong>0, 255, 255</strong> (cyan). Otherwise set it to <strong>0, 0, 255</strong> (blue).</li><li>After the loop, <code>strip</code> show.</li></ol></article>
+          <article><h4>4 · On button A+B pressed</h4><div class="prep-block-image" tabindex="0" role="region" aria-label="Scrollable A+B blocks"><img src="assets/downloads/neopixel-blocks-ab.svg" width="260" height="200" alt="On button A+B pressed: strip clear; strip show."></div><p><code>strip</code> clear, then <code>strip</code> show.</p><p>Both blocks are needed to send the cleared colors to the LEDs.</p></article>
+        </div>
+        <p class="prep-source">In MakeCode, use Basic for “on start,” Input for buttons, Variables for <code>strip</code> and <code>PIXEL_COUNT</code>, Loops for the counter, Logic for if/else, Math for the remainder, and Neopixel / more for strip and RGB blocks. This starter converted to regular editable blocks without JavaScript-only blocks.</p>
+      </div>
+      <div class="prep-code-review" id="starter-text" aria-labelledby="text-title">
+      <p class="eyebrow">Starter · Text</p><h3 id="text-title">JavaScript / TypeScript version</h3>
+      <p>This is the same program as the Blocks project, with additional setup comments. Copy it into MakeCode’s JavaScript view after adding the NeoPixel extension.</p>
       <div class="prep-code-actions no-print"><a class="button secondary" href="assets/downloads/neopixel-preview-starter.ts" download>Download starter code (.ts)</a><button class="button" type="button" id="copy-starter" hidden>Copy code</button><span id="copy-status" role="status" aria-live="polite"></span></div>
       <p class="prep-source">The download is source code to paste into MakeCode, not a compiled .hex file. Button logic was checked with simulated APIs; physical hardware testing is still required. <a href="https://makecode.microbit.org/pkg/microsoft/pxt-neopixel">Microsoft extension documentation</a>.</p>
       <pre class="prep-code" tabindex="0" aria-label="MakeCode JavaScript starter program"><code id="starter-code">// Add the Microsoft "neopixel" extension in MakeCode before pasting.
@@ -147,6 +211,7 @@ input.onButtonPressed(Button.AB, function () {
     strip.show()
 })
 </code></pre>
+      </div>
     </section>
 
     <section class="section compact" id="test">
