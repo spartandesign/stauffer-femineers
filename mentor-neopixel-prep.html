@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5f3dc4">
+  <meta name="description" content="Mentor preparation for the September 24 Femineers NeoPixel preview: ordered parts, harness assembly, wiring, MakeCode starter program, and bench tests.">
+  <title>NeoPixel Mentor Prep | Limitless</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/neopixel-prep.css">
+</head>
+<body class="neopixel-prep">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">L</span> Limitless</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu</button><nav class="site-nav" id="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="my-project.html">My Project</a><a href="tutorials.html">Tutorials</a><a href="mentors.html" aria-current="location">Mentors</a></nav></div></header>
+<nav class="breadcrumbs no-print" aria-label="Breadcrumb"><a href="mentors.html">Mentors</a><span aria-hidden="true">/</span><span aria-current="page">NeoPixel Mentor Prep</span></nav>
+<main id="main-content">
+    <section class="page-hero prep-hero">
+      <p class="eyebrow">Mentor preparation · Thursday, September 24</p>
+      <h1>Prepare the<br><span>NeoPixel preview.</span></h1>
+      <p class="lede">Build one tabletop demonstration and one matching spare. Students will use the buttons, trace power and data, and explain what makes the lights respond.</p>
+      <div class="prep-summary"><span><strong>12</strong> pixels per set</span><span><strong>P0</strong> data output</span><span><strong>40 / 255</strong> starting brightness</span><span><strong>A+B</strong> lights off</span></div>
+      <div class="button-row no-print"><a class="button" href="#gather">Gather the parts</a><a class="button secondary" href="#starter">Open starter code</a><button class="button secondary" type="button" data-print>Print this guide</button></div>
+    </section>
+
+    <section class="section compact" id="before-you-build" aria-labelledby="readiness-title">
+      <div class="callout coral prep-readiness"><p class="eyebrow">Before assembly</p><h2 id="readiness-title">Two connections still need a decision.</h2><p>The order identifies the strip and harness materials. It does not identify a dedicated <strong>micro:bit P0/GND connector</strong> or a <strong>logic-level interface</strong>. Confirm the physical connection and the delivered strip’s data-voltage requirements before powering the harness.</p><p>This is a preparation guide. The complete system still needs a physical bench test. A resistor does not change the data signal’s voltage.</p><a href="#interface">Read the interface check →</a></div>
+      <nav class="prep-jumps no-print" aria-label="On this page"><a href="#gather">Parts</a><a href="#order">Order details</a><a href="#wiring">Wiring</a><a href="#assembly">Assembly</a><a href="#starter">Code</a><a href="#test">Test</a><a href="#backup">Backup</a></nav>
+    </section>
+
+    <section class="section compact" id="gather">
+      <p class="eyebrow">01 · Gather</p><h2>Pack one demo and one spare.</h2>
+      <p>Keep each complete set together under one label, such as <strong>W-NP-01</strong> and <strong>W-NP-02</strong>. These quantities cover two systems. Add hands-on sets only to match the supervised group size.</p>
+      <div class="prep-table-wrap" tabindex="0" role="region" aria-label="Parts for two complete preview systems">
+        <table class="prep-table"><thead><tr><th scope="col">Part</th><th scope="col">For two sets</th><th scope="col">What to check</th></tr></thead><tbody>
+          <tr><th scope="row">Wearables micro:bit V2</th><td>2</td><td>W-labeled boards; keep R-labeled Robotics boards separate.</td></tr>
+          <tr><th scope="row">WS2812B RGB strip</th><td>2 × 12 pixels</td><td>Count pixels and use the marked cut line. Locate DIN and the arrows.</td></tr>
+          <tr><th scope="row">micro:bit 2×AAA holder</th><td>2</td><td>Use the Club Kit holder with the proper battery plug and polarity.</td></tr>
+          <tr><th scope="row">Switched 3×AAA pixel holder</th><td>2</td><td>Nominally 4.5 V with alkaline cells; verify suitability for the delivered strip.</td></tr>
+          <tr><th scope="row">Fresh AAA alkaline cells</th><td>10</td><td>Five per system. Keep battery chemistry consistent.</td></tr>
+          <tr><th scope="row">330 Ω resistor</th><td>2</td><td>One in each data path, close to the first pixel.</td></tr>
+          <tr><th scope="row">1000 µF, 6.3 V capacitor</th><td>2</td><td>One across each pixel supply; identify + and −. A 10 V rating is also suitable.</td></tr>
+          <tr><th scope="row">ALITOVE 3-pin JST-SM leads</th><td>2 mating pairs</td><td>Verify +V / DATA / GND on both halves. These do not attach directly to the micro:bit.</td></tr>
+          <tr><th scope="row">P0/GND connection and data interface</th><td>One solution per set</td><td><a href="#interface">Resolve before powering.</a> Do not solder directly to the micro:bit.</td></tr>
+          <tr><th scope="row">Wire, heat-shrink, labels, mounting</th><td>For both sets</td><td>22 AWG insulated wire, individually insulated joints, strain relief, and two nonconductive bases.</td></tr>
+        </tbody></table>
+      </div>
+      <p><strong>Shared tools:</strong> multimeter, wire stripper, soldering iron and solder, suitable soldering workspace, heat-shrink tool, Windows laptop, USB data cable, and an iPad or phone for the backup video.</p>
+      <p class="prep-source">The capacitor and resistor match <a href="https://learn.adafruit.com/adafruit-neopixel-uberguide/powering-neopixels">Adafruit’s power guidance</a>. The capacitor’s negative side usually has a stripe; read its markings before assembly.</p>
+    </section>
+
+    <section class="section compact" id="order">
+      <p class="eyebrow">Order reference · Checked September 21, 2026</p><h2>What the Stauffer request lists.</h2>
+      <p>The relevant <strong>Quantity Received cells were blank</strong> when checked. These are requested quantities, not confirmed inventory. <a href="https://docs.google.com/spreadsheets/d/12Vz_3wxPcU4_DL9g7hyvn1MOQ-3SmjVzx2BUPvUoqgs/edit#gid=2033800378&amp;range=A17:G36">Open Stauffer order rows 17–36 →</a></p>
+      <div class="callout"><strong>Count pixels before cutting.</strong> Row 17 says 30 LEDs/m, but <a href="https://www.amazon.com/dp/B088BPGMXB">ASIN B088BPGMXB</a> currently selects a BTF-LIGHTING WS2812B/ECO 5 V strip with 300 pixels per 5 m roll: <strong>60 LEDs/m</strong>, black PCB, IP30. A 12-pixel segment is approximately 20 cm at 60/m or 40 cm at 30/m. Verify the delivered roll. Keep the code at 12 pixels either way.</div>
+      <div class="prep-table-wrap" tabindex="0" role="region" aria-label="Requested NeoPixel materials and source rows"><table class="prep-table"><thead><tr><th scope="col">Order row</th><th scope="col">Requested material</th><th scope="col">Quantity</th></tr></thead><tbody>
+        <tr><th scope="row">17</th><td>BTF-LIGHTING strip · B088BPGMXB</td><td>4 rolls; 600 pixels by the sheet description or 1,200 by the currently linked variant.</td></tr>
+        <tr><th scope="row">18</th><td>GeeekPi micro:bit V2 Club Kit · B0BGRRYXSG</td><td>4 ten-board kits: 40 boards, 40 USB cables, 40 two-cell holders, and 80 included AAA cells.</td></tr>
+        <tr><th scope="row">19–20</th><td>Switched 3×AAA holders; additional AAA alkaline cells</td><td>6 ten-packs = 60 holders; 2 hundred-packs = 200 cells.</td></tr>
+        <tr><th scope="row">21–23</th><td>BNTECHGO 22 AWG silicone wire</td><td>3 × 100-foot spools; black, yellow, and one color unnamed in the sheet.</td></tr>
+        <tr><th scope="row">24</th><td>330 Ω, ¼ W, 1% resistors</td><td>1 hundred-pack.</td></tr>
+        <tr><th scope="row">25</th><td>1000 µF, 6.3 V electrolytic capacitors · B0GBYCXDH8</td><td>2 packs. The linked 20-pack implies 40 capacitors if that variant was ordered.</td></tr>
+        <tr><th scope="row">30</th><td>innhom heat-shrink tubing</td><td>1 × 650-piece assortment; check sizes.</td></tr>
+        <tr><th scope="row">36</th><td>ALITOVE JST-SM connectors · B071H5XCN5</td><td>3 twenty-set packs = 60 mating pairs; 15 cm, 20 AWG leads.</td></tr>
+      </tbody></table></div>
+      <p class="prep-source"><a href="https://52pi.com/products/bbc-micro-bit-v2-club-kit-10-pack-microbit-v2-go-kit-with-10-bbc-micro-bit-v2-boards-battery-holders-micro-usb-cable-20-aaa-batteries-for-coding-and-programming">Club Kit package contents</a> · <a href="https://www.amazon.com/dp/B0GBYCXDH8">Capacitor pack size</a>. No dedicated breakout, crocodile leads, or level shifter is listed in the populated Stauffer request. M3 hardware appears in rows 49–51, but its presence does not establish a tested electrical connection.</p>
+    </section>
+
+    <section class="section compact" id="interface">
+      <p class="eyebrow">02 · Confirm the interface</p><h2>Match the signal to the strip.</h2>
+      <div class="lesson-grid"><article class="lesson-block"><h3>Physical connection</h3><p>Choose a suitable edge breakout or secure, insulated connections to the micro:bit’s <strong>P0</strong> and <strong>GND</strong>. Check existing equipment. The three-pin JST connector belongs between the harness and strip.</p></article><article class="lesson-block"><h3>Data voltage</h3><p>The micro:bit uses approximately 3 V logic; the planned pixel holder provides nominally 4.5 V. Check the delivered strip’s input-high requirement against the controller’s output over the intended battery range.</p></article></div>
+      <p>If the signal does not meet that requirement, select a WS2812-compatible level-shifting interface. Its supply range, direction, enable pins, and grounds must match this system. A generic converter or a 5 V-only module is not automatically suitable for three AAA cells as they discharge.</p>
+      <p><strong>The order does not prove direct-data compatibility.</strong> The diagram below shows an unresolved interface, not permission to omit it. A direct P0 connection is appropriate only after compatibility is established. <a href="https://learn.adafruit.com/adafruit-neopixel-uberguide/logic-level">Read Adafruit’s logic-level explanation →</a></p>
+    </section>
+
+    <section class="section compact" id="wiring">
+      <p class="eyebrow">03 · Trace the wiring</p><h2>Separate positive supplies. Shared ground.</h2>
+      <p>This is a functional map. The identified interface’s supply and enable pins must follow its own documentation. On a small screen, scroll the diagram sideways.</p>
+      <figure class="prep-diagram"><div class="prep-diagram-scroll" tabindex="0" role="region" aria-label="Scrollable functional wiring diagram">
+        <svg viewBox="0 0 1120 530" role="img" aria-labelledby="wiring-title wiring-desc" xmlns="http://www.w3.org/2000/svg">
+          <title id="wiring-title">NeoPixel preview: two power supplies and one shared ground</title><desc id="wiring-desc">Two AAA cells power only the micro:bit through its battery plug. P0 connects through the pending verified interface and a 330 ohm resistor to DIN. Three AAA cells power the strip positive terminal through a switch. A 1000 microfarad capacitor connects across pixel positive and ground. Pixel negative, strip ground, and micro:bit ground join. The positive supplies do not join.</desc>
+          <defs><marker id="data-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8Z" fill="#5f3dc4"/></marker></defs>
+          <rect x="24" y="26" width="1072" height="478" rx="20" fill="#fff" stroke="#dfe3ec"/>
+          <g font-family="Arial, sans-serif" font-size="18" fill="#18233a">
+            <rect x="52" y="60" width="180" height="92" rx="12" fill="#fff7df" stroke="#9a680d" stroke-width="2"/><text x="142" y="96" text-anchor="middle" font-weight="700">2 × AAA</text><text x="142" y="124" text-anchor="middle">micro:bit only</text>
+            <path d="M232 106 H280" stroke="#b83c30" stroke-width="4"/><rect x="280" y="60" width="170" height="190" rx="12" fill="#f1ebff" stroke="#5f3dc4" stroke-width="2"/><text x="365" y="98" text-anchor="middle" font-weight="700">micro:bit V2</text><text x="296" y="131" font-size="15">Battery plug</text><text x="409" y="172" font-weight="700">P0</text><text x="307" y="224" font-weight="700">GND</text>
+            <path d="M450 165 H505" stroke="#5f3dc4" stroke-width="4" marker-end="url(#data-arrow)"/><rect x="510" y="120" width="180" height="90" rx="12" fill="#fff7df" stroke="#9a680d" stroke-width="2" stroke-dasharray="7 5"/><text x="600" y="151" text-anchor="middle" font-weight="700">Data interface</text><text x="600" y="179" text-anchor="middle" font-size="16">Decision pending</text>
+            <path d="M690 165 H717 M801 165 H861" stroke="#5f3dc4" stroke-width="4" marker-end="url(#data-arrow)"/><rect x="717" y="147" width="84" height="36" fill="#f1ebff" stroke="#5f3dc4" stroke-width="2"/><text x="759" y="171" text-anchor="middle" font-weight="700">330 Ω</text><text x="759" y="208" text-anchor="middle" font-size="15">Near DIN</text>
+            <rect x="870" y="120" width="190" height="210" rx="12" fill="#eaf8f6" stroke="#168b88" stroke-width="2"/><text x="965" y="149" text-anchor="middle" font-weight="700">12-pixel strip</text><text x="884" y="181" font-weight="700">DIN → 0 → … → 11</text><text x="884" y="246" font-weight="700">+V</text><text x="884" y="303" font-weight="700">GND</text>
+            <rect x="52" y="300" width="180" height="102" rx="12" fill="#fff7df" stroke="#9a680d" stroke-width="2"/><text x="142" y="333" text-anchor="middle" font-weight="700">3 × AAA</text><text x="142" y="359" text-anchor="middle">Switched · pixels</text><text x="142" y="383" text-anchor="middle" font-size="15">Nominally 4.5 V</text>
+            <path d="M232 327 H520 V240 H870" stroke="#b83c30" stroke-width="4" fill="none"/><text x="583" y="270" fill="#9d2f26" font-size="16">Pixel positive (+V)</text>
+            <path d="M330 250 V442 H965 V330 M232 378 H266 V442 H330" stroke="#18233a" stroke-width="4" fill="none"/><text x="430" y="476" text-anchor="middle" font-weight="700">COMMON GROUND</text>
+            <path d="M765 240 V344 M735 344 H795 M735 358 H795 M765 358 V442" stroke="#18233a" stroke-width="3"/><circle cx="765" cy="240" r="6" fill="#b83c30"/><circle cx="765" cy="442" r="6" fill="#18233a"/><circle cx="330" cy="442" r="6" fill="#18233a"/><text x="805" y="342" font-weight="700">+</text><text x="805" y="374" font-weight="700">−</text><text x="700" y="389" text-anchor="end" font-size="17">1000 µF</text><text x="700" y="412" text-anchor="end" font-size="15">6.3 V or higher</text>
+          </g>
+        </svg>
+      </div><figcaption>Capacitor across +V and GND; resistor in series with data. The micro:bit 3V ring stays separate from pixel +V.</figcaption></figure>
+      <div class="callout coral"><strong>Never connect the three-cell positive supply to the micro:bit’s 3V ring or battery input.</strong> Power the strip from its own holder and join the grounds. See the <a href="https://tech.microbit.org/hardware/powersupply/">micro:bit supply limits</a>.</div>
+    </section>
+
+    <section class="section compact" id="assembly">
+      <p class="eyebrow">04 · Adult assembly</p><h2>Build with batteries and USB removed.</h2>
+      <ol class="build-steps">
+        <li><div><strong>Identify the strip input.</strong><p>Count 12 pixels and find a marked cut line. The arrows point away from DIN. Verify the delivered product’s pads and voltage specification.</p></div></li>
+        <li><div><strong>Map both connector halves.</strong><p>Use pad labels and a meter to identify +V, DATA, and GND end-to-end. Do not rely on wire color or connector gender. Label both halves; arrange the powered side with recessed contacts.</p></div></li>
+        <li><div><strong>Make the ground and pixel-power connections.</strong><p>Join micro:bit GND, strip GND, and pixel-holder negative. Connect the pixel holder’s switched positive to strip +V. Follow the verified interface’s documentation for any additional connections.</p></div></li>
+        <li><div><strong>Install the capacitor.</strong><p>Connect capacitor + to pixel +V and capacitor − to shared ground, close to the strip input. It sits across the supply, not in series with a wire.</p></div></li>
+        <li><div><strong>Complete the verified data path.</strong><p>Connect P0 through the chosen interface, then the 330 Ω resistor near DIN, then DIN. Use a direct connection only after the <a href="#interface">interface check</a>.</p></div></li>
+        <li><div><strong>Inspect and meter the unpowered harness.</strong><p>Check for solder bridges and loose strands. Verify each connection against the labels. Check for a sustained +V-to-GND short; a capacitor can cause a brief meter indication. Confirm pixel +V is not joined to micro:bit 3V.</p></div></li>
+        <li><div><strong>Insulate, support, and label.</strong><p>Insulate each exposed joint separately. Add strain relief to protect strip pads. Mount the board, holders, and strip on a nonconductive base with accessible buttons and switches.</p></div></li>
+        <li><div><strong>Check the holder before connection.</strong><p>With the holder disconnected from the harness, check its output polarity and voltage. Switch it off before reconnecting. Power the assembly only after inspection and the interface decision.</p></div></li>
+      </ol>
+      <p class="prep-source">Keep signal wires short and use secure leads, following <a href="https://learn.adafruit.com/adafruit-neopixel-uberguide/best-practices">Adafruit’s connection guidance</a>.</p>
+    </section>
+
+    <section class="section compact" id="starter">
+      <p class="eyebrow">05 · Program</p><h2>Give each button one clear job.</h2>
+      <div class="prep-behaviors"><article><span class="prep-key">A</span><h3>All purple</h3><p>Every pixel shows the same color.</p></article><article><span class="prep-key">B</span><h3>Cyan + blue</h3><p>Alternating colors show pixel order.</p></article><article><span class="prep-key">A+B</span><h3>Lights off</h3><p>Clears the strip. Battery power remains connected.</p></article></div>
+      <ol class="build-steps"><li><div><strong>Create the MakeCode project.</strong><p>Open <a href="https://makecode.microbit.org/">MakeCode for micro:bit</a>. Name the project <code>Femineers-NeoPixel-Preview</code>. Open Extensions and add Microsoft’s <code>neopixel</code> extension. If needed, search with <code>https://github.com/microsoft/pxt-neopixel</code>.</p></div></li><li><div><strong>Paste the code in JavaScript view.</strong><p>Use the code below. It starts with 12 pixels on P0 at brightness 40/255. Set <code>PIXEL_COUNT</code> to the actual segment count. <code>NeoPixelMode.RGB</code> means the standard GRB-order RGB strip mode; check the product if colors are swapped.</p></div></li><li><div><strong>Disconnect the battery system before USB transfer.</strong><p>Disconnect both supplies and the strip harness from the W-labeled micro:bit. Download using the USB data cable and wait until transfer finishes. Remove USB before reconnecting the inspected, unpowered system.</p></div></li></ol>
+      <div class="prep-code-actions no-print"><a class="button secondary" href="assets/downloads/neopixel-preview-starter.ts" download>Download starter code (.ts)</a><button class="button" type="button" id="copy-starter" hidden>Copy code</button><span id="copy-status" role="status" aria-live="polite"></span></div>
+      <p class="prep-source">The download is source code to paste into MakeCode, not a compiled .hex file. Button logic was checked with simulated APIs; physical hardware testing is still required. <a href="https://makecode.microbit.org/pkg/microsoft/pxt-neopixel">Microsoft extension documentation</a>.</p>
+      <pre class="prep-code" tabindex="0" aria-label="MakeCode JavaScript starter program"><code id="starter-code">// Add the Microsoft "neopixel" extension in MakeCode before pasting.
+// W-labeled micro:bit only. Default: 12 standard GRB-order RGB pixels on P0.
+// Bench-test on the completed, verified harness before student use.
+let PIXEL_COUNT = 12
+let strip = neopixel.create(DigitalPin.P0, PIXEL_COUNT, NeoPixelMode.RGB)
+strip.setBrightness(40)
+strip.clear()
+strip.show()
+
+input.onButtonPressed(Button.A, function () {
+    strip.showColor(neopixel.rgb(255, 0, 255))
+})
+
+input.onButtonPressed(Button.B, function () {
+    strip.clear()
+    for (let i = 0; i &lt; PIXEL_COUNT; i++) {
+        if (i % 2 == 0) {
+            strip.setPixelColor(i, neopixel.rgb(0, 255, 255))
+        } else {
+            strip.setPixelColor(i, neopixel.rgb(0, 0, 255))
+        }
+    }
+    strip.show()
+})
+
+input.onButtonPressed(Button.AB, function () {
+    strip.clear()
+    strip.show()
+})
+</code></pre>
+    </section>
+
+    <section class="section compact" id="test">
+      <p class="eyebrow">06 · Bench test</p><h2>Prove the complete set works.</h2>
+      <p>Use the exact board, strip, harness, and batteries that will stay together on Thursday. These checks support a classroom rehearsal; they do not replace component specifications. On-screen checkmarks are temporary—print or photograph the completed record.</p>
+      <ul class="prep-checks">
+        <li><label><input type="checkbox"> <span>Interface and physical connections verified; all joints insulated and parts secured.</span></label></li>
+        <li><label><input type="checkbox"> <span>Start with both holders off. Switch <strong>pixels on first</strong>, then micro:bit power. Startup leaves the strip dark.</span></label></li>
+        <li><label><input type="checkbox"> <span>A lights all 12 pixels purple. A+B turns every pixel off, and they stay off after release.</span></label></li>
+        <li><label><input type="checkbox"> <span>B alternates cyan and blue from pixel 0 at DIN. A+B turns every pixel off again.</span></label></li>
+        <li><label><input type="checkbox"> <span>Repeat the sequence five times. Observe each pattern for several minutes; confirm reset returns to lights off.</span></label></li>
+        <li><label><input type="checkbox"> <span>No heat, odor, damaged insulation, loose mounting, flicker, or unstable behavior. Stop and remove power for a fault; inspect with power off.</span></label></li>
+        <li><label><input type="checkbox"> <span>Complete three shutdown/startup cycles. Shutdown: <strong>A+B → micro:bit off → pixels off</strong>. Startup: <strong>pixels on → micro:bit on</strong>.</span></label></li>
+        <li><label><input type="checkbox"> <span>Another mentor can run A, B, A+B, startup, and shutdown using the labels.</span></label></li>
+        <li><label><input type="checkbox"> <span>Record the set ID, strip model/count, interface, battery type, code name, date, tester, and issues. Mark READY only after the complete set passes.</span></label></li>
+      </ul>
+      <p><strong>Keep this preview on the table.</strong> Brightness 40 is the starting point; it does not establish electrical compatibility or a safe current budget.</p>
+    </section>
+
+    <section class="section compact" id="backup">
+      <p class="eyebrow">07 · Back up the demonstration</p><h2>Make the spare just as ready.</h2>
+      <div class="lesson-grid"><article class="lesson-block"><h3>Keep one whole-system spare</h3><p>Test and label the second complete system independently. Keep its board, strip, harness, and two holders together. Replace a failed set as a whole and put it in INSPECT.</p></article><article class="lesson-block"><h3>Record 30–60 seconds</h3><p>Show the set label, both power supplies, shared ground, data path, and DIN arrow. Demonstrate A, B, A+B, then shutdown. Save the video on the presentation device and check playback without internet.</p></article></div>
+      <p>On Thursday, display this functional diagram beside a photo of the actual tested wiring. Students operate buttons and explain the system; an adult handles hardware faults.</p>
+      <div class="button-row no-print"><a class="button" href="mentors.html#september-24">September 24 mentor plan</a><a class="button secondary" href="meet-the-neopixels.html">Student NeoPixel guide</a><a class="button secondary" href="mentor-print-center.html">Print Center</a></div>
+    </section>
+  </main>
+  <footer class="site-footer"><p><strong>Stauffer Femineers</strong> · Prepare, test, label, then teach.</p><nav class="footer-nav no-print" aria-label="Program information"><a href="program-roadmap.html">All dates</a><a href="recruitment.html">About &amp; joining</a><a href="family-commitment.html">Family information</a><a href="mentors.html">Mentor resources</a></nav></footer>
+  <script src="assets/site.js"></script>
+  <script src="assets/neopixel-prep.js"></script>
+</body>
+</html>
