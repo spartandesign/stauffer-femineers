@@ -40,4 +40,7 @@
   .supply-photo-dialog { padding: 16px; }
 }
 @media (max-width: 360px) { .supply-photo-grid { grid-template-columns: 1fr; } }
-@media print { .supply-photos, .supply-photo-dialog, .supply-concept-preview { display: none !important; } }
+@media print {
+  .supply-photos, .supply-photo-dialog, .supply-concept-preview { display: none !important; }
+  .photo-modal-open { overflow: visible; }
+}
