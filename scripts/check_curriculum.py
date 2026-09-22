@@ -5,6 +5,7 @@ from urllib.parse import urlsplit, unquote
 import re
 import subprocess
 from build_navigation import GENERATED
+from build_supply_photos import without_photo_panels
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -79,7 +80,7 @@ def main():
             errors.append(f'{name}: removed old anchors {sorted(lost)}')
         if name not in allowed_body_changes | GENERATED:
             old_body = main_body(original).replace('September 14', 'September 24').replace('Sept. 14', 'Sept. 24')
-            if old_body.strip() != main_body(sources[name]).strip():
+            if without_photo_panels(old_body).strip() != without_photo_panels(main_body(sources[name])).strip():
                 errors.append(f'{name}: unexpected lesson body change')
             else:
                 preserved += 1
