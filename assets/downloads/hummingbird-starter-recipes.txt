@@ -1,0 +1,42 @@
+STAUFFER FEMINEERS - BIRDBLOX MENTOR STARTER RECIPES
+Assembly notes, NOT an importable BirdBlox program. Build and test on the actual iPad/kit.
+Every robot block selects the assigned device.
+Ports: Distance sensor SENSORS 1; single-color LED LEDS 1; POSITION servo SERVOS 1.
+Replace HOME and ACTIVE with preflighted numeric angles and T with the measured threshold (cm).
+Keep hands outside the marked motion zone. No forever loops in these starters.
+
+SAFE RESET / R1 Connect Check
+when green flag clicked
+  Bit LED port 1 brightness 0
+  Bit Position Servo port 1 angle HOME
+  wait 1 second (increase if the tested mechanism needs more settling time)
+
+R2 Read Input
+Place the Bit Sensor reporter, choose Distance and port 1. Tap it to read.
+Record far, near, far; choose T between stable near and far ranges.
+
+R3 Test Outputs
+when green flag clicked
+  LED 1 = 0; position servo 1 = HOME; wait 1
+  LED 1 = 50; wait 1; LED 1 = 0
+  position servo 1 = ACTIVE; wait 1; position servo 1 = HOME; wait 1
+  LED 1 = 50; position servo 1 = ACTIVE; wait 1
+  LED 1 = 0; position servo 1 = HOME; wait 1
+
+R4 Complete Interaction
+when green flag clicked
+  LED 1 = 0; position servo 1 = HOME; wait 1
+  if (Bit Sensor Distance port 1 < T) then
+    LED 1 = 50; position servo 1 = ACTIVE; wait 1
+  else
+    LED 1 = 0; position servo 1 = HOME
+  LED 1 = 0; position servo 1 = HOME; wait 1
+The final reset is AFTER the whole IF/ELSE. Equal to T takes the else branch.
+Place target before tapping the flag; one sample per run. Repeat for far/near trials.
+
+NORMAL CLOSE
+Let the one-shot challenge finish or stop its script. Open SAFE RESET, run it,
+wait for HOME, then Stop, disconnect BirdBlox, and switch kit power off.
+FAULT: stop code if control is available, switch off immediately, keep hands clear
+until motion stops, then disconnect and inspect. Do not drive a stalled mechanism home.
+Reference: https://learn.birdbraintechnologies.com/hummingbirdbit/birdblox/program
