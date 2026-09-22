@@ -4,6 +4,7 @@ from pathlib import Path
 from urllib.parse import urlsplit, unquote
 import re
 import subprocess
+from build_navigation import GENERATED
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -76,7 +77,7 @@ def main():
         lost = set(Page(original).ids) - set(pages[name].ids)
         if lost:
             errors.append(f'{name}: removed old anchors {sorted(lost)}')
-        if name not in allowed_body_changes:
+        if name not in allowed_body_changes | GENERATED:
             old_body = main_body(original).replace('September 14', 'September 24').replace('Sept. 14', 'Sept. 24')
             if old_body.strip() != main_body(sources[name]).strip():
                 errors.append(f'{name}: unexpected lesson body change')

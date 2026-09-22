@@ -88,7 +88,7 @@ def list_html(items):
 
 
 def category(filename):
-    if filename in {"mentors.html", "mentor-lesson-plans.html", "mentor-print-center.html", "recruitment-toolkit.html"}:
+    if filename in {"mentors.html", "mentor-lesson-plans.html", "mentor-print-center.html", "mentor-neopixel-prep.html", "recruitment-toolkit.html"}:
         return "mentors.html"
     if filename in {"index.html", "recruitment.html", "student-application.html", "returning-member-confirmation.html", "teacher-recommendation.html", "family-commitment.html", "404.html"}:
         return "index.html"
@@ -192,14 +192,15 @@ def room_plan():
 
 def mentors():
     body = hero('Tri · Jennifer · Stephanie', 'Your mentor<br><span>start page.</span>', 'Choose the date, read your role, and open the complete lesson when you need the technical detail. The full playbook and print resources remain available.')
-    body += '<section class="section compact"><div class="hub-links">' + link("mentor-lesson-plans.html", "Full mentor playbook") + link("mentor-print-center.html", "Print Center") + link("program-roadmap.html", "All dates") + link("recruitment-toolkit.html", "Recruitment toolkit") + '</div>' + room_plan()
+    body += '<section class="section compact"><div class="hub-links">' + link("mentor-lesson-plans.html", "Full mentor playbook") + link("mentor-print-center.html", "Print Center") + link("mentor-neopixel-prep.html", "NeoPixel mentor prep") + link("program-roadmap.html", "All dates") + link("recruitment-toolkit.html", "Recruitment toolkit") + '</div>' + room_plan()
     body += '<label class="session-picker" for="mentor-session" hidden>Jump to a date<select id="mentor-session">' + ''.join(f'<option value="{s["id"]}">{esc(s["date"])} · {esc(s["title"])}</option>' for s in SESSIONS) + '</select></label>'
     for i, s in enumerate(SESSIONS):
         body += f'<details class="curriculum-detail mentor-session" id="{s["id"]}"' + (' open' if i == 0 else '') + f'><summary>{session_summary(s)}</summary><div class="detail-body"><p><strong>Prepare:</strong> {esc(s["prepare"])}</p><div class="mentor-role-grid">'
         for person, role, key in [('Jennifer', 'Wearables', 'j'), ('Stephanie', 'Creative Robotics', 's'), ('Tri', 'Technical lead', 't')]:
             body += f'<article><h3>{person}</h3><strong>{role}</strong><p>{esc(s[key])}</p></article>'
-        body += f'</div><p><strong>Before students leave:</strong> {esc(s["goal"])}</p><div class="button-row">' + link(s['mentor'], 'Open the complete mentor plan', 'button') + link(s['guide'], 'Open the student guide', 'button secondary') + link('mentor-print-center.html#september-14' if i == 0 else 'mentor-print-center.html#later-workdays', 'Find the print materials', 'button secondary') + '</div>'
+        body += f'</div><p><strong>Before students leave:</strong> {esc(s["goal"])}</p><div class="button-row">' + link(s['mentor'], 'Open the complete mentor plan', 'button') + link(s['guide'], 'Open the student guide', 'button secondary') + link('mentor-print-center.html#september-24' if i == 0 else 'mentor-print-center.html#later-workdays', 'Find the print materials', 'button secondary') + '</div>'
         if i == 0:
+            body += '<p>' + link('mentor-neopixel-prep.html', 'Prepare the NeoPixel demo: parts, wiring, starter code, and test checklist') + '</p>'
             body += '<details class="agenda-detail"><summary>September 24 agenda · Thursday bells</summary><div class="agenda-wrap"><table class="agenda-table"><thead><tr><th>Time</th><th>Plan</th></tr></thead><tbody>' + ''.join(f'<tr><th>{a}</th><td>{b}</td></tr>' for a, b in [
                 ('8:00–9:25', 'Attendance, welcome, safety, and three-idea brainstorm'), ('9:25–9:38', 'Snack'), ('9:38–9:42', 'Return and settle'), ('9:42–11:09', 'Supervised technology exploration'), ('11:09–11:17', 'Pause, save evidence, and reset'), ('11:17–12:42', 'Finish exploration and begin labeled proposals'), ('12:42–1:12', 'Lunch'), ('1:12–1:16', 'Return and settle'), ('1:16–2:21', 'Proposal studio, staggered mentor reviews, and revisions'), ('2:21–2:41', 'Evidence, next action, safe storage, and cleanup')]) + '</tbody></table></div><p>Bell times follow the supplied Stauffer 2025–2026 schedule. Keep all required exploration evidence; use supervised demonstrations or smaller groups when a live activity exceeds capacity.</p></details>'
         elif 'lunch' in s['kind'].lower():
