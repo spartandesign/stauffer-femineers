@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" role="img" aria-labelledby="title desc">
+<title id="title">Two separate badge circuit paths</title><desc id="desc">Conceptual holder-to-LED map with positive across the top and negative across the bottom. Battery removed for construction; both sides inspected before power.</desc>
+<style>text{font-family:Arial,sans-serif;fill:#18233a}.title{font-size:24px;font-weight:bold}.label{font-size:19px;font-weight:bold}.small{font-size:17px}.pad{fill:#fff;stroke:#514766;stroke-width:3}</style>
+<rect width="900" height="460" rx="18" fill="#fff"/>
+<text x="30" y="40" class="title">Mentor concept map · read the actual component marks</text>
+<rect x="32" y="65" width="836" height="330" rx="24" fill="#faf7f0" stroke="#bcaf94" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="55" y="96" class="small">Felt · routes remain separated on front AND back</text>
+<rect x="110" y="172" width="210" height="122" rx="20" fill="#e8e0fc" stroke="#5f3dc4" stroke-width="2"/>
+<text x="133" y="211" class="label">Switched holder</text><text x="136" y="240" class="small">Battery removed</text><text x="136" y="269" class="small">for construction</text>
+<rect x="80" y="211" width="30" height="45" rx="3" fill="#18233a"/>
+<text x="58" y="332" class="small">Switch + opening:</text><text x="58" y="355" class="small">keep accessible</text>
+<rect x="620" y="172" width="180" height="122" rx="20" fill="#e7f4f2" stroke="#137b76" stroke-width="2"/>
+<text x="647" y="211" class="label">Verified LED</text><text x="639" y="240" class="small">Current limiting</text><text x="641" y="269" class="small">must be verified</text>
+<path d="M285 172 V132 H650 V172" stroke="#b34326" stroke-width="6" fill="none"/>
+<path d="M285 294 V363 H650 V294" stroke="#235a8c" stroke-width="6" stroke-dasharray="11 5" fill="none"/>
+<circle cx="285" cy="172" r="16" class="pad"/><circle cx="650" cy="172" r="16" class="pad"/>
+<text x="279" y="179" class="label">+</text><text x="644" y="179" class="label">+</text>
+<circle cx="285" cy="294" r="16" class="pad"/><circle cx="650" cy="294" r="16" class="pad"/>
+<text x="279" y="300" class="label">−</text><text x="644" y="300" class="label">−</text>
+<text x="347" y="122" class="label">Separate + route</text>
+<text x="347" y="349" class="label">Fresh thread for − route</text>
+<text x="362" y="216" class="small">No crossed stitches</text><text x="362" y="242" class="small">No bridging knot tails</text><text x="362" y="268" class="small">No pressure-only contact</text>
+<text x="30" y="429" class="small">Not a pad-placement template. Base, attachment, and actual wiring need physical release.</text>
+</svg>
