@@ -66,7 +66,7 @@ def main():
         errors.append(f'Unreachable pages: {sorted(unreachable)}')
     original_names = subprocess.check_output(['git', 'ls-tree', '--name-only', 'HEAD'], cwd=ROOT, text=True).splitlines()
     preserved = 0
-    allowed_body_changes = {'index.html', 'start-here.html', 'mentor-lesson-plans.html', 'mentor-print-center.html', 'program-roadmap.html', 'lunch-checkpoints.html', 'phase-2-prototype.html', 'recruitment.html', 'recruitment-toolkit.html', 'family-commitment.html', 'student-application.html', 'returning-member-confirmation.html', 'our-supplies.html', 'meet-the-neopixels.html', 'wearable-design-proposal.html', 'fabrication-lab.html', '404.html'}
+    allowed_body_changes = {'index.html', 'start-here.html', 'mentor-lesson-plans.html', 'mentor-print-center.html', 'mentor-neopixel-prep.html', 'program-roadmap.html', 'lunch-checkpoints.html', 'phase-2-prototype.html', 'recruitment.html', 'recruitment-toolkit.html', 'family-commitment.html', 'student-application.html', 'returning-member-confirmation.html', 'our-supplies.html', 'meet-the-neopixels.html', 'wearable-design-proposal.html', 'fabrication-lab.html', '404.html'}
     for name in original_names:
         if not name.endswith('.html'):
             continue
