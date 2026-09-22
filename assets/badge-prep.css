@@ -1,0 +1,15 @@
+.badge-prep .badge-demo { margin-bottom: 28px; }
+.badge-prep .badge-demo > li { margin: 8px 0; }
+.badge-prep .badge-record-table tbody th { width: 24%; }
+.badge-prep .badge-record-table td { overflow-wrap: anywhere; }
+.badge-prep .badge-trial-table th { width: auto; }
+.badge-prep .record-lines { overflow-wrap: anywhere; }
+@media print {
+  .badge-prep .badge-record { break-before: page; }
+  .badge-prep .prep-summary { display: none; }
+  .badge-prep .badge-record-table td { padding-top: 10px; padding-bottom: 10px; }
+  .badge-prep .badge-trial-table td { height: 32px; }
+  .badge-prep.station-sheet .prep-table tbody th { width: 14%; }
+  .badge-prep.station-sheet .guide-card { padding: 6px 9px; }
+  .badge-prep.station-sheet .guide-card h3 { margin-bottom: 6px; }
+}

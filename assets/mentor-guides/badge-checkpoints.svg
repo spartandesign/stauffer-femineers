@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 310" role="img" aria-labelledby="title desc">
+<title id="title">Four badge preparation checkpoints</title><desc id="desc">Build with battery removed, inspect both sides, test on the table, secure and retest before wearing.</desc>
+<style>text{font-family:Arial,sans-serif;fill:#18233a}.title{font-size:23px;font-weight:bold}.heading{font-size:19px;font-weight:bold}.small{font-size:16px}.number{font-size:21px;font-weight:bold;fill:white}</style>
+<rect width="900" height="310" rx="18" fill="#fff"/>
+<text x="28" y="39" class="title">Build → inspect → table test → secure, retest, wear</text>
+<g fill="#f6f2ff" stroke="#d8cbea"><rect x="25" y="63" width="200" height="216" rx="15"/><rect x="241" y="63" width="200" height="216" rx="15"/><rect x="457" y="63" width="200" height="216" rx="15"/><rect x="673" y="63" width="200" height="216" rx="15"/></g>
+<g fill="#5f3dc4"><circle cx="53" cy="92" r="17"/><circle cx="269" cy="92" r="17"/><circle cx="485" cy="92" r="17"/><circle cx="701" cy="92" r="17"/></g>
+<g class="number"><text x="47" y="99">1</text><text x="263" y="99">2</text><text x="479" y="99">3</text><text x="695" y="99">4</text></g>
+<text x="80" y="99" class="heading">Assemble</text><text x="296" y="99" class="heading">Inspect</text><text x="512" y="99" class="heading">Test flat</text><text x="728" y="99" class="heading">Finish</text>
+<rect x="87" y="120" width="72" height="37" rx="5" fill="#fff" stroke="#655782" stroke-width="2"/><text x="106" y="146" class="heading">OFF</text>
+<path d="M280 130 H402 M280 151 H402" stroke="#137b76" stroke-width="5"/><text x="300" y="179" class="small">Two sides</text>
+<circle cx="557" cy="137" r="17" fill="#f7d773" stroke="#a56b00" stroke-width="2"/><path d="M496 173 H618" stroke="#655782" stroke-width="4"/>
+<rect x="744" y="124" width="58" height="52" rx="8" fill="#fff" stroke="#137b76" stroke-width="3"/><path d="M754 149 L768 161 L790 136" fill="none" stroke="#137b76" stroke-width="4"/>
+<g class="small"><text x="43" y="204">Battery out.</text><text x="43" y="229">Use approved parts</text><text x="43" y="254">and separate paths.</text>
+<text x="259" y="204">No bridges or tails.</text><text x="259" y="229">Contacts snug;</text><text x="259" y="254">parts cannot slide.</text>
+<text x="475" y="204">Power goes in last.</text><text x="475" y="229">Steady + cool;</text><text x="475" y="254">no squeezing.</text>
+<text x="691" y="204">Off for assembly.</text><text x="691" y="229">Secure, inspect,</text><text x="691" y="254">retest before wear.</text></g>
+</svg>
