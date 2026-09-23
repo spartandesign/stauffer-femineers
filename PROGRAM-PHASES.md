@@ -43,3 +43,9 @@ The program should not depend on Saturday workdays for completion. Previous Satu
 ## Room allocation
 
 36 students use six home tables: 18 individual Wearables students at W1–W3 (six per table), and 18 Creative Robotics students in nine pairs at R1–R3 (three pairs per table). Jennifer leads Wearables, Stephanie leads Robotics, and Tri supports technology. Table assignments do not imply six simultaneously staffed stations.
+
+## September 24 supply-delay adjustment
+
+The selected first-day plan is `mentor-backup-plan.html`, with the student route at `september-24-backup.html`. Reported stock covers nine paired sewing sets, nine Wearables micro:bit/laptop sets, and nine Hummingbird Bit/iPad sets; physical release checks remain required. Wearables practice sewing and coding in pairs, then create individual proposals; Robotics retain nine project pairs.
+
+Future Stamp uses paper symbol design and NeoPixels use an observed video/diagram preview. Record wood stitching and physical pixel tests as deferred. Use the four-page September-24-Backup studio packets, generated with scripts/build_backup_packets.py. Already-printed original sheets can be annotated with the same substitutions. Preserve actual/observed/simulated/deferred distinctions and a named next test for unresolved feasibility. Later program dates and final shirt, hat, and Robotics requirements remain as scheduled.

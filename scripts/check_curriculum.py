@@ -6,6 +6,7 @@ import re
 import subprocess
 from build_navigation import GENERATED
 from build_supply_photos import without_photo_panels
+from september_backup import without_backup_notices
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -80,7 +81,7 @@ def main():
             errors.append(f'{name}: removed old anchors {sorted(lost)}')
         if name not in allowed_body_changes | GENERATED:
             old_body = main_body(original).replace('September 14', 'September 24').replace('Sept. 14', 'Sept. 24')
-            if without_photo_panels(old_body).strip() != without_photo_panels(main_body(sources[name])).strip():
+            if without_backup_notices(without_photo_panels(old_body)).strip() != without_backup_notices(without_photo_panels(main_body(sources[name]))).strip():
                 errors.append(f'{name}: unexpected lesson body change')
             else:
                 preserved += 1
