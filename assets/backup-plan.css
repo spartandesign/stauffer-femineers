@@ -1,0 +1,12 @@
+.backup-plan .prep-table tbody th { width: 19%; }
+.backup-plan .guide-card li { margin: 9px 0; }
+.backup-plan video { object-fit: contain; }
+.backup-plan .guide-card a { overflow-wrap: anywhere; }
+@media print {
+  .backup-plan .prep-jumps { display: none; }
+  .backup-plan .guide-grid { display: block; }
+  .backup-plan .guide-card { margin: 10px 0; }
+  .backup-plan .prep-table-wrap { break-inside: auto; }
+  .backup-plan .prep-table tbody th { width: 19%; }
+  .backup-plan a { text-decoration: underline; }
+}

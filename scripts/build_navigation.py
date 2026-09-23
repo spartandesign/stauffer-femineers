@@ -5,6 +5,7 @@ Run after changing the data below. Existing lesson bodies and their URLs are ret
 from pathlib import Path
 import html
 import re
+from september_backup import AGENDA, MENTOR, STUDENT, build_pages, sync_notices
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -23,6 +24,19 @@ SESSIONS = [
     dict(id="march-1", date="March 1, 2027", kind="Showcase · Stauffer Library", title="Stauffer Gala", guide="program-roadmap.html", mentor="mentor-lesson-plans.html#day-6", evidence="gala-ready-evidence.html", evidence_label="Canvas: Stauffer Gala Reflection", goal="Present to real visitors, save evidence, and reflect on one improvement before the district celebration.", prepare="Use the February Gala-ready records to confirm transport, setup, and backup arrangements.", j="Support the Wearables fashion show and student explanations.", s="Support the Robotics gallery, resets, and partner participation.", t="Support reliable setup and record technical changes needed before the district event."),
     dict(id="march-18", date="March 18, 2027 · Evening", kind="Showcase · Downey High", title="District Femineers Gala", guide="program-roadmap.html", mentor="mentor-lesson-plans.html#day-6", evidence="gala-ready-evidence.html", evidence_label="Canvas: final portfolio & district reflection", goal="Present the polished project and complete the final portfolio and reflection in the scheduled Canvas window.", prepare="Confirm the district logistics and retest any changes made after the Stauffer Gala.", j="Support Wearables presentation, comfort, and packing.", s="Support Robotics demonstrations, both partners, and kit return.", t="Support technical readiness, backups, and final equipment inventory."),
 ]
+
+# The supply-delay plan is the selected first-day route. Later sessions retain their original scope.
+SESSIONS[0].update(
+    title="Code, test & design · Backup plan", guide=STUDENT, mentor=MENTOR,
+    w=STUDENT + '#wearables', r=STUDENT + '#robotics',
+    goal="Save actual practice and test evidence, label paper/observed/deferred work, and leave with a reviewed proposal and next action.",
+    w_task="Practice a sewn LED circuit and micro:bit coding in pairs; develop your own shirt-and-hat proposal. Use a paper symbol and an observed NeoPixel preview.",
+    r_task="Explore your assigned Hummingbird Bit input and outputs, test and improve an interaction, and develop a proposal with your partner.",
+    prepare="Use the confirmed stock from last year; physically test nine sewing, nine W coding, and nine R Robotics sets. Print the September 24 backup student packets.",
+    j="Lead sewn LED practice, then micro:bit coding for 18 students. Review individual proposals and record deferred wood/NeoPixel tests.",
+    s="Lead nine fixed Robotics pairs through inputs, outputs, three trials, and an improvement. Use two LEDs if movement is not ready.",
+    t="Release the tested equipment, identify each sensor, support troubleshooting, and lead the observed NeoPixel preview."
+)
 
 TUTORIALS = {
     "Wearables": [
@@ -72,7 +86,7 @@ TUTORIALS = {
 }
 
 NAV = [("index.html", "Home"), ("my-project.html", "My Project"), ("tutorials.html", "Tutorials"), ("mentors.html", "Mentors")]
-GENERATED = {"index.html", "my-project.html", "wearables-project.html", "robotics-project.html", "tutorials.html", "mentors.html", "404.html"}
+GENERATED = {"index.html", "my-project.html", "wearables-project.html", "robotics-project.html", "tutorials.html", "mentors.html", "404.html", STUDENT, MENTOR}
 
 
 def esc(value):
@@ -88,6 +102,8 @@ def list_html(items):
 
 
 def category(filename):
+    if filename == MENTOR:
+        return "mentors.html"
     if filename in {"mentors.html", "mentor-lesson-plans.html", "mentor-print-center.html", "mentor-neopixel-prep.html", "mentor-future-stamp-prep.html", "mentor-circuit-lab-prep.html", "mentor-microbit-prep.html", "mentor-hummingbird-prep.html", "mentor-station-checklist.html", "mentor-badge-prep.html", "mentor-badge-checklist.html", "recruitment-toolkit.html"}:
         return "mentors.html"
     if filename in {"index.html", "recruitment.html", "student-application.html", "returning-member-confirmation.html", "teacher-recommendation.html", "family-commitment.html", "404.html"}:
@@ -133,7 +149,7 @@ def pathway_choices():
 
 def home():
     body = hero("Stauffer Femineers · 2026–2027", 'Your next step<br>starts <span>here.</span>', 'Open your pathway, find the workday, and follow its checklist. Complete tutorials and examples are always available when you need to go deeper.')
-    body += '<section class="section compact"><div class="next-session"><div><p class="eyebrow">First workday · Thursday, September 24</p><h2>Explore &amp; plan</h2><p>Room 14 · 8:00 a.m.–2:41 p.m. · 36 students · Six home tables</p><p>Snack 9:25–9:38 a.m. · Lunch 12:42–1:12 p.m.</p></div><div class="button-row">' + link("my-project.html", "Open my project", "button") + link("mentors.html#september-24", "Open the mentor plan", "button secondary") + '</div></div>'
+    body += '<section class="section compact"><div class="next-session"><div><p class="eyebrow">First workday · Thursday, September 24</p><h2>Code, test &amp; design</h2><p><strong>September 24 backup plan is active.</strong> Use last year’s supplies for sewing, micro:bit coding, and Hummingbird activities.</p><p>Room 14 · 8:00 a.m.–2:41 p.m. · 36 students · Six home tables</p><p>Snack 9:25–9:38 a.m. · Lunch 12:42–1:12 p.m.</p></div><div class="button-row">' + link(STUDENT, "Open Thursday’s activities", "button") + link("mentors.html#september-24", "Open the mentor plan", "button secondary") + '</div></div>'
     body += pathway_choices() + '</section>'
     body += '<section class="section compact"><div class="hub-links">' + link("tutorials.html", "Find a tutorial or example") + link("program-roadmap.html", "See every program date") + link("lunch-checkpoints.html", "Prepare for a lunch checkpoint") + '</div><details class="curriculum-detail" id="assigned-path"><summary>Pathway placement &amp; family commitment</summary><div class="detail-body"><p>First-year Femineers complete Creative Robotics in pairs. Second-year Femineers complete Wearables individually. Third-year Femineers choose either pathway; mentors confirm the final roster.</p><p>Five school-day work sessions take place in Room 14. Students and families arrange and complete all missed regular classwork.</p>' + link("family-commitment.html", "Read the complete family information", "button secondary") + '</div></details></section>'
     return body
@@ -156,11 +172,11 @@ def pathway(path):
         body += f'<details class="curriculum-detail" id="{s["id"]}"' + (' open' if i == 0 else '') + f'><summary>{session_summary(s)}</summary><div class="detail-body">'
         task = s.get(f'{path}_task', s['goal'])
         body += f'<div class="day-quickstart"><div><h3>Start here</h3><p>{esc(task)}</p></div><div><h3>Your finish line</h3><p>{esc(s["goal"])}</p></div></div><div class="button-row">'
-        body += link(s.get(path, s['guide']), "Open the full pathway guide" if path in s else "Open the full event guide", "button")
-        body += link(s['guide'], "Workday overview", "button secondary") if path in s else ''
+        body += link(s.get(path, s['guide']), "Start today’s activities" if i == 0 else ("Open the full pathway guide" if path in s else "Open the full event guide"), "button")
+        body += link(s['guide'], "Workday overview", "button secondary") if path in s and i != 0 else ''
         body += link(s['evidence'], s['evidence_label'], "button secondary") + '</div>'
         if s['id'] == 'september-24':
-            body += '<div class="deeper-links"><h3>Explore the technology</h3>' + list_html([link(url, name) for url, name, _ in TUTORIALS['Wearables' if wearables else 'Creative Robotics'] if 'proposal' not in url]) + '</div>'
+            body += '<p>' + link('wearable-design-proposal.html' if wearables else 'robotics-design-proposal.html', 'Open the project proposal guide') + '</p><div class="deeper-links"><h3>Technology references · follow today’s backup guide first</h3>' + list_html([link(url, name) for url, name, _ in TUTORIALS['Wearables' if wearables else 'Creative Robotics'] if 'proposal' not in url]) + '</div>'
         if s['id'] == 'november-16':
             body += '<p>' + link('wearable-prototype.html' if wearables else 'robotics-prototype.html', 'Open the complete prototype and first-test guide') + '</p>'
         if s['id'].startswith('march-'):
@@ -193,12 +209,13 @@ def room_plan():
 def mentors():
     body = hero('Tri · Jennifer · Stephanie', 'Your mentor<br><span>start page.</span>', 'Choose the date, read your role, and open the complete lesson when you need the technical detail. The full playbook and print resources remain available.')
     body += '<section class="section compact" id="station-prep"><p class="eyebrow">Prepare for each station</p><h2>Station mentor guides</h2><p>Gather and sort, rehearse the illustrated steps, review any starter code, and complete the physical equipment checks before students arrive. Use the dated guide and checklist for the event you are preparing.</p><div class="lesson-grid">' + ''.join('<article class="lesson-block"><h3>' + link(url, title) + '</h3><p>' + description + '</p></article>' for url, title, description in [
+        (MENTOR, 'September 24 · Active backup plan', 'Full-day agenda, confirmed supplies, sewing and blocks activities, paper/observed alternatives, adjusted print guidance, and proposal review.'),
         ('mentor-badge-prep.html', 'October 13 · Glow Up Your Badge', 'District kickoff: prototype walkthrough, diagrams, video and photo tutorials, supply sorting, 20-minute plan, and release record.'),
         ('mentor-hummingbird-prep.html', 'Hummingbird Robotics', 'Nine matched kits, port map, BirdBlox starter recipes, videos, and safe reset.'),
         ('mentor-circuit-lab-prep.html', 'Circuit Lab', 'Verify the LED and supply, prepare working loops, and rehearse conductive sewing.'),
         ('mentor-microbit-prep.html', 'micro:bit + MakeCode', 'Windows transfer steps, editable starter, actual blocks, and matching text code.'),
-        ('mentor-future-stamp-prep.html', 'Future Stamp', 'Inspect wood, sort ordinary floss, practice illustrated stitches, and count needles.'),
-        ('mentor-neopixel-prep.html', 'NeoPixel preview', 'Harness preparation, power checks, tutorial videos, and blocks/text starter.'),
+        ('mentor-future-stamp-prep.html', 'Future Stamp', 'September 24: use paper symbol design. Keep this wood-stitching guide for the later hands-on check.'),
+        ('mentor-neopixel-prep.html', 'NeoPixel preview', 'September 24: observed video/diagram preview. Keep this harness and test guide for later physical work.'),
         ('mentor-station-checklist.html', 'September 24 · opening & closing', 'Shared readiness, transition, supply-count, and technical follow-up sheet.'),
         ('mentor-badge-checklist.html', 'October 13 · badge checklist', 'One shared clipboard sheet for opening, the 20-minute rotation, quick swaps, reset, and closing counts.')]) + '</div></section>'
     body += '<section class="section compact"><div class="hub-links">' + link("mentor-lesson-plans.html", "Full mentor playbook") + link("mentor-print-center.html", "Print Center") + link("#station-prep", "Station preparation guides") + link("program-roadmap.html", "All dates") + link("recruitment-toolkit.html", "Recruitment toolkit") + '</div>' + room_plan()
@@ -211,8 +228,7 @@ def mentors():
         body += f'</div><p><strong>Before students leave:</strong> {esc(s["goal"])}</p><div class="button-row">' + link(s['mentor'], 'Open the complete mentor plan', 'button') + link(s['guide'], 'Open the student guide', 'button secondary') + link('mentor-print-center.html#' + print_anchor, 'Find the print materials', 'button secondary') + '</div>'
         if i == 0:
             body += '<p>' + link('#station-prep', 'Open the station preparation guides') + ' · ' + link('mentor-station-checklist.html', 'Use the September 24 opening and closing checklist') + '</p>'
-            body += '<details class="agenda-detail"><summary>September 24 agenda · Thursday bells</summary><div class="agenda-wrap"><table class="agenda-table"><thead><tr><th>Time</th><th>Plan</th></tr></thead><tbody>' + ''.join(f'<tr><th>{a}</th><td>{b}</td></tr>' for a, b in [
-                ('8:00–9:25', 'Attendance, welcome, safety, and three-idea brainstorm'), ('9:25–9:38', 'Snack'), ('9:38–9:42', 'Return and settle'), ('9:42–11:09', 'Supervised technology exploration'), ('11:09–11:17', 'Pause, save evidence, and reset'), ('11:17–12:42', 'Finish exploration and begin labeled proposals'), ('12:42–1:12', 'Lunch'), ('1:12–1:16', 'Return and settle'), ('1:16–2:21', 'Proposal studio, staggered mentor reviews, and revisions'), ('2:21–2:41', 'Evidence, next action, safe storage, and cleanup')]) + '</tbody></table></div><p>Bell times follow the supplied Stauffer 2025–2026 schedule. Keep all required exploration evidence; use supervised demonstrations or smaller groups when a live activity exceeds capacity.</p></details>'
+            body += '<details class="agenda-detail"><summary>September 24 agenda · Thursday bells</summary><div class="agenda-wrap"><table class="agenda-table"><thead><tr><th>Time</th><th>Plan</th></tr></thead><tbody>' + ''.join(f'<tr><th>{a}</th><td>{b}</td></tr>' for a, b in AGENDA) + '</tbody></table></div><p>Use this active backup agenda with the established Thursday bells. Paper symbol design and an observed NeoPixel preview replace those physical stations today; label the missing hands-on tests as deferred.</p></details>'
         elif s['id'] == 'october-13':
             body += '<p>' + link('mentor-badge-prep.html', 'Open the illustrated badge preparation guide') + ' · ' + link('mentor-badge-checklist.html', 'Print the October 13 station checklist') + '</p>'
         elif 'lunch' in s['kind'].lower():
@@ -255,7 +271,9 @@ def main():
     for path in ROOT.glob('*.html'):
         if path.name not in GENERATED:
             sync_existing(path)
-    print(f'Built {len(pages)} entry pages and synchronized curriculum navigation.')
+    build_pages(ROOT, document)
+    sync_notices(ROOT)
+    print(f'Built {len(pages) + 2} entry pages and synchronized curriculum navigation and September 24 notices.')
 
 
 if __name__ == '__main__':
