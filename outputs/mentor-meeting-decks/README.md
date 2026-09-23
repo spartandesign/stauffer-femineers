@@ -1,3 +1,5 @@
+> **For Thursday, September 24:** use [the revised backup workday PowerPoint](September-24-Backup-Workday-Slides.pptx) or [projection PDF](../../output/pdf/September-24-Backup-Workday-Slides.pdf). Eight slides include the corrected schedule and fixed home tables; PowerPoint notes contain mentor cues and tutorial links. The older September 14 deck and bundled ZIP have not been revised for this backup plan.
+
 # Limitless Mentor Meeting Decks — 2026–27
 
 These ten PowerPoint decks are the shared-screen facilitation layer for the Limitless meetings. Each slide shows the current time block, what students should do, and the finish line for moving on. Detailed mentor background, pacing, safety, access, and source guidance is in the PowerPoint speaker notes.
