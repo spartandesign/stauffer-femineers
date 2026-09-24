@@ -1,0 +1,9 @@
+.learn-steps { padding-left: 1.8rem; max-width: 78ch; }
+.learn-steps li { padding: .5rem 0 .7rem .35rem; line-height: 1.65; }
+.learn-steps li::marker { color: #6138c7; font-weight: 800; }
+.learn-media, .learn-check { margin: 1rem 0; padding: 1rem; border: 1px solid #cbd3df; border-radius: 12px; background: #fff; }
+.learn-media summary, .learn-check summary { cursor: pointer; font-weight: 700; padding: .25rem; }
+.learn-media iframe, .learn-media video { display: block; width: 100%; max-width: 800px; aspect-ratio: 16/9; height: auto; border: 0; margin: 1rem 0; }
+.learn-diagram { display: block; width: 100%; height: auto; max-width: 950px; margin: 1rem auto; }
+summary:focus-visible, .learn-steps a:focus-visible { outline: 3px solid #6138c7; outline-offset: 4px; }
+@media print { .learn-media { display: none; } .learn-steps li { break-inside: avoid; } }

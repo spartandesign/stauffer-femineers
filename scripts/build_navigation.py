@@ -187,8 +187,10 @@ def pathway(path):
 
 
 def tutorials():
+    # Keep the classroom learning companion discoverable alongside topic guides.
     body = hero('Tutorials', 'Go as deep as<br>you <span>need.</span>', 'The complete curriculum library: instructions, diagrams, examples, troubleshooting, and evidence guides. Start with your workday or explore a topic here.')
     body += '<section class="section compact"><div class="tutorial-search" hidden><label for="tutorial-query">Find a topic</label><input id="tutorial-query" type="search" placeholder="Try circuits, BirdBlox, proposal, or evidence" autocomplete="off"><p id="tutorial-count" role="status" aria-live="polite"></p></div>'
+    body += '<section class="tutorial-category" aria-label="Self-paced learning"><h2>Self-paced learning</h2><ul class="tutorial-list"><li data-tutorial><a href="learn-at-your-pace.html"><strong>Watch, try, check, and explain</strong><span>Six guided modules with videos, real component photos, written steps, and self-checks for the September 24 backup activities.</span></a></li></ul></section>'
     for title, items in TUTORIALS.items():
         body += f'<section class="tutorial-category" aria-label="{esc(title)}"><h2>{esc(title)}</h2><ul class="tutorial-list">'
         for url, name, desc in items:
@@ -272,6 +274,8 @@ def main():
         if path.name not in GENERATED:
             sync_existing(path)
     build_pages(ROOT, document)
+    from build_self_paced import build as build_self_paced
+    build_self_paced(ROOT, document)
     sync_notices(ROOT)
     print(f'Built {len(pages) + 2} entry pages and synchronized curriculum navigation and September 24 notices.')
 
