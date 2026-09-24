@@ -86,7 +86,7 @@ TUTORIALS = {
 }
 
 NAV = [("index.html", "Home"), ("my-project.html", "My Project"), ("tutorials.html", "Tutorials"), ("mentors.html", "Mentors")]
-GENERATED = {"index.html", "my-project.html", "wearables-project.html", "robotics-project.html", "tutorials.html", "mentors.html", "404.html", STUDENT, MENTOR}
+GENERATED = {"index.html", "my-project.html", "wearables-project.html", "robotics-project.html", "tutorials.html", "mentors.html", "404.html", "learn-at-your-pace.html", STUDENT, MENTOR}
 
 
 def esc(value):
