@@ -1,113 +1,70 @@
 # Canvas Import Guide
 
-## Package
+**Revision: September 23, 2026 — available-supplies plan for September 24.**
 
-`Stauffer-Femineers-Limitless-2026-27.imscc`
+Use `Stauffer-Femineers-Limitless-2026-27.imscc`. This revision is prepared for the unused course shell. It replaces the previous day-one directions while retaining the later program, dates, assignment identifiers, points, and submission options.
 
-Content revision: **2026-09-08 — simplified curriculum navigation, September 24 Thursday workday, Wednesday lunch times, and 36 students at six Room 14 tables. Full student guides, mentor runbooks, assignment identifiers, and assessment settings are retained.**
+## What the revised course contains
 
-This Canvas-flavored Common Cartridge course export contains:
+- 10 modules, 23 pages, and 9 assignments; 80 points across the year.
+- Orientation and Phase 1 are published in the package: 8 pages and Checkpoint 1.
+- The other 8 modules and all their pages and assignments are unpublished drafts. Release later phases as needed; keep Mentor Planning unpublished.
+- Thursday uses felt LED practice, standalone micro:bit blocks, and Hummingbird Bit exploration. Paper/digital Future Stamp design and an observed NeoPixel preview replace unavailable hardware activities.
+- Checkpoint 1 accepts actual practice/observation evidence, a proposal, and approved/provisional/revise-hold mentor status. Deferred tests have a named owner and a supervised test window.
+- The revised student guide, mentor plan, and both four-page studio packets are linked from the appropriate course pages.
 
-- 10 Canvas modules
-- 23 Canvas pages
-- 9 Canvas assignments: eight 10-point project assignments plus one 0-point kickoff reflection
-- 80 default points
-- A syllabus and one assignment group named **Femineers Evidence**
-- Links from Canvas to the detailed GitHub Pages guides
+The website and imported Canvas pages are separate copies. Later website edits do not automatically change Canvas page or assignment text.
 
-The website now uses **Home / My Project / Tutorials / Mentors** throughout the curriculum. The welcome page links students to My Project and the tutorial library; Mentor Planning links to the dated mentor start page and the full playbook. Publish the matching website before using these new links in Canvas. Navigation improvements alone do not require replacing an existing course.
+## Prepare the unused shell
 
-## Import into Canvas
+1. Open the intended Femineers course and confirm its name. Keep it unpublished during setup.
+2. If the shell is already empty, import directly; no reset is necessary.
+3. If it contains only the old unused course, export a content backup first through **Settings → Export Course Content → Course → Create Export**, then download the result. This saves any instructor edits you may want later.
+4. To replace that old course completely, use **Settings → Reset Course Content** if your district permits it. Read the confirmation before proceeding: a reset permanently removes content, changes the course ID/URL, and removes course-level LTI tools. Canvas retains course details and enrollments and leaves the resulting course unpublished. Update saved course links afterward. If Reset is unavailable or the shell has school-managed integrations that must be retained, ask the Canvas administrator for an empty shell or an approved cleanup route.
+5. Do not simply import a second full copy over the old course to simulate a clean start. Previously imported content may be overwritten while manually added content can remain.
 
-1. Create or open a new, unpublished Canvas course shell.
-2. Open **Settings** and select **Import Course Content**.
-3. For **Content Type**, select **Canvas Course Export Package**.
-4. Choose `Stauffer-Femineers-Limitless-2026-27.imscc`.
-5. Select **All content**.
-6. Do not apply date shifting because assignment dates are intentionally unset.
-7. Start the import and wait for Canvas to report completion.
-8. If Canvas reports an issue, review the issue list before editing or publishing.
+This route is for the confirmed unused shell. If that changes and student work has been submitted, stop the reset workflow and update content in place. A course export does not back up student submissions or grades.
 
-Avoid importing the package into the same course more than once. Canvas may overwrite items imported from the earlier copy.
+Official guidance: [Reset course content](https://community.instructure.com/en/kb/articles/661144-how-do-i-reset-course-content), [export a course](https://community.instructure.com/en/kb/articles/660734-how-do-i-export-a-canvas-course).
 
-## Updating an existing Canvas course
+## Import the revised package once
 
-For this navigation revision, update the current welcome and roadmap pages with September 24, the Thursday snack (9:25–9:38) and lunch (12:42–1:12), Wednesday lunch checkpoints (11:37–12:07), and the 18 Wearables / 18 Robotics allocation. Add the new My Project, Tutorials, and Mentors website links. Existing detailed-guide links still resolve. A clean import into a new, unpublished shell is also supported by the rebuilt package above.
+1. In the empty, unpublished course, open **Settings → Import Course Content**.
+2. Choose **Canvas Course Export Package** as the content type.
+3. Select `Stauffer-Femineers-Limitless-2026-27.imscc` from this folder. Keep the `.imscc` extension; do not unzip it for import.
+4. Select **All content**.
+5. Leave date adjustment off. Due and availability dates are intentionally unset in the package.
+6. Click **Add to Import Queue** (or **Import** in the older interface).
+7. Wait for completion and inspect any issues before publishing.
+8. Review the receiving course settings after import, including its name, time zone, visibility, enrollment, and any district-specific settings.
 
-If this package has already been imported and instructors have edited the live course, do not re-import the full rebuilt package. A repeat import can replace previously imported content and can disrupt course-specific edits.
+Official guidance: [Import a Canvas course export package](https://community.instructure.com/en/kb/articles/660728-how-do-i-import-a-canvas-course-export-package).
 
-Update the existing items in place instead:
+## Check before students use it
 
-1. **Safety, Supplies, and Evidence Rules** — add wooden-blank inspection, needle count-in/count-out, separate needle storage, and the ordinary-floss/non-powered rule.
-2. **Phase 1: Imagine the Future** — add the Future Stamp as Wearables exploration evidence, not a third final wearable.
-3. **Meet the Technology** — update the four Wearables stations and add the four sequential Robotics evidence products: connection/reset; three input readings plus threshold; two outputs; complete input → decision → two outputs → reset interaction.
-4. **Prepare Your Approved Design Proposal** — require pathway technology-exploration evidence and allow the stamp symbol to inform the shared shirt-and-hat theme.
-5. **Checkpoint 1: Approved Project Proposal** — require the four Wearables evidence items and captions plus the four shared Robotics evidence products inside the existing pathway submission; do not create a new technology-rotation assignment.
-6. **Mentor Lesson-Plan Playbook** — retain the September 24 and October 13 preparation, then add the linked detailed runbooks for November 16, December 2, December 7, January 25, and February 22. Include the mentor-made pathway examples, safe prepared faults, live-test capacity gates, Project Rescue statuses, restore/integrate/retest sequence, two-trial Gala rule, and modified-demonstration decisions. Add the low-paper Print Center link and explain that mentors sleeve reusable pages, print only the named student/team or project pages, complete them during program time, and do not grade or assign them as homework.
+1. **Modules:** verify there is one orientation module and one September 24 module, followed by the unpublished later modules. There should be no duplicate old course content.
+2. **Day-one flow:** Phase 1 still has four items in order: overview; Meet the Technology; Prepare Your Design Proposal; Checkpoint 1: Project Proposal + Mentor Review.
+3. **Evidence:** verify paper/digital symbol, felt practice, physical-board/simulator labels, observed NeoPixel preview, actual Robotics input/output types, and deferred tests. Do not require a wooden-stamp or physical-NeoPixel photo on Thursday.
+4. **Mentor resources:** open the backup mentor plan and the revised Wearables and Robotics PDFs. Print 20 Wearables sets and 11 Robotics sets; each set is four pages/two duplex sheets. These are studio tools, not extra homework or separately graded worksheets.
+5. **Completion window:** set Checkpoint 1 to the approved school-time deadline and arrange supervised catch-up. The package does not invent a due time or late penalty.
+6. **Robotics submissions:** assignments remain individual Canvas assignments. Each partner can submit/link the shared technical packet with their own reflection unless you deliberately configure a Canvas group assignment first.
+7. **Student View:** check the visible orientation pages, all four Phase 1 items, linked guides, and submission options. Confirm that later and mentor-only pages/assignments do not appear through Modules, Pages, or Assignments. Unpublishing just a module is insufficient; the package also unpublishes its resources.
+8. **Safety and readiness:** physically test the available kits and firmware, confirm actual sensor types, match batteries to holders, rehearse reset routines, and count needles. Remote package validation does not certify the equipment.
+9. **Schedule:** confirm the September 24 Thursday bells: 8:00–2:41 in Room 14, snack 9:25–9:38, lunch 12:42–1:12. Keep the later Monday workdays and Wednesday lunch checkpoints as shown in the course map.
+10. **Local policies:** add the school’s contact information, attendance, accommodations, grading, and communication requirements; check iPad file/media submission limits.
+11. Publish the course after the import and Student View checks pass.
 
-Preserve the existing assignment’s due and availability dates, points, submission types, attempts, rubrics, student submissions, and grades. Back up/export the course before any selective re-import. Keep the Phase 1 module structure and item order unchanged.
+## Release later phases
 
-The Print Center and expanded runbooks are website resources linked from the existing unpublished Mentor Planning module; they do not require a new Canvas page or assignment. In an already imported course, update the current **Mentor Lesson-Plan Playbook**, the **Phase 4 Overview**, and the Phase 4 module title in place rather than importing the rebuilt package again. Preserve all student work, grades, dates, and course-specific edits.
+- Later lesson and assignment content is retained. Publish each later module **and its pages/assignment** when that phase is ready; then test it in Student View.
+- Phase 2 retains the recommended October 19 Design Ready deadline and October 21 lunch review. Set actual Canvas dates to approved supervised work windows.
+- Before dependent construction, revisit any provisional September proposals and complete their deferred technology/safety checks.
+- Keep October 13 Glow Up Your Badge unpublished until the exact physical kit passes its existing mentor prototype, novice-build timing, safety, repeatability, and reset gates. Its reflection stays 0 points and omitted from the final grade.
+- Keep both Mentor Planning pages and their module unpublished.
+- Keep Home, Modules, Assignments, Grades, and Announcements visible. Consider hiding Pages and Files from navigation if the district allows it, while retaining access to required items through Modules. The package does not set course-navigation permissions.
 
-### Add Glow Up Your Badge to an existing course
+## Rebuild and verification
 
-Do not re-import the full package solely to add the October 13 activity. Add these items manually between Phase 1 and Phase 2:
+Run `build_canvas_course.ps1` from this folder. The builder writes the `.imscc` package and its SHA-256 checksum, checks XML and resource references, and uses stable identifiers. It aligns page, assignment, and item publication states with module release states.
 
-1. Create an unpublished module named **DUSD Femineers Kickoff — Glow Up Your Badge — October 13**.
-2. Add an unpublished page named **Glow Up Your Badge** using the builder/source wording and link it to `glow-up-your-badge.html`.
-3. Add an unpublished, 0-point assignment named **Kickoff Reflection — Glow Up Your Badge**. Allow the normal online submission choices, omit it from the final grade, and leave the completion window unset until a supervised post-event reflection time is confirmed.
-4. Require one finished-badge photo and the three short reflection answers. Excuse non-attendees or provide a non-electrical alternative; do not direct students to recreate the circuit independently.
-5. Update the existing **Program Roadmap and Important Dates**, **Mentor Lesson-Plan Playbook**, and **Canvas Launch Checklist** in place. The mentor playbook should direct mentors to the website’s full circuit primer, prototype record, mentor-only candidate sample, photographed working-example process, rehearsal timeline, detailed 20-minute agenda, and rapid troubleshooting plan.
-6. Keep the new module, page, and assignment unpublished until the final physical badge kit has a mentor-made working example, exact parts record, photographed orientation card, confirmed headcount and spares, and passed 10–12 minute novice build, 20-minute rotation, safety, wear/reliability, rapid-reset, and 90–95% normal-success tests.
-
-Preserve every existing module, module item, assignment, and page identifier. Do not insert the kickoff items into Phase 2; the event remains a separate, theme-neutral module.
-
-## Intentional defaults
-
-- Course home view: Modules
-- Project modules and items: published in the package
-- DUSD Kickoff module, page, and reflection: unpublished pending prototype approval
-- Mentor Planning module: unpublished
-- Eight evidence checkpoints: 10 points each for completion/evidence tracking, not project polish
-- Kickoff reflection: 0 points and omitted from the final grade
-- Assignment group: Femineers Evidence
-- Submission choices: text entry, URL, file upload, or media recording
-- Attempts: unlimited
-- Studio/checkpoint completion windows and availability dates: unset
-- Module progress: sequential
-- Page editing: teachers only
-- Time zone: America/Los_Angeles
-
-Keep the receiving Canvas shell unpublished during the audit. If the shell is already published, use a sandbox course for the import.
-
-## Required audit before launch
-
-1. Confirm participation year and pathway: first year = Creative Robotics, second year = Wearable Technology, and third year = selected pathway.
-2. Confirm the five full workdays: September 24, November 16, December 7, January 25, and February 22. September 24 uses Thursday bells from the supplied 2025–26 schedule; verify that schedule remains applicable for 2026–27. Confirm 36 students: six Wearables students at each W table and three Robotics pairs at each R table.
-3. Confirm the October 13 district kickoff at Griffiths, including Stauffer’s 20-minute Glow Up Your Badge station, final kit, rotation headcount, staffing, and post-event reflection time.
-4. Confirm the lunch checkpoints: October 21, January 13, and February 10, plus the invitation-only December 2 Project Rescue lunch.
-5. Add due/availability dates only for the approved in-program studio or checkpoint windows. October 19 is the recommended Design Ready completion date; arrange any catch-up at school with a mentor.
-6. Schedule the 0-point kickoff reflection after the event and confirm the absence/alternative policy.
-7. Keep the eight checkpoints at 10 points for completion/evidence tracking, or apply the district grading policy consistently across every point value and explanation.
-8. Confirm allowed file types and media-size limits for student iPad submissions.
-9. Add district-required attendance, behavior, accommodations, communication, grading, and food-reward guidance.
-10. Push the matching website pages to GitHub.
-11. Test every module, page, assignment, and website button in Canvas Student View.
-12. Keep the Kickoff and Mentor Planning modules unpublished until their release gates are complete.
-13. Publish the course only after enrollment and launch communication are ready.
-
-## Recommended Canvas navigation
-
-Keep visible:
-
-- Home
-- Modules
-- Assignments
-- Grades
-- Announcements
-
-Consider hiding Pages, Files, and Syllabus from student navigation if the district allows it and the same information is already available through Modules.
-
-## Rebuilding the package
-
-The included `build_canvas_course.ps1` recreates the package with stable identifiers. Rebuild before the first import. After instructors begin editing the imported course, do not re-import a rebuilt package into that same course unless overwriting the original imported items is intentional.
+Do not repeatedly re-import into a course after instructors or students begin using it. Make later live-course changes in place. A locally validated package still needs the Canvas import and Student View checks above.
