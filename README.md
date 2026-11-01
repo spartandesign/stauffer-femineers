@@ -6,6 +6,8 @@ Pathways are organized by participation year: first-year Femineers complete Crea
 
 ## Current release
 
+The current focus is **Monday, November 16, 2026 — Prototype & Build**. Home links directly to the Phase 3 workday, both pathway pages expand November 16 by default, and the mentor page highlights its preparation, roles, and print materials. Monday bells apply: snack 9:38–9:51 a.m.; lunch 12:29–12:59 p.m. Earlier sessions remain available for reference. Set `CURRENT_SESSION` in `scripts/build_navigation.py` when advancing the default session.
+
 The entire curriculum shares four navigation links: **Home, My Project, Tutorials, and Mentors**. My Project opens the student's pathway and dated sessions; Tutorials provides a searchable library of the full guides; Mentors provides dated preparation, named roles, and links to the complete playbook. Existing lesson URLs and anchors remain available for Canvas links and bookmarks.
 
 The first workday is Thursday, September 24, 2026, using the supplied Thursday bell schedule. Room 14 holds 36 students at six home tables: W1–W3 for 18 individual Wearables projects and R1–R3 for nine Creative Robotics pairs. Later Monday workdays and Wednesday lunch checkpoints retain their respective bell schedules.

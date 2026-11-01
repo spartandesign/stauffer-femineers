@@ -9,6 +9,8 @@ from september_backup import AGENDA, MENTOR, STUDENT, build_pages, sync_notices
 
 ROOT = Path(__file__).resolve().parents[1]
 
+CURRENT_SESSION = "november-16"
+
 # Date labels and curriculum links are shared by the student and mentor entry pages.
 SESSIONS = [
     dict(id="september-24", date="September 24, 2026", kind="Workday · Phase 1", title="Explore & plan", guide="start-here.html", mentor="mentor-lesson-plans.html#day-1", evidence="canvas-checkpoint-1.html", evidence_label="Checkpoint 1: approved proposal", goal="Save your technology explorations and an approved proposal or documented revision plan.", w="wearable-design-proposal.html", r="robotics-design-proposal.html", w_task="Explore your materials, brainstorm three ideas, and plan the LED shirt and programmable hat.", r_task="Explore the Hummingbird, brainstorm three ideas, and explain your invention’s input, two outputs, and reset.", prepare="Assign the six home tables; stage samples, tested equipment, and the studio sheets.", j="Guide the 18 Wearables students through exploration and individual proposals.", s="Guide nine Robotics pairs through their kit explorations and team proposals.", t="Lead technical demonstrations, support equipment, and resolve safety or programming questions."),
@@ -148,15 +150,15 @@ def pathway_choices():
 
 
 def home():
-    body = hero("Stauffer Femineers · 2026–2027", 'Your next step<br>starts <span>here.</span>', 'Open your pathway, find the workday, and follow its checklist. Complete tutorials and examples are always available when you need to go deeper.')
-    body += '<section class="section compact"><div class="next-session"><div><p class="eyebrow">First workday · Thursday, September 24</p><h2>Code, test &amp; design</h2><p><strong>September 24 backup plan is active.</strong> Use last year’s supplies for sewing, micro:bit coding, and Hummingbird activities.</p><p>Room 14 · 8:00 a.m.–2:41 p.m. · 36 students · Six home tables</p><p>Snack 9:25–9:38 a.m. · Lunch 12:42–1:12 p.m.</p></div><div class="button-row">' + link(STUDENT, "Open Thursday’s activities", "button") + link("mentors.html#september-24", "Open the mentor plan", "button secondary") + '</div></div>'
+    body = hero("Stauffer Femineers · 2026–2027", 'November 16:<br>prototype &amp; <span>build.</span>', 'Bring your approved design to life. Test a small prototype, use what you learn to begin construction, and capture your progress for Canvas Checkpoint 2.')
+    body += '<section class="section compact"><div class="next-session"><div><p class="eyebrow">Next workday · Monday, November 16, 2026</p><h2>Design What’s Next</h2><p>Start with your October Design Ready package, confirm your first test with a mentor, and prototype before permanent construction.</p><p>Room 14 · 8:00 a.m.–2:41 p.m. · 36 students · Six home tables</p><p>Snack 9:38–9:51 a.m. · Lunch 12:29–12:59 p.m.</p></div><div class="button-row">' + link("phase-3-build.html", "Open the November 16 workday", "button") + link("mentors.html#november-16", "Open the mentor plan", "button secondary") + '</div></div>'
     body += pathway_choices() + '</section>'
     body += '<section class="section compact"><div class="hub-links">' + link("tutorials.html", "Find a tutorial or example") + link("program-roadmap.html", "See every program date") + link("lunch-checkpoints.html", "Prepare for a lunch checkpoint") + '</div><details class="curriculum-detail" id="assigned-path"><summary>Pathway placement &amp; family commitment</summary><div class="detail-body"><p>First-year Femineers complete Creative Robotics in pairs. Second-year Femineers complete Wearables individually. Third-year Femineers choose either pathway; mentors confirm the final roster.</p><p>Five school-day work sessions take place in Room 14. Students and families arrange and complete all missed regular classwork.</p>' + link("family-commitment.html", "Read the complete family information", "button secondary") + '</div></details></section>'
     return body
 
 
 def my_project():
-    return hero("My Project", 'Choose your <span>pathway.</span>', 'Use the pathway on your roster. Each workday has a short starting checklist, full instructions, and an evidence finish line.') + '<section class="section compact">' + pathway_choices() + '<div class="callout teal"><strong>Know your home table:</strong> W1–W3 have six Wearables students each. R1–R3 have three Robotics pairs each. Equipment stays assigned to the table or team.</div><div class="hub-links">' + link("start-here.html", "New to Femineers? Read the full introduction") + link("tutorials.html", "Explore all tutorials") + link("program-roadmap.html", "Open the full roadmap") + '</div></section>'
+    return hero("My Project", 'Choose your <span>pathway.</span>', 'Get ready for Monday, November 16: open your pathway, review your approved design, and plan your first prototype test. Save your results and construction progress for Checkpoint 2.') + '<section class="section compact">' + pathway_choices() + '<div class="callout teal"><strong>Know your home table:</strong> W1–W3 have six Wearables students each. R1–R3 have three Robotics pairs each. Equipment stays assigned to the table or team.</div><div class="hub-links">' + link("start-here.html", "New to Femineers? Read the full introduction") + link("tutorials.html", "Explore all tutorials") + link("program-roadmap.html", "Open the full roadmap") + '</div></section>'
 
 
 def session_summary(s):
@@ -167,12 +169,12 @@ def pathway(path):
     wearables = path == "w"
     label = "Wearables" if wearables else "Creative Robotics"
     body = hero(f'My Project · {label}', 'One workday.<br>One clear <span>next step.</span>', '18 individual projects · Tables W1–W3 · Jennifer' if wearables else '18 students · Nine teams of two · Tables R1–R3 · Stephanie')
-    body += '<section class="section compact"><div class="hub-links">' + link("my-project.html", "Change pathway") + link("wearable-technology.html" if wearables else "creative-robotics.html", "Read the full pathway introduction") + link("tutorials.html", "Explore the tutorial library") + '</div><p class="section-intro">Open the date your mentor assigns. The first workday is expanded to help you begin.</p>'
+    body += '<section class="section compact"><div class="hub-links">' + link("my-project.html", "Change pathway") + link("wearable-technology.html" if wearables else "creative-robotics.html", "Read the full pathway introduction") + link("tutorials.html", "Explore the tutorial library") + '</div><p class="section-intro">November 16 is expanded below. Review your approved design, test a small prototype, and then build. Earlier sessions remain available for reference.</p>'
     for i, s in enumerate(SESSIONS):
-        body += f'<details class="curriculum-detail" id="{s["id"]}"' + (' open' if i == 0 else '') + f'><summary>{session_summary(s)}</summary><div class="detail-body">'
+        body += f'<details class="curriculum-detail" id="{s["id"]}"' + (' open' if s['id'] == CURRENT_SESSION else '') + f'><summary>{session_summary(s)}</summary><div class="detail-body">'
         task = s.get(f'{path}_task', s['goal'])
         body += f'<div class="day-quickstart"><div><h3>Start here</h3><p>{esc(task)}</p></div><div><h3>Your finish line</h3><p>{esc(s["goal"])}</p></div></div><div class="button-row">'
-        body += link(s.get(path, s['guide']), "Start today’s activities" if i == 0 else ("Open the full pathway guide" if path in s else "Open the full event guide"), "button")
+        body += link(s.get(path, s['guide']), "Open September’s activities" if i == 0 else ("Open the full pathway guide" if path in s else "Open the full event guide"), "button")
         body += link(s['guide'], "Workday overview", "button secondary") if path in s and i != 0 else ''
         body += link(s['evidence'], s['evidence_label'], "button secondary") + '</div>'
         if s['id'] == 'september-24':
@@ -209,21 +211,22 @@ def room_plan():
 
 
 def mentors():
-    body = hero('Tri · Jennifer · Stephanie', 'Your mentor<br><span>start page.</span>', 'Choose the date, read your role, and open the complete lesson when you need the technical detail. The full playbook and print resources remain available.')
+    body = hero('Tri · Jennifer · Stephanie', 'Your mentor<br><span>start page.</span>', 'Prepare for Monday, November 16: review Design Ready status, rehearse prototype tests, and stage approved materials. Jennifer leads Wearables, Stephanie leads Robotics, and Tri clears technical gates.')
+    body += '<section class="section compact"><div class="next-session"><div><p class="eyebrow">Monday, November 16 · Phase 3</p><h2>Prototype first. Build from evidence.</h2><p>Room 14 · 8:00 a.m.–2:41 p.m. · Snack 9:38–9:51 a.m. · Lunch 12:29–12:59 p.m.</p><p>Review each project’s approval and first test, release checked materials, and prepare the reusable workday logs. Finish with Checkpoint 2 evidence and a December next step.</p></div><div class="button-row">' + link('mentor-lesson-plans.html#day-3', 'Open the November 16 mentor plan', 'button') + link('#november-16', 'Review November 16 roles', 'button secondary') + link('mentor-print-center.html#later-workdays', 'Find the workday print materials', 'button secondary') + '</div></div></section>'
     body += '<section class="section compact" id="station-prep"><p class="eyebrow">Prepare for each station</p><h2>Station mentor guides</h2><p>Gather and sort, rehearse the illustrated steps, review any starter code, and complete the physical equipment checks before students arrive. Use the dated guide and checklist for the event you are preparing.</p><div class="lesson-grid">' + ''.join('<article class="lesson-block"><h3>' + link(url, title) + '</h3><p>' + description + '</p></article>' for url, title, description in [
-        (MENTOR, 'September 24 · Active backup plan', 'Full-day agenda, confirmed supplies, sewing and blocks activities, paper/observed alternatives, adjusted print guidance, and proposal review.'),
+        (MENTOR, 'September 24 · Backup plan reference', 'Full-day agenda, confirmed supplies, sewing and blocks activities, paper/observed alternatives, adjusted print guidance, and proposal review.'),
         ('mentor-badge-prep.html', 'October 13 · Glow Up Your Badge', 'District kickoff: prototype walkthrough, diagrams, video and photo tutorials, supply sorting, 20-minute plan, and release record.'),
         ('mentor-hummingbird-prep.html', 'Hummingbird Robotics', 'Nine matched kits, port map, BirdBlox starter recipes, videos, and safe reset.'),
         ('mentor-circuit-lab-prep.html', 'Circuit Lab', 'Verify the LED and supply, prepare working loops, and rehearse conductive sewing.'),
         ('mentor-microbit-prep.html', 'micro:bit + MakeCode', 'Windows transfer steps, editable starter, actual blocks, and matching text code.'),
         ('mentor-future-stamp-prep.html', 'Future Stamp', 'September 24: use paper symbol design. Keep this wood-stitching guide for the later hands-on check.'),
-        ('mentor-neopixel-prep.html', 'NeoPixel preview', 'September 24: observed video/diagram preview. Keep this harness and test guide for later physical work.'),
+        ('mentor-neopixel-prep.html', 'NeoPixel preview', 'Prepare and bench-test the harness before releasing physical pixel tests. September’s observed preview remains a reference.'),
         ('mentor-station-checklist.html', 'September 24 · opening & closing', 'Shared readiness, transition, supply-count, and technical follow-up sheet.'),
         ('mentor-badge-checklist.html', 'October 13 · badge checklist', 'One shared clipboard sheet for opening, the 20-minute rotation, quick swaps, reset, and closing counts.')]) + '</div></section>'
     body += '<section class="section compact"><div class="hub-links">' + link("mentor-lesson-plans.html", "Full mentor playbook") + link("mentor-print-center.html", "Print Center") + link("#station-prep", "Station preparation guides") + link("program-roadmap.html", "All dates") + link("recruitment-toolkit.html", "Recruitment toolkit") + '</div>' + room_plan()
-    body += '<label class="session-picker" for="mentor-session" hidden>Jump to a date<select id="mentor-session">' + ''.join(f'<option value="{s["id"]}">{esc(s["date"])} · {esc(s["title"])}</option>' for s in SESSIONS) + '</select></label>'
+    body += '<label class="session-picker" for="mentor-session" hidden>Jump to a date<select id="mentor-session">' + ''.join(f'<option value="{s["id"]}"{ " selected" if s["id"] == CURRENT_SESSION else "" }>{esc(s["date"])} · {esc(s["title"])}</option>' for s in SESSIONS) + '</select></label>'
     for i, s in enumerate(SESSIONS):
-        body += f'<details class="curriculum-detail mentor-session" id="{s["id"]}"' + (' open' if i == 0 else '') + f'><summary>{session_summary(s)}</summary><div class="detail-body"><p><strong>Prepare:</strong> {esc(s["prepare"])}</p><div class="mentor-role-grid">'
+        body += f'<details class="curriculum-detail mentor-session" id="{s["id"]}"' + (' open' if s['id'] == CURRENT_SESSION else '') + f'><summary>{session_summary(s)}</summary><div class="detail-body"><p><strong>Prepare:</strong> {esc(s["prepare"])}</p><div class="mentor-role-grid">'
         for person, role, key in [('Jennifer', 'Wearables', 'j'), ('Stephanie', 'Creative Robotics', 's'), ('Tri', 'Technical lead', 't')]:
             body += f'<article><h3>{person}</h3><strong>{role}</strong><p>{esc(s[key])}</p></article>'
         print_anchor = 'september-24' if i == 0 else ('october-13' if s['id'] == 'october-13' else 'later-workdays')

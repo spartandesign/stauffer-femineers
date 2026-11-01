@@ -34,7 +34,7 @@ const assert = require('node:assert/strict');
       }
     }
     await go('wearables-project.html');
-    await page.locator('#november-16 > summary').click();
+    assert.equal(await page.locator('#november-16').getAttribute('open'), '');
     await page.locator('#november-16').getByRole('link', { name: 'Open the full pathway guide', exact: true }).click();
     assert(page.url().endsWith('/wearable-build.html'));
     assert(await page.getByRole('navigation', { name: 'Breadcrumb' }).getByRole('link', { name: 'Wearables', exact: true }).isVisible());
