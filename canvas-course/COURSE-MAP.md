@@ -1,25 +1,36 @@
 # Limitless Canvas Course Map
 
+**September 23 revision:** September 24 uses the available-supplies backup plan. Only orientation and Phase 1 are published at launch; later modules and their resources remain unpublished until release. The receiving Canvas course stays unpublished until its import audit passes.
+
 ## Course structure
 
 | Module | Canvas pages | Canvas assignments | Status |
 |---|---:|---:|---|
 | Start Here: Limitless Course Orientation | 5 | 0 | Published in package |
-| Phase 1 — Imagine the Future — September 24 | 3 | Checkpoint 1: Approved Project Proposal | Published in package |
+| Phase 1 — Imagine the Future — September 24 | 3 | Checkpoint 1: Project Proposal + Mentor Review | Published in package |
 | DUSD Femineers Kickoff — Glow Up Your Badge — October 13 | 1 | Kickoff Reflection — Glow Up Your Badge | Unpublished until the physical badge prototype passes the timing, safety, and reliability gate |
-| Phase 2 — Arrive Ready to Build — October Canvas + October 21 Lunch | 2 | Phase 2: Design Ready Package | Published in package |
-| Phase 3 — Design What’s Next — November 16 | 2 | Checkpoint 2: Prototype + Build Progress #1 | Published in package |
-| Phase 4 — Build & Test — December 7 | 2 | Mid-Build Test + January Plan | Published in package |
-| Phase 5 — Build the Future — January 13 Lunch + January 25 Workday | 2 | Checkpoint 3: Test, Learn, Redesign | Published in package |
-| Phase 6 — Step Into the Future — February 10 Lunch + February 22 Workday | 2 | Checkpoint 4: Gala Ready | Published in package |
-| Galas, Reflection, and Final Portfolio | 2 | Stauffer Gala Reflection; Final Portfolio + District Gala Reflection | Published in package |
+| Phase 2 — Arrive Ready to Build — October Canvas + October 21 Lunch | 2 | Phase 2: Design Ready Package | Unpublished until phase release |
+| Phase 3 — Design What’s Next — November 16 | 2 | Checkpoint 2: Prototype + Build Progress #1 | Unpublished until phase release |
+| Phase 4 — Build & Test — December 7 | 2 | Mid-Build Test + January Plan | Unpublished until phase release |
+| Phase 5 — Build the Future — January 13 Lunch + January 25 Workday | 2 | Checkpoint 3: Test, Learn, Redesign | Unpublished until phase release |
+| Phase 6 — Step Into the Future — February 10 Lunch + February 22 Workday | 2 | Checkpoint 4: Gala Ready | Unpublished until phase release |
+| Galas, Reflection, and Final Portfolio | 2 | Stauffer Gala Reflection; Final Portfolio + District Gala Reflection | Unpublished until phase release |
 | Mentor Planning — Keep Unpublished | 2 | 0 | Unpublished |
+
+## September 24 student flow
+
+1. Phase 1 Overview — available supplies, Thursday agenda, and finish line.
+2. Meet the Technology — felt LED practice and micro:bit blocks for Wearables; actual input, outputs, and reset for Hummingbird Bit pairs; shared paper symbol and observed NeoPixel preview.
+3. Prepare Your Design Proposal — three ideas, sketches, available/needed materials, evidence, and next test.
+4. Checkpoint 1: Project Proposal + Mentor Review — one submission point with approved, provisional, or revise/hold status. Wood stitching and physical NeoPixel testing are deferred, not missing submission requirements.
+
+Wearables practice in nine pairs but submit 18 individual proposals. Robotics partners share technical evidence and each add an individual reflection. The package does not create Canvas group assignments: each partner submits/links the shared packet unless mentors configure groups before launch. Two-LED and button-input fallbacks identify the output/input types actually used and the deferred motion/sensor tests.
 
 ## Assignment defaults
 
 | Assignment | Default points | Due date | Main evidence |
 |---|---:|---|---|
-| Checkpoint 1: Approved Project Proposal | 10 | Unset | User or need, three ideas, selected plan, sketches, materials, system, pathway technology-exploration evidence, safety, test question, mentor approval |
+| Checkpoint 1: Project Proposal + Mentor Review | 10 | Unset | User or need, three ideas, selected plan, sketches, materials, system, actual practice/observation evidence, safety, next test, mentor review status and deferred-test owner |
 | Kickoff Reflection — Glow Up Your Badge | 0; omitted from final grade | Unset; complete after October 13 | Finished-badge photo; what completed the circuit; troubleshooting action; learning from another school/activity |
 | Phase 2: Design Ready Package | 10 | Unset; October 19 recommended | Approved plan, labeled drawing, system diagram, storyboard, materials, optional fabrication file, three-trial plan, individual reflection |
 | Checkpoint 2: Prototype + Build Progress #1 | 10 | Unset | Prototype trials and retest, mentor clearance, build photos, plan comparison, construction change, status, next repair |
